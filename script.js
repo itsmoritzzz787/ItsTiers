@@ -202,7 +202,7 @@ const players = {
     name: "SocialRex11",
     rank: "4.",
     title: "Combat Novice",
-    points: "13 points",
+    points: "16 points",
     tiers: [
       {icon:"sword", tier:"LT4"},
         {icon:"vanilla", tier:"HT5"},
@@ -213,7 +213,7 @@ const players = {
       {icon:"uhc", tier:"LT5"},
       {icon:"axe", tier:"HT5"},
       {icon:"smp", tier:"HT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"}
     ]
   },
   TheCronos_YT: {
