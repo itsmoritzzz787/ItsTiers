@@ -142,7 +142,7 @@ const players = {
   },
   Epicfaik: {
     name: "Epicfaik",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -200,7 +200,7 @@ const players = {
   },
   SocialRex11: {
     name: "SocialRex11",
-    rank: "6.",
+    rank: "4.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -211,12 +211,31 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},     
       {icon:"nethop", tier:"LT5"},
       {icon:"uhc", tier:"LT5"},
-      {icon:"axe", tier:"LT5"},
-      {icon:"smp", tier:"LT5"},
+      {icon:"axe", tier:"HT5"},
+      {icon:"smp", tier:"HT5"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
     ]
   },
-  
+  TheCronos_YT: {
+    name: "TheCronos_YT",
+    rank: "10.",
+    title: "Combat Novice",
+    points: "10 points",
+    tiers: [
+     {icon:"sword", tier:"HT5"},
+      {icon:"smp", tier:"LT5"},
+      {icon:"mace", tier:"LT5"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},
+     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},
+     
+      {icon:"pot", tier:"LT5"},
+      {icon:"nethop", tier:"LT5"},
+      {icon:"uhc", tier:"LT5"},
+      {icon:"axe", tier:"LT5"},
+       {icon:"vanilla", tier:"-"}
+      
+    ]
+  },
   
   ItsFluffyTime14: {
     name: "ItsFluffyTime14",
@@ -239,7 +258,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "11.",
+    rank: "12.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -257,7 +276,7 @@ const players = {
   },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "12.",
+    rank: "13.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -275,7 +294,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "13.",
+    rank: "14.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -293,7 +312,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "14.",
+    rank: "15.",
     title: "Rookie",
     points: "2 points",
     tiers: [
