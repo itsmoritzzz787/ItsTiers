@@ -296,9 +296,9 @@ const players = {
     name: "_DasEntchen_",
     rank: "14.",
     title: "Rookie",
-    points: "3 points",
+    points: "4 points",
     tiers: [
-      {icon:"sword", tier:"LT4"},
+      {icon:"sword", tier:"HT4"},
       {icon:"uhc", tier:"-"},
       {icon:"mace", tier:"-"},
       {icon:"nethop", tier:"-"},
