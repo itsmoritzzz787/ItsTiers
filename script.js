@@ -274,9 +274,27 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+  lozk00: {
+    name: "lozk00",
+    rank: "13.",
+    title: "Rookie",
+    points: "7 points",
+    tiers: [
+      {icon:"pot", tier:"HT4"},
+      {icon:"sword", tier:"LT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},      
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "13.",
+    rank: "14.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -294,7 +312,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "14.",
+    rank: "15.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -312,7 +330,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "15.",
+    rank: "16.",
     title: "Rookie",
     points: "2 points",
     tiers: [
