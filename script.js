@@ -331,7 +331,7 @@ const players = {
  FrozenBlack: {
     name: "FrozenBlack",
     rank: "16.",
-    title: "Combat Novice",
+    title: "Rookie",
     points: "3 points",
     tiers: [
       {icon:"mace", tier:"LT4"},
