@@ -140,6 +140,24 @@ const players = {
       
     ]
   },
+  SocialRex11: {
+    name: "SocialRex11",
+    rank: "4.",
+    title: "Combat Novice",
+    points: "16 points",
+    tiers: [
+      {icon:"sword", tier:"LT4"},
+        {icon:"vanilla", tier:"HT5"},
+        {icon:"pot", tier:"HT5"},
+      {icon:"mace", tier:"LT5"}, 
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},     
+      {icon:"nethop", tier:"LT5"},
+      {icon:"uhc", tier:"LT5"},
+      {icon:"axe", tier:"HT5"},
+      {icon:"smp", tier:"HT5"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"}
+    ]
+  },
   Epicfaik: {
     name: "Epicfaik",
     rank: "7.",
@@ -160,9 +178,29 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ MrMedoMC: {
+    name: "MrMedoMC",
+    rank: "8.",
+    title: "Combat Novice",
+    points: "13 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT4"},
+      {icon:"axe", tier:"HT5"},
+      {icon:"sword", tier:"HT5"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"uhc", tier:"LT5"},
+      {icon:"smp", tier:"LT5"},
+      {icon:"pot", tier:"LT5"},
+      {icon:"nethop", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+      
+      
+    ]
+  },
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "7.",
+    rank: "9.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -178,44 +216,8 @@ const players = {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
     ]
   },
-  MrMedoMC: {
-    name: "MrMedoMC",
-    rank: "8.",
-    title: "Rookie",
-    points: "12 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"axe", tier:"HT5"},
-      {icon:"sword", tier:"HT5"},
-      {icon:"mace", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"smp", tier:"LT5"},
-      {icon:"pot", tier:"LT5"},
-      {icon:"nethop", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-      
-      
-    ]
-  },
-  SocialRex11: {
-    name: "SocialRex11",
-    rank: "4.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-      {icon:"sword", tier:"LT4"},
-        {icon:"vanilla", tier:"HT5"},
-        {icon:"pot", tier:"HT5"},
-      {icon:"mace", tier:"LT5"}, 
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},     
-      {icon:"nethop", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"axe", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"}
-    ]
-  },
+  
+ 
   TheCronos_YT: {
     name: "TheCronos_YT",
     rank: "10.",
