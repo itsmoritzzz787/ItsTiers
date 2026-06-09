@@ -180,7 +180,7 @@ const players = {
   },
  MrMedoMC: {
     name: "MrMedoMC",
-    rank: "8.",
+    rank: "7.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
