@@ -158,9 +158,27 @@ const players = {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"}
     ]
   },
+ lozk00: {
+    name: "lozk00",
+    rank: "7.",
+    title: "Combat Novice",
+    points: "14 points",
+    tiers: [
+      {icon:"sword", tier:"LT3"},
+      {icon:"pot", tier:"HT4"}, 
+      {icon:"mace", tier:"HT5"},
+      {icon:"vanilla", tier:"HT5"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},                  
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   Epicfaik: {
     name: "Epicfaik",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -180,7 +198,7 @@ const players = {
   },
  MrMedoMC: {
     name: "MrMedoMC",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -200,7 +218,7 @@ const players = {
   },
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "9.",
+    rank: "10.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -220,7 +238,7 @@ const players = {
  
   TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "10.",
+    rank: "11.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -241,7 +259,7 @@ const players = {
   
   ItsFluffyTime14: {
     name: "ItsFluffyTime14",
-    rank: "10.",
+    rank: "11.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -260,7 +278,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "12.",
+    rank: "13.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -276,24 +294,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  lozk00: {
-    name: "lozk00",
-    rank: "13.",
-    title: "Rookie",
-    points: "7 points",
-    tiers: [
-      {icon:"pot", tier:"HT4"},
-      {icon:"sword", tier:"LT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},      
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+  
   PVPSnapper: {
     name: "PVPSnapper",
     rank: "14.",
