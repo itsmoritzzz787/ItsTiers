@@ -312,6 +312,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ xflxpsy: {
+    name: "xflxpsy",
+    rank: "15.",
+    title: "Rookie",
+    points: "4 points",
+    tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"sword", tier:"-"},
+      {icon:"uhc", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"}, 
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   _DasEntchen_: {
     name: "_DasEntchen_",
     rank: "15.",
