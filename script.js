@@ -102,6 +102,24 @@ const players = {
       
     ]
   },
+ lozk00: {
+    name: "lozk00",
+    rank: "4.",
+    title: "Combat Novice",
+    points: "18 points",
+    tiers: [
+      {icon:"sword", tier:"LT3"},
+      {icon:"pot", tier:"LT3"}, 
+      {icon:"mace", tier:"HT5"},
+      {icon:"vanilla", tier:"HT5"},
+      {icon:"nethop", tier:"HT5"},
+      {icon:"uhc", tier:"-"},            
+      {icon:"smp", tier:"-"},                  
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   LordTrash13: {
     name: "LordTrash13",
     rank: "4.",
@@ -158,24 +176,7 @@ const players = {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"}
     ]
   },
- lozk00: {
-    name: "lozk00",
-    rank: "7.",
-    title: "Combat Novice",
-    points: "14 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
-      {icon:"pot", tier:"HT4"}, 
-      {icon:"mace", tier:"HT5"},
-      {icon:"vanilla", tier:"HT5"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},                  
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   Epicfaik: {
     name: "Epicfaik",
     rank: "8.",
