@@ -1091,3 +1091,6 @@ background: linear-gradient(
 
   box-shadow:0 0 10px rgba(79,124,255,.25);
 }
+.overall-player {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
