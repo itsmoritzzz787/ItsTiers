@@ -210,7 +210,7 @@ const players = {
       {icon:"uhc", tier:"LT5"},
       {icon:"smp", tier:"LT5"},
       {icon:"pot", tier:"LT5"},
-      {icon:"nethop", tier:"-"},
+      {icon:"nethop", tier:"LT5"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
       
