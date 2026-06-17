@@ -122,7 +122,7 @@ const players = {
   },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "4.",
+    rank: "5.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -140,7 +140,7 @@ const players = {
   },
   Sn1wMC: {
     name: "Sn1wMC",
-    rank: "4.",
+    rank: "5.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -160,7 +160,7 @@ const players = {
   },
   SocialRex11: {
     name: "SocialRex11",
-    rank: "4.",
+    rank: "5.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
