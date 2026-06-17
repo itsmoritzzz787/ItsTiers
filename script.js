@@ -471,3 +471,34 @@ document.querySelectorAll('.kit-item').forEach(el => {
     el.setAttribute('data-tooltip', text.replace('|', '\n'));
   }
 });
+document.getElementById("playerSearch").addEventListener("keydown", function(e){
+
+  if(e.key !== "Enter") return;
+
+  const search = this.value.toLowerCase();
+
+  const player = players.find(p =>
+    p.name.toLowerCase() === search
+  );
+
+  if(player){
+    openProfile(player);
+    this.value = "";
+  }
+});
+document
+.getElementById("playerSearch")
+.addEventListener("keydown", function(e){
+
+  if(e.key !== "Enter") return;
+
+  const input = this.value.toLowerCase().trim();
+
+  const playerKey = Object.keys(players).find(key =>
+    players[key].name.toLowerCase().includes(input)
+  );
+
+  if(playerKey){
+    openProfile(playerKey);
+  }
+});
