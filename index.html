@@ -8,23 +8,49 @@
 </head>
 <body>
 
-<div class="uberschrift">
-  <a href="https://fontmeme.com/de/minecraft-schriftart/"><img src="https://fontmeme.com/permalink/260508/b95c5fb9.png" alt="minecraft-schriftart" border="0"></a>
+<div class="header">
+
+  <div class="header-left">
+    <button class="top-btn" onclick="scrollToRankings()">
+      <img width="20px"src="https://mctiers.com/nav_icons/rankings.svg" alt=""> Rankings
+    </button>
+
+    <a href="https://discord.gg/Rr8YC7q48" target="_blank">
+  <button class="top-btn"><img width="20px"src="https://mctiers.com/nav_icons/discord.svg" alt=""> Discord</button>
+</a>
+  </div>
+
+  <div class="header-center">
+    <img src="https://fontmeme.com/permalink/260508/b95c5fb9.png">
+  </div>
+
+  <div class="header-right">
+    <input
+      type="text"
+      id="playerSearch"
+      placeholder="Search player..."
+    >
+  </div>
+
 </div>
 <!-- NAV -->
 <div class="kit-nav">
-  <div class="kit-tab active" onclick="showKit(event,'overall')"> <img width=20 src="https://mctiers.com/tier_icons/overall.svg" alt=""> Overall</div>
-  <div class="kit-tab" onclick="showKit(event,'kit1')">Crystal <img width=18px src="https://mctiers.com/tier_icons/vanilla.svg" alt=""></div>
-  <div class="kit-tab" onclick="showKit(event,'kit2')">UHC <img width=19 src="https://mctiers.com/tier_icons/uhc.svg" alt=""></div>
-  <div class="kit-tab" onclick="showKit(event,'kit3')">Pot <img width=19 src="https://mctiers.com/tier_icons/pot.svg" alt=""></div>
-  <div class="kit-tab" onclick="showKit(event,'kit4')">NethPot <img width="18px" src="https://mctiers.com/tier_icons/nethop.svg" alt=""></div>
-  <div class="kit-tab" onclick="showKit(event,'kit5')">SMP <img width="19px" src="https://mctiers.com/tier_icons/smp.svg" alt=""></div>
-  <div class="kit-tab" onclick="showKit(event,'kit6')">Sword <img width="17px" src="https://mctiers.com/tier_icons/sword.svg" alt=""></div>
-  <div class="kit-tab" onclick="showKit(event,'kit7')">Axe <img width=20 src="https://mctiers.com/tier_icons/axe.svg" alt=""></div>
-  <div class="kit-tab" onclick="showKit(event,'kit8')">Mace <img width=19 src="https://mctiers.com/tier_icons/mace.svg" alt=""></div>
-  <div class="kit-tab" onclick="showKit(event,'kit9')">ChaosMace <img width=19 src="https://subtiers.net/assets/trident-1c1a3e5a.svg" alt=""></div>
-  <div class="kit-tab" onclick="showKit(event,'kit10')">Spear Mace <img width=19 src="https://cdn-icons-png.magnific.com/512/6428/6428889.png" alt=""></div>
+  <div class="kit-tab active" onclick="showKit(event,'overall')"> <img width=20 src="https://mctiers.com/tier_icons/overall.svg" alt="" class="nav-icon"><br>Overall</div>
+  <div class="kit-tab" onclick="showKit(event,'kit1')"><img width=19px src="https://mctiers.com/tier_icons/vanilla.svg" alt="" class="nav-icon"><br>Crystal</div>
+  <div class="kit-tab" onclick="showKit(event,'kit2')"><img width=19 src="https://mctiers.com/tier_icons/uhc.svg" alt="" class="nav-icon"><br>UHC</div>
+  <div class="kit-tab" onclick="showKit(event,'kit3')"><img width=19 src="https://mctiers.com/tier_icons/pot.svg" alt="" class="nav-icon"><br>Pot</div>
+  <div class="kit-tab" onclick="showKit(event,'kit4')"><img width="18px" src="https://mctiers.com/tier_icons/nethop.svg" alt="" class="nav-icon"><br>NethPot</div>
+  <div class="kit-tab" onclick="showKit(event,'kit5')"><img width="19px" src="https://mctiers.com/tier_icons/smp.svg" alt="" class="nav-icon"><br>SMP</div>
+  <div class="kit-tab" onclick="showKit(event,'kit6')"><img width="17px" src="https://mctiers.com/tier_icons/sword.svg" alt="" class="nav-icon"><br>Sword</div>
+  <div class="kit-tab" onclick="showKit(event,'kit7')"><img width=20 src="https://mctiers.com/tier_icons/axe.svg" alt="" class="nav-icon"><br>Axe</div>
+  <div class="kit-tab" onclick="showKit(event,'kit8')"><img width=19 src="https://mctiers.com/tier_icons/mace.svg" alt="" class="nav-icon"><br>Mace</div>
+  <div class="kit-tab" onclick="showKit(event,'kit9')"><img width=19 src="https://subtiers.net/assets/trident-1c1a3e5a.svg" alt="" class="nav-icon"><br>ChaosMace</div>
+  <div class="kit-tab" onclick="showKit(event,'kit10')"><img width=19 src="https://cdn-icons-png.magnific.com/512/6428/6428889.png" alt="" class="nav-icon"> <br> Spear Mace</div>
 </div>
+  <div class="Abtrennung">
+    
+  </div>
+  <div class="laaanger-background">
 <div class="kit-wrapper">
   <!-- OVERALL -->
   
@@ -471,6 +497,7 @@ src="https://mc-heads.net/body/hallo663/right">
   
 
 </div>
+    <div class="laaanger-background">
 <!-- KITS -->
 
   <!-- Crystal -->
@@ -601,6 +628,8 @@ src="https://mc-heads.net/body/hallo663/right">
     <div class="tier tier5"><h3>Tier 5</h3><div class="player eu"><span>xflxpsy</span><span class="player-tier ht">⇈</span></div><div class="player eu"><span>McNicho</span><span class="player-tier ht">⇈</span></div><div class="player eu"><span>SocialRex11</span><span class="player-tier lt">⇡</span></div><div class="player eu"><span>TheCronos_YT</span><span class="player-tier lt">⇡</span></div></div>
   </div>
 </div>
+  </div>
+  </div>
   </div>
 <!-- Popup -->
   <div id="popup" class="popup">
