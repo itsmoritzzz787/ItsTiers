@@ -138,8 +138,8 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  Sn1wMC: {
-    name: "Sn1wMC",
+  Der_Schnee: {
+    name: "Der_Schnee",
     rank: "5.",
     title: "Combat Novice",
     points: "16 points",
