@@ -41,7 +41,7 @@ const players = {
     name: "MyNameIsPuma",
     rank: "2.",
     title: "Combat Cadet",
-    points: "42 points",
+    points: "40 points",
     tiers: [
       {icon:"uhc", tier:"RLT3"},
       {icon:"smp", tier:"RLT3"},
@@ -49,8 +49,8 @@ const players = {
       {icon:"nethop", tier:"RHT4"},
       {icon:"pot", tier:"RHT4"},
       {icon:"axe", tier:"RHT4"},
-      {icon:"mace", tier:"RHT4"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"RHT4"},
+      {icon:"mace", tier:"RLT4"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"RLT4"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"RLT4"},
       {icon:"vanilla", tier:"RLT4"},
       
