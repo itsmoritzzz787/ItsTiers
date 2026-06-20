@@ -105,8 +105,8 @@ const players = {
  lozk00: {
     name: "lozk00",
     rank: "4.",
-    title: "Combat Novice",
-    points: "23 points",
+    title: "Combat Cadet",
+    points: "26 points",
     tiers: [
       {icon:"sword", tier:"HT3"},
       {icon:"pot", tier:"LT3"}, 
@@ -114,10 +114,11 @@ const players = {
       {icon:"vanilla", tier:"HT5"},
       {icon:"nethop", tier:"HT5"},
       {icon:"smp", tier:"LT5"},
-      {icon:"uhc", tier:"-"},                                    
-      {icon:"axe", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},
+      {icon:"axe", tier:"HT5"},
+      {icon:"uhc", tier:"-"},                                         
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+      
     ]
   },
   LordTrash13: {
