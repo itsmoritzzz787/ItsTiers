@@ -9,7 +9,9 @@ body{margin:0;font-family:Arial;background:#121822;color:white}
 .rank{font-size:35px;color:white;font-family:trebuchet ms;font-weight:1000;text-shadow:2px 2px black;}
 .region.na{background:#442228;padding:7px;border-radius:10px;text-align:center;color:#d35967;margin: auto;font-weight:800;font-size:20px;margin-right: 20px;}
 .region.eu{background:#1c3e20;padding:7px;border-radius:10px;text-align:center;color:#81ea98;margin: auto;font-weight:800;font-size:20px;margin-right: 20px;}
-
+.region.as{background:#1c3e20;padding:7px;border-radius:10px;text-align:center;color:#81ea98;margin: auto;font-weight:800;font-size:20px;margin-right: 20px;}
+.region.sa{background:#1c3e20;padding:7px;border-radius:10px;text-align:center;color:#81ea98;margin: auto;font-weight:800;font-size:20px;margin-right: 20px;}
+.region.au{background:#1c3e20;padding:7px;border-radius:10px;text-align:center;color:#81ea98;margin: auto;font-weight:800;font-size:20px;margin-right: 20px;}
 .kit-icons{display:flex;gap:10px;position: relative;
   z-index: 2;margin-left: 25px;}
 .kit-item{display:flex;flex-direction:column;align-items:center}
@@ -1100,4 +1102,18 @@ background: linear-gradient(
 
 .player.lt{
   background: rgba(255,255,255,0.08);
+}
+.region.as{
+  background:#3b2a4f;
+  color:#c084fc;
+}
+
+.region.sa{
+  background:#4a3418;
+  color:#fbbf24;
+}
+
+.region.au{
+  background:#17394a;
+  color:#67e8f9;
 }
