@@ -121,9 +121,27 @@ const players = {
       
     ]
   },
+ certifiedrid: {
+    name: "certifiedrid",
+    rank: "5.",
+    title: "Rookie",
+    points: "17 points",
+    tiers: [
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT4"},
+      {icon:"vanilla", tier:"HT4"},      
+      {icon:"axe", tier:"LT4"},           
+      {icon:"mace", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"sword", tier:"-"},
+      {icon:"pot", tier:"-"},    
+      {icon:"uhc", tier:"-"},
+    ]
+  },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "5.",
+    rank: "6.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -141,7 +159,7 @@ const players = {
   },
   Der_Schnee: {
     name: "Der_Schnee",
-    rank: "5.",
+    rank: "6.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -161,7 +179,7 @@ const players = {
   },
   SocialRex11: {
     name: "SocialRex11",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Novice",
     points: "15 points",
     tiers: [
@@ -180,7 +198,7 @@ const players = {
  
   Epicfaik: {
     name: "Epicfaik",
-    rank: "8.",
+    rank: "9.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -200,7 +218,7 @@ const players = {
   },
  MrMedoMC: {
     name: "MrMedoMC",
-    rank: "8.",
+    rank: "9.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -220,7 +238,7 @@ const players = {
   },
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "10.",
+    rank: "11.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -240,7 +258,7 @@ const players = {
  
   TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -261,7 +279,7 @@ const players = {
   
   ItsFluffyTime14: {
     name: "ItsFluffyTime14",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -280,7 +298,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "13.",
+    rank: "14.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -298,7 +316,7 @@ const players = {
   },
   Ginoski: {
     name: "Ginoski",
-    rank: "14.",
+    rank: "15.",
     title: "Rookie",
     points: "8 points",
     tiers: [   
@@ -317,7 +335,7 @@ const players = {
   },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "15.",
+    rank: "16.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -335,7 +353,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "15.",
+    rank: "16.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -353,7 +371,7 @@ const players = {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "17.",
+    rank: "18.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -371,7 +389,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "17.",
+    rank: "18.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -389,7 +407,7 @@ const players = {
   },
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "19.",
+    rank: "20.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -408,7 +426,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "20.",
+    rank: "21.",
     title: "Rookie",
     points: "2 points",
     tiers: [
