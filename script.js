@@ -62,18 +62,18 @@ const players = {
     name: "ItsMoritzzz",
     rank: "1.",
     title: "Combat Cadet",
-    points: "46 points",
+    points: "47 points",
     tiers: [
       
       {icon:"vanilla", tier:"LT3"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
+      {icon:"sword", tier:"HT4"}, 
       {icon:"uhc", tier:"LT4"},
       {icon:"smp", tier:"LT4"},
       {icon:"nethop", tier:"LT4"},
       {icon:"pot", tier:"LT4"},
-      {icon:"axe", tier:"LT4"},
-      {icon:"sword", tier:"LT4"},      
+      {icon:"axe", tier:"LT4"},            
       {icon:"mace", tier:"RHT3"},
       
       
@@ -124,11 +124,11 @@ const players = {
  certifiedrid: {
     name: "certifiedrid",
     rank: "5.",
-    title: "Rookie",
-    points: "17 points",
+    title: "Combat Novice",
+    points: "19 points",
     tiers: [
+      {icon:"vanilla", tier:"LT3"},      
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT4"},
-      {icon:"vanilla", tier:"HT4"},      
       {icon:"axe", tier:"LT4"},           
       {icon:"mace", tier:"LT4"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
