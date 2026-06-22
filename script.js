@@ -41,8 +41,9 @@ const players = {
     name: "MyNameIsPuma",
     rank: "2.",
     title: "Combat Cadet",
-    points: "40 points",
+    points: "43 points",
     tiers: [
+      {icon:"vanilla", tier:"LT3"},
       {icon:"uhc", tier:"RLT3"},
       {icon:"smp", tier:"RLT3"},
       {icon:"sword", tier:"RHT4"},
@@ -52,7 +53,7 @@ const players = {
       {icon:"mace", tier:"RLT4"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"RLT4"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"RLT4"},
-      {icon:"vanilla", tier:"RLT4"},
+      
       
       
     ]
@@ -88,8 +89,7 @@ const players = {
     title: "Combat Cadet",
     points: "35 points",
     tiers: [
-      {icon:"mace", tier:"HT3"},
-      {icon:"vanilla", tier:"LT3"},
+      {icon:"mace", tier:"HT3"},      
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
       {icon:"sword", tier:"LT4"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
@@ -98,7 +98,7 @@ const players = {
       {icon:"nethop", tier:"HT5"},
       {icon:"uhc", tier:"HT5"},      
       {icon:"axe", tier:"HT5"},
-      
+      {icon:"vanilla", tier:"RLT3"},
       
     ]
   },
