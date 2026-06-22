@@ -333,6 +333,25 @@ const players = {
       
     ]
   },
+ VampyWolf: {
+    name: "VampyWolf",
+    rank: "16.",
+    title: "Rookie",
+    points: "6 points",
+    tiers: [
+      {icon:"mace", tier:"LT3"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"sword", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"uhc", tier:"-"},
+      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   PVPSnapper: {
     name: "PVPSnapper",
     rank: "16.",
@@ -369,9 +388,28 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ VampyWolf: {
+    name: "VampyWolf",
+    rank: "19.",
+    title: "Rookie",
+    points: "4 points",
+    tiers: [
+      {icon:"mace", tier:"HT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"sword", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"uhc", tier:"-"},
+      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "18.",
+    rank: "19.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -389,7 +427,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "18.",
+    rank: "19.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -407,7 +445,7 @@ const players = {
   },
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "20.",
+    rank: "22.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -426,7 +464,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "21.",
+    rank: "23.",
     title: "Rookie",
     points: "2 points",
     tiers: [
