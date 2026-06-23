@@ -260,8 +260,7 @@ const players = {
     title: "Combat Novice",
     points: "10 points",
     tiers: [
-      {icon:"mace", tier:"HT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"mace", tier:"HT3"},     
       {icon:"nethop", tier:"-"},
       {icon:"smp", tier:"-"},
       {icon:"sword", tier:"-"},
@@ -269,7 +268,7 @@ const players = {
       {icon:"vanilla", tier:"-"},      
       {icon:"axe", tier:"-"},
       {icon:"uhc", tier:"-"},
-      
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
