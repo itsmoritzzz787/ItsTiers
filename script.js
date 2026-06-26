@@ -145,7 +145,7 @@ const players = {
     title: "Combat Novice",
     points: "16 points",
     tiers: [
-      {icon:"pot", tier:"HT3",
+      {icon:"pot", tier:"HT3"},
       {icon:"sword", tier:"LT3"},
       {icon:"uhc", tier:"-"},
       {icon:"mace", tier:"-"},
@@ -513,7 +513,7 @@ function openProfile(name) {
 
   /* SKIN */
   document.getElementById("popup-skin").src =
-    `https://mc-heads.net/body/${player.name}/right`;
+    `https://render.crafty.gg/3d/bust/${player.name}`;
 
   /* INFO */
   document.getElementById("popup-rank").innerText = player.rank;
