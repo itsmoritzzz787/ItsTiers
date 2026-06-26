@@ -202,14 +202,14 @@ const players = {
     points: "15 points",
     tiers: [
       {icon:"sword", tier:"LT4"},
-        {icon:"vanilla", tier:"HT5"},
-        {icon:"pot", tier:"HT5"},
+      {icon:"vanilla", tier:"HT5"},
+      {icon:"pot", tier:"HT5"},
+      {icon:"axe", tier:"HT5"},
+      {icon:"smp", tier:"HT5"},
       {icon:"mace", tier:"LT5"}, 
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},     
       {icon:"nethop", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"axe", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},
+      {icon:"uhc", tier:"LT5"},   
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"}
     ]
   },
