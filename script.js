@@ -197,9 +197,9 @@ const players = {
   },
   SocialRex11: {
     name: "SocialRex11",
-    rank: "9.",
+    rank: "6.",
     title: "Combat Novice",
-    points: "15 points",
+    points: "16 points",
     tiers: [
       {icon:"sword", tier:"LT4"},
       {icon:"vanilla", tier:"HT5"},
