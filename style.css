@@ -852,20 +852,7 @@ background: linear-gradient(
   min-height:79px;
   
 }
-.player-skin{
- 
 
-  
-  bottom: -25px;
-
-  height: 120px;
-
-  opacity: 0.9;
-
-  pointer-events: none;
-
-  z-index: 1;
-}
 .rank,
 .player-info,
 .region,
@@ -888,14 +875,7 @@ background: linear-gradient(
 
   min-width:420px;
 }
-.player-skin{
-  height:130px;
 
-  object-fit:contain;
-
-  margin-top:-30px;
-  margin-bottom:-50px;
-}
 .player-info{
   display:flex;
   flex-direction:column;
@@ -978,13 +958,13 @@ background: linear-gradient(
   margin-bottom:-10px;
 }
 .popup-skin{
-  height:170px;
+  height:100px;
 
   object-fit:contain;
 
   opacity:0.95;
 
-  margin-bottom:-55px;
+  margin-bottom:0px;
 
   pointer-events:none;
 }
@@ -1116,4 +1096,14 @@ background: linear-gradient(
 .region.au{
   background:#17394a;
   color:#67e8f9;
+}
+.player-skin {
+height:70px;
+margin-bottom:0px;
+}
+.player-skintable {
+height:25px;
+margin-bottom:-7px;
+background:rgba(255,255,255,0.08);
+border-radius:5px
 }
