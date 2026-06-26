@@ -312,8 +312,8 @@ const players = {
     ]
   },
   
-  ItsFluffyTime14: {
-    name: "ItsFluffyTime14",
+  McFaBaZaaRoh1MB: {
+    name: "McFaBaZaaRoh1MB",
     rank: "14.",
     title: "Combat Novice",
     points: "10 points",
