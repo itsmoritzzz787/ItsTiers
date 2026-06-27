@@ -515,12 +515,12 @@ const players = {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "26.",
+    rank: "25.",
     title: "Rookie",
-    points: "0 points",
+    points: "2 points",
     tiers: [
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"uhc", tier:"-"},     
       {icon:"nethop", tier:"-"},
       {icon:"smp", tier:"-"},
       {icon:"sword", tier:"-"},
