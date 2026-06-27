@@ -110,12 +110,12 @@ const players = {
     tiers: [
       {icon:"sword", tier:"LT3"},
       {icon:"pot", tier:"LT3"}, 
-      {icon:"mace", tier:"HT5"},
-      {icon:"vanilla", tier:"HT5"},
+      {icon:"mace", tier:"HT5"},      
       {icon:"nethop", tier:"HT5"},
-      {icon:"smp", tier:"LT5"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},
       {icon:"axe", tier:"HT5"},
+      {icon:"vanilla", tier:"LT5"},
+      {icon:"smp", tier:"LT5"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},      
       {icon:"uhc", tier:"-"},                                         
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       
@@ -272,6 +272,25 @@ const players = {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
     ]
   },
+ TheCronos_YT: {
+    name: "TheCronos_YT",
+    rank: "13.",
+    title: "Combat Novice",
+    points: "11 points",
+    tiers: [
+     {icon:"sword", tier:"HT5"},
+     {icon:"mace", tier:"HT5"},
+     {icon:"smp", tier:"LT5"},      
+     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},
+     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},     
+     {icon:"pot", tier:"LT5"},
+     {icon:"nethop", tier:"LT5"},
+     {icon:"uhc", tier:"LT5"},
+     {icon:"axe", tier:"LT5"},
+     {icon:"vanilla", tier:"-"}
+      
+    ]
+  },
   VampyWolf: {
     name: "VampyWolf",
     rank: "14.",
@@ -291,26 +310,7 @@ const players = {
     ]
   },
  
-  TheCronos_YT: {
-    name: "TheCronos_YT",
-    rank: "14.",
-    title: "Combat Novice",
-    points: "10 points",
-    tiers: [
-     {icon:"sword", tier:"HT5"},
-      {icon:"smp", tier:"LT5"},
-      {icon:"mace", tier:"LT5"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},
-     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},
-     
-      {icon:"pot", tier:"LT5"},
-      {icon:"nethop", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"axe", tier:"LT5"},
-       {icon:"vanilla", tier:"-"}
-      
-    ]
-  },
+  
   
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
@@ -333,7 +333,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "17.",
+    rank: "16.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -351,7 +351,7 @@ const players = {
   },
   Ginoski: {
     name: "Ginoski",
-    rank: "18.",
+    rank: "17.",
     title: "Rookie",
     points: "8 points",
     tiers: [   
@@ -370,7 +370,7 @@ const players = {
   },
  _Rafonix: {
     name: "_Rafonix",
-    rank: "19.",
+    rank: "18.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -388,7 +388,7 @@ const players = {
   },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "19.",
+    rank: "18.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -406,7 +406,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "19.",
+    rank: "18.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -422,7 +422,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- 
+ SolarPleasant: {
+    name: "SolarPleasant",
+    rank: "21.",
+    title: "Rookie",
+    points: "4 points",
+    tiers: [
+      {icon:"mace", tier:"HT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"sword", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  xflxpsy: {
     name: "xflxpsy",
     rank: "22.",
@@ -443,7 +460,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "23.",
+    rank: "22.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -496,7 +513,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  
+   ShieldlessStray: {
+    name: "ShieldlessStray",
+    rank: "26.",
+    title: "Rookie",
+    points: "0 points",
+    tiers: [
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"sword", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   
   
 };
