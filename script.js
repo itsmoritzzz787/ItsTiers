@@ -41,10 +41,10 @@ const players = {
     name: "MyNameIsPuma",
     rank: "2.",
     title: "Combat Cadet",
-    points: "43 points",
+    points: "38 points",
     tiers: [
       {icon:"vanilla", tier:"LT3"},
-      {icon:"uhc", tier:"RLT3"},
+      {icon:"uhc", tier:"LT5"},
       {icon:"smp", tier:"RLT3"},
       {icon:"sword", tier:"RHT4"},
       {icon:"nethop", tier:"RHT4"},
@@ -332,6 +332,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ swnxzx: {
+    name: "swnxzx",
+    rank: "16.",
+    title: "Rookie",
+    points: "9 points",
+    tiers: [
+      {icon:"nethop", tier:"LT3"},
+      {icon:"smp", tier:"HT4"},
+      {icon:"sword", tier:"LT4"},
+      {icon:"pot", tier:"LT4"},
+      {icon:"mace", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"uhc", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   DieElfeFX: {
     name: "DieElfeFX",
     rank: "16.",
@@ -352,7 +370,7 @@ const players = {
   },
   Ginoski: {
     name: "Ginoski",
-    rank: "17.",
+    rank: "18.",
     title: "Rookie",
     points: "8 points",
     tiers: [   
@@ -371,7 +389,7 @@ const players = {
   },
  _Rafonix: {
     name: "_Rafonix",
-    rank: "18.",
+    rank: "19.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -389,7 +407,7 @@ const players = {
   },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "18.",
+    rank: "19.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -407,7 +425,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "18.",
+    rank: "19.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -425,7 +443,7 @@ const players = {
   },
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "21.",
+    rank: "22.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -479,7 +497,7 @@ const players = {
   },
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "24.",
+    rank: "25.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -498,7 +516,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "25.",
+    rank: "26.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -516,7 +534,7 @@ const players = {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "25.",
+    rank: "26.",
     title: "Rookie",
     points: "2 points",
     tiers: [
