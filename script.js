@@ -62,7 +62,7 @@ const players = {
   ItsMoritzzz: {
     name: "ItsMoritzzz",
     rank: "1.",
-    title: "Combat Cadet",
+    title: "Combat Specialist",
     points: "57 points",
     tiers: [
       {icon:"mace", tier:"LT2"},
