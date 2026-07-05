@@ -145,9 +145,10 @@ const players = {
     name: "SocialRex11",
     rank: "6.",
     title: "Combat Novice",
-    points: "17 points",
+    points: "18 points",
     tiers: [   
       {icon:"sword", tier:"LT4"},
+     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},
       {icon:"mace", tier:"HT5"},
       {icon:"vanilla", tier:"HT5"},
       {icon:"pot", tier:"HT5"},
@@ -156,7 +157,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},     
       {icon:"nethop", tier:"LT5"},
       {icon:"uhc", tier:"LT5"},   
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"}
+      
     ]
   },
  zJixen: {
