@@ -103,6 +103,24 @@ const players = {
       
     ]
   },
+ certifiedrid: {
+    name: "certifiedrid",
+    rank: "4.",
+    title: "Combat Cadet",
+    points: "28 points",
+    tiers: [
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
+      {icon:"vanilla", tier:"LT3"},  
+      {icon:"nethop", tier:"HT4"},
+      {icon:"smp", tier:"LT4"},
+      {icon:"axe", tier:"LT4"},           
+      {icon:"mace", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},         
+      {icon:"sword", tier:"-"},
+      {icon:"pot", tier:"-"},    
+      {icon:"uhc", tier:"-"},
+    ]
+  },
  lozk00: {
     name: "lozk00",
     rank: "5.",
@@ -122,27 +140,28 @@ const players = {
       
     ]
   },
- certifiedrid: {
-    name: "certifiedrid",
-    rank: "4.",
-    title: "Combat Cadet",
-    points: "28 points",
-    tiers: [
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
-      {icon:"vanilla", tier:"LT3"},  
-      {icon:"nethop", tier:"HT4"},
-      {icon:"smp", tier:"LT4"},
-      {icon:"axe", tier:"LT4"},           
-      {icon:"mace", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},         
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},    
-      {icon:"uhc", tier:"-"},
+ 
+ SocialRex11: {
+    name: "SocialRex11",
+    rank: "6.",
+    title: "Combat Novice",
+    points: "17 points",
+    tiers: [   
+      {icon:"sword", tier:"LT4"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"vanilla", tier:"HT5"},
+      {icon:"pot", tier:"HT5"},
+      {icon:"axe", tier:"HT5"},
+      {icon:"smp", tier:"HT5"},       
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},     
+      {icon:"nethop", tier:"LT5"},
+      {icon:"uhc", tier:"LT5"},   
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"}
     ]
   },
  zJixen: {
     name: "zJixen",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -160,7 +179,7 @@ const players = {
   },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -178,7 +197,7 @@ const players = {
   },
   Der_Schnee: {
     name: "Der_Schnee",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -196,24 +215,7 @@ const players = {
       
     ]
   },
-  SocialRex11: {
-    name: "SocialRex11",
-    rank: "6.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-      {icon:"sword", tier:"LT4"},
-      {icon:"vanilla", tier:"HT5"},
-      {icon:"pot", tier:"HT5"},
-      {icon:"axe", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},
-      {icon:"mace", tier:"LT5"}, 
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},     
-      {icon:"nethop", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},   
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"}
-    ]
-  },
+  
  
   Epicfaik: {
     name: "Epicfaik",
