@@ -125,11 +125,11 @@ const players = {
     name: "lozk00",
     rank: "5.",
     title: "Combat Cadet",
-    points: "26 points",
+    points: "27 points",
     tiers: [
       {icon:"sword", tier:"LT3"},
       {icon:"pot", tier:"LT3"}, 
-      {icon:"mace", tier:"HT5"},      
+      {icon:"mace", tier:"LT4"},      
       {icon:"nethop", tier:"HT5"},
       {icon:"axe", tier:"HT5"},
       {icon:"vanilla", tier:"LT5"},
