@@ -63,9 +63,9 @@ const players = {
     name: "ItsMoritzzz",
     rank: "1.",
     title: "Combat Specialist",
-    points: "57 points",
+    points: "97 points",
     tiers: [
-      {icon:"mace", tier:"LT2"},
+      {icon:"mace", tier:"HT1"},
       {icon:"vanilla", tier:"LT3"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
