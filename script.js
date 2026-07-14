@@ -151,8 +151,8 @@ const players = {
     points: "18 points",
     tiers: [   
       {icon:"sword", tier:"LT4"},
-     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},
       {icon:"mace", tier:"HT5"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},      
       {icon:"vanilla", tier:"HT5"},
       {icon:"pot", tier:"HT5"},
       {icon:"axe", tier:"HT5"},
