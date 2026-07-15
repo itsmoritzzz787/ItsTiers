@@ -164,7 +164,7 @@ const players = {
  
  SocialRex11: {
     name: "SocialRex11",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Novice",
     points: "18 points",
     tiers: [   
@@ -183,7 +183,7 @@ const players = {
   },
  Joredium: {
     name: "Joredium",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Novice",
     points: "17 points",
     tiers: [
@@ -205,7 +205,7 @@ const players = {
   },
  zJixen: {
     name: "zJixen",
-    rank: "8.",
+    rank: "9.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -223,7 +223,7 @@ const players = {
   },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "8.",
+    rank: "9.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -241,7 +241,7 @@ const players = {
   },
   Der_Schnee: {
     name: "Der_Schnee",
-    rank: "8.",
+    rank: "9.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -263,7 +263,7 @@ const players = {
  
   Epicfaik: {
     name: "Epicfaik",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -283,7 +283,7 @@ const players = {
   },
  MrMedoMC: {
     name: "MrMedoMC",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -303,7 +303,7 @@ const players = {
   },
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "13.",
+    rank: "14.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -321,7 +321,7 @@ const players = {
   },
  TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "14.",
+    rank: "15.",
     title: "Combat Novice",
     points: "11 points",
     tiers: [
@@ -340,7 +340,7 @@ const players = {
   },
   VampyWolf: {
     name: "VampyWolf",
-    rank: "15.",
+    rank: "16.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -361,7 +361,7 @@ const players = {
   
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
-    rank: "15.",
+    rank: "16.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -380,7 +380,7 @@ const players = {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "17.",
+    rank: "18.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -398,7 +398,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "17.",
+    rank: "18.",
     title: "Rookie",
     points: "9 points",
     tiers: [
