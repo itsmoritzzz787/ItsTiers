@@ -142,7 +142,24 @@ const players = {
       
     ]
   },
- 
+ Ginoski: {
+    name: "Ginoski",
+    rank: "6.",
+    title: "Combat Cadet",
+    points: "23 points",
+    tiers: [  
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
+      {icon:"mace", tier:"HT4"},
+      {icon:"uhc", tier:"LT4"},
+      {icon:"vanilla", tier:"HT5"},
+      {icon:"axe", tier:"HT5"},
+      {icon:"pot", tier:"HT5"}, 
+      {icon:"sword", tier:"HT5"},      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
+      {icon:"smp", tier:"LT5"},
+      {icon:"nethop", tier:"LT5"},
+    ]
+  },
  
  
  SocialRex11: {
@@ -397,25 +414,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  Ginoski: {
-    name: "Ginoski",
-    rank: "19.",
-    title: "Rookie",
-    points: "8 points",
-    tiers: [   
-      {icon:"mace", tier:"HT4"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
-      {icon:"smp", tier:"LT5"},
-      {icon:"nethop", tier:"LT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},      
-      {icon:"uhc", tier:"-"},
-      {icon:"axe", tier:"-"},
-      {icon:"vanilla", tier:"-"}
-      
-    ]
-  },
+  
  _Rafonix: {
     name: "_Rafonix",
     rank: "20.",
