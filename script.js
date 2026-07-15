@@ -128,9 +128,9 @@ const players = {
     points: "29 points",
     tiers: [
       {icon:"sword", tier:"LT3"},
-      {icon:"pot", tier:"LT3"}, 
-      {icon:"mace", tier:"LT4"},      
-      {icon:"nethop", tier:"HT5"},
+      {icon:"pot", tier:"LT3"},
+      {icon:"nethop", tier:"HT4"},
+      {icon:"mace", tier:"LT4"},        
       {icon:"axe", tier:"HT5"},
       {icon:"uhc", tier:"LT5"},
       {icon:"vanilla", tier:"LT5"},
