@@ -148,9 +148,9 @@ const players = {
     name: "Ginoski",
     rank: "6.",
     title: "Combat Cadet",
-    points: "23 points",
+    points: "25 points",
     tiers: [  
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
       {icon:"mace", tier:"HT4"},
       {icon:"uhc", tier:"LT4"},
       {icon:"vanilla", tier:"HT5"},
@@ -165,7 +165,7 @@ const players = {
  
  zJixen: {
     name: "zJixen",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [
@@ -183,7 +183,7 @@ const players = {
   },
  SocialRex11: {
     name: "SocialRex11",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [   
