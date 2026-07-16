@@ -165,7 +165,7 @@ const players = {
  
  zJixen: {
     name: "zJixen",
-    rank: "7.",
+    rank: "6.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [
