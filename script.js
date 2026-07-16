@@ -107,12 +107,12 @@ const players = {
     name: "McNicho",
     rank: "4.",
     title: "Combat Cadet",
-    points: "35 points",
+    points: "36 points",
     tiers: [
       
-      {icon:"mace", tier:"HT3"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
-      {icon:"sword", tier:"LT4"},
+      {icon:"mace", tier:"HT3"},  
+      {icon:"sword", tier:"HT4"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},     
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
       {icon:"smp", tier:"HT5"},
       {icon:"pot", tier:"HT5"},
