@@ -183,9 +183,27 @@ const players = {
       
     ]
   },
+ zJixen: {
+    name: "zJixen",
+    rank: "8.",
+    title: "Combat Cadet",
+    points: "20 points",
+    tiers: [
+      {icon:"sword", tier:"HT3"},
+      {icon:"pot", tier:"HT3"},      
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},      
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Joredium: {
     name: "Joredium",
-    rank: "8.",
+    rank: "9.",
     title: "Combat Novice",
     points: "17 points",
     tiers: [
@@ -205,24 +223,7 @@ const players = {
       
     ]
   },
- zJixen: {
-    name: "zJixen",
-    rank: "9.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-      {icon:"pot", tier:"HT3"},
-      {icon:"sword", tier:"LT3"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},      
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   LordTrash13: {
     name: "LordTrash13",
     rank: "9.",
