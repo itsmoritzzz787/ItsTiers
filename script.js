@@ -54,16 +54,9 @@ const players = {
       {icon:"smp", tier:"LT4"},
       {icon:"nethop", tier:"LT4"},
       {icon:"pot", tier:"LT4"},
-      {icon:"axe", tier:"LT4"},            
-      
-      
-      
-      
-      
+      {icon:"axe", tier:"LT4"},                                          
     ]
-  },
-
-  
+  }, 
  certifiedrid: {
     name: "certifiedrid",
     rank: "2.",
@@ -78,10 +71,8 @@ const players = {
       {icon:"pot", tier:"LT4"},
       {icon:"smp", tier:"LT4"},
       {icon:"axe", tier:"LT4"},           
-      {icon:"mace", tier:"LT4"},
-                  
-      {icon:"uhc", tier:"HT5"},
-       
+      {icon:"mace", tier:"LT4"},                  
+      {icon:"uhc", tier:"HT5"},       
     ]
   },
   MyNameIsPuma: {
@@ -99,10 +90,7 @@ const players = {
       {icon:"axe", tier:"RHT4"},
       {icon:"mace", tier:"RLT4"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"RLT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"RLT4"},
-      
-      
-      
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"RLT4"},                 
     ]
   },
  McNicho: {
@@ -110,8 +98,7 @@ const players = {
     rank: "4.",
     title: "Combat Cadet",
     points: "36 points",
-    tiers: [
-      
+    tiers: [     
       {icon:"mace", tier:"HT3"},  
       {icon:"sword", tier:"HT4"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},     
@@ -121,8 +108,7 @@ const players = {
       {icon:"nethop", tier:"HT5"},
       {icon:"uhc", tier:"HT5"},      
       {icon:"axe", tier:"HT5"},
-      {icon:"vanilla", tier:"RLT3"},
-      
+      {icon:"vanilla", tier:"RLT3"},      
     ]
   },
  lozk00: {
@@ -140,10 +126,7 @@ const players = {
       {icon:"axe", tier:"HT5"},
       {icon:"uhc", tier:"LT5"},
       {icon:"vanilla", tier:"LT5"},            
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},
-                                               
-      
-      
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},                                                         
     ]
   },
  Ginoski: {
@@ -163,8 +146,7 @@ const players = {
       {icon:"smp", tier:"LT5"},
       {icon:"nethop", tier:"LT5"},
     ]
-  },
- 
+  }, 
  zJixen: {
     name: "zJixen",
     rank: "7.",
@@ -207,22 +189,18 @@ const players = {
     name: "Joredium",
     rank: "9.",
     title: "Combat Novice",
-    points: "17 points",
+    points: "19 points",
     tiers: [
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
       {icon:"sword", tier:"LT4"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
       {icon:"pot", tier:"HT5"}, 
       {icon:"vanilla", tier:"HT5"},
       {icon:"smp", tier:"HT5"},      
       {icon:"nethop", tier:"HT5"},
       {icon:"axe", tier:"LT5"},
       {icon:"uhc", tier:"LT5"},
-      {icon:"mace", tier:"LT5"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}, 
-      
-                                               
-      
-      
+      {icon:"mace", tier:"LT5"},       
     ]
   },
  
@@ -259,13 +237,9 @@ const players = {
       {icon:"vanilla", tier:"LT5"},
       {icon:"pot", tier:"-"},
       {icon:"nethop", tier:"-"},
-      {icon:"axe", tier:"-"},
-      
-      
+      {icon:"axe", tier:"-"},       
     ]
-  },
-  
- 
+  },   
   Epicfaik: {
     name: "Epicfaik",
     rank: "12.",
@@ -278,11 +252,9 @@ const players = {
       {icon:"nethop", tier:"-"},
       {icon:"smp", tier:"-"},
       {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},
-           
+      {icon:"pot", tier:"-"},           
       {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},
-      
+      {icon:"uhc", tier:"-"},      
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
@@ -301,9 +273,7 @@ const players = {
       {icon:"pot", tier:"LT5"},
       {icon:"nethop", tier:"LT5"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-      
-      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}            
     ]
   },
   Lloyd_The_M: {
@@ -339,8 +309,7 @@ const players = {
      {icon:"nethop", tier:"LT5"},
      {icon:"uhc", tier:"LT5"},
      {icon:"axe", tier:"LT5"},
-     {icon:"vanilla", tier:"-"}
-      
+     {icon:"vanilla", tier:"-"}      
     ]
   },
   VampyWolf: {
@@ -360,10 +329,7 @@ const players = {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
-  },
- 
-  
-  
+  },    
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
     rank: "16.",
@@ -378,8 +344,7 @@ const players = {
       {icon:"pot", tier:"-"},
       {icon:"vanilla", tier:"-"},      
       {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},
-      
+      {icon:"uhc", tier:"-"},      
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
@@ -418,8 +383,7 @@ const players = {
       {icon:"axe", tier:"-"},            
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
-  },
-  
+  },  
  _Rafonix: {
     name: "_Rafonix",
     rank: "20.",
@@ -560,8 +524,7 @@ const players = {
       {icon:"pot", tier:"-"},
       {icon:"vanilla", tier:"-"},      
       {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},
-      
+      {icon:"uhc", tier:"-"},   
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
