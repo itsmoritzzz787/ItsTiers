@@ -37,38 +37,18 @@ function showKit(e, id) {
   currentIndex = newIndex;
 }
 const players = {
-  MyNameIsPuma: {
-    name: "MyNameIsPuma",
-    rank: "2.",
-    title: "Combat Cadet",
-    points: "38 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"smp", tier:"RLT3"},
-      {icon:"sword", tier:"RHT4"},
-      {icon:"nethop", tier:"RHT4"},
-      {icon:"pot", tier:"RHT4"},
-      {icon:"axe", tier:"RHT4"},
-      {icon:"mace", tier:"RLT4"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"RLT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"RLT4"},
-      
-      
-      
-    ]
-  },
+ 
 
   ItsMoritzzz: {
     name: "ItsMoritzzz",
     rank: "1.",
     title: "Combat Specialist",
-    points: "57 points",
+    points: "61 points",
     tiers: [
       {icon:"mace", tier:"LT2"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"},
       {icon:"vanilla", tier:"LT3"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},     
       {icon:"sword", tier:"HT4"}, 
       {icon:"uhc", tier:"LT4"},
       {icon:"smp", tier:"LT4"},
@@ -86,10 +66,11 @@ const players = {
   
  certifiedrid: {
     name: "certifiedrid",
-    rank: "3.",
+    rank: "2.",
     title: "Combat Cadet",
-    points: "37 points",
+    points: "40 points",
     tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"}, 
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
       {icon:"vanilla", tier:"LT3"},
       {icon:"sword", tier:"HT4"},
@@ -98,9 +79,30 @@ const players = {
       {icon:"smp", tier:"LT4"},
       {icon:"axe", tier:"LT4"},           
       {icon:"mace", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},             
+                  
       {icon:"uhc", tier:"HT5"},
        
+    ]
+  },
+  MyNameIsPuma: {
+    name: "MyNameIsPuma",
+    rank: "3.",
+    title: "Combat Cadet",
+    points: "38 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT3"},
+      {icon:"uhc", tier:"LT5"},
+      {icon:"smp", tier:"RLT3"},
+      {icon:"sword", tier:"RHT4"},
+      {icon:"nethop", tier:"RHT4"},
+      {icon:"pot", tier:"RHT4"},
+      {icon:"axe", tier:"RHT4"},
+      {icon:"mace", tier:"RLT4"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"RLT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"RLT4"},
+      
+      
+      
     ]
   },
  McNicho: {
