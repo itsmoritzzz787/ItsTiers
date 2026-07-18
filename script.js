@@ -510,8 +510,8 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  _DasEntchen_: {
-    name: "_DasEntchen_",
+  Spooky1904: {
+    name: "Spooky1904",
     rank: "27.",
     title: "Rookie",
     points: "3 points",
