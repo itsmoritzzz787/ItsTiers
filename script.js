@@ -276,6 +276,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}            
     ]
   },
+ Jonkler75: {
+    name: "Jonkler75",
+    rank: "14.",
+    title: "Combat Novice",
+    points: "12 points",
+    tiers: [
+      {icon:"sword", tier:"LT3"},
+      {icon:"uhc", tier:"LT3"},     
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   Lloyd_The_M: {
     name: "Lloyd_The_M",
     rank: "14.",
@@ -296,7 +314,7 @@ const players = {
   },
  TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "15.",
+    rank: "16.",
     title: "Combat Novice",
     points: "11 points",
     tiers: [
@@ -314,7 +332,7 @@ const players = {
   },
   VampyWolf: {
     name: "VampyWolf",
-    rank: "16.",
+    rank: "17.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -332,7 +350,7 @@ const players = {
   },    
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
-    rank: "16.",
+    rank: "17.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -350,7 +368,7 @@ const players = {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "18.",
+    rank: "19.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -368,7 +386,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "18.",
+    rank: "19.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -384,27 +402,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },  
- Jonkler75: {
-    name: "Jonkler75",
-    rank: "20.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"uhc", tier:"LT3"},
-      {icon:"sword", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  Imjett_: {
     name: "Imjett_",
-    rank: "20.",
+    rank: "21.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -422,7 +423,7 @@ const players = {
   },
  _Rafonix: {
     name: "_Rafonix",
-    rank: "20.",
+    rank: "21.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -440,7 +441,7 @@ const players = {
   },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "20.",
+    rank: "21.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -458,7 +459,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "20.",
+    rank: "21.",
     title: "Rookie",
     points: "6 points",
     tiers: [
