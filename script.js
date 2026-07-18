@@ -203,10 +203,27 @@ const players = {
       {icon:"mace", tier:"LT5"},       
     ]
   },
- 
+ Jonkler75: {
+    name: "Jonkler75",
+    rank: "10.",
+    title: "Combat Novice",
+    points: "18 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT3"},
+      {icon:"sword", tier:"LT3"},
+      {icon:"uhc", tier:"LT3"},     
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},            
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "9.",
+    rank: "11.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -224,7 +241,7 @@ const players = {
   },
   Der_Schnee: {
     name: "Der_Schnee",
-    rank: "9.",
+    rank: "11.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -242,7 +259,7 @@ const players = {
   },   
   Epicfaik: {
     name: "Epicfaik",
-    rank: "12.",
+    rank: "13.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -260,7 +277,7 @@ const players = {
   },
  MrMedoMC: {
     name: "MrMedoMC",
-    rank: "12.",
+    rank: "13.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -276,27 +293,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}            
     ]
   },
- Jonkler75: {
-    name: "Jonkler75",
-    rank: "14.",
-    title: "Combat Novice",
-    points: "12 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},     
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "14.",
+    rank: "15.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -328,6 +328,24 @@ const players = {
      {icon:"uhc", tier:"LT5"},
      {icon:"axe", tier:"LT5"},
      {icon:"vanilla", tier:"-"}      
+    ]
+  },
+ Imjett_: {
+    name: "Imjett_",
+    rank: "17.",
+    title: "Combat Novice",
+    points: "10 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT3"},
+      {icon:"sword", tier:"HT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},            
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
   VampyWolf: {
@@ -368,7 +386,7 @@ const players = {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "19.",
+    rank: "20.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -386,7 +404,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "19.",
+    rank: "20.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -403,27 +421,10 @@ const players = {
     ]
   },  
  
- Imjett_: {
-    name: "Imjett_",
-    rank: "21.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"sword", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  _Rafonix: {
     name: "_Rafonix",
-    rank: "21.",
+    rank: "22.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -441,7 +442,7 @@ const players = {
   },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "21.",
+    rank: "22.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -459,7 +460,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "21.",
+    rank: "22.",
     title: "Rookie",
     points: "6 points",
     tiers: [
