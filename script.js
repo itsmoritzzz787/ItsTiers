@@ -147,6 +147,24 @@ const players = {
       {icon:"nethop", tier:"LT5"},
     ]
   }, 
+ Jonkler75: {
+    name: "Jonkler75",
+    rank: "7.",
+    title: "Combat Cadet",
+    points: "23 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT3"},
+      {icon:"sword", tier:"LT3"},
+      {icon:"uhc", tier:"LT3"},     
+      {icon:"mace", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},            
+      {icon:"axe", tier:"-"},      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  zJixen: {
     name: "zJixen",
     rank: "7.",
@@ -187,7 +205,7 @@ const players = {
  
  Joredium: {
     name: "Joredium",
-    rank: "9.",
+    rank: "10.",
     title: "Combat Novice",
     points: "19 points",
     tiers: [
@@ -203,24 +221,7 @@ const players = {
       {icon:"mace", tier:"LT5"},       
     ]
   },
- Jonkler75: {
-    name: "Jonkler75",
-    rank: "10.",
-    title: "Combat Novice",
-    points: "18 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"sword", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},     
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   LordTrash13: {
     name: "LordTrash13",
     rank: "11.",
@@ -293,7 +294,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}            
     ]
   },
- 
+ Imjett_: {
+    name: "Imjett_",
+    rank: "15.",
+    title: "Combat Novice",
+    points: "12 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT3"},
+      {icon:"sword", tier:"HT4"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},            
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   Lloyd_The_M: {
     name: "Lloyd_The_M",
     rank: "15.",
@@ -314,7 +332,7 @@ const players = {
   },
  TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "16.",
+    rank: "17.",
     title: "Combat Novice",
     points: "11 points",
     tiers: [
@@ -330,27 +348,10 @@ const players = {
      {icon:"vanilla", tier:"-"}      
     ]
   },
- Imjett_: {
-    name: "Imjett_",
-    rank: "17.",
-    title: "Combat Novice",
-    points: "10 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"sword", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   VampyWolf: {
     name: "VampyWolf",
-    rank: "17.",
+    rank: "18.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -368,7 +369,7 @@ const players = {
   },    
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
-    rank: "17.",
+    rank: "18.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -480,12 +481,12 @@ const players = {
     name: "Spooky1904",
     rank: "25.",
     title: "Rookie",
-    points: "4 points",
+    points: "5 points",
     tiers: [
       {icon:"sword", tier:"LT4"},
       {icon:"vanilla", tier:"LT5"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
+      {icon:"mace", tier:"LT5"},
+      {icon:"uhc", tier:"-"},      
       {icon:"nethop", tier:"-"},
       {icon:"smp", tier:"-"},
       {icon:"pot", tier:"-"},            
@@ -569,7 +570,7 @@ const players = {
  
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "29.",
+    rank: "30.",
     title: "Rookie",
     points: "3 points",
     tiers: [
