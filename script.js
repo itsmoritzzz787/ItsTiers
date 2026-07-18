@@ -445,7 +445,7 @@ const players = {
     points: "4 points",
     tiers: [
       {icon:"uhc", tier:"HT5"},
-      {icon:"mace", tier:"HT5"},      
+      {icon:"mace", tier:"LT5"},      
       {icon:"sword", tier:"-"},
       {icon:"nethop", tier:"-"},
       {icon:"smp", tier:"-"},
