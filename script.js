@@ -510,6 +510,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+  _DasEntchen_: {
+    name: "_DasEntchen_",
+    rank: "27.",
+    title: "Rookie",
+    points: "3 points",
+    tiers: [
+      {icon:"sword", tier:"LT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  FrozenBlack: {
     name: "FrozenBlack",
     rank: "27.",
@@ -530,7 +548,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "28.",
+    rank: "29.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -548,7 +566,7 @@ const players = {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "28.",
+    rank: "29.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -566,7 +584,7 @@ const players = {
   },
   nuuhx: {
     name: "nuuhx",
-    rank: "30.",
+    rank: "31.",
     title: "Rookie",
     points: "1 points",
     tiers: [
