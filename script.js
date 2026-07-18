@@ -353,11 +353,11 @@ const players = {
     rank: "18.",
     title: "Rookie",
     points: "9 points",
-    tiers: [
-      {icon:"nethop", tier:"LT3"},
-      {icon:"smp", tier:"HT4"},
-      {icon:"sword", tier:"LT4"},
+    tiers: [         
+      {icon:"sword", tier:"HT4"},
+      {icon:"nethop", tier:"HT5"},
       {icon:"pot", tier:"LT4"},
+      {icon:"smp", tier:"-"},
       {icon:"mace", tier:"-"},
       {icon:"vanilla", tier:"-"},      
       {icon:"axe", tier:"-"},
