@@ -438,6 +438,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+  Spooky1904: {
+    name: "Spooky1904",
+    rank: "23.",
+    title: "Rookie",
+    points: "4 points",
+    tiers: [
+      {icon:"sword", tier:"LT4"},
+      {icon:"vanilla", tier:"LT5"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},            
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Fr0gified: {
     name: "Fr0gified",
     rank: "23.",
@@ -510,24 +528,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  Spooky1904: {
-    name: "Spooky1904",
-    rank: "27.",
-    title: "Rookie",
-    points: "3 points",
-    tiers: [
-      {icon:"sword", tier:"LT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  FrozenBlack: {
     name: "FrozenBlack",
     rank: "27.",
