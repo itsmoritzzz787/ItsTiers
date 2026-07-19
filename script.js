@@ -221,7 +221,24 @@ const players = {
       {icon:"mace", tier:"LT5"},       
     ]
   },
- 
+ MrMedoMC: {
+    name: "MrMedoMC",
+    rank: "11.",
+    title: "Combat Novice",
+    points: "16 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT3"},      
+      {icon:"sword", tier:"HT5"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"axe", tier:"LT5"},
+      {icon:"smp", tier:"LT5"},
+      {icon:"uhc", tier:"LT5"},      
+      {icon:"pot", tier:"LT5"},
+      {icon:"nethop", tier:"LT5"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}            
+    ]
+  },
   LordTrash13: {
     name: "LordTrash13",
     rank: "11.",
@@ -262,7 +279,7 @@ const players = {
     name: "Epicfaik",
     rank: "13.",
     title: "Combat Novice",
-    points: "13 points",
+    points: "14 points",
     tiers: [
       {icon:"mace", tier:"HT3"},
       {icon:"vanilla", tier:"LT4"}, 
@@ -276,24 +293,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- MrMedoMC: {
-    name: "MrMedoMC",
-    rank: "13.",
-    title: "Combat Novice",
-    points: "13 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"axe", tier:"HT5"},
-      {icon:"sword", tier:"HT5"},
-      {icon:"mace", tier:"HT5"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"smp", tier:"LT5"},
-      {icon:"pot", tier:"LT5"},
-      {icon:"nethop", tier:"LT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}            
-    ]
-  },
+ 
  Imjett_: {
     name: "Imjett_",
     rank: "15.",
