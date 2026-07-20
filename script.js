@@ -82,16 +82,15 @@ const players = {
     points: "39 points",
     tiers: [
       {icon:"vanilla", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
+      {icon:"smp", tier:"LT3"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},      
+      {icon:"sword", tier:"HT4"},
+      {icon:"nethop", tier:"HT4"},
+      {icon:"pot", tier:"HT4"},
+      {icon:"axe", tier:"HT4"},   
       {icon:"mace", tier:"LT4"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"smp", tier:"RLT3"},
-      {icon:"sword", tier:"RHT4"},
-      {icon:"nethop", tier:"RHT4"},
-      {icon:"pot", tier:"RHT4"},
-      {icon:"axe", tier:"RHT4"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"RLT4"},
-                       
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
+      {icon:"uhc", tier:"LT5"},                       
     ]
   },
  McNicho: {
