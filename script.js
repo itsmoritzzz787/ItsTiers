@@ -422,7 +422,24 @@ const players = {
     ]
   },  
  
- 
+  borysTygrys: {
+    name: "borysTygrys",
+    rank: "22.",
+    title: "Rookie",
+    points: "6 points",
+    tiers: [
+      {icon:"sword", tier:"HT4"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  _Rafonix: {
     name: "_Rafonix",
     rank: "22.",
@@ -479,7 +496,7 @@ const players = {
   },
   Spooky1904: {
     name: "Spooky1904",
-    rank: "25.",
+    rank: "26.",
     title: "Rookie",
     points: "5 points",
     tiers: [
@@ -495,27 +512,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- borysTygrys: {
-    name: "borysTygrys",
-    rank: "26.",
-    title: "Rookie",
-    points: "4 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+
  Fr0gified: {
     name: "Fr0gified",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -533,7 +533,7 @@ const players = {
   },
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -551,7 +551,7 @@ const players = {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -569,7 +569,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "4 points",
     tiers: [
