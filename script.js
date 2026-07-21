@@ -495,9 +495,27 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ borysTygrys: {
+    name: "borysTygrys",
+    rank: "26.",
+    title: "Rookie",
+    points: "4 points",
+    tiers: [
+      {icon:"sword", tier:"HT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Fr0gified: {
     name: "Fr0gified",
-    rank: "25.",
+    rank: "26.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -515,7 +533,7 @@ const players = {
   },
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "25.",
+    rank: "26.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -533,7 +551,7 @@ const players = {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "25.",
+    rank: "26.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -551,7 +569,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "25.",
+    rank: "26.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -570,7 +588,7 @@ const players = {
  
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "30.",
+    rank: "31.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -588,7 +606,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "31.",
+    rank: "32.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -606,7 +624,7 @@ const players = {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "31.",
+    rank: "32.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -624,7 +642,7 @@ const players = {
   },
   nuuhx: {
     name: "nuuhx",
-    rank: "33.",
+    rank: "34.",
     title: "Rookie",
     points: "1 points",
     tiers: [
