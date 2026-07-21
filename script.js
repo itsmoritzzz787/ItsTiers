@@ -440,8 +440,8 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- _Rafonix: {
-    name: "_Rafonix",
+ FemboyCebulamen: {
+    name: "FemboyCebulamen",
     rank: "22.",
     title: "Rookie",
     points: "6 points",
