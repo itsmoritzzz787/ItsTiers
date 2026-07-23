@@ -57,9 +57,27 @@ const players = {
       {icon:"axe", tier:"LT4"},                                          
     ]
   }, 
+  MyNameIsPuma: {
+    name: "MyNameIsPuma",
+    rank: "2.",
+    title: "Combat Cadet",
+    points: "43 points",
+    tiers: [
+      {icon:"sword", tier:"HT3"},
+      {icon:"vanilla", tier:"LT3"},
+      {icon:"smp", tier:"LT3"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},            
+      {icon:"nethop", tier:"HT4"},
+      {icon:"pot", tier:"HT4"},
+      {icon:"axe", tier:"HT4"},   
+      {icon:"mace", tier:"LT4"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
+      {icon:"uhc", tier:"LT5"},                       
+    ]
+  },
  certifiedrid: {
     name: "certifiedrid",
-    rank: "2.",
+    rank: "3.",
     title: "Combat Cadet",
     points: "40 points",
     tiers: [
@@ -75,24 +93,7 @@ const players = {
       {icon:"uhc", tier:"HT5"},       
     ]
   },
-  MyNameIsPuma: {
-    name: "MyNameIsPuma",
-    rank: "3.",
-    title: "Combat Cadet",
-    points: "39 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"smp", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},      
-      {icon:"sword", tier:"HT4"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"pot", tier:"HT4"},
-      {icon:"axe", tier:"HT4"},   
-      {icon:"mace", tier:"LT4"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
-      {icon:"uhc", tier:"LT5"},                       
-    ]
-  },
+ 
  McNicho: {
     name: "McNicho",
     rank: "4.",
