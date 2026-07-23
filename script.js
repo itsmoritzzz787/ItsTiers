@@ -352,7 +352,24 @@ const players = {
      {icon:"vanilla", tier:"-"}      
     ]
   },
- 
+ FemboyCebulamen: {
+    name: "FemboyCebulamen",
+    rank: "18.",
+    title: "Rookie",
+    points: "10 points",
+    tiers: [
+      {icon:"sword", tier:"HT3"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   VampyWolf: {
     name: "VampyWolf",
     rank: "18.",
@@ -391,7 +408,7 @@ const players = {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "20.",
+    rank: "21.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -409,7 +426,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "20.",
+    rank: "21.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -428,7 +445,7 @@ const players = {
  
   borysTygrys: {
     name: "borysTygrys",
-    rank: "22.",
+    rank: "23.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -444,27 +461,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- FemboyCebulamen: {
-    name: "FemboyCebulamen",
-    rank: "22.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "22.",
+    rank: "23.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -482,7 +482,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "22.",
+    rank: "23.",
     title: "Rookie",
     points: "6 points",
     tiers: [
