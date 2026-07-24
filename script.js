@@ -132,9 +132,27 @@ const players = {
                                                                
     ]
   },
+  Jonkler75: {
+    name: "Jonkler75",
+    rank: "6.",
+    title: "Combat Cadet",
+    points: "27 points",
+    tiers: [
+      {icon:"vanilla", tier:"HT3"},
+      {icon:"sword", tier:"LT3"},
+      {icon:"uhc", tier:"LT3"},     
+      {icon:"mace", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},            
+      {icon:"axe", tier:"-"},      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   SocialRex11: {
     name: "SocialRex11",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Cadet",
     points: "25 points",
     tiers: [   
@@ -153,7 +171,7 @@ const players = {
   },
  Ginoski: {
     name: "Ginoski",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Cadet",
     points: "25 points",
     tiers: [       
@@ -169,27 +187,10 @@ const players = {
       {icon:"nethop", tier:"LT5"},
     ]
   }, 
- Jonkler75: {
-    name: "Jonkler75",
-    rank: "8.",
-    title: "Combat Cadet",
-    points: "23 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"sword", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},     
-      {icon:"mace", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+
  zJixen: {
     name: "zJixen",
-    rank: "8.",
+    rank: "9.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [
