@@ -134,18 +134,18 @@ const players = {
   },
   Jonkler75: {
     name: "Jonkler75",
-    rank: "6.",
+    rank: "5.",
     title: "Combat Cadet",
-    points: "27 points",
+    points: "35 points",
     tiers: [
       {icon:"vanilla", tier:"HT3"},
       {icon:"sword", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},     
+      {icon:"uhc", tier:"LT3"}, 
+      {icon:"smp", tier:"HT4"},
+      {icon:"pot", tier:"HT4"},
       {icon:"mace", tier:"LT4"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},            
+      {icon:"nethop", tier:"-"},                
       {icon:"axe", tier:"-"},      
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
