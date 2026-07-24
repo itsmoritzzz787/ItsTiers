@@ -206,11 +206,28 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-
+vEliass: {
+    name: "vEliass",
+    rank: "10.",
+    title: "Combat Novice",
+    points: "22 points",
+    tiers: [
+      {icon:"sword", tier:"HT3"},
+      {icon:"smp", tier:"LT3"},
+      {icon:"uhc", tier:"LT3"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},          
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  
  Joredium: {
     name: "Joredium",
-    rank: "10.",
+    rank: "11.",
     title: "Combat Novice",
     points: "19 points",
     tiers: [
@@ -226,27 +243,10 @@ const players = {
       {icon:"mace", tier:"LT5"},       
     ]
   },
- vEliass: {
-    name: "vEliass",
-    rank: "11.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-      {icon:"sword", tier:"HT3"},
-      {icon:"uhc", tier:"LT3"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},     
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  Imjett_: {
     name: "Imjett_",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -264,7 +264,7 @@ const players = {
   },
  MrMedoMC: {
     name: "MrMedoMC",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -282,7 +282,7 @@ const players = {
   },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -300,7 +300,7 @@ const players = {
   },
   Der_Schnee: {
     name: "Der_Schnee",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
