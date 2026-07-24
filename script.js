@@ -61,7 +61,7 @@ const players = {
     name: "MyNameIsPuma",
     rank: "2.",
     title: "Combat Cadet",
-    points: "43 points",
+    points: "48 points",
     tiers: [
       {icon:"sword", tier:"HT3"},
       {icon:"vanilla", tier:"LT3"},
@@ -72,7 +72,7 @@ const players = {
       {icon:"axe", tier:"HT4"},   
       {icon:"mace", tier:"LT4"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
-      {icon:"uhc", tier:"LT5"},                       
+      {icon:"uhc", tier:"RLT3"},                       
     ]
   },
  certifiedrid: {
