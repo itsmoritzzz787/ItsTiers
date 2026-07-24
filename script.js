@@ -462,10 +462,27 @@ vEliass: {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },  
-  
+  Fr0gified: {
+    name: "Fr0gified",
+    rank: "24.",
+    title: "Rookie",
+    points: "7 points",
+    tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
+      {icon:"uhc", tier:"HT5"},
+      {icon:"mace", tier:"LT5"},      
+      {icon:"sword", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   borysTygrys: {
     name: "borysTygrys",
-    rank: "24.",
+    rank: "25.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -484,7 +501,7 @@ vEliass: {
  
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "24.",
+    rank: "25.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -502,7 +519,7 @@ vEliass: {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "24.",
+    rank: "25.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -520,7 +537,7 @@ vEliass: {
   },
   Spooky1904: {
     name: "Spooky1904",
-    rank: "27.",
+    rank: "28.",
     title: "Rookie",
     points: "5 points",
     tiers: [
@@ -537,27 +554,10 @@ vEliass: {
     ]
   },
 
- Fr0gified: {
-    name: "Fr0gified",
-    rank: "28.",
-    title: "Rookie",
-    points: "4 points",
-    tiers: [
-      {icon:"uhc", tier:"HT5"},
-      {icon:"mace", tier:"LT5"},      
-      {icon:"sword", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "28.",
+    rank: "29.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -575,7 +575,7 @@ vEliass: {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "28.",
+    rank: "29.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -593,7 +593,7 @@ vEliass: {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "28.",
+    rank: "29.",
     title: "Rookie",
     points: "4 points",
     tiers: [
