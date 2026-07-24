@@ -249,7 +249,7 @@ const players = {
     title: "Combat Novice",
     points: "16 points",
     tiers: [
-      {icon:"vanilla", tier:"LT3"},      
+      {icon:"vanilla", tier:"HT4"},      
       {icon:"sword", tier:"HT5"},
       {icon:"mace", tier:"HT5"},
       {icon:"axe", tier:"LT5"},
