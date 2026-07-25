@@ -150,9 +150,27 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ vEliass: {
+    name: "vEliass",
+    rank: "7.",
+    title: "Combat Novice",
+    points: "26 points",
+    tiers: [
+      {icon:"sword", tier:"HT3"},
+      {icon:"smp", tier:"LT3"},
+      {icon:"uhc", tier:"LT3"},
+      {icon:"pot", tier:"HT4"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},                
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   SocialRex11: {
     name: "SocialRex11",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Cadet",
     points: "25 points",
     tiers: [   
@@ -171,7 +189,7 @@ const players = {
   },
  Ginoski: {
     name: "Ginoski",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Cadet",
     points: "25 points",
     tiers: [       
@@ -190,7 +208,7 @@ const players = {
 
  zJixen: {
     name: "zJixen",
-    rank: "9.",
+    rank: "10.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [
@@ -206,24 +224,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-vEliass: {
-    name: "vEliass",
-    rank: "10.",
-    title: "Combat Novice",
-    points: "22 points",
-    tiers: [
-      {icon:"sword", tier:"HT3"},
-      {icon:"smp", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},          
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+
  
  Joredium: {
     name: "Joredium",
