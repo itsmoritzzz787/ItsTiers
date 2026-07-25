@@ -610,6 +610,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ M4rkiski: {
+    name: "M4rkiski",
+    rank: "32.",
+    title: "Rookie",
+    points: "3 points",
+    tiers: [
+      {icon:"uhc", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"sword", tier:"-"},   
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  SkinPunktexe: {
     name: "SkinPunktexe",
     rank: "32.",
@@ -648,7 +666,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -666,7 +684,7 @@ const players = {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -684,7 +702,7 @@ const players = {
   },
   nuuhx: {
     name: "nuuhx",
-    rank: "36.",
+    rank: "37.",
     title: "Rookie",
     points: "1 points",
     tiers: [
