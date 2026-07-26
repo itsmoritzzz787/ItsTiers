@@ -374,6 +374,24 @@ const players = {
      {icon:"vanilla", tier:"-"}      
     ]
   },
+ Cwrax: {
+    name: "Cwrax",
+    rank: "19.",
+    title: "Combat Novice",
+    points: "10 points",
+    tiers: [
+      {icon:"sword", tier:"HT4"},
+      {icon:"vanilla", tier:"LT4"},
+      {icon:"mace", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},      
+      {icon:"pot", tier:"-"},            
+      {icon:"axe", tier:"-"},
+      {icon:"uhc", tier:"-"},   
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  FemboyCebulamen: {
     name: "FemboyCebulamen",
     rank: "19.",
@@ -430,7 +448,7 @@ const players = {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "22.",
+    rank: "23.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -448,7 +466,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "22.",
+    rank: "23.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -464,28 +482,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },  
- Cwrax: {
-    name: "Cwrax",
-    rank: "24.",
-    title: "Rookie",
-    points: "7 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"mace", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},   
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   Fr0gified: {
     name: "Fr0gified",
-    rank: "24.",
+    rank: "25.",
     title: "Rookie",
     points: "7 points",
     tiers: [
