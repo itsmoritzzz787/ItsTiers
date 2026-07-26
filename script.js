@@ -611,6 +611,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ Cwrax: {
+    name: "Cwrax",
+    rank: "32.",
+    title: "Rookie",
+    points: "3 points",
+    tiers: [
+      {icon:"mace", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"sword", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"uhc", tier:"-"},   
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  M4rkiski: {
     name: "M4rkiski",
     rank: "32.",
@@ -667,7 +685,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "35.",
+    rank: "36.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -685,7 +703,7 @@ const players = {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "35.",
+    rank: "36.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -703,7 +721,7 @@ const players = {
   },
   nuuhx: {
     name: "nuuhx",
-    rank: "37.",
+    rank: "38.",
     title: "Rookie",
     points: "1 points",
     tiers: [
