@@ -336,7 +336,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- 
+ Cwrax: {
+    name: "Cwrax",
+    rank: "17.",
+    title: "Combat Novice",
+    points: "12 points",
+    tiers: [
+      {icon:"sword", tier:"HT4"},
+      {icon:"vanilla", tier:"LT4"},
+      {icon:"mace", tier:"LT4"},
+      {icon:"axe", tier:"HT5"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},      
+      {icon:"pot", tier:"-"},                  
+      {icon:"uhc", tier:"-"},   
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  
   Lloyd_The_M: {
     name: "Lloyd_The_M",
@@ -358,7 +375,7 @@ const players = {
   },
  TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "18.",
+    rank: "19.",
     title: "Combat Novice",
     points: "11 points",
     tiers: [
@@ -374,27 +391,10 @@ const players = {
      {icon:"vanilla", tier:"-"}      
     ]
   },
- Cwrax: {
-    name: "Cwrax",
-    rank: "19.",
-    title: "Combat Novice",
-    points: "10 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"mace", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},      
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},   
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  FemboyCebulamen: {
     name: "FemboyCebulamen",
-    rank: "19.",
+    rank: "20.",
     title: "Rookie",
     points: "10 points",
     tiers: [
@@ -412,7 +412,7 @@ const players = {
   },
   VampyWolf: {
     name: "VampyWolf",
-    rank: "19.",
+    rank: "20.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -430,7 +430,7 @@ const players = {
   },    
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
-    rank: "19.",
+    rank: "20.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
