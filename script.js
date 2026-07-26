@@ -112,9 +112,27 @@ const players = {
       {icon:"vanilla", tier:"RLT3"},      
     ]
   },
+ vEliass: {
+    name: "vEliass",
+    rank: "4.",
+    title: "Combat Novice",
+    points: "36 points",
+    tiers: [
+      {icon:"sword", tier:"LT2"},
+      {icon:"smp", tier:"LT3"},
+      {icon:"uhc", tier:"LT3"},
+      {icon:"pot", tier:"HT4"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},                
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  lozk00: {
     name: "lozk00",
-    rank: "5.",
+    rank: "6.",
     title: "Combat Cadet",
     points: "35 points",
     tiers: [
@@ -134,11 +152,11 @@ const players = {
   },
   Jonkler75: {
     name: "Jonkler75",
-    rank: "5.",
+    rank: "6.",
     title: "Combat Cadet",
     points: "35 points",
     tiers: [
-      {icon:"vanilla", tier:"HT3"},
+      {icon:"vanilla", tier:"LT3"},
       {icon:"sword", tier:"LT3"},
       {icon:"uhc", tier:"LT3"}, 
       {icon:"smp", tier:"HT4"},
@@ -150,24 +168,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- vEliass: {
-    name: "vEliass",
-    rank: "7.",
-    title: "Combat Novice",
-    points: "26 points",
-    tiers: [
-      {icon:"sword", tier:"HT3"},
-      {icon:"smp", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},
-      {icon:"pot", tier:"HT4"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},                
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   SocialRex11: {
     name: "SocialRex11",
     rank: "8.",
