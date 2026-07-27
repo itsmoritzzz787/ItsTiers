@@ -112,8 +112,8 @@ const players = {
       {icon:"vanilla", tier:"RLT3"},      
     ]
   },
- vEliass: {
-    name: "vEliass",
+Eliiiiaass: {
+    name: "Eliiiiaass",
     rank: "4.",
     title: "Combat Novice",
     points: "36 points",
