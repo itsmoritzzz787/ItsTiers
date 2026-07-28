@@ -208,8 +208,8 @@ Eliiiiaass: {
     ]
   }, 
 
- zJixen: {
-    name: "zJixen",
+ ySw1ft: {
+    name: "ySw1ft",
     rank: "10.",
     title: "Combat Cadet",
     points: "23 points",
