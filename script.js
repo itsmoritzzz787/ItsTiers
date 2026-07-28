@@ -176,7 +176,7 @@ Eliiiiaass: {
     title: "Combat Cadet",
     points: "25 points",
     tiers: [   
-      {icon:"sword", tier:"LT3"},
+      {icon:"sword", tier:"HT4"},
       {icon:"vanilla", tier:"HT4"},
       {icon:"pot", tier:"LT4"},
       {icon:"nethop", tier:"HT5"},
