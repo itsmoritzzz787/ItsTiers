@@ -245,7 +245,24 @@ Eliiiiaass: {
       {icon:"mace", tier:"LT5"},       
     ]
   },
- 
+ 4shotss: {
+    name: "4shotss",
+    rank: "12.",
+    title: "Combat Novice",
+    points: "16 points",
+    tiers: [
+      {icon:"pot", tier:"LT3"},
+      {icon:"sword", tier:"LT3"},
+      {icon:"mace", tier:"HT4"}, 
+      {icon:"vanilla", tier:"-"},                
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"uhc", tier:"-"},            
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Imjett_: {
     name: "Imjett_",
     rank: "12.",
@@ -320,7 +337,7 @@ Eliiiiaass: {
   },   
   Epicfaik: {
     name: "Epicfaik",
-    rank: "16.",
+    rank: "17.",
     title: "Combat Novice",
     points: "14 points",
     tiers: [
@@ -338,7 +355,7 @@ Eliiiiaass: {
   },
  Cwrax: {
     name: "Cwrax",
-    rank: "17.",
+    rank: "18.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -357,7 +374,7 @@ Eliiiiaass: {
  
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "17.",
+    rank: "18.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -375,7 +392,7 @@ Eliiiiaass: {
   },
  TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "19.",
+    rank: "20.",
     title: "Combat Novice",
     points: "11 points",
     tiers: [
@@ -394,7 +411,7 @@ Eliiiiaass: {
  
  FemboyCebulamen: {
     name: "FemboyCebulamen",
-    rank: "20.",
+    rank: "21.",
     title: "Rookie",
     points: "10 points",
     tiers: [
@@ -412,7 +429,7 @@ Eliiiiaass: {
   },
   VampyWolf: {
     name: "VampyWolf",
-    rank: "20.",
+    rank: "21.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -430,7 +447,7 @@ Eliiiiaass: {
   },    
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
-    rank: "20.",
+    rank: "21.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -448,7 +465,7 @@ Eliiiiaass: {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "23.",
+    rank: "24.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -466,7 +483,7 @@ Eliiiiaass: {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "23.",
+    rank: "24.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -485,7 +502,7 @@ Eliiiiaass: {
  
   Fr0gified: {
     name: "Fr0gified",
-    rank: "25.",
+    rank: "26.",
     title: "Rookie",
     points: "7 points",
     tiers: [
@@ -503,7 +520,7 @@ Eliiiiaass: {
   },
   borysTygrys: {
     name: "borysTygrys",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -522,7 +539,7 @@ Eliiiiaass: {
  
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -540,7 +557,7 @@ Eliiiiaass: {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -558,7 +575,7 @@ Eliiiiaass: {
   },
   Spooky1904: {
     name: "Spooky1904",
-    rank: "29.",
+    rank: "30.",
     title: "Rookie",
     points: "5 points",
     tiers: [
@@ -577,7 +594,7 @@ Eliiiiaass: {
 
   BartekGaming383: {
     name: "BartekGaming383",
-    rank: "30.",
+    rank: "31.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -595,7 +612,7 @@ Eliiiiaass: {
   },
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "30.",
+    rank: "31.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -613,7 +630,7 @@ Eliiiiaass: {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "30.",
+    rank: "31.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -631,7 +648,7 @@ Eliiiiaass: {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "30.",
+    rank: "31.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -650,7 +667,7 @@ Eliiiiaass: {
  
  M4rkiski: {
     name: "M4rkiski",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -668,7 +685,7 @@ Eliiiiaass: {
   },
  SkinPunktexe: {
     name: "SkinPunktexe",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -686,7 +703,7 @@ Eliiiiaass: {
   },
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -704,7 +721,7 @@ Eliiiiaass: {
   },
   hallo663: {
     name: "hallo663",
-    rank: "37.",
+    rank: "38.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -722,7 +739,7 @@ Eliiiiaass: {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "37.",
+    rank: "38.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -740,7 +757,7 @@ Eliiiiaass: {
   },
   nuuhx: {
     name: "nuuhx",
-    rank: "39.",
+    rank: "40.",
     title: "Rookie",
     points: "1 points",
     tiers: [
