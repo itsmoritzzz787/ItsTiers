@@ -245,7 +245,7 @@ Eliiiiaass: {
       {icon:"mace", tier:"LT5"},       
     ]
   },
- 4shotss: {
+  shotss: {
     name: "4shotss",
     rank: "12.",
     title: "Combat Novice",
