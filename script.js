@@ -79,7 +79,7 @@ const players = {
     name: "McNicho",
     rank: "3.",
     title: "Combat Cadet",
-    points: "40 points",
+    points: "41 points",
     tiers: [     
       {icon:"vanilla", tier:"HT3"}, 
       {icon:"mace", tier:"HT3"},      
