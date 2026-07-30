@@ -194,7 +194,7 @@ Eliiiiaass: {
     points: "25 points",
     tiers: [   
       {icon:"sword", tier:"HT4"},
-      {icon:"vanilla", tier:"HT4"},
+      {icon:"vanilla", tier:"LT4"},
       {icon:"pot", tier:"LT4"},
       {icon:"nethop", tier:"HT5"},
       {icon:"mace", tier:"HT5"},
