@@ -225,7 +225,24 @@ Eliiiiaass: {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-
+shotss: {
+    name: "4shotss",
+    rank: "11.",
+    title: "Combat Novice",
+    points: "19 points",
+    tiers: [
+      {icon:"pot", tier:"LT3"},
+      {icon:"sword", tier:"LT3"},
+      {icon:"mace", tier:"HT4"}, 
+      {icon:"smp", tier:"LT4"},
+      {icon:"vanilla", tier:"-"},                
+      {icon:"nethop", tier:"-"},    
+      {icon:"uhc", tier:"-"},            
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  
  Joredium: {
     name: "Joredium",
@@ -245,27 +262,10 @@ Eliiiiaass: {
       {icon:"mace", tier:"LT5"},       
     ]
   },
-  shotss: {
-    name: "4shotss",
-    rank: "12.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-      {icon:"pot", tier:"LT3"},
-      {icon:"sword", tier:"LT3"},
-      {icon:"mace", tier:"HT4"}, 
-      {icon:"vanilla", tier:"-"},                
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"uhc", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+  
  Imjett_: {
     name: "Imjett_",
-    rank: "12.",
+    rank: "13.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -283,7 +283,7 @@ Eliiiiaass: {
   },
  MrMedoMC: {
     name: "MrMedoMC",
-    rank: "12.",
+    rank: "13.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -301,7 +301,7 @@ Eliiiiaass: {
   },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "12.",
+    rank: "13.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -319,7 +319,7 @@ Eliiiiaass: {
   },
   Der_Schnee: {
     name: "Der_Schnee",
-    rank: "12.",
+    rank: "13.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
