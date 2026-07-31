@@ -318,8 +318,8 @@ shotss: {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  Der_Schnee: {
-    name: "Der_Schnee",
+  SnxwMC: {
+    name: "SnxwMC",
     rank: "13.",
     title: "Combat Novice",
     points: "16 points",
