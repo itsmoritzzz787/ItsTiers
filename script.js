@@ -190,19 +190,18 @@ Eliiiiaass: {
     name: "SocialRex11",
     rank: "9.",
     title: "Combat Cadet",
-    points: "27 points",
+    points: "28 points",
     tiers: [   
       {icon:"sword", tier:"HT4"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
       {icon:"vanilla", tier:"LT4"},
       {icon:"pot", tier:"LT4"},
+      {icon:"uhc", tier:"HT5"},
       {icon:"mace", tier:"HT5"},
       {icon:"nethop", tier:"HT5"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},                  
       {icon:"axe", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},                       
-      {icon:"uhc", tier:"LT5"},   
-      
+      {icon:"smp", tier:"HT5"},                             
     ]
   }, 
  ySw1ft: {
