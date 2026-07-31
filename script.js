@@ -706,7 +706,7 @@ shotss: {
     title: "Rookie",
     points: "3 points",
     tiers: [
-      {icon:"sword", tier:"LT4"},
+      {icon:"sword", tier:"HT5"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"nethop", tier:"-"},
       {icon:"smp", tier:"-"},
