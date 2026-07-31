@@ -226,17 +226,17 @@ const players = {
 shotss: {
     name: "4shotss",
     rank: "11.",
-    title: "Combat Novice",
-    points: "19 points",
+    title: "Combat Cadet",
+    points: "20 points",
     tiers: [
       {icon:"pot", tier:"LT3"},
       {icon:"sword", tier:"LT3"},
       {icon:"mace", tier:"HT4"}, 
       {icon:"smp", tier:"LT4"},
+      {icon:"axe", tier:"LT5"},
       {icon:"vanilla", tier:"-"},                
       {icon:"nethop", tier:"-"},    
-      {icon:"uhc", tier:"-"},            
-      {icon:"axe", tier:"-"},
+      {icon:"uhc", tier:"-"},                  
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
@@ -388,6 +388,24 @@ shotss: {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
     ]
   },
+ emielie14: {
+    name: "emielie14",
+    rank: "20.",
+    title: "Combat Novice",
+    points: "11 points",
+    tiers: [
+      {icon:"vanilla", tier:"HT3"},
+      {icon:"axe", tier:"LT5"},
+      {icon:"mace", tier:"-"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"sword", tier:"-"},            
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  TheCronos_YT: {
     name: "TheCronos_YT",
     rank: "20.",
@@ -409,7 +427,7 @@ shotss: {
  
  FemboyCebulamen: {
     name: "FemboyCebulamen",
-    rank: "21.",
+    rank: "22.",
     title: "Rookie",
     points: "10 points",
     tiers: [
@@ -427,7 +445,7 @@ shotss: {
   },
   VampyWolf: {
     name: "VampyWolf",
-    rank: "21.",
+    rank: "22.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -445,7 +463,7 @@ shotss: {
   },    
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
-    rank: "21.",
+    rank: "22.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -463,7 +481,7 @@ shotss: {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "24.",
+    rank: "25.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -481,7 +499,7 @@ shotss: {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "24.",
+    rank: "25.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -500,7 +518,7 @@ shotss: {
  
   Fr0gified: {
     name: "Fr0gified",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "7 points",
     tiers: [
@@ -516,27 +534,10 @@ shotss: {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  emielie14: {
-    name: "emielie14",
-    rank: "27.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"mace", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"sword", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+  
   borysTygrys: {
     name: "borysTygrys",
-    rank: "27.",
+    rank: "28.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -555,7 +556,7 @@ shotss: {
  
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "27.",
+    rank: "28.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -573,7 +574,7 @@ shotss: {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "27.",
+    rank: "28.",
     title: "Rookie",
     points: "6 points",
     tiers: [
