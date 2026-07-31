@@ -168,6 +168,25 @@ Eliiiiaass: {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ SocialRex11: {
+    name: "SocialRex11",
+    rank: "8.",
+    title: "Combat Cadet",
+    points: "27 points",
+    tiers: [   
+      {icon:"sword", tier:"HT4"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
+      {icon:"vanilla", tier:"LT4"},
+      {icon:"pot", tier:"LT4"},
+      {icon:"nethop", tier:"HT5"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},                  
+      {icon:"axe", tier:"HT5"},
+      {icon:"smp", tier:"HT5"},                       
+      {icon:"uhc", tier:"LT5"},   
+      
+    ]
+  },
   Ginoski: {
     name: "Ginoski",
     rank: "8.",
@@ -187,25 +206,7 @@ Eliiiiaass: {
     ]
   }, 
 
-  SocialRex11: {
-    name: "SocialRex11",
-    rank: "9.",
-    title: "Combat Cadet",
-    points: "25 points",
-    tiers: [   
-      {icon:"sword", tier:"HT4"},
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"pot", tier:"LT4"},
-      {icon:"nethop", tier:"HT5"},
-      {icon:"mace", tier:"HT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},                  
-      {icon:"axe", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},       
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},           
-      {icon:"uhc", tier:"LT5"},   
-      
-    ]
-  },
+  
 
  ySw1ft: {
     name: "ySw1ft",
