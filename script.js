@@ -429,7 +429,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- 
+ BartekGaming383: {
+    name: "BartekGaming383",
+    rank: "22.",
+    title: "Combat Novice",
+    points: "10 points",
+    tiers: [
+      {icon:"sword", tier:"HT4"},
+      {icon:"mace", tier:"HT4"},
+      {icon:"smp", tier:"HT5"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"uhc", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  zNixls_: {
     name: "zNixls_",
     rank: "22.",
@@ -504,7 +521,7 @@ const players = {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -522,7 +539,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "26.",
+    rank: "27.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -541,7 +558,7 @@ const players = {
  
   Fr0gified: {
     name: "Fr0gified",
-    rank: "28.",
+    rank: "29.",
     title: "Rookie",
     points: "7 points",
     tiers: [
@@ -557,27 +574,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  BartekGaming383: {
-    name: "BartekGaming383",
-    rank: "29.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"mace", tier:"HT4"},
-      {icon:"smp", tier:"HT5"},
-      {icon:"sword", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"uhc", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+  
   borysTygrys: {
     name: "borysTygrys",
-    rank: "29.",
+    rank: "30.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -596,7 +596,7 @@ const players = {
  
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "29.",
+    rank: "30.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -614,7 +614,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "29.",
+    rank: "30.",
     title: "Rookie",
     points: "6 points",
     tiers: [
