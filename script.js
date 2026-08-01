@@ -334,12 +334,32 @@ const players = {
       {icon:"nethop", tier:"-"},
       {icon:"axe", tier:"-"},       
     ]
-  },   
-  Epicfaik: {
-    name: "Epicfaik",
+  },
+ TheCronos_YT: {
+    name: "TheCronos_YT",
     rank: "17.",
     title: "Combat Novice",
     points: "14 points",
+    tiers: [
+     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
+     {icon:"axe", tier:"HT5"},
+     {icon:"sword", tier:"HT5"},
+     {icon:"mace", tier:"HT5"},
+     {icon:"vanilla", tier:"LT5"},
+     {icon:"smp", tier:"LT5"},          
+     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},     
+     {icon:"pot", tier:"LT5"},
+     {icon:"nethop", tier:"LT5"},
+     {icon:"uhc", tier:"LT5"},
+     
+     {     
+    ]
+  },
+  Epicfaik: {
+    name: "Epicfaik",
+    rank: "18.",
+    title: "Combat Novice",
+    points: "13 points",
     tiers: [
       {icon:"mace", tier:"HT3"},
       {icon:"vanilla", tier:"LT4"}, 
@@ -355,7 +375,7 @@ const players = {
   },
  Cwrax: {
     name: "Cwrax",
-    rank: "18.",
+    rank: "19.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -374,7 +394,7 @@ const players = {
  
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "18.",
+    rank: "19.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -392,7 +412,7 @@ const players = {
   },
  emielie14: {
     name: "emielie14",
-    rank: "20.",
+    rank: "21.",
     title: "Combat Novice",
     points: "11 points",
     tiers: [
@@ -408,24 +428,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- TheCronos_YT: {
-    name: "TheCronos_YT",
-    rank: "20.",
-    title: "Combat Novice",
-    points: "11 points",
-    tiers: [
-     {icon:"sword", tier:"HT5"},
-     {icon:"mace", tier:"HT5"},
-     {icon:"smp", tier:"LT5"},      
-     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT5"},
-     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},     
-     {icon:"pot", tier:"LT5"},
-     {icon:"nethop", tier:"LT5"},
-     {icon:"uhc", tier:"LT5"},
-     {icon:"axe", tier:"LT5"},
-     {icon:"vanilla", tier:"-"}      
-    ]
-  },
+ 
  
  FemboyCebulamen: {
     name: "FemboyCebulamen",
