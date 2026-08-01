@@ -267,15 +267,15 @@ const players = {
     name: "BartekGaming383",
     rank: "13.",
     title: "Combat Novice",
-    points: "16 points",
+    points: "17 points",
     tiers: [
       {icon:"sword", tier:"HT4"},
       {icon:"mace", tier:"HT4"},
       {icon:"nethop", tier:"LT4"},
       {icon:"pot", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},   
-      {icon:"axe", tier:"LT5"},      
-      {icon:"uhc", tier:"-"},      
+      {icon:"smp", tier:"HT5"},  
+      {icon:"uhc", tier:"LT5"}, 
+      {icon:"axe", tier:"LT5"},                 
       {icon:"vanilla", tier:"-"},          
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
@@ -283,7 +283,7 @@ const players = {
   },
  Imjett_: {
     name: "Imjett_",
-    rank: "13.",
+    rank: "14.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -301,7 +301,7 @@ const players = {
   },
  MrMedoMC: {
     name: "MrMedoMC",
-    rank: "13.",
+    rank: "14.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -319,7 +319,7 @@ const players = {
   },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "13.",
+    rank: "14.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -337,7 +337,7 @@ const players = {
   },
   SnxwMC: {
     name: "SnxwMC",
-    rank: "13.",
+    rank: "14.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
