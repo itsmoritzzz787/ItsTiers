@@ -352,7 +352,7 @@ const players = {
      {icon:"nethop", tier:"LT5"},
      {icon:"uhc", tier:"LT5"},
      
-     {     
+      
     ]
   },
   Epicfaik: {
