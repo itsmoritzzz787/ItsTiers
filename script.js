@@ -356,6 +356,24 @@ const players = {
       
     ]
   },
+ emielie14: {
+    name: "emielie14",
+    rank: "18.",
+    title: "Combat Novice",
+    points: "13 points",
+    tiers: [
+      {icon:"vanilla", tier:"HT3"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"axe", tier:"LT5"},      
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"sword", tier:"-"},            
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  BartekGaming383: {
     name: "BartekGaming383",
     rank: "18.",
@@ -395,7 +413,7 @@ const players = {
  
  Cwrax: {
     name: "Cwrax",
-    rank: "20.",
+    rank: "21.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -414,7 +432,7 @@ const players = {
  
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "20.",
+    rank: "21.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -430,24 +448,7 @@ const players = {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
     ]
   },
- emielie14: {
-    name: "emielie14",
-    rank: "22.",
-    title: "Combat Novice",
-    points: "11 points",
-    tiers: [
-      {icon:"vanilla", tier:"HT3"},
-      {icon:"axe", tier:"LT5"},
-      {icon:"mace", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"sword", tier:"-"},            
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  
  zNixls_: {
     name: "zNixls_",
