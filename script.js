@@ -536,7 +536,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  
+  BartekGaming383: {
+    name: "BartekGaming383",
+    rank: "28.",
+    title: "Rookie",
+    points: "6 points",
+    tiers: [
+      {icon:"mace", tier:"HT4"},
+      {icon:"smp", tier:"HT5"},
+      {icon:"sword", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"uhc", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   borysTygrys: {
     name: "borysTygrys",
     rank: "28.",
@@ -594,7 +611,7 @@ const players = {
   },
   Spooky1904: {
     name: "Spooky1904",
-    rank: "31.",
+    rank: "32.",
     title: "Rookie",
     points: "5 points",
     tiers: [
@@ -611,27 +628,10 @@ const players = {
     ]
   },
 
-  BartekGaming383: {
-    name: "BartekGaming383",
-    rank: "32.",
-    title: "Rookie",
-    points: "4 points",
-    tiers: [
-      {icon:"mace", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+  
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "32.",
+    rank: "33.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -649,7 +649,7 @@ const players = {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "32.",
+    rank: "33.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -667,7 +667,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "32.",
+    rank: "33.",
     title: "Rookie",
     points: "4 points",
     tiers: [
