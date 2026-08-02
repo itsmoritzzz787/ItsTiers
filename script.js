@@ -268,16 +268,16 @@ const players = {
     name: "BartekGaming383",
     rank: "13.",
     title: "Combat Novice",
-    points: "17 points",
+    points: "18 points",
     tiers: [
       {icon:"sword", tier:"HT4"},
       {icon:"mace", tier:"HT4"},
       {icon:"nethop", tier:"LT4"},
       {icon:"pot", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},  
+      {icon:"smp", tier:"HT5"}, 
+      {icon:"vanilla", tier:"LT5"},
       {icon:"uhc", tier:"LT5"}, 
-      {icon:"axe", tier:"LT5"},                 
-      {icon:"vanilla", tier:"-"},          
+      {icon:"axe", tier:"LT5"},                                
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
