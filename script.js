@@ -374,6 +374,24 @@ emielie14: {
       {icon:"axe", tier:"-"},       
     ]
   },
+ zNixls_: {
+    name: "zNixls_",
+    rank: "19.",
+    title: "Combat Novice",
+    points: "14 points",
+    tiers: [
+      {icon:"sword", tier:"HT3"},
+      {icon:"pot", tier:"HT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},      
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  TheCronos_YT: {
     name: "TheCronos_YT",
     rank: "19.",
@@ -398,7 +416,7 @@ emielie14: {
 
   Epicfaik: {
     name: "Epicfaik",
-    rank: "20.",
+    rank: "21.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -417,7 +435,7 @@ emielie14: {
  
  Cwrax: {
     name: "Cwrax",
-    rank: "21.",
+    rank: "22.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -436,7 +454,7 @@ emielie14: {
  
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "21.",
+    rank: "22.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -452,29 +470,9 @@ emielie14: {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
     ]
   },
- 
- 
- zNixls_: {
-    name: "zNixls_",
-    rank: "23.",
-    title: "Rookie",
-    points: "10 points",
-    tiers: [
-      {icon:"sword", tier:"HT3"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
  FemboyCebulamen: {
     name: "FemboyCebulamen",
-    rank: "23.",
+    rank: "24.",
     title: "Rookie",
     points: "10 points",
     tiers: [
@@ -492,7 +490,7 @@ emielie14: {
   },
   VampyWolf: {
     name: "VampyWolf",
-    rank: "23.",
+    rank: "24.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -510,7 +508,7 @@ emielie14: {
   },    
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
-    rank: "23.",
+    rank: "24.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
