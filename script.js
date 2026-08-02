@@ -47,9 +47,9 @@ const players = {
     tiers: [
       {icon:"mace", tier:"LT2"},
       {icon:"vanilla", tier:"HT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},     
-      {icon:"sword", tier:"HT4"}, 
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"},   
+      {icon:"sword", tier:"LT3"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},            
       {icon:"uhc", tier:"LT4"},
       {icon:"smp", tier:"LT4"},
       {icon:"nethop", tier:"LT4"},
@@ -213,11 +213,11 @@ const players = {
     name: "SocialRex11",
     rank: "10.",
     title: "Combat Cadet",
-    points: "28 points",
-    tiers: [   
+    points: "30 points",
+    tiers: [  
+      {icon:"vanilla", tier:"LT3"},
       {icon:"sword", tier:"LT3"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
-      {icon:"vanilla", tier:"LT4"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},     
       {icon:"pot", tier:"LT4"},
       {icon:"uhc", tier:"HT5"},
       {icon:"mace", tier:"HT5"},
