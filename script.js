@@ -46,9 +46,9 @@ const players = {
     points: "71 points",
     tiers: [
       {icon:"mace", tier:"LT2"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"}, 
-      {icon:"vanilla", tier:"HT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"},   
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"},       
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"}, 
+      {icon:"vanilla", tier:"LT3"},
       {icon:"sword", tier:"LT3"},                 
       {icon:"uhc", tier:"LT4"},
       {icon:"smp", tier:"LT4"},
