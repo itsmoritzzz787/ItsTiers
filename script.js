@@ -60,18 +60,18 @@ const players = {
   MyNameIsPuma: {
     name: "MyNameIsPuma",
     rank: "2.",
-    title: "Combat Cadet",
-    points: "48 points",
+    title: "Combat Specialist",
+    points: "51 points",
     tiers: [
       {icon:"sword", tier:"HT3"},
       {icon:"vanilla", tier:"LT3"},
       {icon:"smp", tier:"LT3"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT4"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},            
       {icon:"nethop", tier:"HT4"},
       {icon:"pot", tier:"HT4"},
       {icon:"axe", tier:"HT4"},   
-      {icon:"mace", tier:"LT4"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
+      {icon:"mace", tier:"LT4"},      
       {icon:"uhc", tier:"RLT3"},                       
     ]
   },
