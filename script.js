@@ -191,7 +191,7 @@ const players = {
   }, 
   lozk00: {
     name: "lozk00",
-    rank: "9.",
+    rank: "7.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -211,7 +211,7 @@ const players = {
   },
   Jonkler75: {
     name: "Jonkler75",
-    rank: "9.",
+    rank: "7.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
