@@ -153,7 +153,7 @@ const players = {
   },
  emielie14: {
     name: "emielie14",
-    rank: "11.",
+    rank: "7.",
     title: "Combat Cadet",
     points: "33 points",
     tiers: [
@@ -171,7 +171,7 @@ const players = {
   },
  SocialRex11: {
     name: "SocialRex11",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [  
@@ -189,7 +189,7 @@ const players = {
   }, 
  Ginoski: {
     name: "Ginoski",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [     
@@ -207,7 +207,7 @@ const players = {
   }, 
   lozk00: {
     name: "lozk00",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -227,7 +227,7 @@ const players = {
   },
   Jonkler75: {
     name: "Jonkler75",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -245,7 +245,7 @@ const players = {
   }, 
  ySw1ft: {
     name: "ySw1ft",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [
