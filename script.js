@@ -131,9 +131,28 @@ const players = {
       {icon:"uhc", tier:"HT5"},       
     ]
   },
+  emielie14: {
+    name: "emielie14",
+    rank: "6.",
+    title: "Combat Cadet",
+    points: "35 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT2"},
+      {icon:"sword", tier:"LT3"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
+      {icon:"mace", tier:"HT5"},
+      {icon:"axe", tier:"LT5"},      
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},                        
+      
+    ]
+  },
  shotss: {
     name: "4shotss",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Cadet",
     points: "34 points",
     tiers: [
@@ -151,24 +170,7 @@ const players = {
       
     ]
   },
- emielie14: {
-    name: "emielie14",
-    rank: "7.",
-    title: "Combat Cadet",
-    points: "33 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT2"},
-      {icon:"sword", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
-      {icon:"mace", tier:"HT5"},
-      {icon:"axe", tier:"LT5"},      
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},                        
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+
  SocialRex11: {
     name: "SocialRex11",
     rank: "8.",
