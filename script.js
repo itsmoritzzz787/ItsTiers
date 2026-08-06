@@ -141,7 +141,7 @@ const players = {
       {icon:"pot", tier:"LT3"},
       {icon:"sword", tier:"LT3"},
       {icon:"nethop", tier:"HT4"},
-      {icon:"mace", tier:"HT4"}, 
+      {icon:"mace", tier:"LT4"}, 
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
       {icon:"smp", tier:"LT4"},
       {icon:"vanilla", tier:"HT5"},
