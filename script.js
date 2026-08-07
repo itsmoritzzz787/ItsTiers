@@ -615,7 +615,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- 
+  IgoonToEc: {
+    name: "IgoonToEc",
+    rank: "31.",
+    title: "Rookie",
+    points: "6 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT3"},
+      {icon:"mace", tier:"-"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"sword", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   PVPSnapper: {
     name: "PVPSnapper",
     rank: "31.",
@@ -654,7 +671,7 @@ const players = {
   },
   Spooky1904: {
     name: "Spooky1904",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "5 points",
     tiers: [
@@ -674,7 +691,7 @@ const players = {
   
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "35.",
+    rank: "36.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -692,7 +709,7 @@ const players = {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "35.",
+    rank: "36.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -710,7 +727,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "35.",
+    rank: "36.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -729,7 +746,7 @@ const players = {
  
  M4rkiski: {
     name: "M4rkiski",
-    rank: "38.",
+    rank: "39.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -747,7 +764,7 @@ const players = {
   },
  SkinPunktexe: {
     name: "SkinPunktexe",
-    rank: "38.",
+    rank: "39.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -765,7 +782,7 @@ const players = {
   },
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "38.",
+    rank: "39.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -783,7 +800,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "41.",
+    rank: "42.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -801,7 +818,7 @@ const players = {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "41.",
+    rank: "42.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -819,7 +836,7 @@ const players = {
   },
   nuuhx: {
     name: "nuuhx",
-    rank: "43.",
+    rank: "44.",
     title: "Rookie",
     points: "1 points",
     tiers: [
@@ -838,7 +855,7 @@ const players = {
  
  NaileSMY: {
     name: "NaileSMY",
-    rank: "44.",
+    rank: "45.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -856,7 +873,7 @@ const players = {
   },
  MattiMC187: {
     name: "MattiMC187",
-    rank: "45.",
+    rank: "46.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -874,7 +891,7 @@ const players = {
   },
  Lixa_787: {
     name: "Lixa_787",
-    rank: "46.",
+    rank: "47.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -892,7 +909,7 @@ const players = {
   },
  Erny_YT: {
     name: "Erny_YT",
-    rank: "47.",
+    rank: "48.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -910,7 +927,7 @@ const players = {
   },
  SimonXtheo: {
     name: "SimonXtheo",
-    rank: "48.",
+    rank: "49.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -928,7 +945,7 @@ const players = {
   },
  Maximen123: {
     name: "Maximen123",
-    rank: "49.",
+    rank: "50.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -946,7 +963,7 @@ const players = {
   },
  ReimEnterich42: {
     name: "ReimEnterich42",
-    rank: "50.",
+    rank: "51.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -964,7 +981,7 @@ const players = {
   },
  silloxbtw: {
     name: "silloxbtw",
-    rank: "51.",
+    rank: "52.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -982,7 +999,7 @@ const players = {
   },
  Blackwors_: {
     name: "Blackwors_",
-    rank: "52.",
+    rank: "53.",
     title: "Unranked",
     points: "0 points",
     tiers: [
