@@ -136,17 +136,17 @@ const players = {
     name: "4shotss",
     rank: "6.",
     title: "Combat Cadet",
-    points: "34 points",
-    tiers: [   
+    points: "37 points",
+    tiers: [ 
+      {icon:"mace", tier:"LT3"},
       {icon:"pot", tier:"LT3"},
       {icon:"sword", tier:"LT3"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"mace", tier:"LT4"}, 
+      {icon:"nethop", tier:"HT4"},       
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
       {icon:"smp", tier:"LT4"},
       {icon:"vanilla", tier:"HT5"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},
-      {icon:"axe", tier:"LT5"},                               
+      {icon:"axe", tier:"HT5"},                               
       {icon:"uhc", tier:"-"},                  
       
       
