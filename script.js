@@ -355,6 +355,26 @@ const players = {
       {icon:"axe", tier:"-"},       
     ]
   },
+ TheCronos_YT: {
+    name: "TheCronos_YT",
+    rank: "18.",
+    title: "Combat Novice",
+    points: "15 points",
+    tiers: [
+     {icon:"pot", tier:"HT5"},
+     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
+     {icon:"axe", tier:"HT5"},
+     {icon:"sword", tier:"HT5"},
+     {icon:"mace", tier:"HT5"},
+     {icon:"vanilla", tier:"LT5"},
+     {icon:"smp", tier:"LT5"},          
+     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},          
+     {icon:"nethop", tier:"LT5"},
+     {icon:"uhc", tier:"LT5"},
+     
+      
+    ]
+  },
   emielie14: {
     name: "emielie14",
     rank: "18.",
@@ -376,7 +396,7 @@ const players = {
   },
  zNixls_: {
     name: "zNixls_",
-    rank: "19.",
+    rank: "20.",
     title: "Combat Novice",
     points: "14 points",
     tiers: [
@@ -392,28 +412,6 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- TheCronos_YT: {
-    name: "TheCronos_YT",
-    rank: "19.",
-    title: "Combat Novice",
-    points: "14 points",
-    tiers: [
-     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
-     {icon:"axe", tier:"HT5"},
-     {icon:"sword", tier:"HT5"},
-     {icon:"mace", tier:"HT5"},
-     {icon:"vanilla", tier:"LT5"},
-     {icon:"smp", tier:"LT5"},          
-     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},     
-     {icon:"pot", tier:"LT5"},
-     {icon:"nethop", tier:"LT5"},
-     {icon:"uhc", tier:"LT5"},
-     
-      
-    ]
-  },
- 
-
   Epicfaik: {
     name: "Epicfaik",
     rank: "21.",
