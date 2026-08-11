@@ -431,8 +431,8 @@ const players = {
     ]
   },
  
- Cwrax: {
-    name: "Cwrax",
+ Meloy_: {
+    name: "Meloy_",
     rank: "22.",
     title: "Combat Novice",
     points: "12 points",
