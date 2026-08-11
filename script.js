@@ -468,6 +468,24 @@ const players = {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
     ]
   },
+  borysTygrys: {
+    name: "borysTygrys",
+    rank: "24.",
+    title: "Combat Novice",
+    points: "6 points",
+    tiers: [
+      {icon:"sword", tier:"LT3"},
+      {icon:"vanilla", tier:"HT5"}, 
+      {icon:"mace", tier:"HT5"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},           
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  FemboyCebulamen: {
     name: "FemboyCebulamen",
     rank: "24.",
@@ -524,7 +542,7 @@ const players = {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "27.",
+    rank: "28.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -542,7 +560,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "27.",
+    rank: "28.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -561,7 +579,7 @@ const players = {
  
   Fr0gified: {
     name: "Fr0gified",
-    rank: "29.",
+    rank: "30.",
     title: "Rookie",
     points: "7 points",
     tiers: [
@@ -579,7 +597,7 @@ const players = {
   },
    zeno_HT5: {
     name: "zeno_HT5",
-    rank: "29.",
+    rank: "30.",
     title: "Rookie",
     points: "7 points",
     tiers: [
@@ -595,27 +613,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  borysTygrys: {
-    name: "borysTygrys",
-    rank: "31.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"mace", tier:"HT5"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   IgoonToEc: {
     name: "IgoonToEc",
-    rank: "31.",
+    rank: "32.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -633,7 +634,7 @@ const players = {
   },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "31.",
+    rank: "32.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -651,7 +652,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "31.",
+    rank: "32.",
     title: "Rookie",
     points: "6 points",
     tiers: [
