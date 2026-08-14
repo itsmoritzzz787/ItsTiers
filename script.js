@@ -471,7 +471,7 @@ const players = {
  Sn00wies: {
     name: "Sn00wies",
     rank: "24.",
-    title: "Rookie",
+    title: "Combat Novice",
     points: "10 points",
     tiers: [
       {icon:"sword", tier:"HT3"},
@@ -507,7 +507,7 @@ const players = {
  FemboyCebulamen: {
     name: "FemboyCebulamen",
     rank: "24.",
-    title: "Rookie",
+    title: "Combat Novice",
     points: "10 points",
     tiers: [
       {icon:"sword", tier:"HT3"},
