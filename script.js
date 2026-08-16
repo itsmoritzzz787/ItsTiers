@@ -704,6 +704,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ SkinPunktexe: {
+    name: "SkinPunktexe",
+    rank: "37.",
+    title: "Rookie",
+    points: "4 points",
+    tiers: [
+      {icon:"sword", tier:"HT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"uhc", tier:"-"},   
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
 Sm1targusPrimus: {
     name: "Sm1targusPrimus",
     rank: "37.",
@@ -780,7 +798,7 @@ Sm1targusPrimus: {
  
  M4rkiski: {
     name: "M4rkiski",
-    rank: "41.",
+    rank: "42.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -796,27 +814,10 @@ Sm1targusPrimus: {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- SkinPunktexe: {
-    name: "SkinPunktexe",
-    rank: "41.",
-    title: "Rookie",
-    points: "3 points",
-    tiers: [
-      {icon:"sword", tier:"HT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},   
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "41.",
+    rank: "42.",
     title: "Rookie",
     points: "3 points",
     tiers: [
