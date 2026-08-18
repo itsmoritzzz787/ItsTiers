@@ -411,8 +411,8 @@ const players = {
       
     ]
   },
- borysTygrys: {
-    name: "borysTygrys",
+ TREN: {
+    name: "1TREN",
     rank: "21.",
     title: "Combat Novice",
     points: "14 points",
