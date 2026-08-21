@@ -632,7 +632,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- 
+ bombertobi: {
+    name: "bombertobi",
+    rank: "33.",
+    title: "Rookie",
+    points: "6 points",
+    tiers: [
+      {icon:"sword", tier:"LT3"},
+      {icon:"mace", tier:"-"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   IgoonToEc: {
     name: "IgoonToEc",
     rank: "33.",
@@ -689,7 +706,7 @@ const players = {
   },
   Spooky1904: {
     name: "Spooky1904",
-    rank: "36.",
+    rank: "37.",
     title: "Rookie",
     points: "5 points",
     tiers: [
@@ -707,7 +724,7 @@ const players = {
   },
  SkinPunktexe: {
     name: "SkinPunktexe",
-    rank: "37.",
+    rank: "38.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -725,7 +742,7 @@ const players = {
   },
 Sm1targusPrimus: {
     name: "Sm1targusPrimus",
-    rank: "37.",
+    rank: "38.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -744,7 +761,7 @@ Sm1targusPrimus: {
   
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "37.",
+    rank: "38.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -762,7 +779,7 @@ Sm1targusPrimus: {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "37.",
+    rank: "38.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -780,7 +797,7 @@ Sm1targusPrimus: {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "37.",
+    rank: "38.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -799,7 +816,7 @@ Sm1targusPrimus: {
  
  M4rkiski: {
     name: "M4rkiski",
-    rank: "42.",
+    rank: "43.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -818,7 +835,7 @@ Sm1targusPrimus: {
  
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "42.",
+    rank: "43.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -836,7 +853,7 @@ Sm1targusPrimus: {
   },
   hallo663: {
     name: "hallo663",
-    rank: "44.",
+    rank: "45.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -854,7 +871,7 @@ Sm1targusPrimus: {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "44.",
+    rank: "45.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -872,7 +889,7 @@ Sm1targusPrimus: {
   },
   nuuhx: {
     name: "nuuhx",
-    rank: "46.",
+    rank: "47.",
     title: "Rookie",
     points: "1 points",
     tiers: [
@@ -891,7 +908,7 @@ Sm1targusPrimus: {
  
  NaileSMY: {
     name: "NaileSMY",
-    rank: "47.",
+    rank: "48.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -909,7 +926,7 @@ Sm1targusPrimus: {
   },
  MattiMC187: {
     name: "MattiMC187",
-    rank: "48.",
+    rank: "49.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -927,7 +944,7 @@ Sm1targusPrimus: {
   },
  Lixa_787: {
     name: "Lixa_787",
-    rank: "49.",
+    rank: "50.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -945,7 +962,7 @@ Sm1targusPrimus: {
   },
  Erny_YT: {
     name: "Erny_YT",
-    rank: "50.",
+    rank: "51.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -963,7 +980,7 @@ Sm1targusPrimus: {
   },
  SimonXtheo: {
     name: "SimonXtheo",
-    rank: "51.",
+    rank: "52.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -981,7 +998,7 @@ Sm1targusPrimus: {
   },
  Maximen123: {
     name: "Maximen123",
-    rank: "52.",
+    rank: "53.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -999,7 +1016,7 @@ Sm1targusPrimus: {
   },
  ReimEnterich42: {
     name: "ReimEnterich42",
-    rank: "53.",
+    rank: "54.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -1017,7 +1034,7 @@ Sm1targusPrimus: {
   },
  silloxbtw: {
     name: "silloxbtw",
-    rank: "54.",
+    rank: "55.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -1035,7 +1052,7 @@ Sm1targusPrimus: {
   },
  Blackwors_: {
     name: "Blackwors_",
-    rank: "55.",
+    rank: "56.",
     title: "Unranked",
     points: "0 points",
     tiers: [
@@ -1053,7 +1070,7 @@ Sm1targusPrimus: {
   },
   Haniox: {
     name: "Haniox",
-    rank: "56.",
+    rank: "57.",
     title: "Unranked",
     points: "0 points",
     tiers: [
