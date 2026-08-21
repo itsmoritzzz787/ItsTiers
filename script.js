@@ -246,27 +246,10 @@ const players = {
     ]
   },
 
- Sn00wies: {
-    name: "Sn00wies",
-    rank: "12.",
-    title: "Combat Cadet",
-    points: "20 points",
-    tiers: [
-      {icon:"sword", tier:"LT2"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  Joredium: {
     name: "Joredium",
-    rank: "13.",
+    rank: "12.",
     title: "Combat Novice",
     points: "19 points",
     tiers: [
@@ -284,7 +267,7 @@ const players = {
   },
    BartekGaming383: {
     name: "BartekGaming383",
-    rank: "14.",
+    rank: "13.",
     title: "Combat Novice",
     points: "18 points",
     tiers: [
@@ -302,7 +285,7 @@ const players = {
   },
  Imjett_: {
     name: "Imjett_",
-    rank: "15.",
+    rank: "14.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -320,7 +303,7 @@ const players = {
   },
  MrMedoMC: {
     name: "MrMedoMC",
-    rank: "15.",
+    rank: "14.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -338,7 +321,7 @@ const players = {
   },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "15.",
+    rank: "14.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -356,7 +339,7 @@ const players = {
   },
   SnxwMC: {
     name: "SnxwMC",
-    rank: "15.",
+    rank: "14.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -374,7 +357,7 @@ const players = {
   },
  TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "19.",
+    rank: "18.",
     title: "Combat Novice",
     points: "15 points",
     tiers: [
@@ -394,7 +377,7 @@ const players = {
   },
   emielie14: {
     name: "emielie14",
-    rank: "19.",
+    rank: "18.",
     title: "Combat Novice",
     points: "15 points",
     tiers: [
@@ -413,7 +396,7 @@ const players = {
   },
  TREN: {
     name: "1TREN",
-    rank: "21.",
+    rank: "20.",
     title: "Combat Novice",
     points: "14 points",
     tiers: [
@@ -431,7 +414,7 @@ const players = {
   },
  zNixls_: {
     name: "zNixls_",
-    rank: "21.",
+    rank: "20.",
     title: "Combat Novice",
     points: "14 points",
     tiers: [
@@ -449,7 +432,7 @@ const players = {
   },
   Epicfaik: {
     name: "Epicfaik",
-    rank: "23.",
+    rank: "22.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -468,7 +451,7 @@ const players = {
  
  Meloy_: {
     name: "Meloy_",
-    rank: "24.",
+    rank: "23.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -487,7 +470,7 @@ const players = {
  
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "24.",
+    rank: "23.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -503,11 +486,28 @@ const players = {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
     ]
   },
- 
+ Sn00wies: {
+    name: "Sn00wies",
+    rank: "25.",
+    title: "Combat Novice",
+    points: "10 points",
+    tiers: [
+      {icon:"sword", tier:"LT3"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   
  FemboyCebulamen: {
     name: "FemboyCebulamen",
-    rank: "26.",
+    rank: "25.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -525,7 +525,7 @@ const players = {
   },
   VampyWolf: {
     name: "VampyWolf",
-    rank: "26.",
+    rank: "25.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -543,7 +543,7 @@ const players = {
   },    
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
-    rank: "26.",
+    rank: "25.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
