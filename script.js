@@ -75,6 +75,24 @@ const players = {
       {icon:"mace", tier:"LT4"},                            
     ]
   },
+  certifiedrid: {
+    name: "certifiedrid",
+    rank: "3.",
+    title: "Combat Cadet",
+    points: "44 points",
+    tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"}, 
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
+      {icon:"vanilla", tier:"LT3"},
+      {icon:"sword", tier:"HT4"},
+      {icon:"nethop", tier:"HT4"},
+      {icon:"pot", tier:"LT4"},
+      {icon:"smp", tier:"LT4"},
+      {icon:"axe", tier:"LT4"},           
+      {icon:"mace", tier:"LT4"},                  
+      {icon:"uhc", tier:"HT5"},       
+    ]
+  },
  McNicho: {
     name: "McNicho",
     rank: "3.",
@@ -96,7 +114,7 @@ const players = {
   },
  Eliiiiaass: {
     name: "Eliiiiaass",
-    rank: "4.",
+    rank: "5.",
     title: "Combat Novice",
     points: "42 points",
     tiers: [
@@ -114,7 +132,7 @@ const players = {
   },
   shotss: {
     name: "4shotss",
-    rank: "5.",
+    rank: "6.",
     title: "Combat Cadet",
     points: "41 points",
     tiers: [ 
@@ -132,24 +150,7 @@ const players = {
       
     ]
   },
- certifiedrid: {
-    name: "certifiedrid",
-    rank: "6.",
-    title: "Combat Cadet",
-    points: "40 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"}, 
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"sword", tier:"HT4"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"pot", tier:"LT4"},
-      {icon:"smp", tier:"LT4"},
-      {icon:"axe", tier:"LT4"},           
-      {icon:"mace", tier:"LT4"},                  
-      {icon:"uhc", tier:"HT5"},       
-    ]
-  },
+
  
  
 
@@ -175,16 +176,16 @@ const players = {
     name: "Ginoski",
     rank: "8.",
     title: "Combat Cadet",
-    points: "31 points",
-    tiers: [     
+    points: "32 points",
+    tiers: [  
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
-      {icon:"mace", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
+      {icon:"mace", tier:"LT3"}, 
+      {icon:"sword", tier:"LT4"}, 
       {icon:"uhc", tier:"LT4"},
       {icon:"vanilla", tier:"HT5"},
       {icon:"axe", tier:"HT5"},
-      {icon:"pot", tier:"HT5"}, 
-      {icon:"sword", tier:"HT5"},            
+      {icon:"pot", tier:"HT5"},                
       {icon:"smp", tier:"LT5"},
       {icon:"nethop", tier:"LT5"},
     ]
@@ -250,10 +251,10 @@ const players = {
  Joredium: {
     name: "Joredium",
     rank: "12.",
-    title: "Combat Novice",
-    points: "19 points",
+    title: "Combat Cadet",
+    points: "22 points",
     tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
       {icon:"sword", tier:"LT4"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
       {icon:"pot", tier:"HT5"}, 
