@@ -614,7 +614,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },  
- 
+ Sm1targusPrimus: {
+    name: "Sm1targusPrimus",
+    rank: "7.",
+    title: "Rookie",
+    points: "7 points",
+    tiers: [
+      {icon:"sword", tier:"HT4"},
+      {icon:"mace", tier:"LT4"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   Fr0gified: {
     name: "Fr0gified",
     rank: "32.",
@@ -653,7 +670,7 @@ const players = {
   },
  bombertobi: {
     name: "bombertobi",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -671,7 +688,7 @@ const players = {
   },
   IgoonToEc: {
     name: "IgoonToEc",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -689,7 +706,7 @@ const players = {
   },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -707,7 +724,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "34.",
+    rank: "35.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -725,7 +742,7 @@ const players = {
   },
   Spooky1904: {
     name: "Spooky1904",
-    rank: "38.",
+    rank: "39.",
     title: "Rookie",
     points: "5 points",
     tiers: [
@@ -743,7 +760,7 @@ const players = {
   },
  SkinPunktexe: {
     name: "SkinPunktexe",
-    rank: "39.",
+    rank: "40.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -759,28 +776,11 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-Sm1targusPrimus: {
-    name: "Sm1targusPrimus",
-    rank: "39.",
-    title: "Rookie",
-    points: "4 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+
   
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "39.",
+    rank: "40.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -798,7 +798,7 @@ Sm1targusPrimus: {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "39.",
+    rank: "40.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -816,7 +816,7 @@ Sm1targusPrimus: {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "39.",
+    rank: "40.",
     title: "Rookie",
     points: "4 points",
     tiers: [
