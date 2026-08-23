@@ -43,16 +43,16 @@ const players = {
     name: "ItsMoritzzz",
     rank: "1.",
     title: "Combat Specialist",
-    points: "71 points",
+    points: "82 points",
     tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"}, 
       {icon:"mace", tier:"LT2"},
       {icon:"vanilla", tier:"HT3"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"},       
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"},       
-      {icon:"sword", tier:"LT3"},                 
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"},                   
+      {icon:"sword", tier:"LT3"},  
+      {icon:"nethop", tier:"HT4"},
       {icon:"uhc", tier:"LT4"},
-      {icon:"smp", tier:"LT4"},
-      {icon:"nethop", tier:"LT4"},
+      {icon:"smp", tier:"LT4"},     
       {icon:"pot", tier:"LT4"},
       {icon:"axe", tier:"LT4"},                                          
     ]
@@ -75,24 +75,7 @@ const players = {
       {icon:"mace", tier:"LT4"},                            
     ]
   },
-  certifiedrid: {
-    name: "certifiedrid",
-    rank: "3.",
-    title: "Combat Cadet",
-    points: "44 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"}, 
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"sword", tier:"HT4"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"pot", tier:"LT4"},
-      {icon:"smp", tier:"LT4"},
-      {icon:"axe", tier:"LT4"},           
-      {icon:"mace", tier:"LT4"},                  
-      {icon:"uhc", tier:"HT5"},       
-    ]
-  },
+ 
  McNicho: {
     name: "McNicho",
     rank: "3.",
@@ -114,20 +97,38 @@ const players = {
   },
  Eliiiiaass: {
     name: "Eliiiiaass",
-    rank: "5.",
+    rank: "3.",
     title: "Combat Novice",
-    points: "42 points",
+    points: "44 points",
     tiers: [
       {icon:"sword", tier:"LT2"},
       {icon:"axe", tier:"LT3"},
       {icon:"smp", tier:"LT3"},
       {icon:"uhc", tier:"LT3"},
-      {icon:"pot", tier:"HT4"},
+      {icon:"pot", tier:"LT3"},
       {icon:"mace", tier:"-"},
       {icon:"nethop", tier:"-"},                
       {icon:"vanilla", tier:"-"},            
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
+  certifiedrid: {
+    name: "certifiedrid",
+    rank: "5.",
+    title: "Combat Cadet",
+    points: "43 points",
+    tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"}, 
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
+      {icon:"vanilla", tier:"LT3"},
+      {icon:"sword", tier:"HT4"},
+      {icon:"nethop", tier:"HT4"},
+      {icon:"pot", tier:"LT4"},
+      {icon:"smp", tier:"LT4"},             
+      {icon:"mace", tier:"LT4"},                  
+      {icon:"uhc", tier:"HT5"}, 
+      {icon:"axe", tier:"HT5"},  
     ]
   },
   shotss: {
@@ -394,15 +395,15 @@ const players = {
   },
  TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "20.",
+    rank: "16.",
     title: "Combat Novice",
-    points: "15 points",
+    points: "16 points",
     tiers: [
+     {icon:"sword", tier:"LT4"},
      {icon:"pot", tier:"HT5"},
-     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
-     {icon:"axe", tier:"HT5"},
-     {icon:"sword", tier:"HT5"},
+     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},        
      {icon:"mace", tier:"HT5"},
+     {icon:"axe", tier:"LT5"},
      {icon:"vanilla", tier:"LT5"},
      {icon:"smp", tier:"LT5"},          
      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},          
