@@ -173,6 +173,24 @@ const players = {
       {icon:"smp", tier:"HT5"},                             
     ]
   }, 
+ k4qx: {
+    name: "k4qx",
+    rank: "8.",
+    title: "Combat Cadet",
+    points: "32 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT2"},
+      {icon:"nethop", tier:"LT3"},
+      {icon:"pot", tier:"LT3"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},      
+      {icon:"smp", tier:"-"},      
+      {icon:"sword", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Ginoski: {
     name: "Ginoski",
     rank: "8.",
@@ -193,7 +211,7 @@ const players = {
   }, 
   lozk00: {
     name: "lozk00",
-    rank: "8.",
+    rank: "10.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -213,7 +231,7 @@ const players = {
   },
   Jonkler75: {
     name: "Jonkler75",
-    rank: "8.",
+    rank: "11.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -231,7 +249,7 @@ const players = {
   }, 
  KFCmuncher67: {
     name: "KFCmuncher67",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Cadet",
     points: "26 points",
     tiers: [
@@ -249,7 +267,7 @@ const players = {
   },
  ySw1ft: {
     name: "ySw1ft",
-    rank: "12.",
+    rank: "13.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [
@@ -269,7 +287,7 @@ const players = {
  
  Joredium: {
     name: "Joredium",
-    rank: "13.",
+    rank: "14.",
     title: "Combat Cadet",
     points: "22 points",
     tiers: [
@@ -285,24 +303,7 @@ const players = {
       {icon:"mace", tier:"LT5"},       
     ]
   },
-  k4qx: {
-    name: "k4qx",
-    rank: "14.",
-    title: "Combat Cadet",
-    points: "20 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT2"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"sword", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+  
    BartekGaming383: {
     name: "BartekGaming383",
     rank: "15.",
