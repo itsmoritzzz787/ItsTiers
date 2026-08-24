@@ -304,10 +304,27 @@ const players = {
       {icon:"mace", tier:"LT5"},       
     ]
   },
-  
+  TREN: {
+    name: "1TREN",
+    rank: "15.",
+    title: "Combat Novice",
+    points: "19 points",
+    tiers: [   
+      {icon:"nethop", tier:"HT4"},
+      {icon:"sword", tier:"LT4"},
+      {icon:"pot", tier:"LT4"}, 
+      {icon:"smp", tier:"HT5"},
+      {icon:"vanilla", tier:"HT5"}, 
+      {icon:"mace", tier:"HT5"},
+      {icon:"uhc", tier:"-"},                               
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
    BartekGaming383: {
     name: "BartekGaming383",
-    rank: "15.",
+    rank: "16.",
     title: "Combat Novice",
     points: "18 points",
     tiers: [
@@ -323,24 +340,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- TREN: {
-    name: "1TREN",
-    rank: "16.",
-    title: "Combat Novice",
-    points: "17 points",
-    tiers: [   
-      {icon:"nethop", tier:"HT4"},
-      {icon:"sword", tier:"LT4"},
-      {icon:"pot", tier:"LT4"}, 
-      {icon:"vanilla", tier:"HT5"}, 
-      {icon:"mace", tier:"HT5"},
-      {icon:"uhc", tier:"-"},          
-      {icon:"smp", tier:"-"},                
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  Imjett_: {
     name: "Imjett_",
     rank: "17.",
