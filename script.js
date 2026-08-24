@@ -327,9 +327,9 @@ const players = {
     rank: "16.",
     title: "Combat Novice",
     points: "17 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
+    tiers: [   
       {icon:"nethop", tier:"HT4"},
+      {icon:"sword", tier:"LT4"},
       {icon:"pot", tier:"LT4"}, 
       {icon:"vanilla", tier:"HT5"}, 
       {icon:"mace", tier:"HT5"},
