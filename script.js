@@ -168,12 +168,7 @@ const players = {
       {icon:"uhc", tier:"HT5"}, 
       {icon:"axe", tier:"HT5"},  
     ]
-  },
- 
-
- 
- 
-
+  }, 
  SocialRex11: {
     name: "SocialRex11",
     rank: "8.",
@@ -192,7 +187,24 @@ const players = {
       {icon:"smp", tier:"HT5"},                             
     ]
   }, 
- 
+ KFCmuncher67: {
+    name: "KFCmuncher67",
+    rank: "9.",
+    title: "Combat Cadet",
+    points: "32 points",
+    tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"},
+      {icon:"mace", tier:"LT3"},
+      {icon:"axe", tier:"LT3"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"sword", tier:"-"},      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Ginoski: {
     name: "Ginoski",
     rank: "9.",
@@ -213,7 +225,7 @@ const players = {
   }, 
   lozk00: {
     name: "lozk00",
-    rank: "10.",
+    rank: "11.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -249,24 +261,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   }, 
- KFCmuncher67: {
-    name: "KFCmuncher67",
-    rank: "12.",
-    title: "Combat Cadet",
-    points: "26 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"},
-      {icon:"axe", tier:"LT3"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"sword", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  ySw1ft: {
     name: "ySw1ft",
     rank: "13.",
