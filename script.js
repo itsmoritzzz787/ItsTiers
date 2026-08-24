@@ -43,18 +43,18 @@ const players = {
     name: "ItsMoritzzz",
     rank: "1.",
     title: "Combat Specialist",
-    points: "82 points",
+    points: "84 points",
     tiers: [
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"}, 
       {icon:"mace", tier:"LT2"},
       {icon:"vanilla", tier:"HT3"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"},                   
       {icon:"sword", tier:"LT3"},  
+      {icon:"smp", tier:"HT4"},
+      {icon:"axe", tier:"HT4"}, 
       {icon:"nethop", tier:"HT4"},
-      {icon:"uhc", tier:"LT4"},
-      {icon:"smp", tier:"LT4"},     
-      {icon:"pot", tier:"LT4"},
-      {icon:"axe", tier:"LT4"},                                          
+      {icon:"uhc", tier:"LT4"},          
+      {icon:"pot", tier:"LT4"},                                               
     ]
   }, 
   MyNameIsPuma: {
@@ -75,10 +75,29 @@ const players = {
       {icon:"mace", tier:"LT4"},                            
     ]
   },
- 
+ shotss: {
+    name: "4shotss",
+    rank: "3.",
+    title: "Combat Cadet",
+    points: "45 points",
+    tiers: [ 
+      {icon:"sword", tier:"HT3"},
+      {icon:"mace", tier:"LT3"},
+      {icon:"pot", tier:"LT3"},    
+      {icon:"nethop", tier:"HT4"},  
+      {icon:"axe", tier:"LT4"}, 
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
+      {icon:"smp", tier:"LT4"},
+      {icon:"vanilla", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},                                   
+      {icon:"uhc", tier:"HT5"},                  
+      
+      
+    ]
+  },
  McNicho: {
     name: "McNicho",
-    rank: "3.",
+    rank: "4.",
     title: "Combat Cadet",
     points: "44 points",
     tiers: [     
@@ -95,29 +114,10 @@ const players = {
            
     ]
   },
-  shotss: {
-    name: "4shotss",
-    rank: "3.",
-    title: "Combat Cadet",
-    points: "44 points",
-    tiers: [ 
-      {icon:"sword", tier:"HT3"},
-      {icon:"mace", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},    
-      {icon:"nethop", tier:"HT4"},       
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
-      {icon:"smp", tier:"LT4"},
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},
-      {icon:"axe", tier:"HT5"},                               
-      {icon:"uhc", tier:"HT5"},                  
-      
-      
-    ]
-  },
+  
  Eliiiiaass: {
     name: "Eliiiiaass",
-    rank: "3.",
+    rank: "4.",
     title: "Combat Novice",
     points: "44 points",
     tiers: [
