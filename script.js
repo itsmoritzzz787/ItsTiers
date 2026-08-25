@@ -61,16 +61,16 @@ const players = {
     name: "k4qx",
     rank: "2.",
     title: "Combat Specialist",
-    points: "55 points",
+    points: "59 points",
     tiers: [
       {icon:"sword", tier:"LT2"}, 
       {icon:"vanilla", tier:"LT2"},
       {icon:"nethop", tier:"LT3"},
       {icon:"pot", tier:"LT3"},
+      {icon:"axe", tier:"HT4"},
       {icon:"mace", tier:"LT4"}, 
       {icon:"uhc", tier:"-"},     
-      {icon:"smp", tier:"-"},     
-      {icon:"axe", tier:"-"},
+      {icon:"smp", tier:"-"},           
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
