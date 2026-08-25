@@ -281,7 +281,24 @@ const players = {
     ]
   },
 
- 
+  TREN: {
+    name: "1TREN",
+    rank: "14.",
+    title: "Combat Cadet",
+    points: "22 points",
+    tiers: [   
+      {icon:"nethop", tier:"HT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
+      {icon:"sword", tier:"LT4"},
+      {icon:"pot", tier:"LT4"}, 
+      {icon:"smp", tier:"HT5"},
+      {icon:"vanilla", tier:"HT5"}, 
+      {icon:"mace", tier:"HT5"},
+      {icon:"uhc", tier:"-"},                               
+      {icon:"axe", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Joredium: {
     name: "Joredium",
     rank: "14.",
@@ -302,7 +319,7 @@ const players = {
   },
   GhostlyFatih: {
     name: "GhostlyFatih",
-    rank: "15.",
+    rank: "16.",
     title: "Combat Cadet",
     points: "20 points",
     tiers: [
@@ -318,24 +335,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  TREN: {
-    name: "1TREN",
-    rank: "16.",
-    title: "Combat Novice",
-    points: "19 points",
-    tiers: [   
-      {icon:"nethop", tier:"HT4"},
-      {icon:"sword", tier:"LT4"},
-      {icon:"pot", tier:"LT4"}, 
-      {icon:"smp", tier:"HT5"},
-      {icon:"vanilla", tier:"HT5"}, 
-      {icon:"mace", tier:"HT5"},
-      {icon:"uhc", tier:"-"},                               
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
    BartekGaming383: {
     name: "BartekGaming383",
     rank: "17.",
