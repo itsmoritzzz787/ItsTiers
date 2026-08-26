@@ -294,7 +294,7 @@ const players = {
       {icon:"uhc", tier:"HT5"},
       {icon:"vanilla", tier:"LT5"}, 
       {icon:"mace", tier:"LT5"},         
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
