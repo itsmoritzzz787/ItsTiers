@@ -354,8 +354,8 @@ const players = {
       {icon:"mace", tier:"LT5"},       
     ]
   },
- GhostlyFatih: {
-    name: "GhostlyFatih",
+ muhOnCeiling: {
+    name: "muhOnCeiling",
     rank: "18.",
     title: "Combat Cadet",
     points: "20 points",
