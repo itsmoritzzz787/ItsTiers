@@ -170,9 +170,28 @@ const players = {
       {icon:"axe", tier:"HT5"},  
     ]
   },
+  GhostlyFatih: {
+    name: "GhostlyFatih",
+    rank: "8.",
+    title: "Combat Cadet",
+    points: "20 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT2"},
+      {icon:"sword", tier:"LT2"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},            
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
+ 
  k4qx: {
     name: "k4qx",
-    rank: "8.",
+    rank: "9.",
     title: "Combat Cadet",
     points: "39 points",
     tiers: [
@@ -190,7 +209,7 @@ const players = {
   },
  SocialRex11: {
     name: "SocialRex11",
-    rank: "9.",
+    rank: "10.",
     title: "Combat Cadet",
     points: "34 points",
     tiers: [  
@@ -208,7 +227,7 @@ const players = {
   }, 
  KFCmuncher67: {
     name: "KFCmuncher67",
-    rank: "10.",
+    rank: "11.",
     title: "Combat Cadet",
     points: "32 points",
     tiers: [
@@ -226,7 +245,7 @@ const players = {
   },
  Ginoski: {
     name: "Ginoski",
-    rank: "10.",
+    rank: "11.",
     title: "Combat Cadet",
     points: "32 points",
     tiers: [  
@@ -244,7 +263,7 @@ const players = {
   }, 
   lozk00: {
     name: "lozk00",
-    rank: "12.",
+    rank: "13.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -264,7 +283,7 @@ const players = {
   },
   Jonkler75: {
     name: "Jonkler75",
-    rank: "12.",
+    rank: "13.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -282,7 +301,7 @@ const players = {
   }, 
  Gold3n__: {
     name: "Gold3n__",
-    rank: "14.",
+    rank: "15.",
     title: "Combat Cadet",
     points: "28 points",
     tiers: [   
@@ -300,7 +319,7 @@ const players = {
   },
  TREN: {
     name: "1TREN",
-    rank: "15.",
+    rank: "16.",
     title: "Combat Cadet",
     points: "24 points",
     tiers: [   
@@ -318,7 +337,7 @@ const players = {
   },
  ySw1ft: {
     name: "ySw1ft",
-    rank: "16.",
+    rank: "17.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [
@@ -338,7 +357,7 @@ const players = {
   
  Joredium: {
     name: "Joredium",
-    rank: "17.",
+    rank: "18.",
     title: "Combat Cadet",
     points: "22 points",
     tiers: [
@@ -356,7 +375,7 @@ const players = {
   },
  muhOnCeiling: {
     name: "muhOnCeiling",
-    rank: "18.",
+    rank: "19.",
     title: "Combat Cadet",
     points: "20 points",
     tiers: [
@@ -372,28 +391,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  GhostlyFatih: {
-    name: "GhostlyFatih",
-    rank: "18.",
-    title: "Combat Cadet",
-    points: "20 points",
-    tiers: [
-      {icon:"sword", tier:"LT2"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
  
    BartekGaming383: {
     name: "BartekGaming383",
-    rank: "18.",
+    rank: "19.",
     title: "Combat Cadet",
     points: "20 points",
     tiers: [
