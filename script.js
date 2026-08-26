@@ -57,10 +57,27 @@ const players = {
       {icon:"pot", tier:"LT4"},                                               
     ]
   }, 
- 
+ GhostlyFatih: {
+    name: "GhostlyFatih",
+    rank: "2.",
+    title: "Combat Specialist",
+    points: "62 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT2"},
+      {icon:"sword", tier:"LT2"},
+      {icon:"smp", tier:"LT3"},
+      {icon:"pot", tier:"LT3"},      
+      {icon:"mace", tier:"LT3"},
+      {icon:"nethop", tier:"HT4"},
+      {icon:"uhc", tier:"-"},          
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   MyNameIsPuma: {
     name: "MyNameIsPuma",
-    rank: "2.",
+    rank: "3.",
     title: "Combat Specialist",
     points: "51 points",
     tiers: [
@@ -78,7 +95,7 @@ const players = {
   },
  kasnnn: {
     name: "kasnnn",
-    rank: "3.",
+    rank: "4.",
     title: "Combat Specialist",
     points: "50 points",
     tiers: [
@@ -96,7 +113,7 @@ const players = {
   },
  shotss: {
     name: "4shotss",
-    rank: "4.",
+    rank: "5.",
     title: "Combat Cadet",
     points: "45 points",
     tiers: [ 
@@ -116,7 +133,7 @@ const players = {
   },
  McNicho: {
     name: "McNicho",
-    rank: "4.",
+    rank: "5.",
     title: "Combat Cadet",
     points: "45 points",
     tiers: [     
@@ -136,7 +153,7 @@ const players = {
   
  Eliiiiaass: {
     name: "Eliiiiaass",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Novice",
     points: "44 points",
     tiers: [
@@ -154,7 +171,7 @@ const players = {
   },
   certifiedrid: {
     name: "certifiedrid",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Cadet",
     points: "43 points",
     tiers: [
@@ -170,24 +187,7 @@ const players = {
       {icon:"axe", tier:"HT5"},  
     ]
   },
-  GhostlyFatih: {
-    name: "GhostlyFatih",
-    rank: "8.",
-    title: "Combat Cadet",
-    points: "20 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT2"},
-      {icon:"sword", tier:"LT2"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+  
  
  k4qx: {
     name: "k4qx",
