@@ -79,7 +79,7 @@ const players = {
     name: "kasnnn",
     rank: "3.",
     title: "Combat Specialist",
-    points: "50 points",
+    points: "56 points",
     tiers: [
       {icon:"sword", tier:"HT3"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
