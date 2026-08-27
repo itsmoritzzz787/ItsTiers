@@ -429,8 +429,8 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- MrMedoMC: {
-    name: "MrMedoMC",
+ MrmedoMC: {
+    name: "MrmedoMC",
     rank: "21.",
     title: "Combat Novice",
     points: "16 points",
