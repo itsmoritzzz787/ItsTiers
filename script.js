@@ -75,9 +75,27 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+  kasnnn: {
+    name: "kasnnn",
+    rank: "3.",
+    title: "Combat Specialist",
+    points: "50 points",
+    tiers: [
+      {icon:"sword", tier:"HT3"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
+      {icon:"uhc", tier:"LT3"},      
+      {icon:"nethop", tier:"LT3"},
+      {icon:"smp", tier:"LT3"},
+      {icon:"pot", tier:"LT3"},
+      {icon:"vanilla", tier:"LT3"},      
+      {icon:"axe", tier:"LT3"},
+      {icon:"mace", tier:"HT4"},      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   MyNameIsPuma: {
     name: "MyNameIsPuma",
-    rank: "3.",
+    rank: "4.",
     title: "Combat Specialist",
     points: "51 points",
     tiers: [
@@ -93,24 +111,7 @@ const players = {
       {icon:"mace", tier:"LT4"},                            
     ]
   },
- kasnnn: {
-    name: "kasnnn",
-    rank: "4.",
-    title: "Combat Specialist",
-    points: "50 points",
-    tiers: [
-      {icon:"sword", tier:"HT3"},
-      {icon:"uhc", tier:"LT3"},      
-      {icon:"nethop", tier:"LT3"},
-      {icon:"smp", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},
-      {icon:"vanilla", tier:"LT3"},      
-      {icon:"axe", tier:"LT3"},
-      {icon:"mace", tier:"HT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+
  shotss: {
     name: "4shotss",
     rank: "5.",
