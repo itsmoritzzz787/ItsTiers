@@ -174,10 +174,10 @@ const players = {
     rank: "8.",
     title: "Combat Cadet",
     points: "43 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT3"}, 
+    tiers: [   
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
       {icon:"vanilla", tier:"LT3"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
       {icon:"sword", tier:"HT4"},
       {icon:"nethop", tier:"HT4"},
       {icon:"pot", tier:"LT4"},
@@ -418,9 +418,9 @@ const players = {
     points: "16 points",
     tiers: [
       {icon:"vanilla", tier:"LT3"},
-      {icon:"uhc", tier:"HT4"},
-      {icon:"sword", tier:"HT4"},
-      {icon:"mace", tier:"HT5"},           
+      {icon:"uhc", tier:"HT4"},      
+      {icon:"mace", tier:"HT5"}, 
+      {icon:"sword", tier:"LT5"},
       {icon:"nethop", tier:"-"},
       {icon:"smp", tier:"-"},
       {icon:"pot", tier:"-"},            
