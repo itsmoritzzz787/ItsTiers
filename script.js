@@ -119,7 +119,7 @@ const players = {
     title: "Combat Cadet",
     points: "45 points",
     tiers: [ 
-      {icon:"sword", tier:"HT3"},
+      {icon:"sword", tier:"LT3"},
       {icon:"mace", tier:"LT3"},
       {icon:"pot", tier:"LT3"},    
       {icon:"nethop", tier:"HT4"},  
