@@ -851,8 +851,8 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  IgoonToEc: {
-    name: "IgoonToEc",
+  ______OO______: {
+    name: "______OO______",
     rank: "44.",
     title: "Rookie",
     points: "6 points",
