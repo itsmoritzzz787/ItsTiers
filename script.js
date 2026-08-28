@@ -121,11 +121,11 @@ const players = {
     tiers: [ 
       {icon:"sword", tier:"LT3"},
       {icon:"mace", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},    
+      {icon:"pot", tier:"LT3"},   
+      {icon:"smp", tier:"HT4"},
       {icon:"nethop", tier:"HT4"},  
       {icon:"axe", tier:"LT4"}, 
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},
-      {icon:"smp", tier:"LT4"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},      
       {icon:"vanilla", tier:"LT4"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},                                   
       {icon:"uhc", tier:"HT5"},                  
@@ -135,7 +135,7 @@ const players = {
   },
  McNicho: {
     name: "McNicho",
-    rank: "5.",
+    rank: "6.",
     title: "Combat Cadet",
     points: "45 points",
     tiers: [     
