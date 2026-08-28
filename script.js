@@ -519,8 +519,8 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  SnxwMC: {
-    name: "SnxwMC",
+  ItzSncw: {
+    name: "ItzSncw",
     rank: "24.",
     title: "Combat Novice",
     points: "16 points",
