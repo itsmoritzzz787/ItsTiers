@@ -43,18 +43,18 @@ const players = {
     name: "ItsMoritzzz",
     rank: "1.",
     title: "Combat Specialist",
-    points: "84 points",
+    points: "87 points",
     tiers: [
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"}, 
       {icon:"mace", tier:"LT2"},
       {icon:"vanilla", tier:"HT3"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"},                   
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"},
+      {icon:"pot", tier:"LT3"}, 
       {icon:"sword", tier:"LT3"},  
       {icon:"smp", tier:"HT4"},
       {icon:"axe", tier:"HT4"}, 
       {icon:"nethop", tier:"HT4"},
-      {icon:"uhc", tier:"LT4"},          
-      {icon:"pot", tier:"LT4"},                                               
+      {icon:"uhc", tier:"LT4"},                                                              
     ]
   }, 
  
@@ -80,16 +80,16 @@ const players = {
     name: "ImMythical",
     rank: "3.",
     title: "Combat Cadet",
-    points: "52 points",
+    points: "56 points",
     tiers: [
+      {icon:"mace", tier:"HT3"}, 
       {icon:"sword", tier:"HT3"},     
       {icon:"uhc", tier:"LT3"},      
       {icon:"nethop", tier:"LT3"},
       {icon:"smp", tier:"LT3"},
       {icon:"pot", tier:"LT3"},
       {icon:"vanilla", tier:"LT3"},      
-      {icon:"axe", tier:"LT3"},
-      {icon:"mace", tier:"LT3"}, 
+      {icon:"axe", tier:"LT3"},     
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
