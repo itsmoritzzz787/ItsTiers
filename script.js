@@ -354,6 +354,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ TwyCole: {
+    name: "TwyCole",
+    rank: "18.",
+    title: "Combat Cadet",
+    points: "24 points",
+    tiers: [
+      {icon:"sword", tier:"LT2"},
+      {icon:"nethop", tier:"HT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},      
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  TREN: {
     name: "1TREN",
     rank: "18.",
@@ -374,7 +392,7 @@ const players = {
   },
  ySw1ft: {
     name: "ySw1ft",
-    rank: "19.",
+    rank: "20.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [
@@ -394,7 +412,7 @@ const players = {
   
  Joredium: {
     name: "Joredium",
-    rank: "20.",
+    rank: "21.",
     title: "Combat Cadet",
     points: "22 points",
     tiers: [
@@ -412,7 +430,7 @@ const players = {
   },
  muhOnCeiling: {
     name: "muhOnCeiling",
-    rank: "21.",
+    rank: "22.",
     title: "Combat Cadet",
     points: "20 points",
     tiers: [
@@ -428,27 +446,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  TwyCole: {
-    name: "TwyCole",
-    rank: "21.",
-    title: "Combat Cadet",
-    points: "20 points",
-    tiers: [
-      {icon:"sword", tier:"LT2"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+  
    BartekGaming383: {
     name: "BartekGaming383",
-    rank: "21.",
+    rank: "22.",
     title: "Combat Cadet",
     points: "20 points",
     tiers: [
