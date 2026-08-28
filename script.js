@@ -76,9 +76,27 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ ImMythical: {
+    name: "ImMythical",
+    rank: "3.",
+    title: "Combat Cadet",
+    points: "52 points",
+    tiers: [
+      {icon:"sword", tier:"HT3"},     
+      {icon:"uhc", tier:"LT3"},      
+      {icon:"nethop", tier:"LT3"},
+      {icon:"smp", tier:"LT3"},
+      {icon:"pot", tier:"LT3"},
+      {icon:"vanilla", tier:"LT3"},      
+      {icon:"axe", tier:"LT3"},
+      {icon:"mace", tier:"LT3"}, 
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   MyNameIsPuma: {
     name: "MyNameIsPuma",
-    rank: "3.",
+    rank: "4.",
     title: "Combat Specialist",
     points: "51 points",
     tiers: [
@@ -94,24 +112,7 @@ const players = {
       {icon:"mace", tier:"LT4"},                            
     ]
   },
- ImMythical: {
-    name: "ImMythical",
-    rank: "4.",
-    title: "Combat Cadet",
-    points: "48 points",
-    tiers: [
-      {icon:"sword", tier:"-"},     
-      {icon:"uhc", tier:"LT3"},      
-      {icon:"nethop", tier:"LT3"},
-      {icon:"smp", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},
-      {icon:"vanilla", tier:"LT3"},      
-      {icon:"axe", tier:"LT3"},
-      {icon:"mace", tier:"LT3"}, 
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  shotss: {
     name: "4shotss",
     rank: "5.",
