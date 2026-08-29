@@ -280,9 +280,27 @@ const players = {
       {icon:"smp", tier:"HT5"},                             
     ]
   }, 
+ Gold3n__: {
+    name: "Gold3n__",
+    rank: "11.",
+    title: "Combat Cadet",
+    points: "34 points",
+    tiers: [   
+      {icon:"sword", tier:"HT3"},
+      {icon:"nethop", tier:"LT3"},
+      {icon:"smp", tier:"LT3"},      
+      {icon:"pot", tier:"LT3"},       
+      {icon:"axe", tier:"HT5"},      
+      {icon:"uhc", tier:"HT5"},
+      {icon:"vanilla", tier:"LT5"}, 
+      {icon:"mace", tier:"LT5"},         
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  KFCmuncher67: {
     name: "KFCmuncher67",
-    rank: "14.",
+    rank: "15.",
     title: "Combat Cadet",
     points: "32 points",
     tiers: [
@@ -300,7 +318,7 @@ const players = {
   },
  Ginoski: {
     name: "Ginoski",
-    rank: "14.",
+    rank: "15.",
     title: "Combat Cadet",
     points: "32 points",
     tiers: [  
@@ -318,7 +336,7 @@ const players = {
   }, 
   lozk00: {
     name: "lozk00",
-    rank: "16.",
+    rank: "17.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -339,7 +357,7 @@ const players = {
   
   EvilWcooks: {
     name: "EvilWcooks",
-    rank: "17.",
+    rank: "18.",
     title: "Combat Cadet",
     points: "30 points",
     tiers: [   
@@ -356,24 +374,7 @@ const players = {
     ]
   },
 
- Gold3n__: {
-    name: "Gold3n__",
-    rank: "18.",
-    title: "Combat Cadet",
-    points: "28 points",
-    tiers: [   
-      {icon:"nethop", tier:"LT3"},
-      {icon:"smp", tier:"LT3"},      
-      {icon:"pot", tier:"LT3"}, 
-      {icon:"sword", tier:"HT4"},
-      {icon:"axe", tier:"HT5"},      
-      {icon:"uhc", tier:"HT5"},
-      {icon:"vanilla", tier:"LT5"}, 
-      {icon:"mace", tier:"LT5"},         
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  
  TREN: {
     name: "1TREN",
