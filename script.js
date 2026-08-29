@@ -1016,6 +1016,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ ch1lln: {
+    name: "ch1lln",
+    rank: "51.",
+    title: "Rookie",
+    points: "4 points",
+    tiers: [
+      {icon:"smp", tier:"HT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"sword", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"mace", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  xflxpsy: {
     name: "xflxpsy",
     rank: "51.",
@@ -1055,7 +1073,7 @@ const players = {
  
  M4rkiski: {
     name: "M4rkiski",
-    rank: "56.",
+    rank: "57.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -1074,7 +1092,7 @@ const players = {
  
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "56.",
+    rank: "57.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -1092,7 +1110,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "58.",
+    rank: "59.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -1110,7 +1128,7 @@ const players = {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "58.",
+    rank: "59.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -1128,7 +1146,7 @@ const players = {
   },
   nuuhx: {
     name: "nuuhx",
-    rank: "60.",
+    rank: "61.",
     title: "Rookie",
     points: "1 points",
     tiers: [
