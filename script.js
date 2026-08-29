@@ -226,6 +226,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+  TwyCole: {
+    name: "TwyCole",
+    rank: "11.",
+    title: "Combat Cadet",
+    points: "34 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT3"}, 
+      {icon:"sword", tier:"LT2"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
+      {icon:"nethop", tier:"HT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},      
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},           
+      {icon:"axe", tier:"-"},      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Jonkler75: {
     name: "Jonkler75",
     rank: "11.",
@@ -264,7 +282,7 @@ const players = {
   }, 
  KFCmuncher67: {
     name: "KFCmuncher67",
-    rank: "13.",
+    rank: "14.",
     title: "Combat Cadet",
     points: "32 points",
     tiers: [
@@ -282,7 +300,7 @@ const players = {
   },
  Ginoski: {
     name: "Ginoski",
-    rank: "13.",
+    rank: "14.",
     title: "Combat Cadet",
     points: "32 points",
     tiers: [  
@@ -300,7 +318,7 @@ const players = {
   }, 
   lozk00: {
     name: "lozk00",
-    rank: "15.",
+    rank: "16.",
     title: "Combat Cadet",
     points: "31 points",
     tiers: [
@@ -321,7 +339,7 @@ const players = {
   
   EvilWcooks: {
     name: "EvilWcooks",
-    rank: "16.",
+    rank: "17.",
     title: "Combat Cadet",
     points: "30 points",
     tiers: [   
@@ -337,27 +355,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- TwyCole: {
-    name: "TwyCole",
-    rank: "17.",
-    title: "Combat Cadet",
-    points: "28 points",
-    tiers: [
-      {icon:"sword", tier:"LT2"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},      
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+
  Gold3n__: {
     name: "Gold3n__",
-    rank: "17.",
+    rank: "18.",
     title: "Combat Cadet",
     points: "28 points",
     tiers: [   
