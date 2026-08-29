@@ -337,6 +337,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ TwyCole: {
+    name: "TwyCole",
+    rank: "17.",
+    title: "Combat Cadet",
+    points: "28 points",
+    tiers: [
+      {icon:"sword", tier:"LT2"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
+      {icon:"nethop", tier:"HT4"},
+      {icon:"uhc", tier:"-"},
+      {icon:"mace", tier:"-"},      
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},      
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Gold3n__: {
     name: "Gold3n__",
     rank: "17.",
@@ -355,27 +373,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- TwyCole: {
-    name: "TwyCole",
-    rank: "18.",
-    title: "Combat Cadet",
-    points: "24 points",
-    tiers: [
-      {icon:"sword", tier:"LT2"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},      
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  TREN: {
     name: "1TREN",
-    rank: "18.",
+    rank: "19.",
     title: "Combat Cadet",
     points: "24 points",
     tiers: [   
