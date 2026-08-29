@@ -493,7 +493,7 @@ const players = {
     title: "Combat Novice",
     points: "16 points",
     tiers: [
-      {icon:"vanilla", tier:"LT3"},      
+      {icon:"vanilla", tier:"HT4"},      
       {icon:"sword", tier:"HT5"},
       {icon:"mace", tier:"HT5"},
       {icon:"axe", tier:"LT5"},
@@ -674,7 +674,24 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  
+  Wizo_X_extra: {
+    name: "Wizo_X_extra",
+    rank: "34.",
+    title: "Rookie",
+    points: "10 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT4"},
+      {icon:"mace", tier:"LT4"},
+      {icon:"axe", tier:"HT5"},
+      {icon:"uhc", tier:"HT5"},   
+      {icon:"sword", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},                 
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  FemboyCebulamen: {
     name: "FemboyCebulamen",
     rank: "34.",
@@ -731,7 +748,7 @@ const players = {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "38.",
+    rank: "39.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -749,7 +766,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "38.",
+    rank: "398.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -765,27 +782,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },  
- Wizo_X_extra: {
-    name: "Wizo_X_extra",
-    rank: "409.",
-    title: "Rookie",
-    points: "5 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"mace", tier:"LT4"},
-      {icon:"uhc", tier:"HT5"},   
-      {icon:"sword", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   KoksikSzef: {
     name: "KoksikSzef",
-    rank: "40.",
+    rank: "41.",
     title: "Rookie",
     points: "8 points",
     tiers: [
