@@ -80,7 +80,7 @@ const players = {
     name: "ImMythical",
     rank: "3.",
     title: "Combat Specialist",
-    points: "56 points",
+    points: "62 points",
     tiers: [
       {icon:"mace", tier:"HT3"}, 
       {icon:"sword", tier:"HT3"},     
@@ -90,7 +90,7 @@ const players = {
       {icon:"pot", tier:"LT3"},
       {icon:"vanilla", tier:"LT3"},      
       {icon:"axe", tier:"LT3"},     
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
