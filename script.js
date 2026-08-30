@@ -469,8 +469,8 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- muhOnCeiling: {
-    name: "muhOnCeiling",
+ ImRedlin: {
+    name: "ImRedlin",
     rank: "24.",
     title: "Combat Novice",
     points: "19 points",
