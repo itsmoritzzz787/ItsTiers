@@ -226,9 +226,27 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+  KFCmuncher67: {
+    name: "KFCmuncher67",
+    rank: "11.",
+    title: "Combat Cadet",
+    points: "38 points",
+    tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"},
+      {icon:"sword", tier:"LT3"}, 
+      {icon:"mace", tier:"LT3"},
+      {icon:"axe", tier:"LT3"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},               
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   TwyCole: {
     name: "TwyCole",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Cadet",
     points: "34 points",
     tiers: [      
@@ -246,7 +264,7 @@ const players = {
   },
  Jonkler75: {
     name: "Jonkler75",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Cadet",
     points: "34 points",
     tiers: [
@@ -264,7 +282,7 @@ const players = {
   }, 
  SocialRex11: {
     name: "SocialRex11",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Cadet",
     points: "34 points",
     tiers: [  
@@ -282,7 +300,7 @@ const players = {
   }, 
  Gold3n__: {
     name: "Gold3n__",
-    rank: "11.",
+    rank: "12.",
     title: "Combat Cadet",
     points: "34 points",
     tiers: [   
@@ -298,27 +316,10 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- KFCmuncher67: {
-    name: "KFCmuncher67",
-    rank: "15.",
-    title: "Combat Cadet",
-    points: "32 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"},
-      {icon:"mace", tier:"LT3"},
-      {icon:"axe", tier:"LT3"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"sword", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+
  Ginoski: {
     name: "Ginoski",
-    rank: "15.",
+    rank: "16.",
     title: "Combat Cadet",
     points: "32 points",
     tiers: [  
