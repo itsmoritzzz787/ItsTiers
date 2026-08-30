@@ -487,9 +487,27 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ _jumpingbean_: {
+    name: "_jumpingbean_",
+    rank: "25.",
+    title: "Combat Novice",
+    points: "18 points",
+    tiers: [
+      {icon:"smp", tier:"LT3"},      
+      {icon:"sword", tier:"LT3"},
+      {icon:"mace", tier:"LT3"},  
+      {icon:"uhc", tier:"-"},
+      {icon:"nethop", tier:"-"},
+      {icon:"pot", tier:"-"},
+      {icon:"vanilla", tier:"-"},      
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  Imjett_: {
     name: "Imjett_",
-    rank: "25.",
+    rank: "26.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -507,7 +525,7 @@ const players = {
   },
  MrmedoMC: {
     name: "MrmedoMC",
-    rank: "25.",
+    rank: "26.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -525,7 +543,7 @@ const players = {
   },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "25.",
+    rank: "26.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -543,7 +561,7 @@ const players = {
   },
   ItzSncw: {
     name: "ItzSncw",
-    rank: "25.",
+    rank: "26.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -561,7 +579,7 @@ const players = {
   },
  TheCronos_YT: {
     name: "TheCronos_YT",
-    rank: "25.",
+    rank: "26.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -581,7 +599,7 @@ const players = {
   },
   emielie14: {
     name: "emielie14",
-    rank: "30.",
+    rank: "31.",
     title: "Combat Novice",
     points: "15 points",
     tiers: [
@@ -600,7 +618,7 @@ const players = {
   },
   SigsAhoy: {
     name: "SigsAhoy",
-    rank: "31.",
+    rank: "32.",
     title: "Combat Novice",
     points: "14 points",
     tiers: [
@@ -618,7 +636,7 @@ const players = {
   },
  zNixls_: {
     name: "zNixls_",
-    rank: "31.",
+    rank: "32.",
     title: "Combat Novice",
     points: "14 points",
     tiers: [
@@ -636,7 +654,7 @@ const players = {
   },
   Epicfaik: {
     name: "Epicfaik",
-    rank: "33.",
+    rank: "34.",
     title: "Combat Novice",
     points: "13 points",
     tiers: [
@@ -655,7 +673,7 @@ const players = {
  
  Meloy_: {
     name: "Meloy_",
-    rank: "34.",
+    rank: "35.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -674,7 +692,7 @@ const players = {
  
   Lloyd_The_M: {
     name: "Lloyd_The_M",
-    rank: "34.",
+    rank: "35.",
     title: "Combat Novice",
     points: "12 points",
     tiers: [
@@ -693,7 +711,7 @@ const players = {
  
  Sn00wies: {
     name: "Sn00wies",
-    rank: "36.",
+    rank: "37.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -711,7 +729,7 @@ const players = {
   },
   Wizo_X_extra: {
     name: "Wizo_X_extra",
-    rank: "36.",
+    rank: "37.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -729,7 +747,7 @@ const players = {
   },
  FemboyCebulamen: {
     name: "FemboyCebulamen",
-    rank: "36.",
+    rank: "37.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -747,7 +765,7 @@ const players = {
   },
   VampyWolf: {
     name: "VampyWolf",
-    rank: "36.",
+    rank: "37.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -765,7 +783,7 @@ const players = {
   },    
   McFaBaZaaRoh1MB: {
     name: "McFaBaZaaRoh1MB",
-    rank: "36.",
+    rank: "37.",
     title: "Combat Novice",
     points: "10 points",
     tiers: [
@@ -783,7 +801,7 @@ const players = {
   },
  swnxzx: {
     name: "swnxzx",
-    rank: "41.",
+    rank: "42.",
     title: "Rookie",
     points: "9 points",
     tiers: [         
@@ -801,7 +819,7 @@ const players = {
   },
   DieElfeFX: {
     name: "DieElfeFX",
-    rank: "41.",
+    rank: "42.",
     title: "Rookie",
     points: "9 points",
     tiers: [
@@ -820,7 +838,7 @@ const players = {
  
   KoksikSzef: {
     name: "KoksikSzef",
-    rank: "43.",
+    rank: "44.",
     title: "Rookie",
     points: "8 points",
     tiers: [
@@ -838,7 +856,7 @@ const players = {
   },
  Sm1targusPrimus: {
     name: "Sm1targusPrimus",
-    rank: "44.",
+    rank: "45.",
     title: "Rookie",
     points: "7 points",
     tiers: [
@@ -856,7 +874,7 @@ const players = {
   },
   Fr0gified: {
     name: "Fr0gified",
-    rank: "44.",
+    rank: "45.",
     title: "Rookie",
     points: "7 points",
     tiers: [
@@ -874,7 +892,7 @@ const players = {
   },
    zeno_HT5: {
     name: "zeno_HT5",
-    rank: "44.",
+    rank: "45.",
     title: "Rookie",
     points: "7 points",
     tiers: [
@@ -892,7 +910,7 @@ const players = {
   },
  bombertobi: {
     name: "bombertobi",
-    rank: "47.",
+    rank: "48.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -910,7 +928,7 @@ const players = {
   },
   ______OO______: {
     name: "______OO______",
-    rank: "47.",
+    rank: "48.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -928,7 +946,7 @@ const players = {
   },
  ytgabereal: {
     name: "ytgabereal",
-    rank: "47.",
+    rank: "48.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -946,7 +964,7 @@ const players = {
   },
   PVPSnapper: {
     name: "PVPSnapper",
-    rank: "47.",
+    rank: "48.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -964,7 +982,7 @@ const players = {
   },
  Elias117347: {
     name: "Elias117347",
-    rank: "47.",
+    rank: "48.",
     title: "Rookie",
     points: "6 points",
     tiers: [
@@ -982,7 +1000,7 @@ const players = {
   },
   Spooky1904: {
     name: "Spooky1904",
-    rank: "52.",
+    rank: "53.",
     title: "Rookie",
     points: "5 points",
     tiers: [
@@ -1001,7 +1019,7 @@ const players = {
  
  SkinPunktexe: {
     name: "SkinPunktexe",
-    rank: "53.",
+    rank: "54.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -1019,7 +1037,7 @@ const players = {
   },
  pawkitty: {
     name: "pawkitty",
-    rank: "53.",
+    rank: "54.",
     title: "Rookie",
     points: "4 points",
     tiers: [      
@@ -1038,7 +1056,7 @@ const players = {
   
  SolarPleasant: {
     name: "SolarPleasant",
-    rank: "53.",
+    rank: "54.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -1056,7 +1074,7 @@ const players = {
   },
  ch1lln: {
     name: "ch1lln",
-    rank: "53.",
+    rank: "54.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -1074,7 +1092,7 @@ const players = {
   },
  xflxpsy: {
     name: "xflxpsy",
-    rank: "53.",
+    rank: "54.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -1092,7 +1110,7 @@ const players = {
   },
   _DasEntchen_: {
     name: "_DasEntchen_",
-    rank: "53.",
+    rank: "54.",
     title: "Rookie",
     points: "4 points",
     tiers: [
@@ -1111,7 +1129,7 @@ const players = {
  
  M4rkiski: {
     name: "M4rkiski",
-    rank: "59.",
+    rank: "60.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -1130,7 +1148,7 @@ const players = {
  
  FrozenBlack: {
     name: "FrozenBlack",
-    rank: "59.",
+    rank: "60.",
     title: "Rookie",
     points: "3 points",
     tiers: [
@@ -1148,7 +1166,7 @@ const players = {
   },
   hallo663: {
     name: "hallo663",
-    rank: "61.",
+    rank: "62.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -1166,7 +1184,7 @@ const players = {
   },
    ShieldlessStray: {
     name: "ShieldlessStray",
-    rank: "61.",
+    rank: "62.",
     title: "Rookie",
     points: "2 points",
     tiers: [
@@ -1184,7 +1202,7 @@ const players = {
   },
   nuuhx: {
     name: "nuuhx",
-    rank: "63.",
+    rank: "64.",
     title: "Rookie",
     points: "1 points",
     tiers: [
