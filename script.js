@@ -189,6 +189,24 @@ const players = {
       {icon:"axe", tier:"HT5"},  
     ]
   },
+ KFCmuncher67: {
+    name: "KFCmuncher67",
+    rank: "9.",
+    title: "Combat Cadet",
+    points: "42 points",
+    tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"},
+      {icon:"sword", tier:"LT3"}, 
+      {icon:"mace", tier:"LT3"},
+      {icon:"axe", tier:"LT3"},
+      {icon:"vanilla", tier:"HT4"},
+      {icon:"uhc", tier:"-"},      
+      {icon:"nethop", tier:"-"},
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},                     
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
   GhostlyFatih: {
     name: "GhostlyFatih",
     rank: "9.",
@@ -210,7 +228,7 @@ const players = {
  
  k4qx: {
     name: "k4qx",
-    rank: "10.",
+    rank: "11.",
     title: "Combat Cadet",
     points: "39 points",
     tiers: [
@@ -226,24 +244,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
-  KFCmuncher67: {
-    name: "KFCmuncher67",
-    rank: "11.",
-    title: "Combat Cadet",
-    points: "38 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"},
-      {icon:"sword", tier:"LT3"}, 
-      {icon:"mace", tier:"LT3"},
-      {icon:"axe", tier:"LT3"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},               
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+  
   TwyCole: {
     name: "TwyCole",
     rank: "12.",
@@ -375,11 +376,28 @@ const players = {
     ]
   },
 
- 
+ ImRedlin: {
+    name: "ImRedlin",
+    rank: "19.",
+    title: "Combat Cadet",
+    points: "25 points",
+    tiers: [
+      {icon:"vanilla", tier:"LT3"}, 
+      {icon:"nethop", tier:"LT3"},
+      {icon:"uhc", tier:"LT3"},
+      {icon:"sword", tier:"HT4"},
+      {icon:"mace", tier:"LT4"},      
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},           
+      {icon:"axe", tier:"-"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  
  TREN: {
     name: "1TREN",
-    rank: "19.",
+    rank: "20.",
     title: "Combat Cadet",
     points: "24 points",
     tiers: [   
@@ -397,7 +415,7 @@ const players = {
   },
  ySw1ft: {
     name: "ySw1ft",
-    rank: "20.",
+    rank: "21.",
     title: "Combat Cadet",
     points: "23 points",
     tiers: [
@@ -417,7 +435,7 @@ const players = {
   
  Joredium: {
     name: "Joredium",
-    rank: "21.",
+    rank: "22.",
     title: "Combat Cadet",
     points: "22 points",
     tiers: [
@@ -435,7 +453,7 @@ const players = {
   },
  muhOnCeiling: {
     name: "muhOnCeiling",
-    rank: "22.",
+    rank: "23.",
     title: "Combat Cadet",
     points: "20 points",
     tiers: [
@@ -454,7 +472,7 @@ const players = {
   
    BartekGaming383: {
     name: "BartekGaming383",
-    rank: "22.",
+    rank: "23.",
     title: "Combat Cadet",
     points: "20 points",
     tiers: [
@@ -470,24 +488,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- ImRedlin: {
-    name: "ImRedlin",
-    rank: "24.",
-    title: "Combat Novice",
-    points: "19 points",
-    tiers: [
-      {icon:"nethop", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},
-      {icon:"sword", tier:"HT4"},
-      {icon:"mace", tier:"LT4"},      
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
  _jumpingbean_: {
     name: "_jumpingbean_",
     rank: "25.",
