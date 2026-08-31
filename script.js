@@ -246,15 +246,15 @@ const players = {
   },
    Ginoski: {
     name: "Ginoski",
-    rank: "12.",
+    rank: "11.",
     title: "Combat Cadet",
-    points: "36 points",
+    points: "39 points",
     tiers: [  
       {icon:"vanilla", tier:"LT3"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
       {icon:"mace", tier:"LT3"}, 
-      {icon:"sword", tier:"LT4"}, 
+      {icon:"sword", tier:"LT3"}, 
       {icon:"uhc", tier:"LT4"},
       {icon:"axe", tier:"HT5"},
       {icon:"pot", tier:"HT5"},                
