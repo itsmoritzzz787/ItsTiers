@@ -41,7 +41,7 @@ const players = {
 
   ItsMoritzzz: {
     name: "ItsMoritzzz",
-    rank: "1.",
+    rank: "2.",
     title: "Combat Specialist",
     points: "88 points",
     tiers: [
@@ -60,9 +60,9 @@ const players = {
  
   kasnnn: {
     name: "kasnnn",
-    rank: "2.",
+    rank: "1.",
     title: "Combat Specialist",
-    points: "84 points",
+    points: "90 points",
     tiers: [
       {icon:"sword", tier:"LT2"},
       {icon:"pot", tier:"HT3"},
@@ -73,7 +73,7 @@ const players = {
       {icon:"vanilla", tier:"LT3"},      
       {icon:"axe", tier:"LT3"},
       {icon:"mace", tier:"LT3"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"}
     ]
   },
  ImMythical: {
