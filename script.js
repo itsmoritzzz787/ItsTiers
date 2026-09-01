@@ -124,7 +124,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"}, 
       {icon:"sword", tier:"HT4"},              
       {icon:"smp", tier:"LT4"},
-      {icon:"pot", tier:"HT5"},
+      {icon:"pot", tier:"LT4"},
       {icon:"nethop", tier:"HT5"},
       {icon:"uhc", tier:"HT5"},      
       {icon:"axe", tier:"HT5"},
@@ -448,9 +448,27 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ BartekGaming383: {
+    name: "BartekGaming383",
+    rank: "23.",
+    title: "Combat Cadet",
+    points: "21 points",
+    tiers: [
+      {icon:"sword", tier:"LT3"},
+      {icon:"mace", tier:"HT4"},
+      {icon:"nethop", tier:"LT4"},
+      {icon:"pot", tier:"LT4"},
+      {icon:"smp", tier:"HT5"}, 
+      {icon:"vanilla", tier:"LT5"},
+      {icon:"uhc", tier:"LT5"}, 
+      {icon:"axe", tier:"LT5"},                                
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  muhOnCeiling: {
     name: "muhOnCeiling",
-    rank: "23.",
+    rank: "24.",
     title: "Combat Cadet",
     points: "20 points",
     tiers: [
@@ -462,25 +480,6 @@ const players = {
       {icon:"pot", tier:"-"},
       {icon:"vanilla", tier:"-"},      
       {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  
-   BartekGaming383: {
-    name: "BartekGaming383",
-    rank: "23.",
-    title: "Combat Cadet",
-    points: "20 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
-      {icon:"mace", tier:"HT4"},
-      {icon:"nethop", tier:"LT4"},
-      {icon:"pot", tier:"HT5"},
-      {icon:"smp", tier:"HT5"}, 
-      {icon:"vanilla", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"}, 
-      {icon:"axe", tier:"LT5"},                                
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
