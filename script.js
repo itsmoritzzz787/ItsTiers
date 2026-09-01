@@ -779,8 +779,8 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },    
-  McFaBaZaaRoh1MB: {
-    name: "McFaBaZaaRoh1MB",
+  ItsFluffyTime14: {
+    name: "ItsFluffyTime14",
     rank: "37.",
     title: "Combat Novice",
     points: "10 points",
