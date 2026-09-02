@@ -43,10 +43,11 @@ const players = {
     name: "ItsMoritzzz",
     rank: "1.",
     title: "Combat Specialist",
-    points: "92 points",
+    points: "98 points",
     tiers: [
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"}, 
       {icon:"mace", tier:"LT2"},   
+      {icon:"nethop", tier:"HT3"},
       {icon:"sword", tier:"HT3"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"},
       {icon:"vanilla", tier:"LT3"},
@@ -54,7 +55,7 @@ const players = {
       {icon:"uhc", tier:"HT4"},
       {icon:"smp", tier:"HT4"},
       {icon:"axe", tier:"HT4"}, 
-      {icon:"nethop", tier:"HT4"},                                                                    
+                                                                          
     ]
   }, 
  
@@ -131,9 +132,27 @@ const players = {
            
     ]
   },
+ KFCmuncher67: {
+    name: "KFCmuncher67",
+    rank: "5.",
+    title: "Combat Cadet",
+    points: "48 points",
+    tiers: [
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"},
+      {icon:"nethop", tier:"LT3"},
+      {icon:"sword", tier:"LT3"}, 
+      {icon:"mace", tier:"LT3"},
+      {icon:"axe", tier:"LT3"},
+      {icon:"vanilla", tier:"HT4"},
+      {icon:"uhc", tier:"-"},           
+      {icon:"smp", tier:"-"},
+      {icon:"pot", tier:"-"},                     
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
+    ]
+  },
  shotss: {
     name: "4shotss",
-    rank: "6.",
+    rank: "7.",
     title: "Combat Cadet",
     points: "46 points",
     tiers: [ 
@@ -155,7 +174,7 @@ const players = {
   
  Eliiiiaass: {
     name: "Eliiiiaass",
-    rank: "7.",
+    rank: "8.",
     title: "Combat Novice",
     points: "44 points",
     tiers: [    
@@ -173,7 +192,7 @@ const players = {
   },
   certifiedrid: {
     name: "certifiedrid",
-    rank: "8.",
+    rank: "9.",
     title: "Combat Cadet",
     points: "43 points",
     tiers: [   
@@ -189,27 +208,10 @@ const players = {
       {icon:"axe", tier:"HT5"},  
     ]
   },
- KFCmuncher67: {
-    name: "KFCmuncher67",
-    rank: "9.",
-    title: "Combat Cadet",
-    points: "42 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"},
-      {icon:"sword", tier:"LT3"}, 
-      {icon:"mace", tier:"LT3"},
-      {icon:"axe", tier:"LT3"},
-      {icon:"vanilla", tier:"HT4"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},                     
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
+ 
   GhostlyFatih: {
     name: "GhostlyFatih",
-    rank: "9.",
+    rank: "10.",
     title: "Combat Cadet",
     points: "42 points",
     tiers: [
