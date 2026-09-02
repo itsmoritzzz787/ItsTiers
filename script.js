@@ -61,7 +61,7 @@ const players = {
  
   kasnnn: {
     name: "kasnnn",
-    rank: "1.",
+    rank: "2.",
     title: "Combat Specialist",
     points: "90 points",
     tiers: [
