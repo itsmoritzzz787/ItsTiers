@@ -137,13 +137,13 @@ const players = {
     rank: "5.",
     title: "Combat Cadet",
     points: "48 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"},
+    tiers: [      
       {icon:"nethop", tier:"LT3"},
       {icon:"sword", tier:"LT3"}, 
       {icon:"mace", tier:"LT3"},
       {icon:"axe", tier:"LT3"},
       {icon:"vanilla", tier:"HT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"RLT2"},
       {icon:"uhc", tier:"-"},           
       {icon:"smp", tier:"-"},
       {icon:"pot", tier:"-"},                     
