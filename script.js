@@ -385,9 +385,9 @@ const players = {
     title: "Combat Cadet",
     points: "29 points",
     tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"sword", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},      
+      {icon:"vanilla", tier:"LT3"},      
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"}, 
+      {icon:"sword", tier:"LT4"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
       {icon:"pot", tier:"HT5"},       
       {icon:"smp", tier:"HT5"},      
