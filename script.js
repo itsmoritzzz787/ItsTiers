@@ -523,9 +523,29 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
+ TheCronos_YT: {
+    name: "TheCronos_YT",
+    rank: "27.",
+    title: "Combat Novice",
+    points: "17 points",
+    tiers: [
+     {icon:"sword", tier:"LT4"},
+     {icon:"smp", tier:"HT5"}, 
+     {icon:"pot", tier:"HT5"},
+     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},        
+     {icon:"mace", tier:"HT5"},
+     {icon:"axe", tier:"LT5"},
+     {icon:"vanilla", tier:"LT5"},            
+     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},          
+     {icon:"nethop", tier:"LT5"},
+     {icon:"uhc", tier:"LT5"},
+     
+      
+    ]
+  },
  Imjett_: {
     name: "Imjett_",
-    rank: "27.",
+    rank: "28.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -543,7 +563,7 @@ const players = {
   },
  MrmedoMC: {
     name: "MrmedoMC",
-    rank: "27.",
+    rank: "28.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -561,7 +581,7 @@ const players = {
   },
   LordTrash13: {
     name: "LordTrash13",
-    rank: "27.",
+    rank: "28.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -579,7 +599,7 @@ const players = {
   },
   ItzSncw: {
     name: "ItzSncw",
-    rank: "27.",
+    rank: "28.",
     title: "Combat Novice",
     points: "16 points",
     tiers: [
@@ -595,26 +615,7 @@ const players = {
       {icon:"axe", tier:"-"},       
     ]
   },
- TheCronos_YT: {
-    name: "TheCronos_YT",
-    rank: "27.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-     {icon:"sword", tier:"LT4"},
-     {icon:"pot", tier:"HT5"},
-     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},        
-     {icon:"mace", tier:"HT5"},
-     {icon:"axe", tier:"LT5"},
-     {icon:"vanilla", tier:"LT5"},
-     {icon:"smp", tier:"LT5"},          
-     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},          
-     {icon:"nethop", tier:"LT5"},
-     {icon:"uhc", tier:"LT5"},
-     
-      
-    ]
-  },
+ 
   emielie14: {
     name: "emielie14",
     rank: "32.",
