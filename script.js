@@ -43,7 +43,7 @@ const players = {
     name: "ItsMoritzzz",
     rank: "1.",
     title: "Combat Ace",
-    points: "104 points",
+    points: "102 points",
     tiers: [
       {icon:"sword", tier:"LT2"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"}, 
