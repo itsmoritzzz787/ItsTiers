@@ -77,9 +77,29 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"}
     ]
   },
+ shotss: {
+    name: "4shotss",
+    rank: "3.",
+    title: "Combat Specialist",
+    points: "57 points",
+    tiers: [ 
+      {icon:"sword", tier:"LT2"},
+      {icon:"mace", tier:"LT3"},
+      {icon:"pot", tier:"LT3"},   
+      {icon:"smp", tier:"HT4"},
+      {icon:"nethop", tier:"HT4"},  
+      {icon:"axe", tier:"HT4"}, 
+      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},      
+      {icon:"vanilla", tier:"LT4"},
+      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},                                   
+      {icon:"uhc", tier:"HT5"},                  
+      
+      
+    ]
+  },
  ImMythical: {
     name: "ImMythical",
-    rank: "3.",
+    rank: "4.",
     title: "Combat Specialist",
     points: "54 points",
     tiers: [
@@ -97,7 +117,7 @@ const players = {
   },
   MyNameIsPuma: {
     name: "MyNameIsPuma",
-    rank: "4.",
+    rank: "5.",
     title: "Combat Specialist",
     points: "51 points",
     tiers: [
@@ -115,7 +135,7 @@ const players = {
   },
   McNicho: {
     name: "McNicho",
-    rank: "5.",
+    rank: "6.",
     title: "Combat Cadet",
     points: "48 points",
     tiers: [     
@@ -134,7 +154,7 @@ const players = {
   },
  KFCmuncher67: {
     name: "KFCmuncher67",
-    rank: "5.",
+    rank: "6.",
     title: "Combat Cadet",
     points: "48 points",
     tiers: [      
@@ -150,26 +170,7 @@ const players = {
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
     ]
   },
- shotss: {
-    name: "4shotss",
-    rank: "7.",
-    title: "Combat Cadet",
-    points: "46 points",
-    tiers: [ 
-      {icon:"sword", tier:"LT3"},
-      {icon:"mace", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},   
-      {icon:"smp", tier:"HT4"},
-      {icon:"nethop", tier:"HT4"},  
-      {icon:"axe", tier:"HT4"}, 
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},      
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},                                   
-      {icon:"uhc", tier:"HT5"},                  
-      
-      
-    ]
-  },
+ 
 
   
  Eliiiiaass: {
@@ -273,7 +274,7 @@ const players = {
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
       {icon:"mace", tier:"LT3"}, 
-      {icon:"sword", tier:"LT3"}, 
+      {icon:"sword", tier:"HT4"}, 
       {icon:"uhc", tier:"LT4"},
       {icon:"axe", tier:"HT5"},
       {icon:"pot", tier:"HT5"},                
