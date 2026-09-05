@@ -30,6 +30,51 @@
   let loading = false;
   let returnFocus = null;
 
+  // Render one tooltip outside cards so their layout/animations cannot cover its text.
+  const tooltip = el('div', 'tier-tooltip');
+  tooltip.id = 'tier-tooltip';
+  tooltip.setAttribute('role', 'tooltip');
+  tooltip.hidden = true;
+  document.body.append(tooltip);
+  let tooltipTarget = null;
+  function hideTooltip() {
+    if (tooltipTarget) tooltipTarget.removeAttribute('aria-describedby');
+    tooltipTarget = null;
+    tooltip.hidden = true;
+  }
+  function showTooltip(target) {
+    hideTooltip();
+    tooltipTarget = target;
+    target.removeAttribute('title');
+    tooltip.textContent = target.dataset.tooltip;
+    tooltip.hidden = false;
+    const box = target.getBoundingClientRect();
+    const size = tooltip.getBoundingClientRect();
+    const viewportWidth = document.documentElement.clientWidth || window.innerWidth;
+    let top = box.top - size.height - 12;
+    if (top < 8) top = box.bottom + 12;
+    const left = Math.max(8, Math.min(box.left + box.width / 2 - size.width / 2, viewportWidth - size.width - 8));
+    tooltip.style.left = `${left}px`;
+    tooltip.style.top = `${top}px`;
+    target.setAttribute('aria-describedby', tooltip.id);
+  }
+  document.addEventListener('pointerover', event => {
+    const target = event.target.closest?.('.kit-item[data-tooltip]');
+    if (target && target !== tooltipTarget) showTooltip(target);
+  });
+  document.addEventListener('pointerout', event => {
+    if (tooltipTarget && tooltipTarget.contains(event.target) && !tooltipTarget.contains(event.relatedTarget)) hideTooltip();
+  });
+  document.addEventListener('focusin', event => {
+    const target = event.target.closest?.('.kit-item[data-tooltip]');
+    if (target) showTooltip(target);
+  });
+  document.addEventListener('focusout', event => {
+    if (tooltipTarget?.contains(event.target)) hideTooltip();
+  });
+  document.addEventListener('scroll', hideTooltip, true);
+  window.addEventListener('resize', hideTooltip);
+
   function badgeList(player) {
     return Object.entries(player.tiers).sort((a,b) => b[1].points - a[1].points || MODES.indexOf(a[0]) - MODES.indexOf(b[0]))
       .map(([mode, result]) => ItsTiers.createBadge(mode, result));
@@ -109,6 +154,7 @@
     status.textContent = query ? 'No players found.' : (activeKit === 'overall' ? 'No ranked players yet.' : 'No active tiers in this gamemode yet.');
   }
   function showKit(tab) {
+    hideTooltip();
     const next = tab.dataset.kit;
     const oldIndex = tabs.findIndex(item => item.dataset.kit === activeKit);
     const nextIndex = tabs.indexOf(tab);
@@ -125,6 +171,7 @@
     if (!loading) applySearch();
   }
   function openProfile(name) {
+    hideTooltip();
     const player = players.get(name.toLowerCase());
     if (!player) return;
     returnFocus = document.activeElement;
@@ -143,6 +190,7 @@
     closeButton.focus();
   }
   function closeProfile() {
+    hideTooltip();
     popup.hidden = true;
     document.body.classList.remove('profile-open');
     if (returnFocus?.isConnected) returnFocus.focus();
@@ -168,6 +216,7 @@
   tabs.forEach(tab => {
     tab.addEventListener('click', () => showKit(tab));
     tab.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); showKit(tab); return; }
       if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
       event.preventDefault();
       const i = tabs.indexOf(tab);
