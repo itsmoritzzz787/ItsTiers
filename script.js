@@ -1,1390 +1,207 @@
-
-
-function closeProfile(){
- document.getElementById('popup').style.display='none';
-}
-document.querySelectorAll('.overall-player').forEach(card => {
-
-  card.addEventListener('mouseenter', () => {
-    card.style.transform = "translateY(-6px) scale(1.02)";
-  });
-
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = "translateY(0px) scale(1)";
-  });
-
-});
-let currentIndex = 0;
-
-function showKit(e, id) {
+/* Rankings, gamemode tables and profiles all come from website-tiers.json. */
+(() => {
+  'use strict';
+  const DATA_URL = './website-tiers.json';
+  const MODES = ['crystal', 'uhc', 'pot', 'nethpot', 'smp', 'sword', 'axe', 'mace', 'chaosmace', 'spearmace'];
+  const TITLES = [[100, 'Combat Ace'], [50, 'Combat Specialist'], [20, 'Combat Cadet'], [10, 'Combat Novice'], [0, 'Rookie']];
+  const titleFor = points => TITLES.find(([minimum]) => points >= minimum)[1];
+  const el = (tag, className, text) => {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  };
+  const skin = (name, className) => {
+    const img = el('img', className);
+    img.src = `https://render.crafty.gg/3d/bust/${encodeURIComponent(name)}`;
+    img.alt = ''; img.loading = 'lazy';
+    return img;
+  };
+  const search = document.getElementById('playerSearch');
+  const popup = document.getElementById('popup');
+  const closeButton = document.getElementById('popup-close');
+  const panels = document.getElementById('ranking-panels');
   const tabs = Array.from(document.querySelectorAll('.kit-tab'));
-  const newIndex = tabs.indexOf(e.currentTarget);
+  const loadStatus = document.getElementById('load-status');
+  const message = document.getElementById('load-message');
+  const retry = document.getElementById('retry-load');
+  let players = new Map();
+  let activeKit = 'overall';
+  let loading = false;
+  let returnFocus = null;
 
-  const direction = newIndex > currentIndex ? "right" : "left";
-
-  document.querySelectorAll('.kit-content').forEach(el => {
-    el.classList.remove('active', 'slide-left', 'slide-right');
-  });
-
-  const newKit = document.getElementById(id);
-
-  newKit.classList.add('active');
-  newKit.classList.add(direction === "right" ? 'slide-right' : 'slide-left');
-
-  document.querySelectorAll('.kit-tab').forEach(tab => tab.classList.remove('active'));
-  e.currentTarget.classList.add('active');
-
-  currentIndex = newIndex;
-}
-const players = {
- 
-kasnnn: {
-    name: "kasnnn",
-    rank: "1.",
-    title: "Combat Specialist",
-    points: "115 points",
-    tiers: [
-      {icon:"sword", tier:"LT1"},
-      {icon:"pot", tier:"HT3"},
-      {icon:"nethop", tier:"HT3"}, 
-      {icon:"uhc", tier:"HT3"},  
-      {icon:"smp", tier:"HT3"},      
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},                           
-      {icon:"vanilla", tier:"LT3"},      
-      {icon:"axe", tier:"LT3"},
-      {icon:"mace", tier:"LT3"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"}
-    ]
-  },
-  ItsMoritzzz: {
-    name: "ItsMoritzzz",
-    rank: "2.",
-    title: "Combat Ace",
-    points: "114 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT2"},
-      {icon:"sword", tier:"LT2"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"}, 
-      {icon:"mace", tier:"LT2"},        
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"},          
-      {icon:"smp", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},    
-      {icon:"nethop", tier:"HT4"},
-      {icon:"uhc", tier:"HT4"},
-      {icon:"axe", tier:"HT4"}, 
-                                                                          
-    ]
-  }, 
- 
-  
- shotss: {
-    name: "4shotss",
-    rank: "3.",
-    title: "Combat Specialist",
-    points: "57 points",
-    tiers: [ 
-      {icon:"sword", tier:"LT2"},
-      {icon:"mace", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},   
-      {icon:"smp", tier:"HT4"},
-      {icon:"nethop", tier:"HT4"},  
-      {icon:"axe", tier:"HT4"}, 
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},      
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},                                   
-      {icon:"uhc", tier:"HT5"},                  
-      
-      
-    ]
-  },
- ImMythical: {
-    name: "ImMythical",
-    rank: "4.",
-    title: "Combat Specialist",
-    points: "54 points",
-    tiers: [
-      {icon:"nethop", tier:"LT3"},
-      {icon:"mace", tier:"LT3"}, 
-      {icon:"sword", tier:"LT3"},     
-      {icon:"uhc", tier:"LT3"},           
-      {icon:"smp", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},
-      {icon:"vanilla", tier:"LT3"},      
-      {icon:"axe", tier:"LT3"},     
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  MyNameIsPuma: {
-    name: "MyNameIsPuma",
-    rank: "5.",
-    title: "Combat Specialist",
-    points: "51 points",
-    tiers: [
-      {icon:"sword", tier:"HT3"},
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"smp", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},            
-      {icon:"nethop", tier:"HT4"},
-      {icon:"pot", tier:"HT4"},
-      {icon:"axe", tier:"HT4"},   
-      {icon:"mace", tier:"LT4"},                            
-    ]
-  },
-  McNicho: {
-    name: "McNicho",
-    rank: "6.",
-    title: "Combat Cadet",
-    points: "48 points",
-    tiers: [     
-      {icon:"vanilla", tier:"HT3"}, 
-      {icon:"mace", tier:"HT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"}, 
-      {icon:"sword", tier:"HT4"},              
-      {icon:"smp", tier:"LT4"},
-      {icon:"pot", tier:"LT4"},
-      {icon:"nethop", tier:"HT5"},
-      {icon:"uhc", tier:"HT5"},      
-      {icon:"axe", tier:"HT5"},
-           
-    ]
-  },
- KFCmuncher67: {
-    name: "KFCmuncher67",
-    rank: "6.",
-    title: "Combat Cadet",
-    points: "48 points",
-    tiers: [      
-      {icon:"nethop", tier:"LT3"},
-      {icon:"sword", tier:"LT3"}, 
-      {icon:"mace", tier:"LT3"},
-      {icon:"axe", tier:"LT3"},
-      {icon:"vanilla", tier:"HT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"RLT2"},
-      {icon:"uhc", tier:"-"},           
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},                     
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- 
-
-  
- Eliiiiaass: {
-    name: "Eliiiiaass",
-    rank: "8.",
-    title: "Combat Novice",
-    points: "44 points",
-    tiers: [    
-      {icon:"axe", tier:"LT3"},
-      {icon:"smp", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},
-      {icon:"sword", tier:"RLT2"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},                
-      {icon:"vanilla", tier:"-"},            
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  certifiedrid: {
-    name: "certifiedrid",
-    rank: "9.",
-    title: "Combat Cadet",
-    points: "43 points",
-    tiers: [   
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
-      {icon:"sword", tier:"HT4"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"pot", tier:"LT4"},
-      {icon:"smp", tier:"LT4"},             
-      {icon:"mace", tier:"LT4"},                  
-      {icon:"uhc", tier:"HT5"}, 
-      {icon:"axe", tier:"HT5"},  
-    ]
-  },
- 
-  GhostlyFatih: {
-    name: "GhostlyFatih",
-    rank: "10.",
-    title: "Combat Cadet",
-    points: "42 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"sword", tier:"LT3"},
-      {icon:"smp", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},      
-      {icon:"mace", tier:"LT3"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"uhc", tier:"-"},          
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  TwyCole: {
-    name: "TwyCole",
-    rank: "11.",
-    title: "Combat Cadet",
-    points: "40 points",
-    tiers: [           
-      {icon:"uhc", tier:"LT3"},
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
-      {icon:"nethop", tier:"HT4"}, 
-      {icon:"sword", tier:"RLT2"},
-      {icon:"mace", tier:"-"},      
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},           
-      {icon:"axe", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- k4qx: {
-    name: "k4qx",
-    rank: "12.",
-    title: "Combat Cadet",
-    points: "39 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"}, 
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"nethop", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},
-      {icon:"axe", tier:"HT4"},
-      {icon:"mace", tier:"LT4"}, 
-      {icon:"uhc", tier:"-"},     
-      {icon:"smp", tier:"-"},           
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-   Ginoski: {
-    name: "Ginoski",
-    rank: "12.",
-    title: "Combat Cadet",
-    points: "39 points",
-    tiers: [  
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT3"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT3"},
-      {icon:"mace", tier:"LT3"}, 
-      {icon:"sword", tier:"HT4"}, 
-      {icon:"uhc", tier:"LT4"},
-      {icon:"axe", tier:"HT5"},
-      {icon:"pot", tier:"HT5"},                
-      {icon:"smp", tier:"LT5"},
-      {icon:"nethop", tier:"LT5"},
-    ]
-  }, 
-  SocialRex11: {
-    name: "SocialRex11",
-    rank: "14.",
-    title: "Combat Cadet",
-    points: "38 points",
-    tiers: [  
-      {icon:"vanilla", tier:"HT3"},
-      {icon:"sword", tier:"LT3"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT4"}, 
-      {icon:"mace", tier:"HT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},           
-      {icon:"pot", tier:"LT4"},
-      {icon:"uhc", tier:"HT5"},      
-      {icon:"nethop", tier:"HT5"},                       
-      {icon:"axe", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},                             
-    ]
-  }, 
- 
- Jonkler75: {
-    name: "Jonkler75",
-    rank: "15.",
-    title: "Combat Cadet",
-    points: "34 points",
-    tiers: [
-      {icon:"mace", tier:"LT3"},
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"sword", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"}, 
-      {icon:"smp", tier:"HT4"},
-      {icon:"pot", tier:"HT4"},      
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},
-      {icon:"nethop", tier:"-"},                
-      {icon:"axe", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  }, 
-
- Gold3n__: {
-    name: "Gold3n__",
-    rank: "15.",
-    title: "Combat Cadet",
-    points: "34 points",
-    tiers: [   
-      {icon:"sword", tier:"HT3"},
-      {icon:"nethop", tier:"LT3"},
-      {icon:"smp", tier:"LT3"},      
-      {icon:"pot", tier:"LT3"},       
-      {icon:"axe", tier:"HT5"},      
-      {icon:"uhc", tier:"HT5"},
-      {icon:"vanilla", tier:"LT5"}, 
-      {icon:"mace", tier:"LT5"},         
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-
-
-  lozk00: {
-    name: "lozk00",
-    rank: "17.",
-    title: "Combat Cadet",
-    points: "31 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
-      {icon:"pot", tier:"LT3"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"mace", tier:"LT4"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"LT4"},            
-      {icon:"vanilla", tier:"HT5"},
-      {icon:"smp", tier:"HT5"}, 
-      {icon:"axe", tier:"HT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},
-                  
-                                                               
-    ]
-  },
-  
-  EvilWcooks: {
-    name: "EvilWcooks",
-    rank: "18.",
-    title: "Combat Cadet",
-    points: "30 points",
-    tiers: [   
-      {icon:"nethop", tier:"LT3"},
-      {icon:"smp", tier:"LT3"},      
-      {icon:"pot", tier:"LT3"}, 
-      {icon:"sword", tier:"HT4"},            
-      {icon:"uhc", tier:"HT4"},       
-      {icon:"mace", tier:"HT4"},  
-      {icon:"axe", tier:"-"},
-      {icon:"vanilla", tier:"-"}, 
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- Joredium: {
-    name: "Joredium",
-    rank: "19.",
-    title: "Combat Cadet",
-    points: "29 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},      
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"}, 
-      {icon:"sword", tier:"LT4"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
-      {icon:"pot", tier:"HT5"},       
-      {icon:"smp", tier:"HT5"},      
-      {icon:"nethop", tier:"HT5"},
-      {icon:"axe", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"mace", tier:"LT5"},       
-    ]
-  },
- ImRedlin: {
-    name: "ImRedlin",
-    rank: "20.",
-    title: "Combat Cadet",
-    points: "25 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"}, 
-      {icon:"nethop", tier:"LT3"},
-      {icon:"uhc", tier:"LT3"},
-      {icon:"sword", tier:"HT4"},
-      {icon:"mace", tier:"LT4"},      
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},           
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- pawkitty: {
-    name: "pawkitty",
-    rank: "21.",
-    title: "Combat Cadet",
-    points: "24 points",
-    tiers: [  
-      {icon:"sword", tier:"LT2"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},     
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},   
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- TREN: {
-    name: "1TREN",
-    rank: "21.",
-    title: "Combat Cadet",
-    points: "24 points",
-    tiers: [   
-      {icon:"sword", tier:"LT3"},
-      {icon:"nethop", tier:"HT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},      
-      {icon:"pot", tier:"LT4"}, 
-      {icon:"axe", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},
-      {icon:"vanilla", tier:"HT5"}, 
-      {icon:"mace", tier:"HT5"},
-      {icon:"uhc", tier:"-"},                                     
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- ySw1ft: {
-    name: "ySw1ft",
-    rank: "23.",
-    title: "Combat Cadet",
-    points: "23 points",
-    tiers: [
-      {icon:"sword", tier:"HT3"},
-      {icon:"pot", tier:"HT3"},
-      {icon:"nethop", tier:"LT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},      
-      {icon:"smp", tier:"-"},      
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- BartekGaming383: {
-    name: "BartekGaming383",
-    rank: "24.",
-    title: "Combat Cadet",
-    points: "21 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
-      {icon:"mace", tier:"HT4"},
-      {icon:"nethop", tier:"LT4"},
-      {icon:"pot", tier:"LT4"},
-      {icon:"smp", tier:"HT5"}, 
-      {icon:"vanilla", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"}, 
-      {icon:"axe", tier:"LT5"},                                
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- muhOnCeiling: {
-    name: "muhOnCeiling",
-    rank: "25.",
-    title: "Combat Cadet",
-    points: "20 points",
-    tiers: [
-      {icon:"mace", tier:"LT2"},
-      {icon:"uhc", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- 
- _jumpingbean_: {
-    name: "_jumpingbean_",
-    rank: "26.",
-    title: "Combat Novice",
-    points: "18 points",
-    tiers: [
-      {icon:"smp", tier:"LT3"},      
-      {icon:"sword", tier:"LT3"},
-      {icon:"mace", tier:"LT3"},  
-      {icon:"uhc", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- TheCronos_YT: {
-    name: "TheCronos_YT",
-    rank: "27.",
-    title: "Combat Novice",
-    points: "17 points",
-    tiers: [
-     {icon:"sword", tier:"LT4"},
-     {icon:"smp", tier:"HT5"}, 
-     {icon:"pot", tier:"HT5"},
-     {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},        
-     {icon:"mace", tier:"HT5"},
-     {icon:"axe", tier:"LT5"},
-     {icon:"vanilla", tier:"LT5"},            
-     {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT5"},          
-     {icon:"nethop", tier:"LT5"},
-     {icon:"uhc", tier:"LT5"},
-     
-      
-    ]
-  },
- Imjett_: {
-    name: "Imjett_",
-    rank: "28.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"uhc", tier:"HT4"},      
-      {icon:"mace", tier:"HT5"}, 
-      {icon:"sword", tier:"LT5"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- MrmedoMC: {
-    name: "MrmedoMC",
-    rank: "28.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-      {icon:"vanilla", tier:"HT4"},      
-      {icon:"sword", tier:"HT5"},
-      {icon:"mace", tier:"HT5"},
-      {icon:"axe", tier:"LT5"},
-      {icon:"smp", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},      
-      {icon:"pot", tier:"LT5"},
-      {icon:"nethop", tier:"LT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}            
-    ]
-  },
-  LordTrash13: {
-    name: "LordTrash13",
-    rank: "28.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-      {icon:"nethop", tier:"LT3"},
-      {icon:"smp", tier:"HT4"},
-      {icon:"sword", tier:"LT4"},
-      {icon:"pot", tier:"LT4"},
-      {icon:"mace", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  ItzSncw: {
-    name: "ItzSncw",
-    rank: "28.",
-    title: "Combat Novice",
-    points: "16 points",
-    tiers: [
-      {icon:"uhc", tier:"LT4"},
-      {icon:"sword", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
-      {icon:"mace", tier:"HT5"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
-      {icon:"smp", tier:"HT5"},
-      {icon:"vanilla", tier:"LT5"},
-      {icon:"pot", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"axe", tier:"-"},       
-    ]
-  },
- 
-  emielie14: {
-    name: "emielie14",
-    rank: "32.",
-    title: "Combat Novice",
-    points: "15 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},      
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
-      {icon:"mace", tier:"HT5"},
-      {icon:"axe", tier:"LT5"},  
-      {icon:"sword", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},                        
-      
-    ]
-  },
-  SigsAhoy: {
-    name: "SigsAhoy",
-    rank: "33.",
-    title: "Combat Novice",
-    points: "14 points",
-    tiers: [
-      {icon:"smp", tier:"LT3"},
-      {icon:"pot", tier:"HT4"},
-      {icon:"uhc", tier:"HT4"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"sword", tier:"-"},      
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- zNixls_: {
-    name: "zNixls_",
-    rank: "33.",
-    title: "Combat Novice",
-    points: "14 points",
-    tiers: [
-      {icon:"sword", tier:"HT3"},
-      {icon:"pot", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},      
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  Epicfaik: {
-    name: "Epicfaik",
-    rank: "35.",
-    title: "Combat Novice",
-    points: "13 points",
-    tiers: [
-      {icon:"mace", tier:"HT3"},
-      {icon:"vanilla", tier:"LT4"}, 
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},           
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- 
- Meloy_: {
-    name: "Meloy_",
-    rank: "36.",
-    title: "Combat Novice",
-    points: "12 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"mace", tier:"LT4"},
-      {icon:"axe", tier:"HT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},      
-      {icon:"pot", tier:"-"},                  
-      {icon:"uhc", tier:"-"},   
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- 
-  Lloyd_The_M: {
-    name: "Lloyd_The_M",
-    rank: "36.",
-    title: "Combat Novice",
-    points: "12 points",
-    tiers: [
-      {icon:"smp", tier:"HT5"},
-      {icon:"mace", tier:"HT5"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT5"},
-      {icon:"vanilla", tier:"LT5"},
-      {icon:"pot", tier:"LT5"},
-      {icon:"nethop", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"axe", tier:"LT5"},
-      {icon:"sword", tier:"LT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"}
-    ]
-  },
- 
- Sn00wies: {
-    name: "Sn00wies",
-    rank: "38.",
-    title: "Combat Novice",
-    points: "10 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  Wizo_X_extra: {
-    name: "Wizo_X_extra",
-    rank: "38.",
-    title: "Combat Novice",
-    points: "10 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT4"},
-      {icon:"mace", tier:"LT4"},
-      {icon:"axe", tier:"HT5"},
-      {icon:"uhc", tier:"HT5"},   
-      {icon:"sword", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},                 
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- FemboyCebulamen: {
-    name: "FemboyCebulamen",
-    rank: "38.",
-    title: "Combat Novice",
-    points: "10 points",
-    tiers: [
-      {icon:"sword", tier:"HT3"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  VampyWolf: {
-    name: "VampyWolf",
-    rank: "38.",
-    title: "Combat Novice",
-    points: "10 points",
-    tiers: [
-      {icon:"mace", tier:"HT4"},     
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },    
-  ItsFluffyTime14: {
-    name: "ItsFluffyTime14",
-    rank: "38.",
-    title: "Combat Novice",
-    points: "10 points",
-    tiers: [
-      {icon:"mace", tier:"LT3"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT4"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- swnxzx: {
-    name: "swnxzx",
-    rank: "43.",
-    title: "Rookie",
-    points: "9 points",
-    tiers: [         
-      {icon:"sword", tier:"HT4"},
-      {icon:"nethop", tier:"HT5"},
-      {icon:"pot", tier:"LT4"},
-      {icon:"smp", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  DieElfeFX: {
-    name: "DieElfeFX",
-    rank: "43.",
-    title: "Rookie",
-    points: "9 points",
-    tiers: [
-      {icon:"uhc", tier:"LT4"},
-      {icon:"mace", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},            
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },  
- 
-  KoksikSzef: {
-    name: "KoksikSzef",
-    rank: "43.",
-    title: "Rookie",
-    points: "9 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"vanilla", tier:"LT4"},             
-      {icon:"pot", tier:"HT5"}, 
-      {icon:"nethop", tier:"LT5"},
-      {icon:"mace", tier:"-"},
-      {icon:"uhc", tier:"-"},          
-      {icon:"smp", tier:"-"},                
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- Sm1targusPrimus: {
-    name: "Sm1targusPrimus",
-    rank: "46.",
-    title: "Rookie",
-    points: "7 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"mace", tier:"LT4"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  Fr0gified: {
-    name: "Fr0gified",
-    rank: "46.",
-    title: "Rookie",
-    points: "7 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT4"},
-      {icon:"uhc", tier:"HT5"},
-      {icon:"mace", tier:"LT5"},      
-      {icon:"sword", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-   zeno_HT5: {
-    name: "zeno_HT5",
-    rank: "46.",
-    title: "Rookie",
-    points: "7 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"mace", tier:"LT5"},
-      {icon:"uhc", tier:"-"},     
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- ItzK1RBE: {
-    name: "ItzK1RBE",
-    rank: "49.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"mace", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"sword", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- bombertobi: {
-    name: "bombertobi",
-    rank: "49.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
-      {icon:"mace", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- Nyxtox: {
-    name: "Nyxtox",
-    rank: "49.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"sword", tier:"LT3"},
-      {icon:"mace", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  ______OO______: {
-    name: "______OO______",
-    rank: "49.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"vanilla", tier:"LT3"},
-      {icon:"mace", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"sword", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- ytgabereal: {
-    name: "ytgabereal",
-    rank: "49.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"smp", tier:"LT3"},
-      {icon:"mace", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"vanilla", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"sword", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  PVPSnapper: {
-    name: "PVPSnapper",
-    rank: "49.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"smp", tier:"HT5"},
-      {icon:"sword", tier:"HT5"},
-      {icon:"mace", tier:"LT5"},
-      {icon:"uhc", tier:"LT5"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"nethop", tier:"-"},     
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},      
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- Elias117347: {
-    name: "Elias117347",
-    rank: "49.",
-    title: "Rookie",
-    points: "6 points",
-    tiers: [
-      {icon:"sword", tier:"LT4"},
-      {icon:"uhc", tier:"HT5"},
-      {icon:"mace", tier:"LT5"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- Tom_wvw: {
-    name: "Tom_wvw",
-    rank: "56.",
-    title: "Rookie",
-    points: "5 points",
-    tiers: [   
-      {icon:"vanilla", tier:"HT4"},
-      {icon:"mace", tier:"LT5"},
-      {icon:"sword", tier:"-"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  Spooky1904: {
-    name: "Spooky1904",
-    rank: "56.",
-    title: "Rookie",
-    points: "5 points",
-    tiers: [
-      {icon:"sword", tier:"LT4"},
-      {icon:"vanilla", tier:"LT5"},
-      {icon:"mace", tier:"LT5"},
-      {icon:"uhc", tier:"-"},      
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},            
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- 
- SkinPunktexe: {
-    name: "SkinPunktexe",
-    rank: "58.",
-    title: "Rookie",
-    points: "4 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},   
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  }, 
- SolarPleasant: {
-    name: "SolarPleasant",
-    rank: "58.",
-    title: "Rookie",
-    points: "4 points",
-    tiers: [
-      {icon:"mace", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- ch1lln: {
-    name: "ch1lln",
-    rank: "58.",
-    title: "Rookie",
-    points: "4 points",
-    tiers: [
-      {icon:"smp", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- xflxpsy: {
-    name: "xflxpsy",
-    rank: "58.",
-    title: "Rookie",
-    points: "4 points",
-    tiers: [
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"HT5"},
-      {icon:"mace", tier:"HT5"},
-      {icon:"sword", tier:"-"},
-      {icon:"uhc", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"}, 
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  _DasEntchen_: {
-    name: "_DasEntchen_",
-    rank: "58.",
-    title: "Rookie",
-    points: "4 points",
-    tiers: [
-      {icon:"sword", tier:"HT4"},
-      {icon:"uhc", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- 
- M4rkiski: {
-    name: "M4rkiski",
-    rank: "63.",
-    title: "Rookie",
-    points: "3 points",
-    tiers: [
-      {icon:"uhc", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"mace", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"sword", tier:"-"},   
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- 
- FrozenBlack: {
-    name: "FrozenBlack",
-    rank: "63.",
-    title: "Rookie",
-    points: "3 points",
-    tiers: [
-      {icon:"mace", tier:"LT4"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"uhc", tier:"-"},   
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  hallo663: {
-    name: "hallo663",
-    rank: "65.",
-    title: "Rookie",
-    points: "2 points",
-    tiers: [
-      {icon:"uhc", tier:"HT5"},
-      {icon:"mace", tier:"-"},
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-   ShieldlessStray: {
-    name: "ShieldlessStray",
-    rank: "65.",
-    title: "Rookie",
-    points: "2 points",
-    tiers: [
-      {icon:"mace", tier:"HT5"},
-      {icon:"uhc", tier:"-"},     
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
-  nuuhx: {
-    name: "nuuhx",
-    rank: "67.",
-    title: "Rookie",
-    points: "1 points",
-    tiers: [
-      {icon:"mace", tier:"LT5"},
-      {icon:"uhc", tier:"-"},     
-      {icon:"nethop", tier:"-"},
-      {icon:"smp", tier:"-"},
-      {icon:"sword", tier:"-"},
-      {icon:"pot", tier:"-"},
-      {icon:"vanilla", tier:"-"},      
-      {icon:"axe", tier:"-"},
-      {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"-"},
-      {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"-"}
-    ]
-  },
- 
- 
-};
-
-
-function openProfile(name) {
-  const player = players[name];
-  if (!player) return;
-
-  document.getElementById("popup").style.display = "flex";
-
-  /* NAME */
-  document.getElementById("popup-name").innerText = player.name;
-
-  /* SKIN */
-  document.getElementById("popup-skin").src =
-    `https://render.crafty.gg/3d/bust/${player.name}`;
-
-  /* INFO */
-  document.getElementById("popup-rank").innerText = player.rank;
-  document.getElementById("popup-title").innerText = player.title;
-  document.getElementById("popup-points").innerText = player.points;
-
-  /* TOP 3 FARBEN */
-  const rankEl = document.getElementById("popup-rank");
-
-  rankEl.classList.remove("gold", "silver", "bronze");
-
-  if (player.rank.trim() === "1.") {
-    rankEl.classList.add("gold");
+  function badgeList(player) {
+    return Object.entries(player.tiers).sort((a,b) => b[1].points - a[1].points || MODES.indexOf(a[0]) - MODES.indexOf(b[0]))
+      .map(([mode, result]) => ItsTiers.createBadge(mode, result));
   }
-  else if (player.rank.trim() === "2.") {
-    rankEl.classList.add("silver");
+  function clickable(node, player) {
+    node.dataset.player = player.minecraft;
+    node.tabIndex = 0;
+    node.setAttribute('role', 'button');
+    node.setAttribute('aria-label', `View ${player.minecraft}'s profile`);
+    return node;
   }
-  else if (player.rank.trim() === "3.") {
-    rankEl.classList.add("bronze");
+  function overallCard(player) {
+    const places = ['first-place', 'second-place', 'third-place'];
+    const card = clickable(el('div', `overall-player ${places[player.rank - 1] || ''}`), player);
+    card.append(el('div', 'player-bg'), el('i', player.rank <= 3 ? `rank${player.rank}` : 'rank', `${player.rank}.`));
+    const wrapper = el('div', 'skin-wrapper'); wrapper.append(skin(player.minecraft, 'player-skin'));
+    const info = el('div', 'player-info');
+    info.append(el('div', 'name', player.minecraft), el('div', 'points', `${titleFor(player.totalPoints)} (${player.totalPoints} points)`));
+    const right = el('div', 'player-right');
+    const region = el('div', `region ${player.region.toLowerCase()}`, player.region);
+    const icons = el('div', 'kit-icons'); icons.append(...badgeList(player));
+    right.append(region, icons); card.append(wrapper, info, right);
+    return card;
   }
-
-  /* TIERS */
-  const container = document.getElementById("popup-tiers");
-  container.innerHTML = "";
-
-  player.tiers.forEach(t => {
-
-    const el = document.createElement("div");
-    el.className = "kit-item";
-
-    const iconSrc = t.icon.startsWith("http")
-      ? t.icon
-      : `https://mctiers.com/tier_icons/${t.icon}.svg`;
-
-    el.innerHTML = `
-      <div class="icon ${t.tier.toLowerCase()}">
-        <img src="${iconSrc}">
-      </div>
-
-      <span class="label ${t.tier.toLowerCase()}">
-        ${t.tier}
-      </span>
-    `;
-
-    container.appendChild(el);
-  });
-}
-
-function closeProfile() {
-  document.getElementById("popup").style.display = "none";
-}
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".player, .overall-player").forEach(el => {
-    el.addEventListener("click", () => {
-      const name = el.innerText.split("\n")[0].trim();
-      openProfile(name);
+  function modeRow(player, mode) {
+    const result = player.tiers[mode];
+    const kind = result.tier.startsWith('H') ? 'ht' : 'lt';
+    const region = result.region || player.region;
+    const row = clickable(el('div', `player ${kind} ${region.toLowerCase()}`), player);
+    const identity = el('span', 'table-player-name');
+    identity.append(skin(player.minecraft, 'player-skintable'), document.createTextNode(` ${player.minecraft}`));
+    row.append(identity, el('span', `player-tier ${kind}`, kind === 'ht' ? '⇈' : '⇡'));
+    row.title = `${result.tooltip}\n${region}`;
+    return row;
+  }
+  function validatePlayers(ranking) {
+    const names = new Set();
+    for (const player of ranking) {
+      if (!/^[A-Za-z0-9_]{1,16}$/.test(player.minecraft) || !['EU','NA','AS','SA','AU'].includes(player.region)) throw new Error('Invalid player identity');
+      const key = player.minecraft.toLowerCase();
+      if (names.has(key)) throw new Error('Duplicate player');
+      names.add(key);
+      for (const result of Object.values(player.tiers)) {
+        if (result.region && !['EU','NA','AS','SA','AU'].includes(result.region)) throw new Error('Invalid gamemode region');
+      }
+    }
+  }
+  function render(ranking) {
+    validatePlayers(ranking);
+    const overall = document.createDocumentFragment();
+    overall.append(...ranking.map(overallCard));
+    const tables = MODES.map(mode => {
+      const table = el('div', 'tier-table');
+      const columns = Array.from({length:5}, (_, i) => {
+        const column = el('div', `tier tier${i + 1}`);
+        column.append(el('h3', '', `Tier ${i + 1}`)); return column;
+      });
+      // Retired players remain in Overall/profiles and keep peak points, as on the original site.
+      const entries = ranking.filter(p => p.tiers[mode] && !p.tiers[mode].retired && /^[HL]T[1-5]$/.test(p.tiers[mode].tier));
+      entries.sort((a,b) => a.tiers[mode].tier[0].localeCompare(b.tiers[mode].tier[0]) || a.minecraft.localeCompare(b.minecraft, 'en'));
+      for (const player of entries) columns[Number(player.tiers[mode].tier[2]) - 1].append(modeRow(player, mode));
+      table.append(...columns); return table;
+    });
+    // Swap the page only after the full dataset and its UI have been built successfully.
+    document.getElementById('overall').replaceChildren(overall);
+    tables.forEach((table, i) => document.getElementById(`kit${i + 1}`).replaceChildren(table));
+    players = new Map(ranking.map(player => [player.minecraft.toLowerCase(), player]));
+    applySearch();
+  }
+  function applySearch() {
+    const query = search.value.trim().toLowerCase();
+    for (const card of panels.querySelectorAll('[data-player]')) card.hidden = !card.dataset.player.toLowerCase().includes(query);
+    const panel = document.getElementById(activeKit);
+    const found = Array.from(panel.querySelectorAll('[data-player]')).some(node => !node.hidden);
+    const status = document.getElementById('search-status');
+    status.hidden = found || loading;
+    status.textContent = query ? 'No players found.' : (activeKit === 'overall' ? 'No ranked players yet.' : 'No active tiers in this gamemode yet.');
+  }
+  function showKit(tab) {
+    const next = tab.dataset.kit;
+    const oldIndex = tabs.findIndex(item => item.dataset.kit === activeKit);
+    const nextIndex = tabs.indexOf(tab);
+    for (const item of tabs) {
+      const selected = item === tab;
+      item.classList.toggle('active', selected);
+      item.setAttribute('aria-selected', String(selected));
+      const panel = document.getElementById(item.dataset.kit);
+      panel.hidden = !selected;
+      panel.classList.remove('active', 'slide-left', 'slide-right');
+      if (selected) panel.classList.add('active', nextIndex > oldIndex ? 'slide-right' : 'slide-left');
+    }
+    activeKit = next;
+    if (!loading) applySearch();
+  }
+  function openProfile(name) {
+    const player = players.get(name.toLowerCase());
+    if (!player) return;
+    returnFocus = document.activeElement;
+    document.getElementById('popup-name').textContent = player.minecraft;
+    const portrait = document.getElementById('popup-skin');
+    portrait.src = `https://render.crafty.gg/3d/bust/${encodeURIComponent(player.minecraft)}`;
+    portrait.alt = `${player.minecraft}'s Minecraft skin`;
+    document.getElementById('popup-title').textContent = titleFor(player.totalPoints);
+    const rank = document.getElementById('popup-rank');
+    rank.textContent = `${player.rank}.`;
+    rank.className = `popup-rank ${['gold', 'silver', 'bronze'][player.rank - 1] || ''}`;
+    document.getElementById('popup-points').textContent = `${player.totalPoints} points`;
+    document.getElementById('popup-tiers').replaceChildren(...badgeList(player));
+    popup.hidden = false;
+    document.body.classList.add('profile-open');
+    closeButton.focus();
+  }
+  function closeProfile() {
+    popup.hidden = true;
+    document.body.classList.remove('profile-open');
+    if (returnFocus?.isConnected) returnFocus.focus();
+  }
+  async function loadRankings() {
+    if (loading) return;
+    loading = true; retry.hidden = true; search.disabled = true;
+    loadStatus.hidden = false; message.textContent = 'Loading rankings…';
+    document.getElementById('search-status').hidden = true;
+    panels.setAttribute('aria-busy', 'true');
+    try {
+      const ranking = await ItsTiers.load(DATA_URL);
+      render(ranking); loadStatus.hidden = true; search.disabled = false;
+    } catch (error) {
+      console.error('Could not load rankings:', error);
+      message.textContent = 'Rankings could not be loaded. Please try again.';
+      retry.hidden = false;
+    } finally {
+      loading = false; panels.setAttribute('aria-busy', 'false');
+      if (loadStatus.hidden) applySearch();
+    }
+  }
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => showKit(tab));
+    tab.addEventListener('keydown', event => {
+      if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
+      event.preventDefault();
+      const i = tabs.indexOf(tab);
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (i + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+      tabs[next].focus(); showKit(tabs[next]);
     });
   });
-});
-document.querySelectorAll('.kit-item').forEach(el => {
-  const text = el.getAttribute('data-tooltip');
-  if (text && text.includes('|')) {
-    el.setAttribute('data-tooltip', text.replace('|', '\n'));
-  }
-});
-document.getElementById("playerSearch").addEventListener("keydown", function(e){
-
-  if(e.key !== "Enter") return;
-
-  const search = this.value.toLowerCase();
-
-  const player = players.find(p =>
-    p.name.toLowerCase() === search
-  );
-
-  if(player){
-    openProfile(player);
-    this.value = "";
-  }
-});
-document
-.getElementById("playerSearch")
-.addEventListener("keydown", function(e){
-
-  if(e.key !== "Enter") return;
-
-  const input = this.value.toLowerCase().trim();
-
-  const playerKey = Object.keys(players).find(key =>
-    players[key].name.toLowerCase().includes(input)
-  );
-
-  if(playerKey){
-    openProfile(playerKey);
-  }
-});
+  panels.addEventListener('click', event => {
+    const row = event.target.closest('[data-player]'); if (row) openProfile(row.dataset.player);
+  });
+  panels.addEventListener('keydown', event => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const row = event.target.closest('[data-player]');
+    if (row) { event.preventDefault(); openProfile(row.dataset.player); }
+  });
+  search.addEventListener('input', applySearch);
+  search.addEventListener('keydown', event => {
+    if (event.key !== 'Enter') return;
+    const query = search.value.trim().toLowerCase(); if (!query) return;
+    const player = players.get(query) || Array.from(players.values()).find(p => p.minecraft.toLowerCase().includes(query));
+    if (player) openProfile(player.minecraft);
+  });
+  closeButton.addEventListener('click', closeProfile);
+  popup.addEventListener('click', event => { if (event.target === popup) closeProfile(); });
+  document.addEventListener('keydown', event => {
+    if (popup.hidden) return;
+    if (event.key === 'Escape') { event.preventDefault(); closeProfile(); }
+    if (event.key === 'Tab') {
+      const focusable = Array.from(popup.querySelectorAll('button, [tabindex="0"]'));
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
+  });
+  retry.addEventListener('click', loadRankings);
+  loadRankings();
+})();
