@@ -1136,8 +1136,6 @@ border-radius:5px
 
 /* Data-driven rankings: retain the original theme and support dynamic content. */
 [hidden] { display: none !important; }
-.kit-tab { color: inherit; font: inherit; border: 0; border-bottom: 2px solid transparent; padding: 10px; }
-.kit-tab.active { border-bottom-color: white; }
 .data-status { text-align: center; padding: 24px; color: #b1bfcb; }
 .data-status p { margin: 0 0 12px; }
 .popup:not([hidden]) { display: flex; }
@@ -1158,8 +1156,6 @@ border-radius:5px
 @media (max-width: 1050px) {
   .header { flex-wrap: wrap; gap: 16px; }
   .header-center img { max-width: 100%; height: auto; }
-  .kit-nav { justify-content: flex-start; overflow-x: auto; }
-  .kit-tab { flex: 0 0 auto; }
   .overall-player { flex-wrap: wrap; padding: 12px 18px; gap: 10px; }
   .overall-player .skin-wrapper { margin: 0; height: 70px; width: 50px; }
   .overall-player .player-info { margin-left: 0; }
@@ -1223,3 +1219,24 @@ border-radius:5px
   bottom: calc(100% + 2px);
 }
 .overall-player .kit-icons { padding-block: 8px; }
+
+/* A single viewport-positioned tooltip replaces both legacy pseudo-element bubbles. */
+.kit-item[data-tooltip]::before,
+.kit-item[data-tooltip]::after { content: none; display: none; }
+.tier-tooltip {
+  position: fixed;
+  z-index: 2147483647;
+  width: max-content;
+  max-width: calc(100vw - 16px);
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1px solid #3b4658;
+  border-radius: 8px;
+  background: #10151e;
+  color: #fff;
+  font: 600 14px/1.45 Arial, sans-serif;
+  white-space: pre-line;
+  text-align: center;
+  pointer-events: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .4);
+}
