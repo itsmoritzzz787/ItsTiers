@@ -1186,7 +1186,7 @@ border-radius:5px
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 0;
   min-width: 0;
   position: relative;
 }
@@ -1239,4 +1239,100 @@ border-radius:5px
   text-align: center;
   pointer-events: none;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .4);
+}
+
+/* Profile content follows normal layout; no offsets into the tiers section. */
+.popup .popup-content {
+  width: min(460px, calc(100vw - 24px));
+  min-height: 0;
+  max-height: calc(100dvh - 32px);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;
+}
+.popup .Spieler-Name {
+  margin: 12px 28px 0;
+  font-size: 28px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.popup .popup-close {
+  top: 14px;
+  right: 14px;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+}
+.popup .popup-skin-wrapper {
+  flex: 0 0 110px;
+  width: 100%;
+  height: 110px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.popup .popup-skin {
+  display: block;
+  height: 110px;
+  max-width: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+.popup .popup-info {
+  flex: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  transform: none;
+}
+.popup .popup-title {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin: 0;
+  padding: 7px 22px;
+  font-size: 20px;
+  line-height: 1.25;
+}
+.popup .popup-rank,
+.popup .popup-points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 42px;
+  margin: 0;
+  padding: 8px 16px;
+  line-height: 1;
+}
+.popup .popup-rank { font-size: 20px; min-width: 48px; }
+.popup .popup-points { font-size: 15px; }
+.popup .popup-content h3 {
+  margin: 8px 0 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.popup .popup-tiers {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: start;
+  gap: 14px 8px;
+  margin: 0;
+  padding: 14px;
+  flex-shrink: 0;
+}
+@media (max-width: 380px) {
+  .popup .popup-content { padding: 22px 16px; }
+  .popup .Spieler-Name { font-size: 24px; }
+  .popup .popup-title { font-size: 18px; }
+  .popup .popup-tiers { padding: 12px 8px; gap: 12px 4px; }
 }
