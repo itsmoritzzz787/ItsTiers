@@ -6,7 +6,7 @@ This is the source of the existing ItsTiers website, updated to read player data
 
 1. Back up the current repository files.
 2. Extract the website ZIP.
-3. Upload its contents to the same repository directory as your current `index.html`. Replace `index.html`, `script.js`, and `style.css`. Add `tier-display.js` and `website-tiers.json`.
+3. Upload its contents to the same repository directory as your current `index.html`. Replace `index.html` and `script.js`, and upload `newstyle.css` (the stylesheet linked by index.html). Add `tier-display.js` and `website-tiers.json`.
 4. Keep the original image files in that directory; the ZIP also contains copies.
 5. Commit the changes and let your existing GitHub Pages deployment finish. Keep your current Pages publishing settings.
 6. Open the website and refresh it after deployment.
@@ -16,7 +16,7 @@ The main files must be beside each other, rather than inside an extra nested fol
 ```text
 index.html
 script.js
-style.css
+newstyle.css
 tier-display.js
 website-tiers.json
 IMG_20260816_141402.png
@@ -35,7 +35,7 @@ node export-site.js
 
 This reads the bot's current `tiers.json` and updates `website-tiers.json`. Upload that generated file to the website repository, replacing the previous copy. After GitHub Pages publishes the change, reload the website.
 
-**The included bot does not automatically upload files to GitHub.** Exporting and uploading remain manual until a separate synchronization step is configured. The website reads data on page load; it does not poll in the background.
+**Automatic updates are available in the updated bot package.** Follow its `GITHUB-SETUP.txt` and set `GITHUB_TOKEN` on the bot hosting service. The bot will upload the public JSON after results and on startup, grouping changed uploads at least 6 minutes apart. Without that configuration, use the manual export/upload steps above. The website reads data on page load; it does not poll in the background.
 
 ## How the website works
 
@@ -90,3 +90,12 @@ Syntax and Node/jsdom integration tests cover all imported players, peak scoring
 These files have not been committed or pushed to your GitHub repository, and your public website has not been changed by this download.
 
 Original source: https://github.com/itsmoritzzz787/ItsTiers
+
+## Updating an existing installation
+
+Use ItsTiers-site-update.zip and replace its files in your repository root, including assets/overall.svg.
+Keep your live website-tiers.json. The update ZIP excludes ranking data.
+Retired badges follow active badges and have neutral borders and backgrounds.
+Badge order uses current tiers; peaks still contribute points and tooltips.
+Gamemode tables retain alphabetical player ordering. The profile uses the MCTiers Overall cup.
+Minecraft name changes arrive through the bot's existing GitHub JSON synchronization.

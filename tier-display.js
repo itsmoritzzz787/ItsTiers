@@ -52,7 +52,7 @@
     const retired = result.retired === true;
     const hasBetterPeak = peakTier !== null && peakTier !== tier;
     const summary = retired
-      ? 'Retired ' + tier + (hasBetterPeak ? ' Â· Peak ' + peakTier : '')
+      ? 'Retired ' + tier + (hasBetterPeak ? ' · Peak ' + peakTier : '')
       : (hasBetterPeak ? 'Peak ' + peakTier : tier);
 
     return { tier, peakTier, retired, currentPoints, peakPoints: points, points, tooltip: summary + '\n' + points + ' Points' };

@@ -76,7 +76,9 @@
   window.addEventListener('resize', hideTooltip);
 
   function badgeList(player) {
-    return Object.entries(player.tiers).sort((a,b) => b[1].points - a[1].points || MODES.indexOf(a[0]) - MODES.indexOf(b[0]))
+    const order = ['HT1','LT1','HT2','LT2','HT3','LT3','HT4','LT4','HT5','LT5'];
+    const rank = tier => order.includes(tier) ? order.indexOf(tier) : 99;
+    return Object.entries(player.tiers).sort((a,b) => Number(Boolean(a[1].retired)) - Number(Boolean(b[1].retired)) || rank(a[1].tier) - rank(b[1].tier) || MODES.indexOf(a[0]) - MODES.indexOf(b[0]))
       .map(([mode, result]) => ItsTiers.createBadge(mode, result));
   }
   function clickable(node, player) {
