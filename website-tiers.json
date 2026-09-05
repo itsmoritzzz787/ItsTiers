@@ -83,11 +83,11 @@
       "tiers": {
         "sword": {
           "tier": "LT2",
-          "peakTier": "LT2"
+          "peakTier": "HT1"
         },
         "mace": {
           "tier": "LT3",
-          "peakTier": "LT3"
+          "peakTier": "HT1"
         },
         "pot": {
           "tier": "LT3",
