@@ -180,6 +180,8 @@
     portrait.src = `https://render.crafty.gg/3d/bust/${encodeURIComponent(player.minecraft)}`;
     portrait.alt = `${player.minecraft}'s Minecraft skin`;
     document.getElementById('popup-title').textContent = titleFor(player.totalPoints);
+    document.getElementById('popup-region').textContent = ({EU:'Europe', NA:'North America', AS:'Asia', SA:'South America', AU:'Australia'})[player.region] || player.region;
+    document.getElementById('popup-namemc').href = `https://namemc.com/profile/${encodeURIComponent(player.minecraft)}`;
     const rank = document.getElementById('popup-rank');
     rank.textContent = `${player.rank}.`;
     rank.className = `popup-rank ${['gold', 'silver', 'bronze'][player.rank - 1] || ''}`;
@@ -245,7 +247,7 @@
     if (popup.hidden) return;
     if (event.key === 'Escape') { event.preventDefault(); closeProfile(); }
     if (event.key === 'Tab') {
-      const focusable = Array.from(popup.querySelectorAll('button, [tabindex="0"]'));
+      const focusable = Array.from(popup.querySelectorAll('button, a[href], [tabindex="0"]'));
       const first = focusable[0], last = focusable[focusable.length - 1];
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
       else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
