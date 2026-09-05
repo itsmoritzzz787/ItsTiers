@@ -52,7 +52,7 @@
     const retired = result.retired === true;
     const hasBetterPeak = peakTier !== null && peakTier !== tier;
     const summary = retired
-      ? 'Retired ' + tier + (hasBetterPeak ? ' · Peak ' + peakTier : '')
+      ? 'Retired ' + tier + (hasBetterPeak ? ' Â· Peak ' + peakTier : '')
       : (hasBetterPeak ? 'Peak ' + peakTier : tier);
 
     return { tier, peakTier, retired, currentPoints, peakPoints: points, points, tooltip: summary + '\n' + points + ' Points' };
@@ -86,7 +86,6 @@
     badge.className = 'kit-item' + (info.retired ? ' retired' : '');
     badge.setAttribute('data-mode', mode);
     badge.setAttribute('data-tooltip', info.tooltip);
-    badge.title = info.tooltip;
     badge.setAttribute('aria-label', MODE_LABELS[mode] + ': ' + info.tier + '. ' + info.tooltip.replace('\n', '. '));
     badge.tabIndex = 0;
 
