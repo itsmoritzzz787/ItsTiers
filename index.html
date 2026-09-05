@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>ItsTiers</title>
-<link href="style.css" rel="stylesheet"/>
+<link href="newstyle.css" rel="stylesheet"/>
 <script defer="" src="tier-display.js"></script>
 <script defer="" src="script.js"></script>
 </head>
@@ -63,16 +63,26 @@
 </main>
 <div aria-labelledby="popup-name" aria-modal="true" class="popup" hidden="" id="popup" role="dialog">
 <div class="popup-content">
-<button aria-label="Close player profile" class="popup-close" id="popup-close" type="button">✕</button>
-<h2 class="Spieler-Name" id="popup-name"></h2>
+<button aria-label="Close player profile" class="popup-close" id="popup-close" type="button">×</button>
+<div class="profile-heading">
 <div class="popup-skin-wrapper"><img alt="" class="popup-skin" id="popup-skin"/></div>
-<div class="popup-info">
-<span class="popup-title" id="popup-title"></span>
+<h2 class="Spieler-Name" id="popup-name"></h2>
+<div class="profile-title-badge"><span aria-hidden="true">🏅</span><span class="popup-title" id="popup-title"></span></div>
+<p class="profile-region" id="popup-region"></p>
+<a class="profile-namemc" id="popup-namemc" rel="noopener noreferrer" target="_blank"><span aria-hidden="true" class="namemc-mark">n</span>NameMC <span aria-hidden="true">↗</span></a>
+</div>
+<section aria-labelledby="position-heading" class="profile-position">
+<h3 id="position-heading">POSITION</h3>
+<div class="profile-position-bar">
 <span class="popup-rank" id="popup-rank"></span>
+<span class="profile-overall"><span aria-hidden="true">🏆</span> OVERALL</span>
 <span class="popup-points" id="popup-points"></span>
 </div>
-<h3>TIERS</h3>
+</section>
+<section aria-labelledby="tiers-heading" class="profile-tier-section">
+<h3 id="tiers-heading">TIERS</h3>
 <div class="popup-tiers" id="popup-tiers"></div>
+</section>
 </div>
 </div>
 </body>
