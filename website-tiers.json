@@ -82,11 +82,11 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "HT1",
+          "tier": "LT2",
           "peakTier": "HT1"
         },
         "mace": {
-          "tier": "HT1",
+          "tier": "LT3",
           "peakTier": "HT1"
         },
         "pot": {
