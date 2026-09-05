@@ -1241,98 +1241,119 @@ border-radius:5px
   box-shadow: 0 4px 16px rgba(0, 0, 0, .4);
 }
 
-/* Profile content follows normal layout; no offsets into the tiers section. */
+/* Player profile, matching the supplied reference. */
 .popup .popup-content {
-  width: min(460px, calc(100vw - 24px));
+  width: min(512px, calc(100vw - 24px));
   min-height: 0;
-  max-height: calc(100dvh - 32px);
-  padding: 28px;
+  max-height: calc(100dvh - 24px);
+  box-sizing: border-box;
+  padding: 80px 40px 32px;
+  border: 0;
+  border-radius: 24px;
+  background: #191f27;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 0;
   overflow-y: auto;
 }
-.popup .Spieler-Name {
-  margin: 12px 28px 0;
-  font-size: 28px;
-  line-height: 1.2;
-  overflow-wrap: anywhere;
-}
 .popup .popup-close {
-  top: 14px;
-  right: 14px;
-  padding: 0;
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  line-height: 1;
+  top: 24px; right: 40px;
+  width: 48px; height: 48px;
+  padding: 0; border: 0; border-radius: 50%;
+  display: grid; place-items: center;
+  background: #242e3c; color: #aeb7c3;
+  font: 400 38px/1 Arial, sans-serif;
+  opacity: 1;
 }
+.popup .popup-close:hover { background: #303c4d; color: #fff; }
+.popup .profile-heading { display: flex; flex-direction: column; align-items: center; }
 .popup .popup-skin-wrapper {
-  flex: 0 0 110px;
-  width: 100%;
-  height: 110px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex: none;
+  box-sizing: border-box;
+  width: 112px; height: 112px;
+  margin: 0; border: 2px solid #f3c52c; border-radius: 50%;
+  background: #223044;
+  display: flex; justify-content: center; align-items: flex-end;
   overflow: hidden;
 }
-.popup .popup-skin {
-  display: block;
-  height: 110px;
-  max-width: 100%;
+.popup .popup-skin { height: 98px; max-width: 100%; display: block; object-fit: contain; margin: 0; opacity: 1; }
+.popup .Spieler-Name {
   margin: 0;
-  object-fit: contain;
+  font: 700 32px/1.2 Arial, sans-serif;
+  max-width: 100%; overflow-wrap: anywhere;
+  background: linear-gradient(100deg, #df16d4, #9470e6 52%, #10a8ef);
+  background-clip: text; -webkit-background-clip: text;
+  color: transparent; text-align: center;
 }
-.popup .popup-info {
-  flex: none;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin: 0;
-  transform: none;
+.popup .profile-title-badge {
+  margin-top: 16px; padding: 7px 14px;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  max-width: 100%; box-sizing: border-box;
+  border-radius: 24px; background: #48452d; color: #ffdb25;
 }
+.popup .profile-title-badge > span:first-child { font-size: 24px; line-height: 1; }
 .popup .popup-title {
-  grid-column: 1 / -1;
-  justify-self: center;
-  margin: 0;
-  padding: 7px 22px;
-  font-size: 20px;
-  line-height: 1.25;
+  display: inline; width: auto; margin: 0; padding: 0;
+  background: none; color: inherit;
+  font-size: 18px; line-height: 1.3; font-weight: 600;
 }
-.popup .popup-rank,
+.popup .profile-region { margin: 18px 0 0; color: #97a2b2; font-size: 20px; line-height: 1.2; font-weight: 600; }
+.popup .profile-namemc {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 18px; padding: 8px 10px; border-radius: 14px;
+  background: #242e3c; color: #a4adbc; font-size: 14px; line-height: 20px;
+  text-decoration: none;
+}
+.popup .profile-namemc:hover { background: #303c4d; color: white; }
+.popup .namemc-mark { width: 20px; height: 20px; border-radius: 5px; background: #07090c; color: white; text-align: center; font: 700 19px/20px monospace; }
+.popup .profile-position { margin-top: 12px; }
+.popup .popup-content h3 { margin: 0 0 10px; color: #9aa3b3; font: 400 24px/1.25 Arial, sans-serif; }
+.popup .profile-position-bar {
+  min-height: 48px; display: flex; align-items: center; gap: 8px;
+  border: 2px solid #2e3847; border-radius: 10px;
+  background: #1d242e; overflow: hidden; box-sizing: border-box;
+}
+.popup .popup-rank {
+  align-self: stretch; display: flex; align-items: center;
+  min-width: 64px; width: auto; margin: 0; padding: 0 26px 0 12px;
+  box-sizing: border-box; border: 0; border-radius: 0;
+  background: #34465f; color: white;
+  font: italic 800 30px/1 Arial, sans-serif;
+  text-shadow: 2px 2px 1px #0009;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+}
+.popup .popup-rank.gold { background: #efbc3d; }
+.popup .popup-rank.silver { background: #aab4c2; }
+.popup .popup-rank.bronze { background: #c98d4f; }
+.popup .popup-rank::before { content: none; }
+.popup .profile-overall { display: flex; align-items: center; gap: 8px; white-space: nowrap; font-size: 24px; font-weight: 700; }
+.popup .profile-overall > span { font-size: 22px; }
 .popup .popup-points {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  height: 42px;
-  margin: 0;
-  padding: 8px 16px;
-  line-height: 1;
+  display: inline; width: auto; margin: 0; padding: 0 8px 0 0; border: 0;
+  background: none; border-radius: 0; color: #91a0b8;
+  font-size: 18px; font-weight: 500; line-height: 1.3; white-space: nowrap;
 }
-.popup .popup-rank { font-size: 20px; min-width: 48px; }
-.popup .popup-points { font-size: 15px; }
-.popup .popup-content h3 {
-  margin: 8px 0 0;
-  font-size: 20px;
-  line-height: 1.2;
-}
+.popup .popup-points::before { content: '('; }
+.popup .popup-points::after { content: ')'; }
+.popup .profile-tier-section { margin-top: 24px; }
 .popup .popup-tiers {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  align-items: start;
-  gap: 14px 8px;
-  margin: 0;
-  padding: 14px;
-  flex-shrink: 0;
+  display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;
+  gap: 10px 12px; margin: 0; padding: 10px;
+  border: 2px solid #2e3847; border-radius: 10px; background: #1d242e;
+}
+.popup .popup-tiers > .kit-item { flex: 0 0 36px; }
+@media (max-width: 520px) {
+  .popup .popup-content { padding: 72px 24px 28px; }
+  .popup .popup-close { top: 18px; right: 24px; }
+  .popup .profile-position-bar { gap: 6px; flex-wrap: wrap; }
+  .popup .profile-overall { font-size: 20px; }
+  .popup .popup-points { font-size: 16px; }
+  .popup .popup-rank { min-height: 44px; font-size: 26px; }
 }
 @media (max-width: 380px) {
-  .popup .popup-content { padding: 22px 16px; }
-  .popup .Spieler-Name { font-size: 24px; }
-  .popup .popup-title { font-size: 18px; }
-  .popup .popup-tiers { padding: 12px 8px; gap: 12px 4px; }
+  .popup .popup-content { padding-inline: 16px; }
+  .popup .profile-overall { font-size: 17px; gap: 5px; }
+  .popup .profile-overall > span { font-size: 18px; }
+  .popup .popup-points { font-size: 14px; }
+  .popup .popup-rank { min-width: 52px; padding-right: 18px; }
 }
