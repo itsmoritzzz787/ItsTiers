@@ -1271,7 +1271,7 @@ border-radius:5px
   flex: none;
   box-sizing: border-box;
   width: 112px; height: 112px;
-  margin: 0; border: 2px solid #f3c52c; border-radius: 50%;
+  margin: 0; border: 0; border-radius: 50%;
   background: #223044;
   display: flex; justify-content: center; align-items: flex-end;
   overflow: hidden;
@@ -1281,17 +1281,16 @@ border-radius:5px
   margin: 0;
   font: 700 32px/1.2 Arial, sans-serif;
   max-width: 100%; overflow-wrap: anywhere;
-  background: linear-gradient(100deg, #df16d4, #9470e6 52%, #10a8ef);
-  background-clip: text; -webkit-background-clip: text;
-  color: transparent; text-align: center;
+  background: none;
+  color: #fff; text-align: center;
 }
 .popup .profile-title-badge {
   margin-top: 16px; padding: 7px 14px;
   display: flex; align-items: center; justify-content: center; gap: 8px;
   max-width: 100%; box-sizing: border-box;
-  border-radius: 24px; background: #48452d; color: #ffdb25;
+  border-radius: 0; background: none; color: #fff;
 }
-.popup .profile-title-badge > span:first-child { font-size: 24px; line-height: 1; }
+.popup .profile-title-badge > span[aria-hidden="true"] { display: none; }
 .popup .popup-title {
   display: inline; width: auto; margin: 0; padding: 0;
   background: none; color: inherit;
