@@ -43,17 +43,17 @@ const players = {
     name: "ItsMoritzzz",
     rank: "1.",
     title: "Combat Ace",
-    points: "102 points",
+    points: "104 points",
     tiers: [
       {icon:"sword", tier:"LT2"},
       {icon:"https://cdn-icons-png.magnific.com/512/6428/6428889.png", tier:"LT2"}, 
       {icon:"mace", tier:"LT2"},        
       {icon:"https://subtiers.net/assets/trident-1c1a3e5a.svg", tier:"HT3"},     
       {icon:"vanilla", tier:"LT3"},
+      {icon:"smp", tier:"LT3"},
       {icon:"pot", tier:"LT3"},    
       {icon:"nethop", tier:"HT4"},
       {icon:"uhc", tier:"HT4"},
-      {icon:"smp", tier:"HT4"},
       {icon:"axe", tier:"HT4"}, 
                                                                           
     ]
