@@ -1182,3 +1182,44 @@ border-radius:5px
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Keep the icon, tier label and tooltip in separate, non-overlapping areas. */
+.kit-icons > .kit-item,
+.popup-tiers > .kit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  min-width: 0;
+  position: relative;
+}
+.kit-item > .icon {
+  flex: 0 0 31px;
+  width: 31px;
+  height: 31px;
+  box-sizing: border-box;
+  top: 0;
+}
+.kit-item > .label {
+  display: block;
+  flex: 0 0 auto;
+  position: static;
+  margin: 0;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+.kit-item::after {
+  top: auto;
+  bottom: calc(100% + 12px);
+  width: max-content;
+  max-width: 190px;
+  box-sizing: border-box;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+.kit-item::before {
+  top: auto;
+  bottom: calc(100% + 2px);
+}
+.overall-player .kit-icons { padding-block: 8px; }
