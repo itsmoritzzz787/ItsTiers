@@ -1274,6 +1274,10 @@
         "spearmace": {
           "tier": "HT4",
           "peakTier": "HT4"
+        },
+        "axe": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
