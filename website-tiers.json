@@ -1250,8 +1250,8 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT2",
+          "peakTier": "LT2"
         }
       }
     },
