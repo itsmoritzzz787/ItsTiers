@@ -1246,6 +1246,16 @@
       }
     },
     {
+      "minecraft": "Paliwag",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "pawkitty",
       "region": "EU",
       "tiers": {
