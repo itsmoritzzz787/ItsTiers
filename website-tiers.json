@@ -1243,6 +1243,10 @@
         "sword": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "uhc": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
