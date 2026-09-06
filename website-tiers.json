@@ -1530,7 +1530,7 @@
       "region": "EU",
       "tiers": {
         "mace": {
-          "tier": "HT4",
+          "tier": "LT5",
           "peakTier": "HT4"
         },
         "crystal": {
