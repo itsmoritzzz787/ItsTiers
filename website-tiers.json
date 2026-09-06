@@ -1278,6 +1278,10 @@
         "axe": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "smp": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
