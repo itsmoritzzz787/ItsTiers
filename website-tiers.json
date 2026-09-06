@@ -124,6 +124,24 @@
       }
     },
     {
+      "minecraft": "67kz",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "pot": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "nethpot": {
+          "tier": "LT4",
+          "peakTier": "LT4"
+        }
+      }
+    },
+    {
       "minecraft": "BartekGaming383",
       "region": "EU",
       "tiers": {
@@ -1547,24 +1565,6 @@
         "spearmace": {
           "tier": "HT5",
           "peakTier": "HT5"
-        }
-      }
-    },
-    {
-      "minecraft": "ySw1ft",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "pot": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "nethpot": {
-          "tier": "LT4",
-          "peakTier": "LT4"
         }
       }
     },
