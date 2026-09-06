@@ -1484,8 +1484,8 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "LT4",
-          "peakTier": "LT4"
+          "tier": "HT4",
+          "peakTier": "HT4"
         },
         "pot": {
           "tier": "HT5",
