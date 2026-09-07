@@ -1382,6 +1382,16 @@
       }
     },
     {
+      "minecraft": "Sm1twargusPrimus",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "Sn00wies",
       "region": "EU",
       "tiers": {
