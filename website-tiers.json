@@ -1388,6 +1388,10 @@
         "sword": {
           "tier": "HT4",
           "peakTier": "HT4"
+        },
+        "mace": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
