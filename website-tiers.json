@@ -1075,6 +1075,16 @@
       }
     },
     {
+      "minecraft": "Matttttiiee",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT2",
+          "peakTier": "HT2"
+        }
+      }
+    },
+    {
       "minecraft": "McNicho",
       "region": "EU",
       "tiers": {
