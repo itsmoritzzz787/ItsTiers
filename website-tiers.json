@@ -628,6 +628,10 @@
         "mace": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "pot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
@@ -1261,7 +1265,7 @@
       "tiers": {
         "sword": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT2"
         },
         "mace": {
           "tier": "LT4",
@@ -1531,7 +1535,7 @@
       "tiers": {
         "mace": {
           "tier": "LT5",
-          "peakTier": "LT5"
+          "peakTier": "HT4"
         },
         "crystal": {
           "tier": "HT4",
