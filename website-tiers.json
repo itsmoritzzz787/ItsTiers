@@ -1646,6 +1646,16 @@
       }
     },
     {
+      "minecraft": "Zendvor",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "LT2",
+          "peakTier": "LT2"
+        }
+      }
+    },
+    {
       "minecraft": "Zeno_HT5",
       "region": "EU",
       "tiers": {
