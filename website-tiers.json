@@ -659,7 +659,8 @@
         },
         "sword": {
           "tier": "LT2",
-          "peakTier": "LT2"
+          "peakTier": "LT2",
+          "retired": true
         },
         "spearmace": {
           "tier": "LT2",
