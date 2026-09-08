@@ -1593,6 +1593,16 @@
       }
     },
     {
+      "minecraft": "TungTungSwight",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "TwyCole",
       "region": "EU",
       "tiers": {
