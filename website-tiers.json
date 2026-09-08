@@ -1079,8 +1079,8 @@
       "region": "EU",
       "tiers": {
         "mace": {
-          "tier": "HT2",
-          "peakTier": "HT2"
+          "tier": "LT1",
+          "peakTier": "LT1"
         }
       }
     },
