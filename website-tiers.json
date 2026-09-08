@@ -215,6 +215,16 @@
       }
     },
     {
+      "minecraft": "biscoffbread",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "bombertobi",
       "region": "EU",
       "tiers": {
