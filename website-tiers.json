@@ -177,6 +177,16 @@
       }
     },
     {
+      "minecraft": "atokyo",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "BartekGaming383",
       "region": "EU",
       "tiers": {
