@@ -1296,6 +1296,7 @@
     },
     {
       "minecraft": "Paliwag",
+      "restricted": true,
       "region": "EU",
       "tiers": {
         "sword": {
