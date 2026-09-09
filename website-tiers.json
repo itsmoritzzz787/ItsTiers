@@ -1119,6 +1119,10 @@
         "chaosmace": {
           "tier": "LT2",
           "peakTier": "LT2"
+        },
+        "axe": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
