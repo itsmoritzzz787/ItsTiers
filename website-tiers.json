@@ -965,6 +965,16 @@
       }
     },
     {
+      "minecraft": "Lixa_787",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "LT4",
+          "peakTier": "LT4"
+        }
+      }
+    },
+    {
       "minecraft": "LLoyd_the_M",
       "region": "EU",
       "tiers": {
