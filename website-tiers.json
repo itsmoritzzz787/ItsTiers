@@ -1111,6 +1111,10 @@
         "mace": {
           "tier": "LT1",
           "peakTier": "LT1"
+        },
+        "spearmace": {
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
