@@ -1075,6 +1075,16 @@
       }
     },
     {
+      "minecraft": "luudwiczek",
+      "region": "EU",
+      "tiers": {
+        "nethpot": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "M4rkiski",
       "region": "EU",
       "tiers": {
