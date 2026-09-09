@@ -949,6 +949,10 @@
           "tier": "LT2",
           "peakTier": "LT2",
           "retired": true
+        },
+        "pot": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
