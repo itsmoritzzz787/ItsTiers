@@ -1123,6 +1123,10 @@
         "axe": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "nethpot": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
