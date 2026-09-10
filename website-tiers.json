@@ -434,16 +434,6 @@
       }
     },
     {
-      "minecraft": "FemboyCebulamen",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        }
-      }
-    },
-    {
       "minecraft": "Fr0gified",
       "region": "EU",
       "tiers": {
@@ -1550,6 +1540,16 @@
         "mace": {
           "tier": "HT4",
           "peakTier": "HT4"
+        }
+      }
+    },
+    {
+      "minecraft": "SonPatrol",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
