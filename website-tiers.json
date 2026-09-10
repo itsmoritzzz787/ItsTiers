@@ -506,7 +506,7 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "LT3",
+          "tier": "LT4",
           "peakTier": "LT3"
         },
         "spearmace": {
