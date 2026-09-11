@@ -183,6 +183,10 @@
         "sword": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "mace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
