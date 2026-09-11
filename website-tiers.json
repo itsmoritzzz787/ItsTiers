@@ -151,7 +151,7 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "LT3",
+          "tier": "HT3",
           "peakTier": "HT3"
         },
         "crystal": {
