@@ -44,8 +44,8 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT3",
+          "peakTier": "HT3"
         },
         "nethpot": {
           "tier": "LT3",
