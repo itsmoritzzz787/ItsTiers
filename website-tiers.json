@@ -922,8 +922,8 @@
           "peakTier": "LT1"
         },
         "pot": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT2",
+          "peakTier": "LT2"
         },
         "nethpot": {
           "tier": "HT3",
