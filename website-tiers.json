@@ -22,7 +22,7 @@
       }
     },
     {
-      "minecraft": "_JumpingBean_",
+      "minecraft": "_jumpingbean_",
       "region": "EU",
       "tiers": {
         "mace": {
@@ -44,28 +44,28 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "nethpot": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "nethpot": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         },
         "spearmace": {
           "tier": "LT4",
           "peakTier": "LT4"
         },
         "pot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "LT4",
+          "peakTier": "LT4"
         },
         "axe": {
           "tier": "HT5",
           "peakTier": "HT5"
         },
         "smp": {
-          "tier": "LT4",
-          "peakTier": "LT4"
+          "tier": "HT5",
+          "peakTier": "HT5"
         },
         "crystal": {
           "tier": "HT5",
@@ -78,36 +78,35 @@
       }
     },
     {
-      "minecraft": "3qzy",
+      "minecraft": "4shotss",
       "region": "EU",
       "tiers": {
         "sword": {
           "tier": "LT2",
-          "peakTier": "LT2",
-          "retired": true
+          "peakTier": "LT2"
         },
         "mace": {
           "tier": "LT3",
           "peakTier": "LT3"
         },
         "pot": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "smp": {
           "tier": "HT4",
           "peakTier": "HT4"
         },
         "nethpot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT4",
+          "peakTier": "HT4"
         },
         "axe": {
           "tier": "HT4",
           "peakTier": "HT4"
         },
         "chaosmace": {
-          "tier": "LT3",
+          "tier": "LT4",
           "peakTier": "LT3"
         },
         "crystal": {
@@ -121,72 +120,6 @@
         "uhc": {
           "tier": "HT5",
           "peakTier": "HT5"
-        }
-      }
-    },
-    {
-      "minecraft": "67kz",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "pot": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "nethpot": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        },
-        "mace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        }
-      }
-    },
-    {
-      "minecraft": "aha28",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "crystal": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "pot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "nethpot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "axe": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "mace": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        }
-      }
-    },
-    {
-      "minecraft": "atokyo",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "mace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
         }
       }
     },
@@ -229,66 +162,12 @@
       }
     },
     {
-      "minecraft": "biscoffbread",
-      "region": "EU",
-      "tiers": {
-        "mace": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        }
-      }
-    },
-    {
-      "minecraft": "bo_nix_10",
-      "region": "NA",
-      "tiers": {
-        "crystal": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "mace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "pot": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "nethpot": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        }
-      }
-    },
-    {
       "minecraft": "bombertobi",
       "region": "EU",
       "tiers": {
         "sword": {
           "tier": "LT3",
           "peakTier": "LT3"
-        }
-      }
-    },
-    {
-      "minecraft": "BomoFan",
-      "region": "EU",
-      "tiers": {
-        "smp": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "pot": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "uhc": {
-          "tier": "HT4",
-          "peakTier": "HT4"
         }
       }
     },
@@ -482,6 +361,16 @@
       }
     },
     {
+      "minecraft": "FemboyCebulamen",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "Fr0gified",
       "region": "EU",
       "tiers": {
@@ -544,7 +433,7 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "LT4",
+          "tier": "LT3",
           "peakTier": "LT3"
         },
         "spearmace": {
@@ -634,7 +523,7 @@
       }
     },
     {
-      "minecraft": "ImJett_",
+      "minecraft": "Imjett_",
       "region": "EU",
       "tiers": {
         "crystal": {
@@ -702,7 +591,7 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "HT4",
+          "tier": "LT3",
           "peakTier": "LT3"
         },
         "nethpot": {
@@ -720,15 +609,11 @@
         "mace": {
           "tier": "LT4",
           "peakTier": "LT4"
-        },
-        "pot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
         }
       }
     },
     {
-      "minecraft": "ItsFluffytime14",
+      "minecraft": "ItsFluffyTime14",
       "region": "EU",
       "tiers": {
         "mace": {
@@ -736,8 +621,8 @@
           "peakTier": "LT3"
         },
         "spearmace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
@@ -751,13 +636,11 @@
         },
         "sword": {
           "tier": "LT2",
-          "peakTier": "LT2",
-          "retired": true
+          "peakTier": "LT2"
         },
         "spearmace": {
           "tier": "LT2",
-          "peakTier": "LT2",
-          "retired": true
+          "peakTier": "LT2"
         },
         "mace": {
           "tier": "LT2",
@@ -772,7 +655,7 @@
           "peakTier": "LT3"
         },
         "pot": {
-          "tier": "LT4",
+          "tier": "LT3",
           "peakTier": "LT3"
         },
         "nethpot": {
@@ -872,7 +755,7 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "HT4",
+          "tier": "LT3",
           "peakTier": "LT3"
         },
         "spearmace": {
@@ -908,8 +791,38 @@
           "peakTier": "LT5"
         },
         "mace": {
-          "tier": "HT5",
-          "peakTier": "HT5"
+          "tier": "LT5",
+          "peakTier": "LT5"
+        }
+      }
+    },
+    {
+      "minecraft": "k4qx",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "HT3"
+        },
+        "crystal": {
+          "tier": "LT3",
+          "peakTier": "HT3"
+        },
+        "pot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "nethpot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "axe": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        },
+        "mace": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
@@ -922,8 +835,8 @@
           "peakTier": "LT1"
         },
         "pot": {
-          "tier": "LT2",
-          "peakTier": "LT2"
+          "tier": "HT3",
+          "peakTier": "HT3"
         },
         "nethpot": {
           "tier": "HT3",
@@ -938,11 +851,11 @@
           "peakTier": "HT3"
         },
         "chaosmace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "mace": {
-          "tier": "HT4",
+          "tier": "LT3",
           "peakTier": "LT3"
         },
         "spearmace": {
@@ -987,19 +900,11 @@
           "tier": "LT2",
           "peakTier": "LT2",
           "retired": true
-        },
-        "pot": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "uhc": {
-          "tier": "HT4",
-          "peakTier": "HT4"
         }
       }
     },
     {
-      "minecraft": "koksikSzef",
+      "minecraft": "KoksikSzef",
       "region": "EU",
       "tiers": {
         "sword": {
@@ -1021,21 +926,7 @@
       }
     },
     {
-      "minecraft": "Lixa_787",
-      "region": "EU",
-      "tiers": {
-        "crystal": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        },
-        "mace": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        }
-      }
-    },
-    {
-      "minecraft": "LLoyd_the_M",
+      "minecraft": "Lloyd_The_M",
       "region": "EU",
       "tiers": {
         "smp": {
@@ -1145,16 +1036,6 @@
       }
     },
     {
-      "minecraft": "luudwiczek",
-      "region": "EU",
-      "tiers": {
-        "nethpot": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        }
-      }
-    },
-    {
       "minecraft": "M4rkiski",
       "region": "EU",
       "tiers": {
@@ -1165,42 +1046,12 @@
       }
     },
     {
-      "minecraft": "Matttttiiee",
-      "region": "EU",
-      "tiers": {
-        "mace": {
-          "tier": "LT1",
-          "peakTier": "LT1"
-        },
-        "spearmace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "chaosmace": {
-          "tier": "LT2",
-          "peakTier": "LT2"
-        },
-        "axe": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "nethpot": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        }
-      }
-    },
-    {
       "minecraft": "McNicho",
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "LT2",
-          "peakTier": "LT2"
+          "tier": "HT3",
+          "peakTier": "HT3"
         },
         "mace": {
           "tier": "HT3",
@@ -1215,8 +1066,8 @@
           "peakTier": "LT3"
         },
         "sword": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT4",
+          "peakTier": "HT4"
         },
         "smp": {
           "tier": "LT4",
@@ -1373,41 +1224,6 @@
         "sword": {
           "tier": "LT3",
           "peakTier": "LT3"
-        },
-        "uhc": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "axe": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        }
-      }
-    },
-    {
-      "minecraft": "Paliwag",
-      "restricted": true,
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "LT3",
-          "peakTier": "LT2"
-        },
-        "mace": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        },
-        "axe": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "uhc": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "crystal": {
-          "tier": "LT5",
-          "peakTier": "LT5"
         }
       }
     },
@@ -1422,18 +1238,6 @@
         "spearmace": {
           "tier": "HT4",
           "peakTier": "HT4"
-        },
-        "axe": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "smp": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        },
-        "pot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
         }
       }
     },
@@ -1470,6 +1274,24 @@
       }
     },
     {
+      "minecraft": "SigsAhoy",
+      "region": "EU",
+      "tiers": {
+        "smp": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "pot": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        },
+        "uhc": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "SkinPunktexe",
       "region": "EU",
       "tiers": {
@@ -1481,20 +1303,6 @@
     },
     {
       "minecraft": "Sm1targusPrimus",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "mace": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        }
-      }
-    },
-    {
-      "minecraft": "Sm1twargusPrimus",
       "region": "EU",
       "tiers": {
         "sword": {
@@ -1574,16 +1382,6 @@
       }
     },
     {
-      "minecraft": "SonPatrol",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        }
-      }
-    },
-    {
       "minecraft": "Spooky1904",
       "region": "EU",
       "tiers": {
@@ -1598,16 +1396,6 @@
         "crystal": {
           "tier": "LT5",
           "peakTier": "LT5"
-        }
-      }
-    },
-    {
-      "minecraft": "StoneTrail",
-      "region": "EU",
-      "tiers": {
-        "mace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
         }
       }
     },
@@ -1634,16 +1422,16 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "HT4",
-          "peakTier": "HT4"
+          "tier": "LT4",
+          "peakTier": "LT4"
         },
         "pot": {
           "tier": "HT5",
           "peakTier": "HT5"
         },
         "chaosmace": {
-          "tier": "LT4",
-          "peakTier": "LT4"
+          "tier": "HT5",
+          "peakTier": "HT5"
         },
         "smp": {
           "tier": "HT5",
@@ -1659,19 +1447,19 @@
         },
         "nethpot": {
           "tier": "LT5",
-          "peakTier": "HT5"
+          "peakTier": "LT5"
         },
         "uhc": {
           "tier": "LT5",
           "peakTier": "LT5"
         },
         "spearmace": {
-          "tier": "HT5",
-          "peakTier": "HT5"
+          "tier": "LT5",
+          "peakTier": "LT5"
         },
         "crystal": {
-          "tier": "HT5",
-          "peakTier": "HT5"
+          "tier": "LT5",
+          "peakTier": "LT5"
         }
       }
     },
@@ -1680,22 +1468,12 @@
       "region": "EU",
       "tiers": {
         "mace": {
-          "tier": "LT5",
+          "tier": "HT4",
           "peakTier": "HT4"
         },
         "crystal": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        }
-      }
-    },
-    {
-      "minecraft": "TungTungSwight",
-      "region": "EU",
-      "tiers": {
-        "mace": {
-          "tier": "HT4",
-          "peakTier": "HT4"
+          "tier": "LT5",
+          "peakTier": "LT5"
         }
       }
     },
@@ -1773,6 +1551,24 @@
       }
     },
     {
+      "minecraft": "ySw1ft",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "pot": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "nethpot": {
+          "tier": "LT4",
+          "peakTier": "LT4"
+        }
+      }
+    },
+    {
       "minecraft": "ytgabereal",
       "region": "EU",
       "tiers": {
@@ -1783,17 +1579,7 @@
       }
     },
     {
-      "minecraft": "Zendvor",
-      "region": "EU",
-      "tiers": {
-        "mace": {
-          "tier": "LT2",
-          "peakTier": "LT2"
-        }
-      }
-    },
-    {
-      "minecraft": "Zeno_HT5",
+      "minecraft": "zeno_HT5",
       "region": "EU",
       "tiers": {
         "crystal": {
@@ -1820,5 +1606,10 @@
         }
       }
     }
-  ]
+  ],
+  "ltm": {
+    "definitions": [],
+    "active": null,
+    "players": []
+  }
 }

@@ -58,9 +58,35 @@
     return { tier, peakTier, retired, currentPoints, peakPoints: points, points, tooltip: summary + '\n' + points + ' Points' };
   }
 
-  function rankPlayers(players) {
+  function normalizeLtm(ltm) {
+    if (ltm === undefined) return {definitions:[],active:null,players:[]};
+    if (!isRecord(ltm) || !Array.isArray(ltm.definitions) || !Array.isArray(ltm.players)) throw new TypeError('Invalid LTM data');
+    const ids = new Set();
+    const definitions = ltm.definitions.map(definition => {
+      if (!isRecord(definition) || !/^[a-z0-9](?:[a-z0-9-]{0,31})$/.test(definition.id || '') ||
+          typeof definition.name !== 'string' || !definition.name.trim() || !/^https:\/\//.test(definition.icon || '') || ids.has(definition.id)) {
+        throw new TypeError('Invalid LTM definition');
+      }
+      ids.add(definition.id); return {...definition};
+    });
+    const players = ltm.players.map(player => {
+      if (!isRecord(player) || typeof player.minecraft !== 'string' || !isRecord(player.results)) throw new TypeError('Invalid LTM player');
+      const results = Object.fromEntries(Object.entries(player.results).map(([id,result]) => {
+        if (!ids.has(id)) throw new TypeError('Unknown LTM result');
+        return [id,{...result,...tierInfo(result)}];
+      }));
+      return {...player,results};
+    });
+    const active = ltm.active && ids.has(ltm.active.id) ? {...ltm.active} : null;
+    return {definitions,active,players};
+  }
+
+  function rankPlayers(players, ltmData = {players:[]}) {
     if (!Array.isArray(players)) throw new TypeError('Players must be an array');
-    const ranked = players.map(player => {
+    const ltmByName = new Map((ltmData.players || []).map(player => [player.minecraft.toLowerCase(),player]));
+    const standardNames = new Set(players.map(player => String(player.minecraft).toLowerCase()));
+    const combined = [...players, ...(ltmData.players || []).filter(player => !standardNames.has(player.minecraft.toLowerCase())).map(player => ({minecraft:player.minecraft,region:player.region,tiers:{}}))];
+    const ranked = combined.map(player => {
       if (!isRecord(player) || typeof player.minecraft !== 'string' || !player.minecraft.trim() || !isRecord(player.tiers)) {
         throw new TypeError('Each player needs a Minecraft name and a tiers object');
       }
@@ -71,10 +97,23 @@
         totalPoints += info.points;
         return [mode, { ...result, ...info }];
       }));
-      return { ...player, tiers, totalPoints };
+      const ltmPlayer = ltmByName.get(player.minecraft.toLowerCase());
+      const ltms = {...(ltmPlayer?.results || {})};
+      totalPoints += Object.values(ltms).reduce((sum,result)=>sum+result.points,0);
+      return { ...player, region:player.region || ltmPlayer?.region, tiers, ltms, totalPoints };
     });
     ranked.sort((a, b) => b.totalPoints - a.totalPoints || a.minecraft.localeCompare(b.minecraft, 'en'));
     return ranked.map((player, index) => ({ ...player, rank: index + 1 }));
+  }
+
+  function createLtmButton(count) {
+    if (typeof document === 'undefined') throw new Error('createLtmButton requires a browser document');
+    const button=document.createElement('button');button.type='button';button.className='kit-item ltm-player-trigger';
+    button.setAttribute('aria-label',`View ${count} limited-time tier${count===1?'':'s'}`);
+    const icon=document.createElement('div');icon.className='icon ltm-icon';
+    const image=document.createElement('img');image.src='assets/ltm.svg';image.width=20;image.alt='LTM';icon.appendChild(image);
+    const label=document.createElement('span');label.className='label ltm-label';label.textContent='LTM';
+    button.append(icon,label);return button;
   }
 
   function createBadge(mode, result) {
@@ -86,6 +125,7 @@
     badge.className = 'kit-item' + (info.retired ? ' retired' : '');
     badge.setAttribute('data-mode', mode);
     badge.setAttribute('data-tooltip', info.tooltip);
+    badge.title = info.tooltip;
     badge.setAttribute('aria-label', MODE_LABELS[mode] + ': ' + info.tier + '. ' + info.tooltip.replace('\n', '. '));
     badge.tabIndex = 0;
 
@@ -105,15 +145,18 @@
     return badge;
   }
 
-  async function load(url) {
+  async function loadData(url) {
     const response = await fetch(url, { cache: 'no-store' });
     if (!response.ok) throw new Error('Could not load tiers JSON (HTTP ' + response.status + ')');
     const data = await response.json();
     if (!isRecord(data) || data.schemaVersion !== 2 || !Array.isArray(data.players)) {
       throw new TypeError('Expected schemaVersion 2 and a players array');
     }
-    return rankPlayers(data.players);
+    const ltm=normalizeLtm(data.ltm);
+    return {ranking:rankPlayers(data.players,ltm),ltm};
   }
 
-  return Object.freeze({ POINTS_BY_TIER, MODE_ICONS, MODE_LABELS, tierInfo, rankPlayers, createBadge, load });
+  async function load(url) { return (await loadData(url)).ranking; }
+
+  return Object.freeze({ POINTS_BY_TIER, MODE_ICONS, MODE_LABELS, tierInfo, rankPlayers, createBadge, createLtmButton, normalizeLtm, loadData, load });
 });

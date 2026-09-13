@@ -19,13 +19,16 @@
   };
   const search = document.getElementById('playerSearch');
   const popup = document.getElementById('popup');
+  const ltmPopup = document.getElementById('ltm-player-popup');
   const closeButton = document.getElementById('popup-close');
+  const ltmCloseButton = document.getElementById('ltm-player-close');
   const panels = document.getElementById('ranking-panels');
   const tabs = Array.from(document.querySelectorAll('.kit-tab'));
   const loadStatus = document.getElementById('load-status');
   const message = document.getElementById('load-message');
   const retry = document.getElementById('retry-load');
   let players = new Map();
+  let ltmData = {definitions:[],active:null,players:[]};
   let activeKit = 'overall';
   let loading = false;
   let returnFocus = null;
@@ -98,11 +101,13 @@
     const right = el('div', 'player-right');
     const region = el('div', `region ${player.region.toLowerCase()}`, player.region);
     const icons = el('div', 'kit-icons'); icons.append(...badgeList(player));
+    const ltmCount=Object.keys(player.ltms || {}).length;
+    if (ltmCount) icons.append(ItsTiers.createLtmButton(ltmCount));
     right.append(region, icons); card.append(wrapper, info, right);
     return card;
   }
-  function modeRow(player, mode) {
-    const result = player.tiers[mode];
+  function modeRow(player, mode, suppliedResult) {
+    const result = suppliedResult || player.tiers[mode];
     const kind = result.tier.startsWith('H') ? 'ht' : 'lt';
     const region = result.region || player.region;
     const row = clickable(el('div', `player ${kind} ${region.toLowerCase()}`), player);
@@ -111,6 +116,39 @@
     row.append(identity, el('span', `player-tier ${kind}`, kind === 'ht' ? '⇈' : '⇡'));
     row.title = `${result.tooltip}\n${region}`;
     return row;
+  }
+  function ltmTable(ranking,id) {
+    const table=el('div','tier-table');
+    const columns=Array.from({length:5},(_,i)=>{const column=el('div',`tier tier${i+1}`);column.append(el('h3','',`Tier ${i+1}`));return column;});
+    const entries=ranking.filter(player=>/^[HL]T[1-5]$/.test(player.ltms?.[id]?.tier || ''))
+      .sort((a,b)=>a.ltms[id].tier[0].localeCompare(b.ltms[id].tier[0]) || a.minecraft.localeCompare(b.minecraft,'en'));
+    for (const player of entries) columns[Number(player.ltms[id].tier[2])-1].append(modeRow(player,id,player.ltms[id]));
+    table.append(...columns);return table;
+  }
+  function renderLtmPanel(ranking) {
+    const panel=el('div','ltm-panel');
+    if (!ltmData.definitions.length) { panel.append(el('p','ltm-empty','No limited-time modes have been added yet.')); return panel; }
+    const picker=el('div','ltm-picker');picker.setAttribute('aria-label','Limited-time modes');
+    const heading=el('div','ltm-table-heading');
+    const tableHost=el('div','ltm-table-host');
+    const definitions=[...ltmData.definitions].sort((a,b)=>Number(b.id===ltmData.active?.id)-Number(a.id===ltmData.active?.id)||a.name.localeCompare(b.name,'en'));
+    function select(definition,button) {
+      for (const item of picker.querySelectorAll('.ltm-choice')) item.classList.toggle('active',item===button);
+      heading.replaceChildren();
+      const image=el('img','');image.src=definition.icon;image.alt='';
+      const title=el('h2','',definition.name);heading.append(image,title);
+      if (definition.id===ltmData.active?.id) heading.append(el('span','ltm-active-label','ACTIVE'));
+      tableHost.replaceChildren(ltmTable(ranking,definition.id));applySearch();
+    }
+    definitions.forEach((definition,index)=>{
+      const button=el('button','ltm-choice');button.type='button';
+      const image=el('img','');image.src=definition.icon;image.alt='';
+      button.append(image,el('span','',definition.name));
+      if(definition.id===ltmData.active?.id)button.append(el('small','','ACTIVE'));
+      button.addEventListener('click',()=>select(definition,button));picker.append(button);
+      if(index===0) queueMicrotask(()=>select(definition,button));
+    });
+    panel.append(picker,heading,tableHost);return panel;
   }
   function validatePlayers(ranking) {
     const names = new Set();
@@ -124,7 +162,8 @@
       }
     }
   }
-  function render(ranking) {
+  function render(ranking, loadedLtm) {
+    ltmData=loadedLtm;
     validatePlayers(ranking);
     const overall = document.createDocumentFragment();
     overall.append(...ranking.map(overallCard));
@@ -143,6 +182,7 @@
     // Swap the page only after the full dataset and its UI have been built successfully.
     document.getElementById('overall').replaceChildren(overall);
     tables.forEach((table, i) => document.getElementById(`kit${i + 1}`).replaceChildren(table));
+    document.getElementById('ltm').replaceChildren(renderLtmPanel(ranking));
     players = new Map(ranking.map(player => [player.minecraft.toLowerCase(), player]));
     applySearch();
   }
@@ -193,11 +233,34 @@
     document.body.classList.add('profile-open');
     closeButton.focus();
   }
+  function openLtmResults(name) {
+    hideTooltip();
+    const player=players.get(name.toLowerCase());if(!player)return;
+    const definitions=new Map(ltmData.definitions.map(item=>[item.id,item]));
+    const results=Object.entries(player.ltms || {}).filter(([id])=>definitions.has(id));
+    if(!results.length)return;
+    returnFocus=document.activeElement;
+    document.getElementById('ltm-player-title').textContent=player.minecraft;
+    const rows=results.sort((a,b)=>definitions.get(a[0]).name.localeCompare(definitions.get(b[0]).name,'en')).map(([id,result])=>{
+      const definition=definitions.get(id);const row=el('div','ltm-result-row');
+      const image=el('img','ltm-result-icon');image.src=definition.icon;image.alt='';
+      const info=el('div','ltm-result-info');info.append(el('strong','',definition.name),el('span','',`${result.points} points${id===ltmData.active?.id?' · Active':''}`));
+      const tier=el('span',`ltm-result-tier ${result.tier.toLowerCase()}`,result.tier);
+      if(result.peakTier && result.peakTier!==result.tier)tier.title=`Peak ${result.peakTier}`;
+      row.append(image,info,tier);return row;
+    });
+    document.getElementById('ltm-player-results').replaceChildren(...rows);
+    ltmPopup.hidden=false;document.body.classList.add('profile-open');ltmCloseButton.focus();
+  }
   function closeProfile() {
     hideTooltip();
     popup.hidden = true;
     document.body.classList.remove('profile-open');
     if (returnFocus?.isConnected) returnFocus.focus();
+  }
+  function closeLtmResults() {
+    ltmPopup.hidden=true;document.body.classList.remove('profile-open');
+    if(returnFocus?.isConnected)returnFocus.focus();
   }
   async function loadRankings() {
     if (loading) return;
@@ -206,8 +269,8 @@
     document.getElementById('search-status').hidden = true;
     panels.setAttribute('aria-busy', 'true');
     try {
-      const ranking = await ItsTiers.load(DATA_URL);
-      render(ranking); loadStatus.hidden = true; search.disabled = false;
+      const data = await ItsTiers.loadData(DATA_URL);
+      render(data.ranking,data.ltm); loadStatus.hidden = true; search.disabled = false;
     } catch (error) {
       console.error('Could not load rankings:', error);
       message.textContent = 'Rankings could not be loaded. Please try again.';
@@ -229,10 +292,14 @@
     });
   });
   panels.addEventListener('click', event => {
+    const ltmButton=event.target.closest('.ltm-player-trigger');
+    if(ltmButton){event.stopPropagation();const card=ltmButton.closest('[data-player]');if(card)openLtmResults(card.dataset.player);return;}
     const row = event.target.closest('[data-player]'); if (row) openProfile(row.dataset.player);
   });
   panels.addEventListener('keydown', event => {
     if (event.key !== 'Enter' && event.key !== ' ') return;
+    const ltmButton=event.target.closest('.ltm-player-trigger');
+    if(ltmButton){event.preventDefault();const card=ltmButton.closest('[data-player]');if(card)openLtmResults(card.dataset.player);return;}
     const row = event.target.closest('[data-player]');
     if (row) { event.preventDefault(); openProfile(row.dataset.player); }
   });
@@ -244,12 +311,15 @@
     if (player) openProfile(player.minecraft);
   });
   closeButton.addEventListener('click', closeProfile);
+  ltmCloseButton.addEventListener('click', closeLtmResults);
   popup.addEventListener('click', event => { if (event.target === popup) closeProfile(); });
+  ltmPopup.addEventListener('click', event => { if (event.target === ltmPopup) closeLtmResults(); });
   document.addEventListener('keydown', event => {
-    if (popup.hidden) return;
-    if (event.key === 'Escape') { event.preventDefault(); closeProfile(); }
+    if (popup.hidden && ltmPopup.hidden) return;
+    if (event.key === 'Escape') { event.preventDefault(); popup.hidden ? closeLtmResults() : closeProfile(); }
     if (event.key === 'Tab') {
-      const focusable = Array.from(popup.querySelectorAll('button, a[href], [tabindex="0"]'));
+      const dialog=popup.hidden?ltmPopup:popup;
+      const focusable = Array.from(dialog.querySelectorAll('button, a[href], [tabindex="0"]'));
       const first = focusable[0], last = focusable[focusable.length - 1];
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
       else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }

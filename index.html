@@ -5,9 +5,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>ItsTiers</title>
-<link href="newstyle.css?v=f845e300f352" rel="stylesheet"/>
-<script defer="" src="tier-display.js?v=dfc1efb4cf11"></script>
-<script defer="" src="script.js?v=9371df5260ed"></script>
+<link href="newstyle.css?v=ltm1" rel="stylesheet"/>
+<script defer="" src="tier-display.js?v=ltm1"></script>
+<script defer="" src="script.js?v=ltm1"></script>
 </head>
 <body>
 <div class="header">
@@ -38,6 +38,7 @@
 <div aria-controls="kit8" aria-selected="false" class="kit-tab" data-kit="kit8" id="tab-kit8" role="tab" tabindex="0"><img alt="" class="nav-icon" src="https://mctiers.com/tier_icons/mace.svg" width="19"/><br/>Mace</div>
 <div aria-controls="kit9" aria-selected="false" class="kit-tab" data-kit="kit9" id="tab-kit9" role="tab" tabindex="0"><img alt="" class="nav-icon" src="https://subtiers.net/assets/trident-1c1a3e5a.svg" width="19"/><br/>ChaosMace</div>
 <div aria-controls="kit10" aria-selected="false" class="kit-tab" data-kit="kit10" id="tab-kit10" role="tab" tabindex="0"><img alt="" class="nav-icon" src="https://cdn-icons-png.magnific.com/512/6428/6428889.png" width="19"/> <br/> Spear Mace</div>
+<div aria-controls="ltm" aria-selected="false" class="kit-tab" data-kit="ltm" id="tab-ltm" role="tab" tabindex="0"><img alt="" class="nav-icon" src="assets/ltm.svg" width="20"/><br/>LTM</div>
 </div>
 <div class="Abtrennung"></div>
 <main class="laaanger-background">
@@ -58,6 +59,7 @@
 <section aria-labelledby="tab-kit8" class="kit-content" hidden="" id="kit8" role="tabpanel"></section>
 <section aria-labelledby="tab-kit9" class="kit-content" hidden="" id="kit9" role="tabpanel"></section>
 <section aria-labelledby="tab-kit10" class="kit-content" hidden="" id="kit10" role="tabpanel"></section>
+<section aria-labelledby="tab-ltm" class="kit-content" hidden="" id="ltm" role="tabpanel"></section>
 </div>
 <noscript><p class="data-status">Enable JavaScript to view the rankings.</p></noscript>
 </main>
@@ -85,6 +87,12 @@
 </section>
 </div>
 </div>
+<div aria-labelledby="ltm-player-title" aria-modal="true" class="popup ltm-player-popup" hidden="" id="ltm-player-popup" role="dialog">
+<div class="popup-content ltm-player-popup-content">
+<button aria-label="Close LTM results" class="popup-close" id="ltm-player-close" type="button">×</button>
+<div class="ltm-popup-heading"><img alt="" src="assets/ltm.svg"/><div><p>LIMITED TIME MODES</p><h2 id="ltm-player-title"></h2></div></div>
+<div class="ltm-player-results" id="ltm-player-results"></div>
+</div>
+</div>
 </body>
 </html>
-
