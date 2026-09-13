@@ -22,7 +22,7 @@
       }
     },
     {
-      "minecraft": "_jumpingbean_",
+      "minecraft": "_JumpingBean_",
       "region": "EU",
       "tiers": {
         "mace": {
@@ -361,16 +361,6 @@
       }
     },
     {
-      "minecraft": "FemboyCebulamen",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        }
-      }
-    },
-    {
       "minecraft": "Fr0gified",
       "region": "EU",
       "tiers": {
@@ -523,7 +513,7 @@
       }
     },
     {
-      "minecraft": "Imjett_",
+      "minecraft": "ImJett_",
       "region": "EU",
       "tiers": {
         "crystal": {
@@ -613,7 +603,7 @@
       }
     },
     {
-      "minecraft": "ItsFluffyTime14",
+      "minecraft": "ItsFluffytime14",
       "region": "EU",
       "tiers": {
         "mace": {
@@ -904,7 +894,7 @@
       }
     },
     {
-      "minecraft": "KoksikSzef",
+      "minecraft": "koksikSzef",
       "region": "EU",
       "tiers": {
         "sword": {
@@ -926,7 +916,7 @@
       }
     },
     {
-      "minecraft": "Lloyd_The_M",
+      "minecraft": "LLoyd_the_M",
       "region": "EU",
       "tiers": {
         "smp": {
@@ -1382,6 +1372,16 @@
       }
     },
     {
+      "minecraft": "SonPatrol",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "Spooky1904",
       "region": "EU",
       "tiers": {
@@ -1579,7 +1579,7 @@
       }
     },
     {
-      "minecraft": "zeno_HT5",
+      "minecraft": "Zeno_HT5",
       "region": "EU",
       "tiers": {
         "crystal": {
@@ -1608,8 +1608,25 @@
     }
   ],
   "ltm": {
-    "definitions": [],
-    "active": null,
+    "definitions": [
+      {
+        "id": "diamond-op",
+        "name": "Diamond OP",
+        "icon": "https://ibb.co/217C76Lc"
+      },
+      {
+        "id": "diaop",
+        "name": "DiaOP",
+        "icon": "https://i.ibb.co/67RTRZpD/diaop.png"
+      }
+    ],
+    "active": {
+      "id": "diaop",
+      "name": "DiaOP",
+      "icon": "https://i.ibb.co/67RTRZpD/diaop.png",
+      "startedAt": "2026-09-13T22:18:01.671Z",
+      "endsAt": "2026-09-27T22:18:01.671Z"
+    },
     "players": []
   }
 }
