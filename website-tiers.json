@@ -1826,21 +1826,28 @@
       {
         "id": "diamond-op",
         "name": "Diamond OP",
-        "icon": "https://ibb.co/217C76Lc"
-      },
-      {
-        "id": "diaop",
-        "name": "DiaOP",
-        "icon": "https://i.ibb.co/67RTRZpD/diaop.png"
+        "icon": "https://cdn.discordapp.com/attachments/1532045805677052045/1548822284305825884/diaop.png?ex=6aa874a8&is=6aa72328&hm=8c69d048da94322050aa4ee3c3b912c2a4892906d30c0851a74ecf2946ce6312&"
       }
     ],
     "active": {
-      "id": "diaop",
-      "name": "DiaOP",
-      "icon": "https://i.ibb.co/67RTRZpD/diaop.png",
-      "startedAt": "2026-09-13T22:18:01.671Z",
-      "endsAt": "2026-09-27T22:18:01.671Z"
+      "id": "diamond-op",
+      "name": "Diamond OP",
+      "icon": "https://cdn.discordapp.com/attachments/1532045805677052045/1548822284305825884/diaop.png?ex=6aa874a8&is=6aa72328&hm=8c69d048da94322050aa4ee3c3b912c2a4892906d30c0851a74ecf2946ce6312&",
+      "startedAt": "2026-09-13T22:28:56.287Z",
+      "endsAt": "2026-09-27T22:28:56.287Z"
     },
-    "players": []
+    "players": [
+      {
+        "minecraft": "3qzy",
+        "region": "EU",
+        "results": {
+          "diamond-op": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-09-13T22:30:05.076Z"
+          }
+        }
+      }
+    ]
   }
 }
