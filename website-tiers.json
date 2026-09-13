@@ -239,6 +239,24 @@
       }
     },
     {
+      "minecraft": "bo_nix_10",
+      "region": "NA",
+      "tiers": {
+        "crystal": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "mace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "bombertobi",
       "region": "EU",
       "tiers": {
