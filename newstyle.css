@@ -1941,7 +1941,7 @@ body {
 .overall-player .player-position {
   grid-column: 1;
   display: grid;
-  grid-template-columns: 54px 100px;
+  grid-template-columns: 54px 80px;
   align-items: center;
   align-self: stretch;
   min-width: 0;
@@ -1962,14 +1962,14 @@ body {
   text-shadow: 2px 2px 2px rgba(0,0,0,.72);
 }
 .overall-player .player-position .skin-wrapper {
-  width: 96px;
-  height: 90px;
+  width: 72px;
+  height: 100px;
   margin: 0;
   align-self: end;
 }
 .overall-player .player-position .player-skin {
-  height: 104px;
-  margin-bottom: -26px;
+  height: 122px;
+  margin-bottom: -30px;
 }
 .overall-player.first-place .player-position { background: linear-gradient(110deg, #d99d1e, #f4c13e); }
 .overall-player.second-place .player-position { background: linear-gradient(110deg, #6f8085, #9eafb2); }
@@ -2063,12 +2063,13 @@ body {
     grid-template-columns: 126px minmax(0, 1fr);
     min-height: 72px;
   }
-  .overall-player .player-position { grid-template-columns: 44px 82px; }
+  .overall-player .player-position { grid-template-columns: 44px 70px; }
   .overall-player .player-position .rank,
   .overall-player .player-position .rank1,
   .overall-player .player-position .rank2,
   .overall-player .player-position .rank3 { padding-left: 9px; font-size: 27px; }
-  .overall-player .player-position .skin-wrapper { width: 72px; height: 74px; }
+  .overall-player .player-position .skin-wrapper { width: 62px; height: 92px; }
+  .overall-player .player-position .player-skin { height: 108px; margin-bottom: -26px; }
   .overall-player .player-info { grid-column: 2; border-right: 0; padding-inline: 12px; }
   .overall-player .player-right {
     grid-column: 1 / -1;
@@ -2086,9 +2087,9 @@ body {
     grid-template-columns: 112px minmax(0, 1fr);
     padding-right: 0;
   }
-  .overall-player .player-position { grid-template-columns: 40px 72px; }
-  .overall-player .player-position .skin-wrapper { width: 66px; }
-  .overall-player .player-position .player-skin { height: 82px; }
+  .overall-player .player-position { grid-template-columns: 40px 58px; }
+  .overall-player .player-position .skin-wrapper { width: 52px; height: 84px; }
+  .overall-player .player-position .player-skin { height: 98px; margin-bottom: -24px; }
   .overall-player .player-info { padding-inline: 9px; }
   .overall-player .name { font-size: 15px; }
   .overall-player .points { font-size: 12px; }
