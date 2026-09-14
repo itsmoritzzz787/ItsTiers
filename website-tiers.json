@@ -1195,11 +1195,11 @@
           "peakTier": "LT1"
         },
         "spearmace": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "chaosmace": {
-          "tier": "LT2",
+          "tier": "LT3",
           "peakTier": "LT2"
         },
         "axe": {
@@ -1211,7 +1211,7 @@
           "peakTier": "HT4"
         },
         "sword": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         }
       }
