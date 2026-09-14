@@ -1879,6 +1879,17 @@
         }
       },
       {
+        "minecraft": "bo_nix_10",
+        "region": "NA",
+        "results": {
+          "diamond-op": {
+            "tier": "HT3",
+            "peakTier": "HT3",
+            "awardedAt": "2026-09-14T21:34:15.886Z"
+          }
+        }
+      },
+      {
         "minecraft": "ItsMoritzzz",
         "region": "EU",
         "results": {
