@@ -1931,7 +1931,7 @@ body {
   display: grid;
   grid-template-columns: 154px minmax(210px, 1fr) max-content 70px;
   align-items: stretch;
-  min-height: 78px;
+  min-height: 72px;
   padding: 0 14px 0 0;
   gap: 0;
   border: 1px solid #181e27;
@@ -1962,14 +1962,15 @@ body {
   text-shadow: 2px 2px 2px rgba(0,0,0,.72);
 }
 .overall-player .player-position .skin-wrapper {
-  width: 72px;
-  height: 100px;
+  width: 62px;
+  height: 72px;
   margin: 0;
   align-self: end;
 }
 .overall-player .player-position .player-skin {
-  height: 122px;
-  margin-bottom: -30px;
+  width: auto;
+  height: 82px;
+  margin-bottom: -10px;
 }
 .overall-player.first-place .player-position { background: linear-gradient(110deg, #d99d1e, #f4c13e); }
 .overall-player.second-place .player-position { background: linear-gradient(110deg, #6f8085, #9eafb2); }
@@ -2068,8 +2069,8 @@ body {
   .overall-player .player-position .rank1,
   .overall-player .player-position .rank2,
   .overall-player .player-position .rank3 { padding-left: 9px; font-size: 27px; }
-  .overall-player .player-position .skin-wrapper { width: 62px; height: 92px; }
-  .overall-player .player-position .player-skin { height: 108px; margin-bottom: -26px; }
+  .overall-player .player-position .skin-wrapper { width: 56px; height: 70px; }
+  .overall-player .player-position .player-skin { width: auto; height: 80px; margin-bottom: -10px; }
   .overall-player .player-info { grid-column: 2; border-right: 0; padding-inline: 12px; }
   .overall-player .player-right {
     grid-column: 1 / -1;
@@ -2088,8 +2089,8 @@ body {
     padding-right: 0;
   }
   .overall-player .player-position { grid-template-columns: 40px 58px; }
-  .overall-player .player-position .skin-wrapper { width: 52px; height: 84px; }
-  .overall-player .player-position .player-skin { height: 98px; margin-bottom: -24px; }
+  .overall-player .player-position .skin-wrapper { width: 50px; height: 68px; }
+  .overall-player .player-position .player-skin { width: auto; height: 78px; margin-bottom: -10px; }
   .overall-player .player-info { padding-inline: 9px; }
   .overall-player .name { font-size: 15px; }
   .overall-player .points { font-size: 12px; }
