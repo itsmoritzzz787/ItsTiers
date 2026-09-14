@@ -2064,6 +2064,8 @@ body {
   background: rgba(255,255,255,.16);
   font-size: 17px;
 }
+.tier .player.ht { background: rgba(255,255,255,.18); }
+.tier .player.lt { background: rgba(255,255,255,.075); }
 .tier .table-player-name { display: flex; align-items: center; gap: 7px; }
 .tier .player-skintable { width: 28px; height: 28px; margin: -4px 0 -4px -2px; }
 .tier .player-tier { font-size: 18px; }
