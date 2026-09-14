@@ -1778,7 +1778,7 @@ body {
   margin: 0 0 0 14px;
 }
 .overall-player .kit-icons { order: 1; }
-.tier { filter: brightness(.76) saturate(.82); }
+ 
 .player { background: rgba(255,255,255,.055); }
 
 /* Tier details arrive in two deliberate beats: result, then points. */
