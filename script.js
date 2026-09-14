@@ -21,10 +21,7 @@
   };
   const skin = (name, className) => {
     const img = el('img', className);
-    const rankingRender = className === 'player-skin';
-    img.src = rankingRender
-      ? `https://render.crafty.gg/3d/full/${encodeURIComponent(name)}?width=160&height=260&shadow=false`
-      : `https://render.crafty.gg/3d/bust/${encodeURIComponent(name)}`;
+    img.src = `https://render.crafty.gg/3d/bust/${encodeURIComponent(name)}`;
     img.alt = ''; img.loading = 'lazy';
     return img;
   };
