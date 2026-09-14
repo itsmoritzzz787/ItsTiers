@@ -2099,3 +2099,88 @@ body {
 .popup .profile-region,
 .popup .popup-content h3 { color: #858c96; }
 .ltm-result-info span { color: #858c96; }
+
+/* Player, region and tiers form separate columns; unused tier room stays on the right. */
+.ranking-table-header {
+  grid-template-columns: 154px minmax(210px, 1fr) 90px 528px;
+}
+.ranking-heading-region { grid-column: 3; }
+.ranking-heading-tiers { grid-column: 4; justify-self: start; }
+#overall .overall-player {
+  grid-template-columns: 154px minmax(210px, 1fr) 90px 528px;
+}
+.overall-player .player-info { grid-column: 2; }
+.overall-player .player-right { display: contents; }
+.overall-player .region {
+  grid-column: 3;
+  grid-row: 1;
+  border-right: 1px solid #151b23;
+}
+.overall-player .kit-icons {
+  grid-column: 4;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 42px);
+  grid-auto-flow: row;
+  grid-auto-columns: auto;
+  justify-content: start;
+  width: 528px;
+  padding: 8px 12px;
+  border-right: 0;
+}
+.rank-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.rank-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  object-fit: contain;
+}
+.rank-grandmaster, .rank-master { color: #e9bf43 !important; }
+.rank-ace { color: #e77a8d !important; }
+.rank-specialist { color: #c49ae8 !important; }
+.rank-cadet { color: #aeb6e8 !important; }
+.rank-novice { color: #8d9bda !important; }
+.rank-rookie { color: #9aa1aa !important; }
+.popup .profile-title-badge {
+  margin-top: 14px;
+  padding: 7px 13px;
+  border: 1px solid #252b35;
+  border-radius: 999px;
+  background: #101319;
+}
+.popup .popup-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.popup .popup-title .rank-icon { width: 22px; height: 22px; flex-basis: 22px; }
+
+@media (max-width: 900px) {
+  #overall .overall-player {
+    grid-template-columns: 126px minmax(0, 1fr) 58px;
+  }
+  .overall-player .player-info { grid-column: 2; }
+  .overall-player .region {
+    grid-column: 3;
+    grid-row: 1;
+    border-right: 0;
+  }
+  .overall-player .kit-icons {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    grid-template-columns: repeat(12, 36px);
+    width: auto;
+    min-height: 50px;
+    padding: 8px 12px;
+    border-top: 1px solid #151b23;
+  }
+  .overall-player .kit-item { width: 36px; }
+}
+@media (max-width: 540px) {
+  #overall .overall-player { grid-template-columns: 112px minmax(0, 1fr) 50px; }
+  .overall-player .kit-icons { grid-template-columns: repeat(8, 36px); overflow-x: auto; }
+}

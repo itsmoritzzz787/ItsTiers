@@ -3,8 +3,16 @@
   'use strict';
   const DATA_URL = './website-tiers.json';
   const MODES = ['crystal', 'uhc', 'pot', 'nethpot', 'smp', 'sword', 'axe', 'mace', 'chaosmace', 'spearmace'];
-  const TITLES = [[100, 'Combat Ace'], [50, 'Combat Specialist'], [20, 'Combat Cadet'], [10, 'Combat Novice'], [0, 'Rookie']];
-  const titleFor = points => TITLES.find(([minimum]) => points >= minimum)[1];
+  const TITLES = [
+    { minimum: 400, id: 'grandmaster', name: 'Combat Grandmaster', description: 'Obtained 400+ total points.' },
+    { minimum: 250, id: 'master', name: 'Combat Master', description: 'Obtained 250+ total points.' },
+    { minimum: 100, id: 'ace', name: 'Combat Ace', description: 'Obtained 100+ total points.' },
+    { minimum: 50, id: 'specialist', name: 'Combat Specialist', description: 'Obtained 50+ total points.' },
+    { minimum: 20, id: 'cadet', name: 'Combat Cadet', description: 'Obtained 20+ total points.' },
+    { minimum: 10, id: 'novice', name: 'Combat Novice', description: 'Obtained 10+ total points.' },
+    { minimum: 0, id: 'rookie', name: 'Rookie', description: 'Starting rank for players with less than 10 points.' }
+  ];
+  const rankFor = points => TITLES.find(rank => points >= rank.minimum);
   const el = (tag, className, text) => {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -16,6 +24,12 @@
     img.src = `https://render.crafty.gg/3d/bust/${encodeURIComponent(name)}`;
     img.alt = ''; img.loading = 'lazy';
     return img;
+  };
+  const rankIcon = rank => {
+    const image = el('img', `rank-icon rank-icon-${rank.id}`);
+    image.src = `assets/rank-icons/${rank.id}.svg`;
+    image.alt = '';
+    return image;
   };
   const search = document.getElementById('playerSearch');
   const popup = document.getElementById('popup');
@@ -159,7 +173,10 @@
     const wrapper = el('div', 'skin-wrapper'); wrapper.append(skin(player.minecraft, 'player-skin'));
     position.append(wrapper);
     const info = el('div', 'player-info');
-    info.append(el('div', 'name', player.minecraft), el('div', 'points', `${titleFor(player.totalPoints)} (${player.totalPoints} points)`));
+    const rank = rankFor(player.totalPoints);
+    const details = el('div', `points rank-text rank-${rank.id}`);
+    details.append(rankIcon(rank), document.createTextNode(`${rank.name} (${player.totalPoints} points)`));
+    info.append(el('div', 'name', player.minecraft), details);
     const right = el('div', 'player-right');
     const region = el('div', `region ${player.region.toLowerCase()}`, player.region);
     const icons = el('div', 'kit-icons'); icons.append(...badgeList(player));
@@ -200,8 +217,8 @@
     tableHeader.append(
       el('span', 'ranking-heading-number', '#'),
       el('span', 'ranking-heading-player', 'PLAYER'),
-      el('span', 'ranking-heading-tiers', 'TIERS'),
-      el('span', 'ranking-heading-region', 'REGION')
+      el('span', 'ranking-heading-region', 'REGION'),
+      el('span', 'ranking-heading-tiers', 'TIERS')
     );
     document.getElementById('overall').replaceChildren(tableHeader, rankingSentinel);
     renderMorePlayers();
@@ -331,7 +348,7 @@
     animatePanel(document.getElementById(next));
     if (!loading) applySearch();
   }
-  function openProfile(name) {
+  function openProfile(name, { focusClose = true } = {}) {
     hideTooltip();
     const player = players.get(name.toLowerCase());
     if (!player) return;
@@ -340,7 +357,10 @@
     const portrait = document.getElementById('popup-skin');
     portrait.src = `https://render.crafty.gg/3d/bust/${encodeURIComponent(player.minecraft)}`;
     portrait.alt = `${player.minecraft}'s Minecraft skin`;
-    document.getElementById('popup-title').textContent = titleFor(player.totalPoints);
+    const rankTitle = rankFor(player.totalPoints);
+    const popupTitle = document.getElementById('popup-title');
+    popupTitle.className = `popup-title rank-${rankTitle.id}`;
+    popupTitle.replaceChildren(rankIcon(rankTitle), document.createTextNode(rankTitle.name));
     document.getElementById('popup-region').textContent = ({EU:'Europe', NA:'North America', AS:'Asia', SA:'South America', AU:'Australia'})[player.region] || player.region;
     document.getElementById('popup-namemc').href = `https://namemc.com/profile/${encodeURIComponent(player.minecraft)}`;
     const rank = document.getElementById('popup-rank');
@@ -350,7 +370,11 @@
     document.getElementById('popup-tiers').replaceChildren(...badgeList(player));
     popup.hidden = false;
     document.body.classList.add('profile-open');
-    closeButton.focus();
+    if (focusClose) closeButton.focus();
+    else {
+      popup.tabIndex = -1;
+      popup.focus();
+    }
   }
   function openLtmResults(name) {
     hideTooltip();
@@ -431,7 +455,9 @@
     event.preventDefault();
     const query = search.value.trim().toLowerCase(); if (!query) return;
     const player = players.get(query);
-    if (player) { clearSearchError(); openProfile(player.minecraft); }
+    // The search result keeps focus on the dialog rather than the close button.
+    // That avoids Chromium reusing the same Enter key press to close the profile.
+    if (player) { clearSearchError(); openProfile(player.minecraft, { focusClose: false }); }
     else showSearchError();
   });
   closeButton.addEventListener('click', closeProfile);
