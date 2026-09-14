@@ -2,7 +2,6 @@ body{margin:0;font-family:Arial;background:#121822;color:white}
 .uberschrift{display:flex;justify-content:center;text-align:center;padding:20px}
 .kit-nav{display:flex;gap:10px;justify-content:center;padding:10px}
 .kit-tab{background:#10161d;border-radius:10px;cursor:pointer}
-.kit-tab.active{border-bottom:2px solid white}
 
 .overall-player{display:grid;grid-template-columns:80px 1fr 80px 450px;background:#141b26;margin:10px;padding:15px;border-radius:12px;cursor:pointer;position: relative;
   overflow: hidden;}
