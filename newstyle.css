@@ -1960,13 +1960,17 @@ body {
   font-size: 31px;
   color: #f3f4f6;
   text-shadow: 2px 2px 2px rgba(0,0,0,.72);
+  position: relative;
+  z-index: 2;
 }
 .overall-player .player-position .skin-wrapper {
-  width: 100%;
-  height: 64px;
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
   margin: 0;
-  align-self: end;
-  position: relative;
+  overflow: hidden;
+  pointer-events: none;
 }
 .overall-player .player-position .player-skin {
   position: absolute;
@@ -2075,7 +2079,7 @@ body {
   .overall-player .player-position .rank1,
   .overall-player .player-position .rank2,
   .overall-player .player-position .rank3 { padding-left: 9px; font-size: 27px; }
-  .overall-player .player-position .skin-wrapper { width: 100%; height: 64px; }
+  .overall-player .player-position .skin-wrapper { width: auto; height: auto; }
   .overall-player .player-position .player-skin { right: 12px; bottom: 0; width: 66px; height: 60px; margin: 0; object-fit: fill; }
   .overall-player .player-info { grid-column: 2; border-right: 0; padding-inline: 12px; }
   .overall-player .player-right {
@@ -2095,7 +2099,7 @@ body {
     padding-right: 0;
   }
   .overall-player .player-position { grid-template-columns: 40px 58px; }
-  .overall-player .player-position .skin-wrapper { width: 100%; height: 62px; }
+  .overall-player .player-position .skin-wrapper { width: auto; height: auto; }
   .overall-player .player-position .player-skin { right: 2px; bottom: 0; width: 64px; height: 58px; margin: 0; object-fit: fill; }
   .overall-player .player-info { padding-inline: 9px; }
   .overall-player .name { font-size: 15px; }
