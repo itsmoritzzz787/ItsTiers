@@ -56,11 +56,15 @@
   let rankedPlayers = [];
   let renderedPlayers = 0;
   let rankingSentinel = null;
+  let rankingBatchTimer = 0;
+  let rankingCheckTimer = 0;
   const RANKING_BATCH_SIZE = 5;
+  const RANKING_BATCH_DELAY = 750;
+  const RANKING_PRELOAD_DISTANCE = 320;
   const rankingObserver = 'IntersectionObserver' in window
     ? new IntersectionObserver(entries => {
-        if (entries.some(entry => entry.isIntersecting)) renderMorePlayers();
-      }, { rootMargin: '0px 0px -10%' })
+        if (entries.some(entry => entry.isIntersecting)) queueMorePlayers();
+      }, { rootMargin: `${RANKING_PRELOAD_DISTANCE}px 0px`, threshold: 0 })
     : null;
 
   // Decorative particles fill the quiet space around the centred ranking.
@@ -192,6 +196,32 @@
     right.append(icons, region); card.append(el('div', 'player-bg'), position, info, right);
     return card;
   }
+  function sentinelNearViewport() {
+    if (!rankingSentinel || renderedPlayers >= rankedPlayers.length) return false;
+    const overall = document.getElementById('overall');
+    if (overall.hidden || overall.closest('[hidden]')) return false;
+    const box = rankingSentinel.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+    return box.top <= viewportHeight + RANKING_PRELOAD_DISTANCE && box.bottom >= -RANKING_PRELOAD_DISTANCE;
+  }
+  function queueMorePlayers({ immediate = false } = {}) {
+    if (rankingBatchTimer || !sentinelNearViewport()) return;
+    rankingBatchTimer = window.setTimeout(() => {
+      rankingBatchTimer = 0;
+      if (!sentinelNearViewport()) return;
+      renderMorePlayers();
+      // Some engines keep the sentinel intersecting after DOM insertion and do not
+      // issue another observer callback. Recheck until it moves below the preload area.
+      queueMorePlayers();
+    }, immediate ? 0 : RANKING_BATCH_DELAY);
+  }
+  function scheduleRankingCheck() {
+    if (rankingCheckTimer) return;
+    rankingCheckTimer = window.setTimeout(() => {
+      rankingCheckTimer = 0;
+      queueMorePlayers();
+    }, 0);
+  }
   function renderMorePlayers() {
     if (!rankingSentinel || renderedPlayers >= rankedPlayers.length) return;
     const overall = document.getElementById('overall');
@@ -214,6 +244,10 @@
   }
   function resetOverall(ranking) {
     rankingObserver?.disconnect();
+    clearTimeout(rankingBatchTimer);
+    clearTimeout(rankingCheckTimer);
+    rankingBatchTimer = 0;
+    rankingCheckTimer = 0;
     rankedPlayers = ranking;
     renderedPlayers = 0;
     rankingSentinel = el('div', 'ranking-sentinel');
@@ -237,6 +271,8 @@
         button.addEventListener('click', renderMorePlayers);
         rankingSentinel.replaceChildren(button);
       }
+      // Fill short viewports and provide a browser-independent first check.
+      queueMorePlayers();
     }
   }
   function modeRow(player, mode, suppliedResult) {
@@ -366,6 +402,7 @@
     }
     activeKit = next;
     animatePanel(document.getElementById(next));
+    if (next === 'overall') scheduleRankingCheck();
     if (!loading) applySearch();
   }
   function openProfile(name, { focusClose = true } = {}) {
@@ -456,6 +493,13 @@
       const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (i + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
       tabs[next].focus(); showKit(tabs[next]);
     });
+  });
+  window.addEventListener('scroll', scheduleRankingCheck, {passive:true});
+  document.addEventListener('scroll', scheduleRankingCheck, true);
+  window.addEventListener('resize', scheduleRankingCheck);
+  window.addEventListener('pageshow', scheduleRankingCheck);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) scheduleRankingCheck();
   });
   panels.addEventListener('click', event => {
     const ltmButton=event.target.closest('.ltm-player-trigger');
