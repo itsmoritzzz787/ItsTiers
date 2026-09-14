@@ -1888,7 +1888,7 @@ body {
   from { opacity: .2; transform: translateY(2px) scale(.8); }
   to { opacity: .9; transform: translateY(-3px) scale(1.15); }
 }
-.lazy-ranking-entry { animation: ranking-entry 440ms cubic-bezier(.2,.8,.2,1) var(--entry-delay, 0ms) both; }
+.lazy-ranking-entry { animation: ranking-entry 560ms cubic-bezier(.2,.8,.2,1) var(--entry-delay, 0ms) both; }
 .load-more-players {
   min-height: 42px;
   padding: 8px 16px;

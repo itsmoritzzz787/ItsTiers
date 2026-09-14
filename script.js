@@ -58,7 +58,7 @@
   const rankingObserver = 'IntersectionObserver' in window
     ? new IntersectionObserver(entries => {
         if (entries.some(entry => entry.isIntersecting)) renderMorePlayers();
-      }, { rootMargin: '0px 0px -35%' })
+      }, { rootMargin: '0px 0px -10%' })
     : null;
 
   // Decorative particles fill the quiet space around the centred ranking.
@@ -192,7 +192,7 @@
     const fragment = document.createDocumentFragment();
     for (let index = renderedPlayers; index < end; index += 1) {
       const card = overallCard(rankedPlayers[index]);
-      card.style.setProperty('--entry-delay', `${Math.min((index - renderedPlayers) * 22, 220)}ms`);
+      card.style.setProperty('--entry-delay', `${Math.min((index - renderedPlayers) * 48, 240)}ms`);
       card.classList.add('lazy-ranking-entry');
       fragment.append(card);
     }
