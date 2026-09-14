@@ -1191,7 +1191,7 @@
       "region": "EU",
       "tiers": {
         "mace": {
-          "tier": "LT1",
+          "tier": "LT3",
           "peakTier": "LT1"
         },
         "spearmace": {
