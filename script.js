@@ -54,11 +54,11 @@
   let rankedPlayers = [];
   let renderedPlayers = 0;
   let rankingSentinel = null;
-  const RANKING_BATCH_SIZE = 18;
+  const RANKING_BATCH_SIZE = 5;
   const rankingObserver = 'IntersectionObserver' in window
     ? new IntersectionObserver(entries => {
         if (entries.some(entry => entry.isIntersecting)) renderMorePlayers();
-      }, { rootMargin: '500px 0px' })
+      }, { rootMargin: '0px 0px -35%' })
     : null;
 
   // Decorative particles fill the quiet space around the centred ranking.
@@ -243,9 +243,25 @@
     row.title = `${result.tooltip}\n${region}`;
     return row;
   }
+  function tierColumns() {
+    return Array.from({length: 5}, (_, index) => {
+      const tierNumber = index + 1;
+      const column = el('div', `tier tier${tierNumber}`);
+      const heading = el('h3', 'tier-heading');
+      if (tierNumber <= 3) {
+        const trophy = el('img', `tier-cup tier-cup${tierNumber}`);
+        trophy.src = 'assets/overall.svg';
+        trophy.alt = `Tier ${tierNumber} trophy`;
+        heading.append(trophy);
+      }
+      heading.append(document.createTextNode(`Tier ${tierNumber}`));
+      column.append(heading);
+      return column;
+    });
+  }
   function ltmTable(ranking,id) {
     const table=el('div','tier-table');
-    const columns=Array.from({length:5},(_,i)=>{const column=el('div',`tier tier${i+1}`);column.append(el('h3','',`Tier ${i+1}`));return column;});
+    const columns=tierColumns();
     const entries=ranking.filter(player=>/^[HL]T[1-5]$/.test(player.ltms?.[id]?.tier || ''))
       .sort((a,b)=>a.ltms[id].tier[0].localeCompare(b.ltms[id].tier[0]) || a.minecraft.localeCompare(b.minecraft,'en'));
     for (const player of entries) columns[Number(player.ltms[id].tier[2])-1].append(modeRow(player,id,player.ltms[id]));
@@ -293,10 +309,7 @@
     validatePlayers(ranking);
     const tables = MODES.map(mode => {
       const table = el('div', 'tier-table');
-      const columns = Array.from({length:5}, (_, i) => {
-        const column = el('div', `tier tier${i + 1}`);
-        column.append(el('h3', '', `Tier ${i + 1}`)); return column;
-      });
+      const columns = tierColumns();
       // Retired players remain in Overall/profiles and keep peak points, as on the original site.
       const entries = ranking.filter(p => p.tiers[mode] && !p.tiers[mode].retired && /^[HL]T[1-5]$/.test(p.tiers[mode].tier));
       entries.sort((a,b) => a.tiers[mode].tier[0].localeCompare(b.tiers[mode].tier[0]) || a.minecraft.localeCompare(b.minecraft, 'en'));

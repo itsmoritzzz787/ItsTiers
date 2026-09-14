@@ -1962,14 +1962,14 @@ body {
   text-shadow: 2px 2px 2px rgba(0,0,0,.72);
 }
 .overall-player .player-position .skin-wrapper {
-  width: 88px;
-  height: 82px;
+  width: 96px;
+  height: 90px;
   margin: 0;
   align-self: end;
 }
 .overall-player .player-position .player-skin {
-  height: 92px;
-  margin-bottom: -22px;
+  height: 104px;
+  margin-bottom: -26px;
 }
 .overall-player.first-place .player-position { background: linear-gradient(110deg, #d99d1e, #f4c13e); }
 .overall-player.second-place .player-position { background: linear-gradient(110deg, #6f8085, #9eafb2); }
@@ -2020,6 +2020,42 @@ body {
 .overall-player .region.as { color: #c692ed; }
 .overall-player .region.sa { color: #e6b354; }
 .overall-player .region.au { color: #6dc7d9; }
+
+/* Clearer gamemode tier tables with podium trophies for the first three tiers. */
+.tier-table { gap: 12px; padding: 18px; }
+.tier {
+  min-height: 250px;
+  border: 1px solid rgba(255,255,255,.075);
+  box-shadow: inset 0 1px rgba(255,255,255,.035);
+}
+.tier1 { background: #59471f; }
+.tier2 { background: #444a58; }
+.tier3 { background: #4c3428; }
+.tier4, .tier5 { background: #28303c; }
+.tier-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  margin: 0 0 10px !important;
+  padding: 12px 10px 10px !important;
+  color: inherit;
+  font: 800 25px/1 Arial, sans-serif !important;
+}
+.tier-cup { width: 27px; height: 27px; object-fit: contain; }
+.tier-cup2 { filter: grayscale(1) brightness(1.45); }
+.tier-cup3 { filter: sepia(.92) saturate(1.9) hue-rotate(327deg) brightness(.88); }
+.tier .player {
+  min-height: 34px;
+  margin: 5px;
+  padding: 6px 10px;
+  background: rgba(255,255,255,.16);
+  font-size: 17px;
+}
+.tier .table-player-name { display: flex; align-items: center; gap: 7px; }
+.tier .player-skintable { width: 28px; height: 28px; margin: -4px 0 -4px -2px; }
+.tier .player-tier { font-size: 18px; }
 
 @media (max-width: 900px) {
   .ranking-table-header { display: none; }
