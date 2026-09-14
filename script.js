@@ -19,10 +19,12 @@
     if (text !== undefined) node.textContent = text;
     return node;
   };
-  const skin = (name, className) => {
+  const skin = (name, className, options = {}) => {
     const img = el('img', className);
-    img.src = `https://render.crafty.gg/3d/bust/${encodeURIComponent(name)}`;
-    img.alt = ''; img.loading = 'lazy';
+    const identifier = options.uuid || name;
+    img.src = `https://render.crafty.gg/3d/bust/${encodeURIComponent(identifier)}`;
+    img.alt = options.label ? `${name}'s Skin` : '';
+    img.loading = options.eager ? 'eager' : 'lazy';
     return img;
   };
   const rankIcon = rank => {
@@ -170,7 +172,12 @@
     const card = clickable(el('div', `overall-player ${places[player.rank - 1] || ''}`), player);
     const position = el('div', 'player-position');
     position.append(el('i', player.rank <= 3 ? `rank${player.rank}` : 'rank', `${player.rank}.`));
-    const wrapper = el('div', 'skin-wrapper'); wrapper.append(skin(player.minecraft, 'player-skin'));
+    const wrapper = el('div', 'skin-wrapper');
+    wrapper.append(skin(player.minecraft, 'player-skin', {
+      uuid: player.minecraftUuid || player.uuid,
+      eager: true,
+      label: true
+    }));
     position.append(wrapper);
     const info = el('div', 'player-info');
     const rank = rankFor(player.totalPoints);
