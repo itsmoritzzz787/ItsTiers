@@ -27,6 +27,7 @@
   const loadStatus = document.getElementById('load-status');
   const message = document.getElementById('load-message');
   const retry = document.getElementById('retry-load');
+  const searchError = document.getElementById('search-error');
   const particleLayer = document.getElementById('ambient-particles');
   const pageProgress = document.getElementById('page-progress');
   let players = new Map();
@@ -36,6 +37,15 @@
   let returnFocus = null;
   let progressTimer = 0;
   let panelTimer = 0;
+  let rankedPlayers = [];
+  let renderedPlayers = 0;
+  let rankingSentinel = null;
+  const RANKING_BATCH_SIZE = 18;
+  const rankingObserver = 'IntersectionObserver' in window
+    ? new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) renderMorePlayers();
+      }, { rootMargin: '500px 0px' })
+    : null;
 
   // Decorative particles fill the quiet space around the centred ranking.
   // Fixed values keep the layout stable between reloads and avoid a canvas loop.
@@ -86,14 +96,21 @@
   function hideTooltip() {
     if (tooltipTarget) tooltipTarget.removeAttribute('aria-describedby');
     tooltipTarget = null;
+    tooltip.classList.remove('is-visible');
     tooltip.hidden = true;
   }
   function showTooltip(target) {
     hideTooltip();
     tooltipTarget = target;
     target.removeAttribute('title');
-    tooltip.textContent = target.dataset.tooltip;
+    const [tierText, pointsText = ''] = target.dataset.tooltip.split('\n');
+    tooltip.replaceChildren(
+      el('strong', 'tier-tooltip-tier', tierText),
+      el('span', 'tier-tooltip-points', pointsText)
+    );
     tooltip.hidden = false;
+    void tooltip.offsetWidth;
+    tooltip.classList.add('is-visible');
     const box = target.getBoundingClientRect();
     const size = tooltip.getBoundingClientRect();
     const viewportWidth = document.documentElement.clientWidth || window.innerWidth;
@@ -137,8 +154,10 @@
   function overallCard(player) {
     const places = ['first-place', 'second-place', 'third-place'];
     const card = clickable(el('div', `overall-player ${places[player.rank - 1] || ''}`), player);
-    card.append(el('div', 'player-bg'), el('i', player.rank <= 3 ? `rank${player.rank}` : 'rank', `${player.rank}.`));
+    const position = el('div', 'player-position');
+    position.append(el('i', player.rank <= 3 ? `rank${player.rank}` : 'rank', `${player.rank}.`));
     const wrapper = el('div', 'skin-wrapper'); wrapper.append(skin(player.minecraft, 'player-skin'));
+    position.append(wrapper);
     const info = el('div', 'player-info');
     info.append(el('div', 'name', player.minecraft), el('div', 'points', `${titleFor(player.totalPoints)} (${player.totalPoints} points)`));
     const right = el('div', 'player-right');
@@ -146,8 +165,55 @@
     const icons = el('div', 'kit-icons'); icons.append(...badgeList(player));
     const ltmCount=Object.keys(player.ltms || {}).length;
     if (ltmCount) icons.append(ItsTiers.createLtmButton(ltmCount));
-    right.append(region, icons); card.append(wrapper, info, right);
+    right.append(icons, region); card.append(el('div', 'player-bg'), position, info, right);
     return card;
+  }
+  function renderMorePlayers() {
+    if (!rankingSentinel || renderedPlayers >= rankedPlayers.length) return;
+    const overall = document.getElementById('overall');
+    const end = Math.min(renderedPlayers + RANKING_BATCH_SIZE, rankedPlayers.length);
+    const fragment = document.createDocumentFragment();
+    for (let index = renderedPlayers; index < end; index += 1) {
+      const card = overallCard(rankedPlayers[index]);
+      card.style.setProperty('--entry-delay', `${Math.min((index - renderedPlayers) * 22, 220)}ms`);
+      card.classList.add('lazy-ranking-entry');
+      fragment.append(card);
+    }
+    overall.insertBefore(fragment, rankingSentinel);
+    renderedPlayers = end;
+    rankingSentinel.setAttribute('aria-label', `${renderedPlayers} of ${rankedPlayers.length} players loaded`);
+    if (renderedPlayers >= rankedPlayers.length) {
+      rankingObserver?.unobserve(rankingSentinel);
+      rankingSentinel.remove();
+      rankingSentinel = null;
+    }
+  }
+  function resetOverall(ranking) {
+    rankingObserver?.disconnect();
+    rankedPlayers = ranking;
+    renderedPlayers = 0;
+    rankingSentinel = el('div', 'ranking-sentinel');
+    rankingSentinel.setAttribute('role', 'status');
+    rankingSentinel.setAttribute('aria-live', 'polite');
+    rankingSentinel.append(el('i', ''), el('i', ''), el('i', ''));
+    const tableHeader = el('div', 'ranking-table-header');
+    tableHeader.append(
+      el('span', 'ranking-heading-number', '#'),
+      el('span', 'ranking-heading-player', 'PLAYER'),
+      el('span', 'ranking-heading-tiers', 'TIERS'),
+      el('span', 'ranking-heading-region', 'REGION')
+    );
+    document.getElementById('overall').replaceChildren(tableHeader, rankingSentinel);
+    renderMorePlayers();
+    if (rankingSentinel) {
+      if (rankingObserver) rankingObserver.observe(rankingSentinel);
+      else {
+        const button = el('button', 'load-more-players', 'Load more players');
+        button.type = 'button';
+        button.addEventListener('click', renderMorePlayers);
+        rankingSentinel.replaceChildren(button);
+      }
+    }
   }
   function modeRow(player, mode, suppliedResult) {
     const result = suppliedResult || player.tiers[mode];
@@ -208,8 +274,6 @@
   function render(ranking, loadedLtm) {
     ltmData=loadedLtm;
     validatePlayers(ranking);
-    const overall = document.createDocumentFragment();
-    overall.append(...ranking.map(overallCard));
     const tables = MODES.map(mode => {
       const table = el('div', 'tier-table');
       const columns = Array.from({length:5}, (_, i) => {
@@ -223,20 +287,29 @@
       table.append(...columns); return table;
     });
     // Swap the page only after the full dataset and its UI have been built successfully.
-    document.getElementById('overall').replaceChildren(overall);
+    resetOverall(ranking);
     tables.forEach((table, i) => document.getElementById(`kit${i + 1}`).replaceChildren(table));
     document.getElementById('ltm').replaceChildren(renderLtmPanel(ranking));
     players = new Map(ranking.map(player => [player.minecraft.toLowerCase(), player]));
     applySearch();
   }
   function applySearch() {
-    const query = search.value.trim().toLowerCase();
-    for (const card of panels.querySelectorAll('[data-player]')) card.hidden = !card.dataset.player.toLowerCase().includes(query);
     const panel = document.getElementById(activeKit);
     const found = Array.from(panel.querySelectorAll('[data-player]')).some(node => !node.hidden);
     const status = document.getElementById('search-status');
     status.hidden = found || loading;
-    status.textContent = query ? 'No players found.' : (activeKit === 'overall' ? 'No ranked players yet.' : 'No active tiers in this gamemode yet.');
+    status.textContent = activeKit === 'overall' ? 'No ranked players yet.' : 'No active tiers in this gamemode yet.';
+  }
+  function clearSearchError() {
+    searchError.hidden = true;
+    search.removeAttribute('aria-invalid');
+  }
+  function showSearchError() {
+    searchError.hidden = false;
+    search.setAttribute('aria-invalid', 'true');
+    searchError.classList.remove('is-visible');
+    void searchError.offsetWidth;
+    searchError.classList.add('is-visible');
   }
   function showKit(tab) {
     hideTooltip();
@@ -352,12 +425,14 @@
     const row = event.target.closest('[data-player]');
     if (row) { event.preventDefault(); openProfile(row.dataset.player); }
   });
-  search.addEventListener('input', applySearch);
+  search.addEventListener('input', clearSearchError);
   search.addEventListener('keydown', event => {
     if (event.key !== 'Enter') return;
+    event.preventDefault();
     const query = search.value.trim().toLowerCase(); if (!query) return;
-    const player = players.get(query) || Array.from(players.values()).find(p => p.minecraft.toLowerCase().includes(query));
-    if (player) openProfile(player.minecraft);
+    const player = players.get(query);
+    if (player) { clearSearchError(); openProfile(player.minecraft); }
+    else showSearchError();
   });
   closeButton.addEventListener('click', closeProfile);
   ltmCloseButton.addEventListener('click', closeLtmResults);
