@@ -27,11 +27,54 @@
   const loadStatus = document.getElementById('load-status');
   const message = document.getElementById('load-message');
   const retry = document.getElementById('retry-load');
+  const particleLayer = document.getElementById('ambient-particles');
+  const pageProgress = document.getElementById('page-progress');
   let players = new Map();
   let ltmData = {definitions:[],active:null,players:[]};
   let activeKit = 'overall';
   let loading = false;
   let returnFocus = null;
+  let progressTimer = 0;
+  let panelTimer = 0;
+
+  // Decorative particles fill the quiet space around the centred ranking.
+  // Fixed values keep the layout stable between reloads and avoid a canvas loop.
+  if (particleLayer) {
+    const particles = Array.from({length: 34}, (_, index) => {
+      const particle = el('i', 'ambient-particle');
+      const seed = index + 1;
+      particle.style.setProperty('--particle-x', `${(seed * 37) % 101}%`);
+      particle.style.setProperty('--particle-size', `${2 + (seed * 7) % 5}px`);
+      particle.style.setProperty('--particle-duration', `${18 + (seed * 11) % 19}s`);
+      particle.style.setProperty('--particle-delay', `${-((seed * 13) % 31)}s`);
+      particle.style.setProperty('--particle-drift', `${-55 + (seed * 29) % 111}px`);
+      return particle;
+    });
+    particleLayer.append(...particles);
+  }
+
+  function runProgress(indeterminate = false) {
+    clearTimeout(progressTimer);
+    pageProgress.classList.remove('is-running', 'is-loading');
+    void pageProgress.offsetWidth;
+    pageProgress.classList.add(indeterminate ? 'is-loading' : 'is-running');
+    if (!indeterminate) progressTimer = window.setTimeout(() => pageProgress.classList.remove('is-running'), 720);
+  }
+  function finishProgress() {
+    clearTimeout(progressTimer);
+    pageProgress.classList.remove('is-loading');
+    pageProgress.classList.add('is-finishing');
+    progressTimer = window.setTimeout(() => pageProgress.classList.remove('is-finishing'), 280);
+  }
+  function animatePanel(panel) {
+    clearTimeout(panelTimer);
+    const entries = panel.querySelectorAll('.overall-player, .tier, .ltm-choice, .ltm-table-heading');
+    entries.forEach((entry, index) => entry.style.setProperty('--entry-delay', `${Math.min(index * 24, 240)}ms`));
+    panel.classList.remove('panel-entering');
+    void panel.offsetWidth;
+    panel.classList.add('panel-entering');
+    panelTimer = window.setTimeout(() => panel.classList.remove('panel-entering'), 760);
+  }
 
   // Render one tooltip outside cards so their layout/animations cannot cover its text.
   const tooltip = el('div', 'tier-tooltip');
@@ -198,6 +241,8 @@
   function showKit(tab) {
     hideTooltip();
     const next = tab.dataset.kit;
+    if (next === activeKit) return;
+    runProgress();
     const oldIndex = tabs.findIndex(item => item.dataset.kit === activeKit);
     const nextIndex = tabs.indexOf(tab);
     for (const item of tabs) {
@@ -210,6 +255,7 @@
       if (selected) panel.classList.add('active', nextIndex > oldIndex ? 'slide-right' : 'slide-left');
     }
     activeKit = next;
+    animatePanel(document.getElementById(next));
     if (!loading) applySearch();
   }
   function openProfile(name) {
@@ -265,18 +311,21 @@
   async function loadRankings() {
     if (loading) return;
     loading = true; retry.hidden = true; search.disabled = true;
+    runProgress(true);
     loadStatus.hidden = false; message.textContent = 'Loading rankings…';
     document.getElementById('search-status').hidden = true;
     panels.setAttribute('aria-busy', 'true');
     try {
       const data = await ItsTiers.loadData(DATA_URL);
       render(data.ranking,data.ltm); loadStatus.hidden = true; search.disabled = false;
+      animatePanel(document.getElementById(activeKit));
     } catch (error) {
       console.error('Could not load rankings:', error);
       message.textContent = 'Rankings could not be loaded. Please try again.';
       retry.hidden = false;
     } finally {
       loading = false; panels.setAttribute('aria-busy', 'false');
+      finishProgress();
       if (loadStatus.hidden) applySearch();
     }
   }
