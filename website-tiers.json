@@ -624,6 +624,20 @@
       }
     },
     {
+      "minecraft": "Goldium_",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        },
+        "mace": {
+          "tier": "LT4",
+          "peakTier": "LT4"
+        }
+      }
+    },
+    {
       "minecraft": "hallo663",
       "region": "EU",
       "tiers": {
@@ -1489,20 +1503,6 @@
     },
     {
       "minecraft": "Sm1targusPrimus",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "mace": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        }
-      }
-    },
-    {
-      "minecraft": "Sm1twargusPrimus",
       "region": "EU",
       "tiers": {
         "sword": {
