@@ -1846,13 +1846,24 @@
     },
     "players": [
       {
-        "minecraft": "3qzy",
+        "minecraft": "1TREN",
         "region": "EU",
         "results": {
           "diamond-op": {
             "tier": "LT3",
             "peakTier": "LT3",
-            "awardedAt": "2026-09-13T22:30:05.076Z"
+            "awardedAt": "2026-09-14T20:44:12.779Z"
+          }
+        }
+      },
+      {
+        "minecraft": "3qzy",
+        "region": "EU",
+        "results": {
+          "diamond-op": {
+            "tier": "HT3",
+            "peakTier": "HT3",
+            "awardedAt": "2026-09-14T20:44:20.351Z"
           }
         }
       },
