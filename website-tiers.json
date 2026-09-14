@@ -1866,6 +1866,17 @@
             "awardedAt": "2026-09-13T23:03:19.683Z"
           }
         }
+      },
+      {
+        "minecraft": "McNicho",
+        "region": "EU",
+        "results": {
+          "diamond-op": {
+            "tier": "HT4",
+            "peakTier": "HT4",
+            "awardedAt": "2026-09-14T16:19:43.606Z"
+          }
+        }
       }
     ]
   }
