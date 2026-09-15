@@ -1192,7 +1192,7 @@
       "tiers": {
         "mace": {
           "tier": "LT3",
-          "peakTier": "LT1"
+          "peakTier": "HT3"
         },
         "spearmace": {
           "tier": "LT3",
@@ -1212,7 +1212,7 @@
         },
         "sword": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         }
       }
     },
