@@ -1196,11 +1196,11 @@
         },
         "spearmace": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         },
         "chaosmace": {
           "tier": "LT3",
-          "peakTier": "LT2"
+          "peakTier": "HT3"
         },
         "axe": {
           "tier": "LT3",
