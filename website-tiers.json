@@ -293,6 +293,16 @@
       }
     },
     {
+      "minecraft": "ByePretty",
+      "region": "EU",
+      "tiers": {
+        "spearmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "certifiedrid",
       "region": "NA",
       "tiers": {
