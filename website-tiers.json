@@ -269,6 +269,10 @@
         "chaosmace": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "spearmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
@@ -1657,7 +1661,7 @@
           "peakTier": "HT5"
         },
         "nethpot": {
-          "tier": "LT5",
+          "tier": "HT5",
           "peakTier": "HT5"
         },
         "uhc": {
