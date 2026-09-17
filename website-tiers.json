@@ -1557,6 +1557,10 @@
         "mace": {
           "tier": "HT4",
           "peakTier": "HT4"
+        },
+        "smp": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
