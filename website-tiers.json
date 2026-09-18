@@ -464,6 +464,20 @@
       }
     },
     {
+      "minecraft": "Enzo_KnoXx202411",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "mace": {
+          "tier": "LT5",
+          "peakTier": "LT5"
+        }
+      }
+    },
+    {
       "minecraft": "Epicfaik",
       "region": "EU",
       "tiers": {
@@ -1840,20 +1854,6 @@
         "mace": {
           "tier": "LT2",
           "peakTier": "LT2"
-        }
-      }
-    },
-    {
-      "minecraft": "Zeno_HT5",
-      "region": "EU",
-      "tiers": {
-        "crystal": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "mace": {
-          "tier": "LT5",
-          "peakTier": "LT5"
         }
       }
     },
