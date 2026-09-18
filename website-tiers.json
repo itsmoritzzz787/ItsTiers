@@ -813,6 +813,10 @@
         "mace": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "chaosmace": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
