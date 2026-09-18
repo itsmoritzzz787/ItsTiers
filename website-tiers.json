@@ -1309,6 +1309,16 @@
       }
     },
     {
+      "minecraft": "Meow0wO",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "MrmedoMC",
       "region": "EU",
       "tiers": {
