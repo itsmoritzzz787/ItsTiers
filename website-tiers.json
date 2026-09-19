@@ -1220,15 +1220,15 @@
       "tiers": {
         "mace": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT1"
         },
         "spearmace": {
           "tier": "LT3",
-          "peakTier": "LT3"
+          "peakTier": "HT3"
         },
         "chaosmace": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT2"
         },
         "axe": {
           "tier": "LT3",
@@ -1240,7 +1240,7 @@
         },
         "sword": {
           "tier": "LT3",
-          "peakTier": "LT3"
+          "peakTier": "HT3"
         }
       }
     },
@@ -1888,120 +1888,8 @@
     }
   ],
   "ltm": {
-    "definitions": [
-      {
-        "id": "diamond-op",
-        "name": "Diamond OP",
-        "icon": "https://cdn.discordapp.com/attachments/1532045805677052045/1548822284305825884/diaop.png?ex=6aa874a8&is=6aa72328&hm=8c69d048da94322050aa4ee3c3b912c2a4892906d30c0851a74ecf2946ce6312&"
-      }
-    ],
-    "active": {
-      "id": "diamond-op",
-      "name": "Diamond OP",
-      "icon": "https://cdn.discordapp.com/attachments/1532045805677052045/1548822284305825884/diaop.png?ex=6aa874a8&is=6aa72328&hm=8c69d048da94322050aa4ee3c3b912c2a4892906d30c0851a74ecf2946ce6312&",
-      "startedAt": "2026-09-13T22:28:56.287Z",
-      "endsAt": "2026-09-27T22:28:56.287Z"
-    },
-    "players": [
-      {
-        "minecraft": "1TREN",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-09-14T20:44:12.779Z"
-          }
-        }
-      },
-      {
-        "minecraft": "3qzy",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "HT3",
-            "peakTier": "HT3",
-            "awardedAt": "2026-09-14T20:44:20.351Z"
-          }
-        }
-      },
-      {
-        "minecraft": "aha28",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-09-14T20:04:41.287Z"
-          }
-        }
-      },
-      {
-        "minecraft": "bo_nix_10",
-        "region": "NA",
-        "results": {
-          "diamond-op": {
-            "tier": "LT2",
-            "peakTier": "LT2",
-            "awardedAt": "2026-09-14T21:49:48.072Z"
-          }
-        }
-      },
-      {
-        "minecraft": "ItsMoritzzz",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "HT4",
-            "peakTier": "HT4",
-            "awardedAt": "2026-09-14T16:36:27.314Z"
-          }
-        }
-      },
-      {
-        "minecraft": "kasnnn",
-        "region": "NA",
-        "results": {
-          "diamond-op": {
-            "tier": "LT2",
-            "peakTier": "LT2",
-            "awardedAt": "2026-09-14T22:20:51.475Z"
-          }
-        }
-      },
-      {
-        "minecraft": "McNicho",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "HT4",
-            "peakTier": "HT4",
-            "awardedAt": "2026-09-14T16:19:43.606Z"
-          }
-        }
-      },
-      {
-        "minecraft": "SocialRex11",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "LT4",
-            "peakTier": "LT4",
-            "awardedAt": "2026-09-14T18:01:24.458Z"
-          }
-        }
-      },
-      {
-        "minecraft": "TheCronos_YT",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "LT4",
-            "peakTier": "LT4",
-            "awardedAt": "2026-09-17T20:49:23.500Z"
-          }
-        }
-      }
-    ]
+    "definitions": [],
+    "active": null,
+    "players": []
   }
 }
