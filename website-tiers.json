@@ -148,16 +148,15 @@
     },
     {
       "minecraft": "aha28",
-      "restricted": true,
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT3",
+          "peakTier": "HT3"
         },
         "crystal": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT3",
+          "peakTier": "HT3"
         },
         "pot": {
           "tier": "HT3",
@@ -1991,9 +1990,9 @@
         "region": "EU",
         "results": {
           "diamond-op": {
-            "tier": "LT4",
+            "tier": "LT5",
             "peakTier": "LT4",
-            "awardedAt": "2026-09-14T18:01:24.458Z"
+            "awardedAt": "2026-09-20T19:40:26.031Z"
           }
         }
       },
