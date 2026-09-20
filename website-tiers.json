@@ -152,12 +152,12 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "crystal": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "pot": {
           "tier": "HT3",
@@ -168,8 +168,8 @@
           "peakTier": "LT3"
         },
         "axe": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "mace": {
           "tier": "HT4",
