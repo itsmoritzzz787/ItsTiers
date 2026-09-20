@@ -148,6 +148,7 @@
     },
     {
       "minecraft": "aha28",
+      "restricted": true,
       "region": "EU",
       "tiers": {
         "sword": {
