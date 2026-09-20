@@ -74,6 +74,10 @@
         "mace": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "uhc": {
+          "tier": "Unranked",
+          "peakTier": null
         }
       }
     },
