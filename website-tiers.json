@@ -1220,15 +1220,15 @@
       "tiers": {
         "mace": {
           "tier": "LT3",
-          "peakTier": "LT1"
+          "peakTier": "HT3"
         },
         "spearmace": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         },
         "chaosmace": {
           "tier": "LT3",
-          "peakTier": "LT2"
+          "peakTier": "HT3"
         },
         "axe": {
           "tier": "LT3",
@@ -1240,7 +1240,7 @@
         },
         "sword": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         }
       }
     },
@@ -1451,7 +1451,7 @@
       "tiers": {
         "sword": {
           "tier": "LT3",
-          "peakTier": "LT2"
+          "peakTier": "LT3"
         },
         "mace": {
           "tier": "LT4",
@@ -1658,6 +1658,10 @@
         "mace": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "spearmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
