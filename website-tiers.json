@@ -763,6 +763,10 @@
         "axe": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "smp": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
