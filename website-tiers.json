@@ -246,7 +246,7 @@
       "region": "NA",
       "tiers": {
         "crystal": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "mace": {
@@ -254,11 +254,11 @@
           "peakTier": "LT3"
         },
         "sword": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "pot": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "nethpot": {
@@ -266,7 +266,7 @@
           "peakTier": "LT2"
         },
         "axe": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "chaosmace": {
@@ -278,11 +278,11 @@
           "peakTier": "LT3"
         },
         "uhc": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "smp": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         }
       }
@@ -1957,9 +1957,9 @@
         "region": "NA",
         "results": {
           "diamond-op": {
-            "tier": "LT2",
+            "tier": "LT3",
             "peakTier": "LT2",
-            "awardedAt": "2026-09-14T21:49:48.072Z"
+            "awardedAt": "2026-09-22T21:57:05.667Z"
           }
         }
       },
