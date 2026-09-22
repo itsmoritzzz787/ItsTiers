@@ -263,7 +263,7 @@
         },
         "nethpot": {
           "tier": "LT3",
-          "peakTier": "LT2"
+          "peakTier": "HT3"
         },
         "axe": {
           "tier": "LT3",
@@ -1958,7 +1958,7 @@
         "results": {
           "diamond-op": {
             "tier": "LT3",
-            "peakTier": "LT2",
+            "peakTier": "HT3",
             "awardedAt": "2026-09-22T21:57:05.667Z"
           }
         }
