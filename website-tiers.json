@@ -1015,8 +1015,8 @@
           "peakTier": "LT3"
         },
         "axe": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
@@ -1290,8 +1290,8 @@
           "peakTier": "LT3"
         },
         "chaosmace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT3",
+          "peakTier": "HT3"
         },
         "sword": {
           "tier": "LT3",
