@@ -1118,8 +1118,8 @@
       "region": "EU",
       "tiers": {
         "smp": {
-          "tier": "HT5",
-          "peakTier": "HT5"
+          "tier": "LT4",
+          "peakTier": "LT4"
         },
         "mace": {
           "tier": "LT4",
