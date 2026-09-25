@@ -901,6 +901,10 @@
         "sword": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "smp": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
