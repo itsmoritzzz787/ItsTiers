@@ -893,6 +893,10 @@
         "chaosmace": {
           "tier": "HT4",
           "peakTier": "HT4"
+        },
+        "spearmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
