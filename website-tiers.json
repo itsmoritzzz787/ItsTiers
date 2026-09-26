@@ -549,6 +549,16 @@
       }
     },
     {
+      "minecraft": "Fluriol",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "Fr0gified",
       "region": "EU",
       "tiers": {
