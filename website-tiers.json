@@ -267,7 +267,7 @@
         },
         "nethpot": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT2"
         },
         "axe": {
           "tier": "LT3",
@@ -1321,7 +1321,7 @@
       "tiers": {
         "mace": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT1"
         },
         "spearmace": {
           "tier": "LT3",
@@ -1329,7 +1329,7 @@
         },
         "chaosmace": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT2"
         },
         "axe": {
           "tier": "LT3",
