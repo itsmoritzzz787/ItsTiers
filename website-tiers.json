@@ -919,6 +919,10 @@
         "crystal": {
           "tier": "HT5",
           "peakTier": "HT5"
+        },
+        "pot": {
+          "tier": "HT5",
+          "peakTier": "HT5"
         }
       }
     },
