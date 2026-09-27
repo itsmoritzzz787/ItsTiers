@@ -1943,14 +1943,19 @@
         "id": "diamond-op",
         "name": "Diamond OP",
         "icon": "https://cdn.discordapp.com/attachments/1532045805677052045/1548822284305825884/diaop.png?ex=6aa874a8&is=6aa72328&hm=8c69d048da94322050aa4ee3c3b912c2a4892906d30c0851a74ecf2946ce6312&"
+      },
+      {
+        "id": "debuff",
+        "name": "Debuff",
+        "icon": "https://subtiers.net/assets/debuff-20260909.png"
       }
     ],
     "active": {
-      "id": "diamond-op",
-      "name": "Diamond OP",
-      "icon": "https://cdn.discordapp.com/attachments/1532045805677052045/1548822284305825884/diaop.png?ex=6aa874a8&is=6aa72328&hm=8c69d048da94322050aa4ee3c3b912c2a4892906d30c0851a74ecf2946ce6312&",
-      "startedAt": "2026-09-13T22:28:56.287Z",
-      "endsAt": "2026-09-27T22:28:56.287Z"
+      "id": "debuff",
+      "name": "Debuff",
+      "icon": "https://subtiers.net/assets/debuff-20260909.png",
+      "startedAt": "2026-09-27T22:12:56.618Z",
+      "endsAt": "2026-10-11T22:12:56.618Z"
     },
     "players": [
       {
