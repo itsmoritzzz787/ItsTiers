@@ -259,11 +259,11 @@
         },
         "sword": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         },
         "pot": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         },
         "nethpot": {
           "tier": "LT3",
@@ -283,11 +283,11 @@
         },
         "uhc": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         },
         "smp": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         }
       }
     },
