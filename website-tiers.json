@@ -1791,7 +1791,7 @@
       "tiers": {
         "mace": {
           "tier": "LT5",
-          "peakTier": "HT4"
+          "peakTier": "LT5"
         },
         "crystal": {
           "tier": "HT4",
