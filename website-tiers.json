@@ -2045,6 +2045,11 @@
             "tier": "LT2",
             "peakTier": "LT2",
             "awardedAt": "2026-09-14T22:20:51.475Z"
+          },
+          "debuff": {
+            "tier": "LT4",
+            "peakTier": "LT4",
+            "awardedAt": "2026-10-01T20:13:53.197Z"
           }
         }
       },
