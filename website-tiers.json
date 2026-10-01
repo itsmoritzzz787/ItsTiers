@@ -255,7 +255,7 @@
       "tiers": {
         "crystal": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         },
         "mace": {
           "tier": "LT3",
@@ -267,15 +267,15 @@
         },
         "pot": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         },
         "nethpot": {
           "tier": "LT3",
-          "peakTier": "LT2"
+          "peakTier": "HT3"
         },
         "axe": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         },
         "chaosmace": {
           "tier": "LT3",
@@ -287,7 +287,7 @@
         },
         "uhc": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT3"
         },
         "smp": {
           "tier": "LT3",
@@ -1329,7 +1329,7 @@
       "tiers": {
         "mace": {
           "tier": "LT3",
-          "peakTier": "LT1"
+          "peakTier": "HT3"
         },
         "spearmace": {
           "tier": "LT3",
@@ -1337,7 +1337,7 @@
         },
         "chaosmace": {
           "tier": "LT3",
-          "peakTier": "LT2"
+          "peakTier": "HT3"
         },
         "axe": {
           "tier": "LT3",
