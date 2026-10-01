@@ -180,6 +180,10 @@
         "uhc": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "smp": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
