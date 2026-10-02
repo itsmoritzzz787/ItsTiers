@@ -424,6 +424,10 @@
         "crystal": {
           "tier": "HT5",
           "peakTier": "HT5"
+        },
+        "chaosmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
