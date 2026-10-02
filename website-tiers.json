@@ -404,6 +404,10 @@
         "spearmace": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "sword": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
