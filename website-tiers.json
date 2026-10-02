@@ -420,6 +420,10 @@
         "smp": {
           "tier": "HT5",
           "peakTier": "HT5"
+        },
+        "crystal": {
+          "tier": "HT5",
+          "peakTier": "HT5"
         }
       }
     },
