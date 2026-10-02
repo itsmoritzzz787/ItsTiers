@@ -416,6 +416,10 @@
         "pot": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "smp": {
+          "tier": "HT5",
+          "peakTier": "HT5"
         }
       }
     },
