@@ -394,8 +394,8 @@
       "region": "EU",
       "tiers": {
         "uhc": {
-          "tier": "LT4",
-          "peakTier": "LT4"
+          "tier": "HT4",
+          "peakTier": "HT4"
         },
         "mace": {
           "tier": "LT4",
