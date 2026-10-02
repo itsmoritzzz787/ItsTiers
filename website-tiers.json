@@ -729,6 +729,16 @@
       }
     },
     {
+      "minecraft": "HalloweenMeower",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "LT2",
+          "peakTier": "LT2"
+        }
+      }
+    },
+    {
       "minecraft": "ImJett_",
       "region": "EU",
       "tiers": {
@@ -1418,16 +1428,6 @@
         "axe": {
           "tier": "HT5",
           "peakTier": "HT5"
-        }
-      }
-    },
-    {
-      "minecraft": "Meow0wO",
-      "region": "EU",
-      "tiers": {
-        "crystal": {
-          "tier": "LT2",
-          "peakTier": "LT2"
         }
       }
     },
