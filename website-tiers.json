@@ -969,6 +969,10 @@
         "pot": {
           "tier": "HT5",
           "peakTier": "HT5"
+        },
+        "uhc": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
