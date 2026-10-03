@@ -2108,6 +2108,11 @@
             "tier": "HT4",
             "peakTier": "HT4",
             "awardedAt": "2026-09-14T16:19:43.606Z"
+          },
+          "debuff": {
+            "tier": "LT5",
+            "peakTier": "LT5",
+            "awardedAt": "2026-10-03T18:28:30.839Z"
           }
         }
       },
