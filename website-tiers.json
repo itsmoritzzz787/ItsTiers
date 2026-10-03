@@ -2,16 +2,6 @@
   "schemaVersion": 2,
   "players": [
     {
-      "minecraft": "______OO______",
-      "region": "EU",
-      "tiers": {
-        "crystal": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        }
-      }
-    },
-    {
       "minecraft": "_DasEntchen_",
       "region": "EU",
       "tiers": {
@@ -1147,6 +1137,16 @@
       }
     },
     {
+      "minecraft": "KelvinFittii",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "KFCmuncher67",
       "region": "EU",
       "tiers": {
@@ -2060,6 +2060,16 @@
             "tier": "LT4",
             "peakTier": "LT4",
             "awardedAt": "2026-10-01T20:18:32.238Z"
+          },
+          "speed": {
+            "tier": "HT4",
+            "peakTier": "HT4",
+            "awardedAt": "2026-10-03T19:01:40.969Z"
+          },
+          "diamond-smp": {
+            "tier": "LT4",
+            "peakTier": "LT4",
+            "awardedAt": "2026-10-03T19:01:47.150Z"
           }
         }
       },
@@ -2114,6 +2124,16 @@
             "tier": "LT4",
             "peakTier": "LT4",
             "awardedAt": "2026-10-01T20:13:53.197Z"
+          },
+          "diamond-smp": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-03T19:05:19.699Z"
+          },
+          "speed": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-03T19:05:36.857Z"
           }
         }
       },
