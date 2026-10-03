@@ -917,7 +917,7 @@
           "peakTier": "LT2"
         },
         "smp": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "pot": {
