@@ -2106,6 +2106,11 @@
             "tier": "LT5",
             "peakTier": "LT5",
             "awardedAt": "2026-10-03T17:28:54.979Z"
+          },
+          "speed": {
+            "tier": "HT5",
+            "peakTier": "HT5",
+            "awardedAt": "2026-10-03T20:07:08.231Z"
           }
         }
       }
