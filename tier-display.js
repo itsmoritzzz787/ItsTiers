@@ -59,7 +59,7 @@
   }
 
   function normalizeLtm(ltm) {
-    if (ltm === undefined) return {definitions:[],active:null,players:[]};
+    if (ltm === undefined) return {definitions:[],active:null,activeLtms:[],players:[]};
     if (!isRecord(ltm) || !Array.isArray(ltm.definitions) || !Array.isArray(ltm.players)) throw new TypeError('Invalid LTM data');
     const ids = new Set();
     const definitions = ltm.definitions.map(definition => {
@@ -77,8 +77,19 @@
       }));
       return {...player,results};
     });
-    const active = ltm.active && ids.has(ltm.active.id) ? {...ltm.active} : null;
-    return {definitions,active,players};
+    const candidates = ltm.activeLtms !== undefined ? ltm.activeLtms : ltm.active ? [{...ltm.active,slot:1}] : [];
+    if (!Array.isArray(candidates) || candidates.length > 2) throw new TypeError('Invalid active LTM list');
+    const activeIds = new Set(), slots = new Set();
+    const activeLtms = candidates.map(item => {
+      if (!isRecord(item) || !ids.has(item.id) || activeIds.has(item.id) ||
+          ![1,2].includes(item.slot) || slots.has(item.slot) ||
+          !Number.isFinite(Date.parse(item.startedAt)) || !Number.isFinite(Date.parse(item.endsAt))) {
+        throw new TypeError('Invalid active LTM');
+      }
+      activeIds.add(item.id); slots.add(item.slot); return {...item};
+    }).filter(item => Date.parse(item.endsAt) > Date.now()).sort((a,b) => a.slot-b.slot);
+    const active = activeLtms.find(item => item.slot === 1) || null;
+    return {definitions,active,activeLtms,players};
   }
 
   function rankPlayers(players, ltmData = {players:[]}) {

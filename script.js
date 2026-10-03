@@ -47,7 +47,7 @@
   const particleLayer = document.getElementById('ambient-particles');
   const pageProgress = document.getElementById('page-progress');
   let players = new Map();
-  let ltmData = {definitions:[],active:null,players:[]};
+  let ltmData = {definitions:[],active:null,activeLtms:[],players:[]};
   let activeKit = 'overall';
   let loading = false;
   let returnFocus = null;
@@ -316,20 +316,21 @@
     const picker=el('div','ltm-picker');picker.setAttribute('aria-label','Limited-time modes');
     const heading=el('div','ltm-table-heading');
     const tableHost=el('div','ltm-table-host');
-    const definitions=[...ltmData.definitions].sort((a,b)=>Number(b.id===ltmData.active?.id)-Number(a.id===ltmData.active?.id)||a.name.localeCompare(b.name,'en'));
+    const activeIds=new Set(ltmData.activeLtms.map(item=>item.id));
+    const definitions=[...ltmData.definitions].sort((a,b)=>Number(activeIds.has(b.id))-Number(activeIds.has(a.id))||a.name.localeCompare(b.name,'en'));
     function select(definition,button) {
       for (const item of picker.querySelectorAll('.ltm-choice')) item.classList.toggle('active',item===button);
       heading.replaceChildren();
       const image=el('img','');image.src=definition.icon;image.alt='';
       const title=el('h2','',definition.name);heading.append(image,title);
-      if (definition.id===ltmData.active?.id) heading.append(el('span','ltm-active-label','ACTIVE'));
+      if (activeIds.has(definition.id)) heading.append(el('span','ltm-active-label','ACTIVE'));
       tableHost.replaceChildren(ltmTable(ranking,definition.id));applySearch();
     }
     definitions.forEach((definition,index)=>{
       const button=el('button','ltm-choice');button.type='button';
       const image=el('img','');image.src=definition.icon;image.alt='';
       button.append(image,el('span','',definition.name));
-      if(definition.id===ltmData.active?.id)button.append(el('small','','ACTIVE'));
+      if(activeIds.has(definition.id))button.append(el('small','','ACTIVE'));
       button.addEventListener('click',()=>select(definition,button));picker.append(button);
       if(index===0) queueMicrotask(()=>select(definition,button));
     });
@@ -444,7 +445,7 @@
     const rows=results.sort((a,b)=>definitions.get(a[0]).name.localeCompare(definitions.get(b[0]).name,'en')).map(([id,result])=>{
       const definition=definitions.get(id);const row=el('div','ltm-result-row');
       const image=el('img','ltm-result-icon');image.src=definition.icon;image.alt='';
-      const info=el('div','ltm-result-info');info.append(el('strong','',definition.name),el('span','',`${result.points} points${id===ltmData.active?.id?' · Active':''}`));
+      const info=el('div','ltm-result-info');info.append(el('strong','',definition.name),el('span','',`${result.points} points${ltmData.activeLtms.some(item=>item.id===id)?' · Active':''}`));
       const tier=el('span',`ltm-result-tier ${result.tier.toLowerCase()}`,result.tier);
       if(result.peakTier && result.peakTier!==result.tier)tier.title=`Peak ${result.peakTier}`;
       row.append(image,info,tier);return row;
