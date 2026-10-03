@@ -255,7 +255,7 @@
       "tiers": {
         "crystal": {
           "tier": "LT3",
-          "peakTier": "LT3"
+          "peakTier": "HT3"
         },
         "mace": {
           "tier": "LT3",
@@ -263,19 +263,19 @@
         },
         "sword": {
           "tier": "LT3",
-          "peakTier": "LT3"
+          "peakTier": "HT3"
         },
         "pot": {
           "tier": "LT3",
-          "peakTier": "LT3"
+          "peakTier": "HT3"
         },
         "nethpot": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT2"
         },
         "axe": {
           "tier": "LT3",
-          "peakTier": "LT3"
+          "peakTier": "HT3"
         },
         "chaosmace": {
           "tier": "LT3",
@@ -287,7 +287,7 @@
         },
         "uhc": {
           "tier": "LT3",
-          "peakTier": "LT3"
+          "peakTier": "HT3"
         },
         "smp": {
           "tier": "LT3",
@@ -1375,7 +1375,7 @@
       "tiers": {
         "mace": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT1"
         },
         "spearmace": {
           "tier": "LT3",
@@ -1383,7 +1383,7 @@
         },
         "chaosmace": {
           "tier": "LT3",
-          "peakTier": "HT3"
+          "peakTier": "LT2"
         },
         "axe": {
           "tier": "LT3",
@@ -2007,6 +2007,16 @@
       "startedAt": "2026-09-27T22:12:56.618Z",
       "endsAt": "2026-10-11T22:12:56.618Z"
     },
+    "activeLtms": [
+      {
+        "id": "debuff",
+        "name": "Debuff",
+        "icon": "https://subtiers.net/assets/debuff-20260909.png",
+        "slot": 1,
+        "startedAt": "2026-09-27T22:12:56.618Z",
+        "endsAt": "2026-10-11T22:12:56.618Z"
+      }
+    ],
     "players": [
       {
         "minecraft": "1TREN",
