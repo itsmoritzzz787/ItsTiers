@@ -1432,8 +1432,8 @@
           "peakTier": "LT4"
         },
         "nethpot": {
-          "tier": "HT5",
-          "peakTier": "HT5"
+          "tier": "LT4",
+          "peakTier": "LT4"
         },
         "uhc": {
           "tier": "HT5",
