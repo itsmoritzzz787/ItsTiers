@@ -240,52 +240,6 @@
       }
     },
     {
-      "minecraft": "bo_nix_10",
-      "region": "NA",
-      "tiers": {
-        "crystal": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        },
-        "mace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "sword": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "pot": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        },
-        "nethpot": {
-          "tier": "LT3",
-          "peakTier": "LT2"
-        },
-        "axe": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        },
-        "chaosmace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "spearmace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "uhc": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        },
-        "smp": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        }
-      }
-    },
-    {
       "minecraft": "bombertobi",
       "region": "EU",
       "tiers": {
@@ -1370,36 +1324,6 @@
       }
     },
     {
-      "minecraft": "Matttttiiee",
-      "region": "EU",
-      "tiers": {
-        "mace": {
-          "tier": "LT3",
-          "peakTier": "LT1"
-        },
-        "spearmace": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        },
-        "chaosmace": {
-          "tier": "LT3",
-          "peakTier": "LT2"
-        },
-        "axe": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "nethpot": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "sword": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        }
-      }
-    },
-    {
       "minecraft": "McNicho",
       "region": "EU",
       "tiers": {
@@ -2081,17 +2005,6 @@
             "tier": "HT4",
             "peakTier": "LT3",
             "awardedAt": "2026-09-24T17:59:17.389Z"
-          }
-        }
-      },
-      {
-        "minecraft": "bo_nix_10",
-        "region": "NA",
-        "results": {
-          "diamond-op": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-09-22T21:57:05.667Z"
           }
         }
       },
