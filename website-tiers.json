@@ -1998,23 +1998,41 @@
         "id": "debuff",
         "name": "Debuff",
         "icon": "https://subtiers.net/assets/debuff-20260909.png"
+      },
+      {
+        "id": "diamond-smp",
+        "name": "Diamond SMP",
+        "icon": "https://subtiers.net/assets/dia_smp-20260909.png"
+      },
+      {
+        "id": "speed",
+        "name": "Speed",
+        "icon": "https://subtiers.net/assets/speed-116175c6.svg"
       }
     ],
     "active": {
-      "id": "debuff",
-      "name": "Debuff",
-      "icon": "https://subtiers.net/assets/debuff-20260909.png",
-      "startedAt": "2026-09-27T22:12:56.618Z",
-      "endsAt": "2026-10-11T22:12:56.618Z"
+      "id": "diamond-smp",
+      "name": "Diamond SMP",
+      "icon": "https://subtiers.net/assets/dia_smp-20260909.png",
+      "startedAt": "2026-10-03T18:49:02.758Z",
+      "endsAt": "2026-10-17T18:49:02.758Z"
     },
     "activeLtms": [
       {
-        "id": "debuff",
-        "name": "Debuff",
-        "icon": "https://subtiers.net/assets/debuff-20260909.png",
+        "id": "diamond-smp",
+        "name": "Diamond SMP",
+        "icon": "https://subtiers.net/assets/dia_smp-20260909.png",
         "slot": 1,
-        "startedAt": "2026-09-27T22:12:56.618Z",
-        "endsAt": "2026-10-11T22:12:56.618Z"
+        "startedAt": "2026-10-03T18:49:02.758Z",
+        "endsAt": "2026-10-17T18:49:02.758Z"
+      },
+      {
+        "id": "speed",
+        "name": "Speed",
+        "icon": "https://subtiers.net/assets/speed-116175c6.svg",
+        "slot": 2,
+        "startedAt": "2026-10-03T18:49:31.890Z",
+        "endsAt": "2026-10-17T18:49:31.890Z"
       }
     ],
     "players": [
