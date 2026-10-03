@@ -759,6 +759,10 @@
         "crystal": {
           "tier": "LT2",
           "peakTier": "LT2"
+        },
+        "smp": {
+          "tier": "LT2",
+          "peakTier": "LT2"
         }
       }
     },
