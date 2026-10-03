@@ -763,6 +763,10 @@
         "smp": {
           "tier": "LT2",
           "peakTier": "LT2"
+        },
+        "spearmace": {
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
