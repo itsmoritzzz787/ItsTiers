@@ -1436,8 +1436,8 @@
           "peakTier": "LT4"
         },
         "uhc": {
-          "tier": "HT5",
-          "peakTier": "HT5"
+          "tier": "LT4",
+          "peakTier": "LT4"
         },
         "axe": {
           "tier": "HT5",
