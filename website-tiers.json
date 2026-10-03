@@ -98,8 +98,8 @@
           "peakTier": "HT3"
         },
         "smp": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT3",
+          "peakTier": "HT3"
         },
         "nethpot": {
           "tier": "LT3",
