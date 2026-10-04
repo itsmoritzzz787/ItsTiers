@@ -2094,6 +2094,17 @@
         }
       },
       {
+        "minecraft": "SonPatrol",
+        "region": "EU",
+        "results": {
+          "speed": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-04T12:58:59.691Z"
+          }
+        }
+      },
+      {
         "minecraft": "TheCronos_YT",
         "region": "EU",
         "results": {
