@@ -711,6 +711,10 @@
         "spearmace": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
