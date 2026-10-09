@@ -787,7 +787,7 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "HT4",
+          "tier": "LT3",
           "peakTier": "LT3"
         },
         "nethpot": {
