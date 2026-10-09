@@ -1314,6 +1314,10 @@
         "nethpot": {
           "tier": "HT4",
           "peakTier": "HT4"
+        },
+        "chaosmace": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
