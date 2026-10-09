@@ -1434,6 +1434,10 @@
         "smp": {
           "tier": "LT5",
           "peakTier": "LT5"
+        },
+        "chaosmace": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
