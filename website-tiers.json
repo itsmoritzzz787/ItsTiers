@@ -1520,6 +1520,16 @@
       }
     },
     {
+      "minecraft": "Prpl_Kng",
+      "region": "EU",
+      "tiers": {
+        "spearmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "PVPSnapper",
       "region": "EU",
       "tiers": {
