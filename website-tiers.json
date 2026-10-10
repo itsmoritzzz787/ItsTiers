@@ -1740,6 +1740,16 @@
       }
     },
     {
+      "minecraft": "Szaniaczekk",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT5",
+          "peakTier": "HT5"
+        }
+      }
+    },
+    {
       "minecraft": "TheCronos_YT",
       "region": "EU",
       "tiers": {
