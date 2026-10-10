@@ -1614,6 +1614,16 @@
       }
     },
     {
+      "minecraft": "SmitwargusPr1mus",
+      "region": "EU",
+      "tiers": {
+        "uhc": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "Sn00wies",
       "region": "EU",
       "tiers": {
