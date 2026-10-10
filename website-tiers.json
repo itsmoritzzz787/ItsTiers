@@ -1318,6 +1318,10 @@
         "chaosmace": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
