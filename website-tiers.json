@@ -593,7 +593,7 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "LT4",
+          "tier": "LT3",
           "peakTier": "LT3"
         },
         "spearmace": {
