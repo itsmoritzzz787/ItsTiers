@@ -1980,6 +1980,10 @@
         "mace": {
           "tier": "HT5",
           "peakTier": "HT5"
+        },
+        "axe": {
+          "tier": "HT5",
+          "peakTier": "HT5"
         }
       }
     }
