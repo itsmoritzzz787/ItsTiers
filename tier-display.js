@@ -11,14 +11,14 @@
   });
   const TIER_ORDER = ['HT1','LT1','HT2','LT2','HT3','LT3','HT4','LT4','HT5','LT5'];
   const MODE_ICONS = Object.freeze({
-    crystal: 'https://mctiers.com/tier_icons/vanilla.svg',
-    uhc: 'https://mctiers.com/tier_icons/uhc.svg',
-    pot: 'https://mctiers.com/tier_icons/pot.svg',
-    nethpot: 'https://mctiers.com/tier_icons/nethop.svg',
-    smp: 'https://mctiers.com/tier_icons/smp.svg',
-    sword: 'https://mctiers.com/tier_icons/sword.svg',
-    axe: 'https://mctiers.com/tier_icons/axe.svg',
-    mace: 'https://mctiers.com/tier_icons/mace.svg',
+    crystal: 'https://tiermaker.com/images/media/template_images/2024/16172991/mctiers--subtiers-gamemodes-16172991/vanilla.png',
+    uhc: 'https://tiermaker.com/images/media/template_images/2024/18176275/minecraft-mctiers-kits-ranking-121-18176275/uhc.png',
+    pot: 'https://tiermaker.com/images/media/template_images/2024/16172991/mctiers--subtiers-gamemodes-16172991/pot.png',
+    nethpot: 'https://tiermaker.com/images/media/template_images/2024/16172991/mctiers--subtiers-gamemodes-16172991/nethop.png',
+    smp: 'https://tiermaker.com/images/media/template_images/2024/16172991/mctiers--subtiers-gamemodes-16172991/smp.png',
+    sword: 'https://tiermaker.com/images/media/template_images/2024/16172991/mctiers--subtiers-gamemodes-16172991/sword.png',
+    axe: 'https://tiermaker.com/images/media/template_images/2024/16172991/mctiers--subtiers-gamemodes-16172991/axe.png',
+    mace: 'https://tiermaker.com/images/media/template_images/2024/16172991/mctiers--subtiers-gamemodes-16172991/mace.png',
     chaosmace: 'https://subtiers.net/assets/trident-1c1a3e5a.svg',
     spearmace: 'https://cdn-icons-png.magnific.com/512/6428/6428889.png'
   });
