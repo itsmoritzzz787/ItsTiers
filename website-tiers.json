@@ -2162,6 +2162,17 @@
         }
       },
       {
+        "minecraft": "Pestilents",
+        "region": "EU",
+        "results": {
+          "speed": {
+            "tier": "HT4",
+            "peakTier": "HT4",
+            "awardedAt": "2026-10-11T14:47:08.930Z"
+          }
+        }
+      },
+      {
         "minecraft": "Sn00wies",
         "region": "EU",
         "results": {
