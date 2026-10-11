@@ -2085,6 +2085,11 @@
             "tier": "LT4",
             "peakTier": "LT4",
             "awardedAt": "2026-10-01T16:01:56.357Z"
+          },
+          "speed": {
+            "tier": "HT5",
+            "peakTier": "HT5",
+            "awardedAt": "2026-10-11T02:19:31.389Z"
           }
         }
       },
