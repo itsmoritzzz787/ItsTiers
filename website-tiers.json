@@ -1523,6 +1523,16 @@
       }
     },
     {
+      "minecraft": "Pestilents",
+      "region": "EU",
+      "tiers": {
+        "uhc": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "Prpl_Kng",
       "region": "EU",
       "tiers": {
