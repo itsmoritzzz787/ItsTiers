@@ -1984,6 +1984,10 @@
         "axe": {
           "tier": "HT5",
           "peakTier": "HT5"
+        },
+        "uhc": {
+          "tier": "HT5",
+          "peakTier": "HT5"
         }
       }
     }
