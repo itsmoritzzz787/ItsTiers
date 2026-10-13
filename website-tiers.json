@@ -2083,17 +2083,6 @@
         }
       },
       {
-        "minecraft": "aha28",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "HT4",
-            "peakTier": "LT3",
-            "awardedAt": "2026-09-24T17:59:17.389Z"
-          }
-        }
-      },
-      {
         "minecraft": "HalloweenMeower",
         "region": "EU",
         "results": {
@@ -2148,6 +2137,17 @@
             "tier": "HT3",
             "peakTier": "HT3",
             "awardedAt": "2026-10-03T20:30:16.163Z"
+          }
+        }
+      },
+      {
+        "minecraft": "kxnzzs_",
+        "region": "EU",
+        "results": {
+          "diamond-op": {
+            "tier": "HT4",
+            "peakTier": "LT3",
+            "awardedAt": "2026-09-24T17:59:17.389Z"
           }
         }
       },
