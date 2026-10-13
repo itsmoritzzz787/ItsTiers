@@ -715,6 +715,10 @@
         "sword": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "uhc": {
+          "tier": "LT2",
+          "peakTier": "LT2"
         }
       }
     },
