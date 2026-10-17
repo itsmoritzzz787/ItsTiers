@@ -2017,10 +2017,30 @@
         "id": "speed",
         "name": "Speed",
         "icon": "https://subtiers.net/assets/speed-116175c6.svg"
+      },
+      {
+        "id": "lightspeed-mace",
+        "name": "Lightspeed Mace",
+        "icon": "https://raw.githubusercontent.com/itsmoritzzz787/ItsTiers/main/assets/lightspeed-mace.png"
       }
     ],
-    "active": null,
-    "activeLtms": [],
+    "active": {
+      "id": "lightspeed-mace",
+      "name": "Lightspeed Mace",
+      "icon": "https://raw.githubusercontent.com/itsmoritzzz787/ItsTiers/main/assets/lightspeed-mace.png",
+      "startedAt": "2026-10-17T21:17:22.248Z",
+      "endsAt": "2026-10-31T21:17:22.248Z"
+    },
+    "activeLtms": [
+      {
+        "id": "lightspeed-mace",
+        "name": "Lightspeed Mace",
+        "icon": "https://raw.githubusercontent.com/itsmoritzzz787/ItsTiers/main/assets/lightspeed-mace.png",
+        "slot": 1,
+        "startedAt": "2026-10-17T21:17:22.248Z",
+        "endsAt": "2026-10-31T21:17:22.248Z"
+      }
+    ],
     "players": [
       {
         "minecraft": "1TREN",
