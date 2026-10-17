@@ -2019,31 +2019,8 @@
         "icon": "https://subtiers.net/assets/speed-116175c6.svg"
       }
     ],
-    "active": {
-      "id": "diamond-smp",
-      "name": "Diamond SMP",
-      "icon": "https://subtiers.net/assets/dia_smp-20260909.png",
-      "startedAt": "2026-10-03T18:49:02.758Z",
-      "endsAt": "2026-10-17T18:49:02.758Z"
-    },
-    "activeLtms": [
-      {
-        "id": "diamond-smp",
-        "name": "Diamond SMP",
-        "icon": "https://subtiers.net/assets/dia_smp-20260909.png",
-        "slot": 1,
-        "startedAt": "2026-10-03T18:49:02.758Z",
-        "endsAt": "2026-10-17T18:49:02.758Z"
-      },
-      {
-        "id": "speed",
-        "name": "Speed",
-        "icon": "https://subtiers.net/assets/speed-116175c6.svg",
-        "slot": 2,
-        "startedAt": "2026-10-03T18:49:31.890Z",
-        "endsAt": "2026-10-17T18:49:31.890Z"
-      }
-    ],
+    "active": null,
+    "activeLtms": [],
     "players": [
       {
         "minecraft": "1TREN",
@@ -2090,6 +2067,11 @@
             "tier": "LT3",
             "peakTier": "LT3",
             "awardedAt": "2026-10-11T14:06:27.880Z"
+          },
+          "speed": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-17T21:16:08.570Z"
           }
         }
       },
