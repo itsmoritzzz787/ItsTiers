@@ -1964,6 +1964,16 @@
       }
     },
     {
+      "minecraft": "zMomentum",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "zNixls_",
       "region": "EU",
       "tiers": {
