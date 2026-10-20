@@ -1019,11 +1019,13 @@
       "tiers": {
         "sword": {
           "tier": "LT1",
-          "peakTier": "LT1"
+          "peakTier": "LT1",
+          "retired": true
         },
         "pot": {
           "tier": "LT2",
-          "peakTier": "LT2"
+          "peakTier": "LT2",
+          "retired": true
         },
         "nethpot": {
           "tier": "HT3",
