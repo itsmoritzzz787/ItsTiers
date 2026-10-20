@@ -681,6 +681,10 @@
         "uhc": {
           "tier": "LT2",
           "peakTier": "LT2"
+        },
+        "pot": {
+          "tier": "LT2",
+          "peakTier": "LT2"
         }
       }
     },
