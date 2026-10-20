@@ -76,44 +76,44 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "LT3",
-          "peakTier": "LT2"
+          "tier": "HT1",
+          "peakTier": "HT1"
         },
         "mace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT1",
+          "peakTier": "HT1"
         },
         "pot": {
-          "tier": "LT3",
-          "peakTier": "HT3"
+          "tier": "HT1",
+          "peakTier": "HT1"
         },
         "smp": {
-          "tier": "LT3",
-          "peakTier": "HT3"
+          "tier": "HT1",
+          "peakTier": "HT1"
         },
         "nethpot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT1",
+          "peakTier": "HT1"
         },
         "axe": {
-          "tier": "LT4",
-          "peakTier": "HT4"
+          "tier": "HT1",
+          "peakTier": "HT1"
         },
         "chaosmace": {
-          "tier": "LT3",
-          "peakTier": "HT3"
+          "tier": "HT1",
+          "peakTier": "HT1"
         },
         "crystal": {
-          "tier": "LT4",
-          "peakTier": "LT4"
+          "tier": "HT1",
+          "peakTier": "HT1"
         },
         "spearmace": {
-          "tier": "HT4",
-          "peakTier": "HT4"
+          "tier": "HT1",
+          "peakTier": "HT1"
         },
         "uhc": {
-          "tier": "LT4",
-          "peakTier": "LT4"
+          "tier": "HT1",
+          "peakTier": "HT1"
         }
       }
     },
