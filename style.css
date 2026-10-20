@@ -1359,5 +1359,7 @@ border-radius:5px
 
 /* Retired ranks have a neutral border and label, regardless of tier. */
 .kit-item.retired > .icon { border-color: #303948; background: #202a38; }
-.kit-item.retired > .label { background: #252f3e; color: #9ba5b5; }
+.kit-item.retired > .label {
+    background: #252f3e;
+}
 .popup .profile-overall .overall-cup { display: block; width: 24px; height: 24px; object-fit: contain; }
