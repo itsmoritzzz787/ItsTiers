@@ -2121,6 +2121,17 @@
         }
       },
       {
+        "minecraft": "certifiedrid",
+        "region": "NA",
+        "results": {
+          "lightspeed-mace": {
+            "tier": "HT3",
+            "peakTier": "HT3",
+            "awardedAt": "2026-10-20T02:10:51.369Z"
+          }
+        }
+      },
+      {
         "minecraft": "Ginoski",
         "region": "EU",
         "results": {
