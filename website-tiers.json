@@ -11,6 +11,7 @@
         }
       }
     },
+    
     {
       "minecraft": "_JumpingBean_",
       "region": "EU",
@@ -77,6 +78,98 @@
       "tiers": {
         "sword": {
           "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "mace": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "pot": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "smp": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "nethpot": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "axe": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "chaosmace": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "crystal": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "spearmace": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "uhc": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        }
+      }
+    },
+    {
+      "minecraft": "Marlowwww",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT2",
+          "peakTier": "HT1"
+        },
+        "mace": {
+          "tier": "LT3",
+          "peakTier": "HT1"
+        },
+        "pot": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "smp": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "nethpot": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "axe": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "chaosmace": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "crystal": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "spearmace": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        },
+        "uhc": {
+          "tier": "HT1",
+          "peakTier": "HT1"
+        }
+      }
+    },
+    {
+      "minecraft": "coldified",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT2",
           "peakTier": "HT1"
         },
         "mace": {
