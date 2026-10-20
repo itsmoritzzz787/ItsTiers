@@ -1,7 +1,7 @@
-body{margin:0;font-family:Arial;background:#da85ff;color:pink}
+body{margin:0;font-family:Arial;background:#121822;color:white}
 .uberschrift{display:flex;justify-content:center;text-align:center;padding:20px}
 .kit-nav{display:flex;gap:10px;justify-content:center;padding:10px}
-.kit-tab{background:#da85ff;border-radius:10px;cursor:pointer}
+.kit-tab{background:#10161d;border-radius:10px;cursor:pointer}
 
 .overall-player{display:grid;grid-template-columns:80px 1fr 80px 450px;background:#141b26;margin:10px;padding:15px;border-radius:12px;cursor:pointer;position: relative;
   overflow: hidden;}
@@ -69,7 +69,7 @@ body{margin:0;font-family:Arial;background:#da85ff;color:pink}
 }
 .overall-player:hover {
   transform: translateY(-5px);
-  background: #da85ff;
+  background: #141b26;
   box-shadow: 
     0 10px 25px rgba(0,0,0,0.4),
     0 0 15px rgba(100,150,255,0.2);
@@ -78,7 +78,7 @@ body{margin:0;font-family:Arial;background:#da85ff;color:pink}
 .first-place {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #da85ff, #da85ff);
+  background: linear-gradient(135deg, #2a1a00, #3a2600);
   box-shadow: 
     0 0 10px rgba(255,215,0,0.2),
     0 0 20px rgba(255,215,0,0.15);
@@ -191,7 +191,7 @@ body{margin:0;font-family:Arial;background:#da85ff;color:pink}
 
 .kit-tab:hover {
   transform: translateY(-2px);
-  background: #da85ff;
+  background: #1a263d;
 }
 
 .kit-tab.active {
