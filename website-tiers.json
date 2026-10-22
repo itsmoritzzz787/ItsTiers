@@ -890,6 +890,10 @@
         "uhc": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "nethpot": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
