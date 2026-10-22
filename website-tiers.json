@@ -2136,6 +2136,17 @@
         }
       },
       {
+        "minecraft": "DieElfeFX",
+        "region": "EU",
+        "results": {
+          "lightspeed-mace": {
+            "tier": "HT5",
+            "peakTier": "HT5",
+            "awardedAt": "2026-10-22T19:37:33.392Z"
+          }
+        }
+      },
+      {
         "minecraft": "Ginoski",
         "region": "EU",
         "results": {
