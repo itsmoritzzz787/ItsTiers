@@ -105,7 +105,7 @@
         },
         "crystal": {
           "tier": "LT4",
-          "peakTier": "LT4"
+          "peakTier": "HT1"
         },
         "spearmace": {
           "tier": "HT4",
@@ -1069,7 +1069,7 @@
         },
         "axe": {
           "tier": "LT3",
-          "peakTier": "LT3"
+          "peakTier": "HT3"
         }
       }
     },
