@@ -689,6 +689,10 @@
         "pot": {
           "tier": "LT2",
           "peakTier": "LT2"
+        },
+        "mace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
