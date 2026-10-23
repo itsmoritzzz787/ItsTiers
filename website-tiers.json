@@ -693,6 +693,24 @@
       }
     },
     {
+      "minecraft": "ILOVEGAPPLES",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "uhc": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "axe": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "ImJett_",
       "region": "EU",
       "tiers": {
@@ -1569,24 +1587,6 @@
         "mace": {
           "tier": "LT5",
           "peakTier": "LT5"
-        }
-      }
-    },
-    {
-      "minecraft": "Senpai_Nyx",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "uhc": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "axe": {
-          "tier": "LT3",
-          "peakTier": "LT3"
         }
       }
     },
