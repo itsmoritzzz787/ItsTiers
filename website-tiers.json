@@ -1127,20 +1127,6 @@
       }
     },
     {
-      "minecraft": "KittyPuter",
-      "region": "EU",
-      "tiers": {
-        "mace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "spearmace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        }
-      }
-    },
-    {
       "minecraft": "koksikSzef",
       "region": "EU",
       "tiers": {
@@ -1783,6 +1769,20 @@
         "crystal": {
           "tier": "LT5",
           "peakTier": "LT5"
+        }
+      }
+    },
+    {
+      "minecraft": "StoneTrail",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "spearmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
