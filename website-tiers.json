@@ -697,6 +697,10 @@
         "nethpot": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "axe": {
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
