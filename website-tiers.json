@@ -601,44 +601,6 @@
       }
     },
     {
-      "minecraft": "Gold3n__",
-      "region": "NA",
-      "tiers": {
-        "sword": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "pot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "smp": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "nethpot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "axe": {
-          "tier": "HT5",
-          "peakTier": "HT5"
-        },
-        "uhc": {
-          "tier": "HT5",
-          "peakTier": "HT5"
-        },
-        "mace": {
-          "tier": "LT5",
-          "peakTier": "LT5"
-        },
-        "crystal": {
-          "tier": "LT5",
-          "peakTier": "LT5"
-        }
-      }
-    },
-    {
       "minecraft": "Goldium_",
       "region": "EU",
       "tiers": {
@@ -2000,6 +1962,44 @@
         "mace": {
           "tier": "HT3",
           "peakTier": "LT2"
+        }
+      }
+    },
+    {
+      "minecraft": "ZeroZombiePigs",
+      "region": "NA",
+      "tiers": {
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "pot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "smp": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "nethpot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "axe": {
+          "tier": "HT5",
+          "peakTier": "HT5"
+        },
+        "uhc": {
+          "tier": "HT5",
+          "peakTier": "HT5"
+        },
+        "mace": {
+          "tier": "LT5",
+          "peakTier": "LT5"
+        },
+        "crystal": {
+          "tier": "LT5",
+          "peakTier": "LT5"
         }
       }
     },
