@@ -2014,6 +2014,10 @@
         "smp": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "pot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
