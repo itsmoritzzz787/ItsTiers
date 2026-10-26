@@ -138,7 +138,7 @@ const tierClass = displayTier.toLowerCase();
     badge.setAttribute('data-mode', mode);
     badge.setAttribute('data-tooltip', info.tooltip);
     badge.title = info.tooltip;
-    badge.setAttribute('aria-label', MODE_LABELS[mode] + ': ' + info.tier + '. ' + info.tooltip.replace('\n', '. '));
+    badge.setAttribute('aria-label', MODE_LABELS[mode] + ': ' + displayTier + '. ' + info.tooltip.replace('\n', '. '));
     badge.tabIndex = 0;
 
     const icon = document.createElement('div');
@@ -151,7 +151,7 @@ const tierClass = displayTier.toLowerCase();
     icon.appendChild(image);
     const label = document.createElement('span');
     label.className = 'label ' + tierClass;
-    label.textContent = info.tier;
+    label.textContent = displayTier;
     badge.appendChild(icon);
     badge.appendChild(label);
     return badge;
