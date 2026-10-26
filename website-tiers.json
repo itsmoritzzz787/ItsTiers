@@ -2018,6 +2018,10 @@
         "pot": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "uhc": {
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
