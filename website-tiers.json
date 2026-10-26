@@ -663,6 +663,10 @@
         "axe": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "chaosmace": {
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
