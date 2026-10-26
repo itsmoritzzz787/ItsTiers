@@ -2064,6 +2064,10 @@
         "uhc": {
           "tier": "HT5",
           "peakTier": "HT5"
+        },
+        "crystal": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     }
