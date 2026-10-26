@@ -52,8 +52,8 @@
     const retired = result.retired === true;
     const hasBetterPeak = peakTier !== null && peakTier !== tier;
     const summary = retired
-      ? 'Retired ' + tier + (hasBetterPeak ? ' · Peak ' + peakTier : '')
-      : (hasBetterPeak ? 'Peak ' + peakTier : tier);
+  ? 'Retired ' + peakTier
+  : (hasBetterPeak ? 'Peak ' + peakTier : tier);
 
     return { tier, peakTier, retired, currentPoints, peakPoints: points, points, tooltip: summary + '\n' + points + ' Points' };
   }
@@ -131,7 +131,8 @@
     if (!own(MODE_ICONS, mode)) throw new TypeError('Unknown mode: ' + String(mode));
     if (typeof document === 'undefined') throw new Error('createBadge requires a browser document');
     const info = tierInfo(result);
-    const tierClass = info.tier.toLowerCase();
+const displayTier = info.retired ? info.peakTier : info.tier;
+const tierClass = displayTier.toLowerCase();
     const badge = document.createElement('div');
     badge.className = 'kit-item' + (info.retired ? ' retired' : '');
     badge.setAttribute('data-mode', mode);
