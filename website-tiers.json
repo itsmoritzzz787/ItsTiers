@@ -2027,6 +2027,10 @@
         "uhc": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "nethpot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
