@@ -832,7 +832,8 @@
         },
         "chaosmace": {
           "tier": "LT2",
-          "peakTier": "LT2"
+          "peakTier": "LT2",
+          "retired": true
         },
         "smp": {
           "tier": "LT3",
