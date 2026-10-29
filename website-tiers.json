@@ -2032,6 +2032,10 @@
         "nethpot": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "spearmace": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
