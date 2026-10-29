@@ -105,7 +105,7 @@
         },
         "crystal": {
           "tier": "LT4",
-          "peakTier": "LT4"
+          "peakTier": "HT1"
         },
         "spearmace": {
           "tier": "HT4",
@@ -813,7 +813,7 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "HT3",
+          "tier": "LT2",
           "peakTier": "LT2"
         },
         "sword": {
