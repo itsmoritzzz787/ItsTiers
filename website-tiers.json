@@ -2036,6 +2036,10 @@
         "spearmace": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "mace": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
