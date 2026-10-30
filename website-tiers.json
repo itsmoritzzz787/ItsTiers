@@ -1572,6 +1572,16 @@
       }
     },
     {
+      "minecraft": "scaryknow",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "ShabakAgent3",
       "region": "EU",
       "tiers": {
