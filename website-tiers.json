@@ -105,7 +105,7 @@
         },
         "crystal": {
           "tier": "LT4",
-          "peakTier": "HT1"
+          "peakTier": "LT4"
         },
         "spearmace": {
           "tier": "HT4",
@@ -1660,7 +1660,7 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         }
       }
@@ -1977,7 +1977,7 @@
       "region": "NA",
       "tiers": {
         "sword": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "pot": {
@@ -2049,7 +2049,7 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "pot": {
