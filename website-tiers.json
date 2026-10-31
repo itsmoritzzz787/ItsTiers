@@ -2051,6 +2051,10 @@
         "mace": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "axe": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
