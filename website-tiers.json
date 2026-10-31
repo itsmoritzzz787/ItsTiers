@@ -2190,6 +2190,17 @@
         }
       },
       {
+        "minecraft": "Clivan",
+        "region": "EU",
+        "results": {
+          "lightspeed-mace": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-31T23:47:56.142Z"
+          }
+        }
+      },
+      {
         "minecraft": "DieElfeFX",
         "region": "EU",
         "results": {
@@ -2357,6 +2368,17 @@
             "tier": "LT3",
             "peakTier": "LT3",
             "awardedAt": "2026-10-03T19:01:12.928Z"
+          }
+        }
+      },
+      {
+        "minecraft": "Matttiie",
+        "region": "EU",
+        "results": {
+          "lightspeed-mace": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-31T23:48:04.700Z"
           }
         }
       },
