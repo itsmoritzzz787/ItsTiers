@@ -2131,10 +2131,30 @@
         "id": "lightspeed-mace",
         "name": "Lightspeed Mace",
         "icon": "https://raw.githubusercontent.com/itsmoritzzz787/ItsTiers/main/assets/lightspeed-mace.png"
+      },
+      {
+        "id": "creeper",
+        "name": "Creeper",
+        "icon": "https://subtiers.net/assets/creeper-2cbc5b3a.svg"
       }
     ],
-    "active": null,
-    "activeLtms": [],
+    "active": {
+      "id": "creeper",
+      "name": "Creeper",
+      "icon": "https://subtiers.net/assets/creeper-2cbc5b3a.svg",
+      "startedAt": "2026-10-31T23:50:53.798Z",
+      "endsAt": "2026-11-14T23:50:53.798Z"
+    },
+    "activeLtms": [
+      {
+        "id": "creeper",
+        "name": "Creeper",
+        "icon": "https://subtiers.net/assets/creeper-2cbc5b3a.svg",
+        "slot": 1,
+        "startedAt": "2026-10-31T23:50:53.798Z",
+        "endsAt": "2026-11-14T23:50:53.798Z"
+      }
+    ],
     "players": [
       {
         "minecraft": "1TREN",
