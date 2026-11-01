@@ -2526,12 +2526,23 @@
         }
       },
       {
-        "minecraft": "zShxrki",
+        "minecraft": "zMomentum",
         "region": "EU",
         "results": {
           "creeper": {
             "tier": "LT3",
             "peakTier": "HT3",
+            "awardedAt": "2026-11-01T01:13:28.190Z"
+          }
+        }
+      },
+      {
+        "minecraft": "zShxrki",
+        "region": "EU",
+        "results": {
+          "creeper": {
+            "tier": "LT3",
+            "peakTier": "LT3",
             "awardedAt": "2026-11-01T01:02:31.796Z"
           }
         }
