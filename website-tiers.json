@@ -631,6 +631,10 @@
         "sword": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "axe": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
