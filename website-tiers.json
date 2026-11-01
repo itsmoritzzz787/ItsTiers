@@ -2524,6 +2524,17 @@
             "awardedAt": "2026-10-19T18:29:20.317Z"
           }
         }
+      },
+      {
+        "minecraft": "zShxrki",
+        "region": "EU",
+        "results": {
+          "creeper": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-01T01:02:31.796Z"
+          }
+        }
       }
     ]
   }
