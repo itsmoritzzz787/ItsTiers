@@ -1154,6 +1154,16 @@
       }
     },
     {
+      "minecraft": "know0",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "koksikSzef",
       "region": "EU",
       "tiers": {
@@ -1596,16 +1606,6 @@
         "mace": {
           "tier": "LT5",
           "peakTier": "LT5"
-        }
-      }
-    },
-    {
-      "minecraft": "scaryknow",
-      "region": "EU",
-      "tiers": {
-        "crystal": {
-          "tier": "HT3",
-          "peakTier": "HT3"
         }
       }
     },
