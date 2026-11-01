@@ -140,6 +140,16 @@
       }
     },
     {
+      "minecraft": "Anonimowy0",
+      "region": "EU",
+      "tiers": {
+        "spearmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "atokyo",
       "region": "EU",
       "tiers": {
@@ -2260,6 +2270,11 @@
             "tier": "HT4",
             "peakTier": "HT4",
             "awardedAt": "2026-10-24T00:51:45.557Z"
+          },
+          "creeper": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-01T01:19:56.937Z"
           }
         }
       },
