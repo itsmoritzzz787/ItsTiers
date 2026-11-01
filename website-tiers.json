@@ -625,6 +625,16 @@
       }
     },
     {
+      "minecraft": "hallo662",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "hallo663",
       "region": "EU",
       "tiers": {
