@@ -1594,6 +1594,10 @@
         "axe": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "mace": {
+          "tier": "HT5",
+          "peakTier": "HT5"
         }
       }
     },
