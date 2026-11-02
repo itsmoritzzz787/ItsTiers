@@ -1588,6 +1588,16 @@
       }
     },
     {
+      "minecraft": "PsychoPoppe3",
+      "region": "EU",
+      "tiers": {
+        "axe": {
+          "tier": "LT4",
+          "peakTier": "LT4"
+        }
+      }
+    },
+    {
       "minecraft": "PVPSnapper",
       "region": "EU",
       "tiers": {
