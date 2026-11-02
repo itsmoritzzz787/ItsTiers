@@ -1598,6 +1598,10 @@
         "mace": {
           "tier": "HT5",
           "peakTier": "HT5"
+        },
+        "spearmace": {
+          "tier": "HT5",
+          "peakTier": "HT5"
         }
       }
     },
