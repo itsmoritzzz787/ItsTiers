@@ -681,8 +681,8 @@
           "peakTier": "LT2"
         },
         "mace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT3",
+          "peakTier": "HT3"
         },
         "nethpot": {
           "tier": "HT3",
