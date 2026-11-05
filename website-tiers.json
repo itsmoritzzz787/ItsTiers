@@ -717,6 +717,16 @@
       }
     },
     {
+      "minecraft": "Im_Zealous",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "ImJett_",
       "region": "EU",
       "tiers": {
