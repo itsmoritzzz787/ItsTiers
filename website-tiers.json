@@ -2265,6 +2265,32 @@
         }
       },
       {
+        "minecraft": "ChristmasMeower",
+        "region": "EU",
+        "results": {
+          "diamond-smp": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-11T14:06:27.880Z"
+          },
+          "speed": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-17T21:16:08.570Z"
+          },
+          "lightspeed-mace": {
+            "tier": "HT4",
+            "peakTier": "HT4",
+            "awardedAt": "2026-10-24T00:51:45.557Z"
+          },
+          "creeper": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-01T01:19:56.937Z"
+          }
+        }
+      },
+      {
         "minecraft": "Clivan",
         "region": "EU",
         "results": {
@@ -2294,32 +2320,6 @@
             "tier": "HT4",
             "peakTier": "LT3",
             "awardedAt": "2026-10-25T03:48:22.566Z"
-          }
-        }
-      },
-      {
-        "minecraft": "HalloweenMeower",
-        "region": "EU",
-        "results": {
-          "diamond-smp": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-10-11T14:06:27.880Z"
-          },
-          "speed": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-10-17T21:16:08.570Z"
-          },
-          "lightspeed-mace": {
-            "tier": "HT4",
-            "peakTier": "HT4",
-            "awardedAt": "2026-10-24T00:51:45.557Z"
-          },
-          "creeper": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-11-01T01:19:56.937Z"
           }
         }
       },
