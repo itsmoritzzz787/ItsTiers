@@ -323,6 +323,52 @@
       }
     },
     {
+      "minecraft": "ChristmasMeower",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "LT2",
+          "peakTier": "LT2"
+        },
+        "smp": {
+          "tier": "LT2",
+          "peakTier": "LT2"
+        },
+        "spearmace": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "sword": {
+          "tier": "LT2",
+          "peakTier": "LT2"
+        },
+        "uhc": {
+          "tier": "LT2",
+          "peakTier": "LT2"
+        },
+        "pot": {
+          "tier": "LT2",
+          "peakTier": "LT2"
+        },
+        "mace": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "nethpot": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "axe": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "chaosmace": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "Clivan",
       "region": "EU",
       "tiers": {
@@ -649,52 +695,6 @@
         "uhc": {
           "tier": "HT5",
           "peakTier": "HT5"
-        }
-      }
-    },
-    {
-      "minecraft": "HalloweenMeower",
-      "region": "EU",
-      "tiers": {
-        "crystal": {
-          "tier": "LT2",
-          "peakTier": "LT2"
-        },
-        "smp": {
-          "tier": "LT2",
-          "peakTier": "LT2"
-        },
-        "spearmace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "sword": {
-          "tier": "LT2",
-          "peakTier": "LT2"
-        },
-        "uhc": {
-          "tier": "LT2",
-          "peakTier": "LT2"
-        },
-        "pot": {
-          "tier": "LT2",
-          "peakTier": "LT2"
-        },
-        "mace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "nethpot": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "axe": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "chaosmace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
         }
       }
     },
