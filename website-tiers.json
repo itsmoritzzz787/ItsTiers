@@ -158,6 +158,10 @@
         "crystal": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "sword": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
@@ -2410,6 +2414,11 @@
             "tier": "HT3",
             "peakTier": "HT3",
             "awardedAt": "2026-10-31T22:33:43.244Z"
+          },
+          "creeper": {
+            "tier": "HT5",
+            "peakTier": "HT5",
+            "awardedAt": "2026-11-06T20:54:22.574Z"
           }
         }
       },
