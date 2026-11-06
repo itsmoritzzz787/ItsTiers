@@ -2330,6 +2330,22 @@ body[data-design="fancy"] .popup .profile-position-bar { border-color: #30243c; 
 }
 
 /* Rich podium cards and violet player profile, inspired by the approved mockups. */
+body[data-design="fancy"] .laaanger-background {
+  background:
+    radial-gradient(ellipse at 50% 4%, rgba(117, 70, 160, .24), transparent 54%),
+    radial-gradient(ellipse at 5% 38%, rgba(83, 51, 119, .17), transparent 42%),
+    radial-gradient(ellipse at 96% 70%, rgba(79, 47, 111, .14), transparent 44%),
+    linear-gradient(180deg, #211a2b 0%, #1a1723 38%, #211a2a 72%, #191720 100%);
+  box-shadow: inset 0 1px rgba(211,174,255,.08), inset 0 34px 70px rgba(137,86,177,.06);
+}
+body[data-design="fancy"] .laaanger-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(110deg, rgba(255,255,255,.012), transparent 24%, transparent 76%, rgba(178,126,224,.025));
+}
 body[data-design="fancy"] #overall .overall-player {
   isolation: isolate;
   border-width: 1px;
