@@ -955,6 +955,10 @@
         "nethpot": {
           "tier": "LT4",
           "peakTier": "LT4"
+        },
+        "axe": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
