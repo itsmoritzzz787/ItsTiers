@@ -441,6 +441,10 @@
     const rank = document.getElementById('popup-rank');
     rank.textContent = `${player.rank}.`;
     rank.className = `popup-rank ${['gold', 'silver', 'bronze'][player.rank - 1] || ''}`;
+    popup.classList.remove('podium-gold', 'podium-silver', 'podium-bronze');
+    if (player.rank === 1) popup.classList.add('podium-gold');
+    else if (player.rank === 2) popup.classList.add('podium-silver');
+    else if (player.rank === 3) popup.classList.add('podium-bronze');
     document.getElementById('popup-points').textContent = `${player.totalPoints} points`;
     document.getElementById('popup-tiers').replaceChildren(...badgeList(player));
     popup.hidden = false;
