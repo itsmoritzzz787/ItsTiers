@@ -2518,3 +2518,113 @@ body[data-design="fancy"] #popup .popup-content h3 { color: #c4a8df; text-shadow
 @media (prefers-reduced-motion: reduce) {
   body[data-design="fancy"] #overall .overall-player .player-bg::after { animation: none; }
 }
+
+/* Keep the Classic palette everywhere except the illuminated podium and its profiles. */
+body[data-design="fancy"] {
+  background: radial-gradient(circle at 50% -15%, rgba(49,73,111,.25), transparent 42%), #121822;
+}
+body[data-design="fancy"] .laaanger-background {
+  background: transparent;
+  box-shadow: none;
+}
+body[data-design="fancy"] .laaanger-background::before { content: none; }
+body[data-design="fancy"] .header,
+body[data-design="fancy"] .kit-nav { filter: none; }
+body[data-design="fancy"] .top-btn2,
+body[data-design="fancy"] .top-btn {
+  border-color: #2a3648;
+  box-shadow: none;
+}
+body[data-design="fancy"] .top-btn2:hover,
+body[data-design="fancy"] .top-btn:hover {
+  border-color: #4f7cff;
+  box-shadow: 0 0 10px rgba(79,124,255,.25);
+}
+body[data-design="fancy"] .kit-tab { border-color: #1e2939; }
+body[data-design="fancy"] .kit-tab:hover,
+body[data-design="fancy"] .kit-tab.active {
+  border-color: #1e2939;
+  box-shadow: none;
+}
+body[data-design="fancy"] .ambient-particle {
+  background: #8eaeeb;
+  box-shadow: 0 0 9px rgba(112,151,225,.72);
+}
+body[data-design="fancy"] #overall .overall-player:not(.first-place):not(.second-place):not(.third-place) {
+  border-color: #181e27;
+  box-shadow: none;
+}
+body[data-design="fancy"] #overall .overall-player:not(.first-place):not(.second-place):not(.third-place):hover {
+  border-color: #181e27;
+  box-shadow: none;
+}
+body[data-design="fancy"] #overall .overall-player:not(.first-place):not(.second-place):not(.third-place) .player-bg {
+  background: transparent;
+}
+body[data-design="fancy"] #popup.popup {
+  background: rgba(0,0,0,.82);
+  backdrop-filter: none;
+}
+body[data-design="fancy"] #popup .popup-content {
+  border: 1px solid #1a2029;
+  border-radius: 24px;
+  background: #06080b;
+  box-shadow: 0 28px 90px rgba(0,0,0,.78), inset 0 1px rgba(255,255,255,.025);
+}
+body[data-design="fancy"] #popup .popup-content::before { content: none; }
+body[data-design="fancy"] #popup .popup-close {
+  border: 1px solid #202630;
+  background: #0e1116;
+  color: #a4a9b0;
+  box-shadow: none;
+}
+body[data-design="fancy"] #popup .popup-close:hover { background: #171b22; color: #fff; box-shadow: none; }
+body[data-design="fancy"] #popup .popup-skin-wrapper { border: 0; background: #0d1015; box-shadow: none; }
+body[data-design="fancy"] #popup .Spieler-Name { text-shadow: none; }
+body[data-design="fancy"] #popup .profile-title-badge {
+  border-color: #252b35;
+  background: #101319;
+  box-shadow: none;
+}
+body[data-design="fancy"] #popup .popup-title { color: #e7e9ec; text-shadow: none; }
+body[data-design="fancy"] #popup .profile-region { color: #858c96; }
+body[data-design="fancy"] #popup .profile-namemc {
+  border-color: #1b212a;
+  background: #0d1015;
+  color: #9299a3;
+  box-shadow: none;
+}
+body[data-design="fancy"] #popup .profile-namemc:hover { background: #151920; color: #fff; }
+body[data-design="fancy"] #popup .profile-position-bar,
+body[data-design="fancy"] #popup .popup-tiers {
+  border-color: #1b222c;
+  background: #090c10;
+  box-shadow: none;
+}
+body[data-design="fancy"] #popup .popup-content h3 { color: #858c96; text-shadow: none; }
+
+/* Only the top three profiles pick up their matching podium metal. */
+#popup.podium-gold .popup-content {
+  border-color: rgba(246,203,86,.56);
+  background: radial-gradient(ellipse at 50% 0%, rgba(169,116,24,.25), transparent 45%), linear-gradient(145deg,#241d10,#0c0b09 66%);
+  box-shadow: 0 28px 90px rgba(0,0,0,.8), 0 0 32px rgba(229,174,44,.2), inset 0 1px rgba(255,235,177,.16);
+}
+#popup.podium-silver .popup-content {
+  border-color: rgba(202,218,234,.55);
+  background: radial-gradient(ellipse at 50% 0%, rgba(125,147,169,.24), transparent 45%), linear-gradient(145deg,#20262e,#0b0d10 66%);
+  box-shadow: 0 28px 90px rgba(0,0,0,.8), 0 0 32px rgba(184,207,231,.18), inset 0 1px rgba(244,249,255,.17);
+}
+#popup.podium-bronze .popup-content {
+  border-color: rgba(221,145,91,.57);
+  background: radial-gradient(ellipse at 50% 0%, rgba(151,77,31,.25), transparent 45%), linear-gradient(145deg,#271a13,#0c0a09 66%);
+  box-shadow: 0 28px 90px rgba(0,0,0,.8), 0 0 32px rgba(209,117,59,.19), inset 0 1px rgba(255,221,194,.15);
+}
+#popup.podium-gold .popup-skin-wrapper { background: radial-gradient(circle at 50% 20%,#62502b,#17130b 73%); box-shadow: 0 0 0 5px rgba(228,181,62,.09),0 0 24px rgba(224,176,51,.18); }
+#popup.podium-silver .popup-skin-wrapper { background: radial-gradient(circle at 50% 20%,#505b68,#121519 73%); box-shadow: 0 0 0 5px rgba(192,212,233,.08),0 0 24px rgba(185,205,225,.16); }
+#popup.podium-bronze .popup-skin-wrapper { background: radial-gradient(circle at 50% 20%,#68442d,#17100c 73%); box-shadow: 0 0 0 5px rgba(221,139,78,.08),0 0 24px rgba(212,124,64,.16); }
+#popup.podium-gold .profile-title-badge { border-color: rgba(225,180,62,.35); background: linear-gradient(110deg,rgba(103,73,19,.64),rgba(40,31,14,.88)); box-shadow: 0 0 18px rgba(220,169,42,.13); }
+#popup.podium-silver .profile-title-badge { border-color: rgba(190,209,228,.32); background: linear-gradient(110deg,rgba(73,86,101,.68),rgba(33,38,45,.9)); box-shadow: 0 0 18px rgba(185,205,226,.12); }
+#popup.podium-bronze .profile-title-badge { border-color: rgba(220,137,78,.34); background: linear-gradient(110deg,rgba(111,62,32,.68),rgba(45,30,21,.9)); box-shadow: 0 0 18px rgba(212,123,66,.13); }
+#popup.podium-gold .profile-position-bar, #popup.podium-gold .popup-tiers { border-color: rgba(188,145,48,.32); }
+#popup.podium-silver .profile-position-bar, #popup.podium-silver .popup-tiers { border-color: rgba(163,185,207,.3); }
+#popup.podium-bronze .profile-position-bar, #popup.podium-bronze .popup-tiers { border-color: rgba(190,112,64,.32); }
