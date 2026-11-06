@@ -34,6 +34,7 @@
     return image;
   };
   const search = document.getElementById('playerSearch');
+  const designToggle = document.getElementById('design-toggle');
   const popup = document.getElementById('popup');
   const ltmPopup = document.getElementById('ltm-player-popup');
   const closeButton = document.getElementById('popup-close');
@@ -46,6 +47,22 @@
   const searchError = document.getElementById('search-error');
   const particleLayer = document.getElementById('ambient-particles');
   const pageProgress = document.getElementById('page-progress');
+  const DESIGN_STORAGE_KEY = 'itstiers-design';
+  function setDesign(isFancy) {
+    document.body.dataset.design = isFancy ? 'fancy' : 'classic';
+    designToggle?.setAttribute('aria-pressed', String(isFancy));
+    designToggle?.setAttribute('aria-label', `Switch design; currently ${isFancy ? 'Fancy' : 'Classic'}`);
+  }
+  try {
+    setDesign(localStorage.getItem(DESIGN_STORAGE_KEY) === 'fancy');
+  } catch {
+    setDesign(false);
+  }
+  designToggle?.addEventListener('click', () => {
+    const isFancy = document.body.dataset.design !== 'fancy';
+    setDesign(isFancy);
+    try { localStorage.setItem(DESIGN_STORAGE_KEY, isFancy ? 'fancy' : 'classic'); } catch {}
+  });
   let players = new Map();
   let ltmData = {definitions:[],active:null,activeLtms:[],players:[]};
   let activeKit = 'overall';
