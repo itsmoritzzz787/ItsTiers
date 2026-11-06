@@ -2328,3 +2328,177 @@ body[data-design="fancy"] .popup .profile-position-bar { border-color: #30243c; 
   #overall .overall-player { grid-template-columns: 112px minmax(0, 1fr) 50px; }
   .overall-player .kit-icons { grid-template-columns: repeat(8, 36px); overflow-x: auto; }
 }
+
+/* Rich podium cards and violet player profile, inspired by the approved mockups. */
+body[data-design="fancy"] #overall .overall-player {
+  isolation: isolate;
+  border-width: 1px;
+  transform: perspective(1200px) translateZ(0);
+  box-shadow: 0 11px 26px rgba(0,0,0,.42), inset 0 1px rgba(255,255,255,.055);
+}
+body[data-design="fancy"] #overall .overall-player:hover {
+  transform: perspective(1200px) translateY(-5px) rotateX(.35deg);
+  box-shadow: 0 19px 34px rgba(0,0,0,.5), 0 0 25px rgba(152,92,224,.15), inset 0 1px rgba(255,255,255,.09);
+}
+body[data-design="fancy"] #overall .overall-player .player-bg {
+  opacity: 1;
+  background: linear-gradient(112deg, #181b24 0%, #11151d 48%, #1d1925 100%);
+}
+body[data-design="fancy"] #overall .overall-player.first-place {
+  border-color: #f5d77d;
+  background: linear-gradient(118deg, #6d4d13 0%, #322407 42%, #18150f 100%);
+  box-shadow: 0 0 0 1px rgba(255,229,154,.22), 0 0 24px rgba(255,190,56,.24), 0 16px 34px rgba(0,0,0,.52), inset 0 1px rgba(255,246,201,.65), inset 0 -8px 22px rgba(108,65,5,.22);
+}
+body[data-design="fancy"] #overall .overall-player.second-place {
+  border-color: #d8e2ec;
+  background: linear-gradient(118deg, #596777 0%, #303945 43%, #171b22 100%);
+  box-shadow: 0 0 0 1px rgba(237,245,255,.14), 0 0 22px rgba(203,221,241,.2), 0 16px 34px rgba(0,0,0,.52), inset 0 1px rgba(255,255,255,.65), inset 0 -8px 22px rgba(105,125,149,.18);
+}
+body[data-design="fancy"] #overall .overall-player.third-place {
+  border-color: #f2b17e;
+  background: linear-gradient(118deg, #75421f 0%, #3d2618 43%, #1b1715 100%);
+  box-shadow: 0 0 0 1px rgba(255,214,174,.14), 0 0 22px rgba(237,137,74,.2), 0 16px 34px rgba(0,0,0,.52), inset 0 1px rgba(255,238,219,.55), inset 0 -8px 22px rgba(117,57,18,.2);
+}
+body[data-design="fancy"] #overall .overall-player.first-place .player-bg {
+  background: radial-gradient(ellipse at 20% 0%, rgba(255,226,133,.34), transparent 54%), linear-gradient(112deg, #4d370f 0%, #28200f 54%, #16151a 100%);
+}
+body[data-design="fancy"] #overall .overall-player.second-place .player-bg {
+  background: radial-gradient(ellipse at 20% 0%, rgba(233,243,255,.3), transparent 54%), linear-gradient(112deg, #3b4754 0%, #252c35 54%, #15191f 100%);
+}
+body[data-design="fancy"] #overall .overall-player.third-place .player-bg {
+  background: radial-gradient(ellipse at 20% 0%, rgba(255,194,145,.3), transparent 54%), linear-gradient(112deg, #512f1b 0%, #302116 54%, #171514 100%);
+}
+body[data-design="fancy"] #overall .overall-player.first-place .player-position {
+  background: linear-gradient(145deg, #ffe89b 0%, #e6ae37 37%, #9b6816 100%);
+  box-shadow: inset 0 1px rgba(255,255,255,.7), inset -9px 0 18px rgba(84,49,3,.2), 4px 0 16px rgba(255,202,74,.28);
+}
+body[data-design="fancy"] #overall .overall-player.second-place .player-position {
+  background: linear-gradient(145deg, #f4f7fa 0%, #a9b8c7 38%, #62717e 100%);
+  box-shadow: inset 0 1px rgba(255,255,255,.82), inset -9px 0 18px rgba(44,57,70,.2), 4px 0 16px rgba(200,221,243,.24);
+}
+body[data-design="fancy"] #overall .overall-player.third-place .player-position {
+  background: linear-gradient(145deg, #ffd1a3 0%, #d98243 38%, #82441f 100%);
+  box-shadow: inset 0 1px rgba(255,255,255,.72), inset -9px 0 18px rgba(73,34,11,.22), 4px 0 16px rgba(232,137,73,.25);
+}
+body[data-design="fancy"] #overall .overall-player.first-place .player-info,
+body[data-design="fancy"] #overall .overall-player.second-place .player-info,
+body[data-design="fancy"] #overall .overall-player.third-place .player-info {
+  background: linear-gradient(100deg, rgba(11,13,17,.28), rgba(8,10,14,.55));
+  border-right-color: rgba(255,255,255,.1);
+}
+body[data-design="fancy"] #overall .overall-player.first-place .kit-icons,
+body[data-design="fancy"] #overall .overall-player.second-place .kit-icons,
+body[data-design="fancy"] #overall .overall-player.third-place .kit-icons,
+body[data-design="fancy"] #overall .overall-player.first-place .region,
+body[data-design="fancy"] #overall .overall-player.second-place .region,
+body[data-design="fancy"] #overall .overall-player.third-place .region {
+  background: rgba(8,10,14,.32);
+  border-color: rgba(255,255,255,.09);
+}
+body[data-design="fancy"] #overall .overall-player.first-place .player-bg::after,
+body[data-design="fancy"] #overall .overall-player.second-place .player-bg::after,
+body[data-design="fancy"] #overall .overall-player.third-place .player-bg::after {
+  content: "";
+  position: absolute;
+  inset: -45% auto -45% -55%;
+  width: 34%;
+  transform: skewX(-18deg);
+  pointer-events: none;
+  animation: fancy-podium-sheen 4.8s ease-in-out infinite;
+}
+body[data-design="fancy"] #overall .overall-player.first-place .player-bg::after {
+  background: linear-gradient(90deg, transparent, rgba(255,246,207,.58), rgba(255,218,113,.25), transparent);
+}
+body[data-design="fancy"] #overall .overall-player.second-place .player-bg::after {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.62), rgba(221,237,255,.24), transparent);
+  animation-delay: .55s;
+}
+body[data-design="fancy"] #overall .overall-player.third-place .player-bg::after {
+  background: linear-gradient(90deg, transparent, rgba(255,235,215,.56), rgba(255,178,119,.24), transparent);
+  animation-delay: 1.1s;
+}
+@keyframes fancy-podium-sheen {
+  0%, 12% { left: -55%; opacity: 0; }
+  24% { opacity: .85; }
+  56%, 100% { left: 125%; opacity: 0; }
+}
+body[data-design="fancy"] #overall .overall-player.first-place .rank1::before {
+  content: "♛";
+  display: block;
+  margin: -1px 0 -5px -3px;
+  color: #fff1b5;
+  font: 700 17px/1 Arial, sans-serif;
+  filter: drop-shadow(0 2px 3px rgba(91,53,5,.65));
+}
+
+body[data-design="fancy"] #popup.popup {
+  background: radial-gradient(ellipse at center, rgba(25,13,43,.62), rgba(3,2,8,.9));
+  backdrop-filter: blur(8px) saturate(.82);
+}
+body[data-design="fancy"] #popup .popup-content {
+  position: relative;
+  isolation: isolate;
+  border: 1px solid rgba(191,143,255,.5);
+  border-radius: 26px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(117,66,167,.26), transparent 42%), linear-gradient(145deg, #21172e 0%, #14111d 48%, #0d0d14 100%);
+  box-shadow: 0 34px 100px rgba(0,0,0,.8), 0 0 0 1px rgba(153,91,218,.18), 0 0 54px rgba(139,74,207,.3), inset 0 1px rgba(255,255,255,.11);
+}
+body[data-design="fancy"] #popup .popup-content::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(125deg, rgba(255,255,255,.08), transparent 22%, transparent 72%, rgba(171,116,230,.07));
+  pointer-events: none;
+}
+body[data-design="fancy"] #popup .popup-close {
+  border: 1px solid rgba(199,154,246,.26);
+  background: linear-gradient(145deg, #342341, #1d1726);
+  color: #ddc6f7;
+  box-shadow: inset 0 1px rgba(255,255,255,.1), 0 5px 16px rgba(0,0,0,.25);
+}
+body[data-design="fancy"] #popup .popup-close:hover {
+  background: linear-gradient(145deg, #523367, #2c1d3d);
+  box-shadow: 0 0 18px rgba(190,126,255,.28);
+}
+body[data-design="fancy"] #popup .popup-skin-wrapper {
+  border: 1px solid rgba(213,177,255,.35);
+  background: radial-gradient(circle at 50% 22%, #563d70, #241b31 70%);
+  box-shadow: 0 0 0 6px rgba(122,75,160,.1), 0 0 30px rgba(180,119,232,.24), inset 0 2px rgba(255,255,255,.14);
+}
+body[data-design="fancy"] #popup .Spieler-Name {
+  margin-top: 17px;
+  text-shadow: 0 2px 18px rgba(206,167,255,.22);
+}
+body[data-design="fancy"] #popup .profile-title-badge {
+  margin-top: 13px;
+  padding: 9px 17px;
+  border: 1px solid rgba(192,139,249,.4);
+  border-radius: 999px;
+  background: linear-gradient(110deg, rgba(96,53,131,.72), rgba(48,35,67,.86));
+  box-shadow: inset 0 1px rgba(255,255,255,.13), 0 0 22px rgba(151,83,216,.22);
+}
+body[data-design="fancy"] #popup .popup-title { color: #f1e4ff; text-shadow: 0 1px 10px rgba(197,147,247,.35); }
+body[data-design="fancy"] #popup .profile-region { color: #c1a8d9; }
+body[data-design="fancy"] #popup .profile-namemc {
+  border: 1px solid rgba(192,146,235,.24);
+  background: linear-gradient(120deg, #30243c, #1b1723);
+  color: #d3c1e5;
+  box-shadow: inset 0 1px rgba(255,255,255,.07), 0 5px 18px rgba(0,0,0,.2);
+}
+body[data-design="fancy"] #popup .profile-namemc:hover { background: linear-gradient(120deg, #49325b, #2a1e39); color: #fff; }
+body[data-design="fancy"] #popup .profile-position-bar,
+body[data-design="fancy"] #popup .popup-tiers {
+  border-color: rgba(160,112,202,.33);
+  background: linear-gradient(130deg, rgba(40,30,52,.96), rgba(19,17,26,.98));
+  box-shadow: inset 0 1px rgba(255,255,255,.07), 0 8px 24px rgba(0,0,0,.22);
+}
+body[data-design="fancy"] #popup .popup-rank.gold { background: linear-gradient(145deg, #ffe68e, #bc8521); color: #291d08; }
+body[data-design="fancy"] #popup .popup-rank.silver { background: linear-gradient(145deg, #f3f6fa, #788a9c); color: #17202b; }
+body[data-design="fancy"] #popup .popup-rank.bronze { background: linear-gradient(145deg, #ffd0a6, #a85826); color: #2d170b; }
+body[data-design="fancy"] #popup .popup-content h3 { color: #c4a8df; text-shadow: 0 0 12px rgba(180,122,231,.18); }
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-design="fancy"] #overall .overall-player .player-bg::after { animation: none; }
+}
