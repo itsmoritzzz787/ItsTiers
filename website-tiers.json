@@ -1422,9 +1422,8 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "HT3",
-          "peakTier": "LT2",
-          "retired": true
+          "tier": "LT2",
+          "peakTier": "LT2"
         },
         "mace": {
           "tier": "HT3",
