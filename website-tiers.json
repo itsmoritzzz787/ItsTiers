@@ -1617,6 +1617,16 @@
       }
     },
     {
+      "minecraft": "prequlol",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "Prpl_Kng",
       "region": "EU",
       "tiers": {
