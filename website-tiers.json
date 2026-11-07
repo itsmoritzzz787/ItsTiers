@@ -2204,6 +2204,10 @@
         "crystal": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "uhc": {
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
