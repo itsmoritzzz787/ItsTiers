@@ -1015,6 +1015,16 @@
       }
     },
     {
+      "minecraft": "Jbrxu",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "JCNKLER",
       "region": "EU",
       "tiers": {
