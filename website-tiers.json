@@ -170,6 +170,10 @@
         "nethpot": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "smp": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
