@@ -1412,7 +1412,7 @@
       "region": "EU",
       "tiers": {
         "uhc": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         }
       }
