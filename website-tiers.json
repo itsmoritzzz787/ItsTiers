@@ -1919,6 +1919,10 @@
         "sword": {
           "tier": "HT4",
           "peakTier": "HT4"
+        },
+        "nethpot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
