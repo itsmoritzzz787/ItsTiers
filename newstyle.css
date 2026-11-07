@@ -2625,9 +2625,12 @@ body[data-design=fancy] #popup.podium-bronze .popup-skin-wrapper { background: r
 body[data-design=fancy] #popup.podium-gold .profile-title-badge { border-color: rgba(225,180,62,.35); background: linear-gradient(110deg,rgba(103,73,19,.64),rgba(40,31,14,.88)); box-shadow: 0 0 18px rgba(220,169,42,.13); }
 body[data-design=fancy] #popup.podium-silver .profile-title-badge { border-color: rgba(190,209,228,.32); background: linear-gradient(110deg,rgba(73,86,101,.68),rgba(33,38,45,.9)); box-shadow: 0 0 18px rgba(185,205,226,.12); }
 body[data-design=fancy] #popup.podium-bronze .profile-title-badge { border-color: rgba(220,137,78,.34); background: linear-gradient(110deg,rgba(111,62,32,.68),rgba(45,30,21,.9)); box-shadow: 0 0 18px rgba(212,123,66,.13); }
-body[data-design=fancy] #popup.podium-gold .profile-position-bar, #popup.podium-gold .popup-tiers { border-color: rgba(188,145,48,.32); }
-body[data-design=fancy] #popup.podium-silver .profile-position-bar, #popup.podium-silver .popup-tiers { border-color: rgba(163,185,207,.3); }
-body[data-design=fancy] #popup.podium-bronze .profile-position-bar, #popup.podium-bronze .popup-tiers { border-color: rgba(190,112,64,.32); }
+body[data-design=fancy] #popup.podium-gold .profile-position-bar,
+body[data-design=fancy] #popup.podium-gold .popup-tiers { border-color: rgba(188,145,48,.32); }
+body[data-design=fancy] #popup.podium-silver .profile-position-bar,
+body[data-design=fancy] #popup.podium-silver .popup-tiers { border-color: rgba(163,185,207,.3); }
+body[data-design=fancy] #popup.podium-bronze .profile-position-bar,
+body[data-design=fancy] #popup.podium-bronze .popup-tiers { border-color: rgba(190,112,64,.32); }
 
 /* Match the portrait frame to the player's podium color. */
 body[data-design=fancy] #popup.podium-gold .popup-skin-wrapper {
@@ -2800,4 +2803,33 @@ body[data-design=fancy] .tier.tier5 > .player:hover {
 @media (prefers-reduced-motion: reduce) {
   body[data-design=fancy] .tier.tier4::after,
   body[data-design=fancy] .tier.tier5::after { animation: none; }
+}
+
+/* In Fancy, high-tier entries are denser and brighter than low-tier entries. */
+body[data-design=fancy] .tier.tier1 > .player.ht {
+  background: linear-gradient(105deg,rgba(160,119,35,.94),rgba(111,81,28,.96));
+  border-color: rgba(255,222,135,.34);
+  box-shadow: inset 0 1px rgba(255,245,205,.22), 0 4px 11px rgba(0,0,0,.2);
+}
+body[data-design=fancy] .tier.tier2 > .player.ht {
+  background: linear-gradient(105deg,rgba(132,144,160,.94),rgba(91,102,119,.96));
+  border-color: rgba(239,246,255,.34);
+  box-shadow: inset 0 1px rgba(255,255,255,.24), 0 4px 11px rgba(0,0,0,.2);
+}
+body[data-design=fancy] .tier.tier3 > .player.ht {
+  background: linear-gradient(105deg,rgba(151,96,62,.94),rgba(106,68,47,.96));
+  border-color: rgba(255,217,184,.32);
+  box-shadow: inset 0 1px rgba(255,246,233,.2), 0 4px 11px rgba(0,0,0,.2);
+}
+body[data-design=fancy] .tier.tier4 > .player.ht,
+body[data-design=fancy] .tier.tier5 > .player.ht {
+  background: linear-gradient(105deg,rgba(109,124,143,.94),rgba(77,89,105,.96));
+  border-color: rgba(224,235,248,.25);
+  box-shadow: inset 0 1px rgba(255,255,255,.19), 0 4px 11px rgba(0,0,0,.2);
+}
+body[data-design=fancy] .tier > .player.lt {
+  background: linear-gradient(105deg,rgba(16,19,25,.34),rgba(14,17,23,.24));
+  border-color: rgba(205,218,234,.1);
+  box-shadow: inset 0 1px rgba(255,255,255,.035);
+  font-weight: 500;
 }
