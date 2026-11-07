@@ -1773,7 +1773,7 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "sword": {
