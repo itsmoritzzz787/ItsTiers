@@ -1995,7 +1995,7 @@
           "peakTier": "HT5"
         },
         "nethpot": {
-          "tier": "LT5",
+          "tier": "HT5",
           "peakTier": "HT5"
         },
         "uhc": {
@@ -2204,6 +2204,16 @@
           "peakTier": "LT3"
         },
         "chaosmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
+      "minecraft": "zNicofn",
+      "region": "EU",
+      "tiers": {
+        "spearmace": {
           "tier": "LT3",
           "peakTier": "LT3"
         }
