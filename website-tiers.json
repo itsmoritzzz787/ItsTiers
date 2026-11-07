@@ -1913,6 +1913,16 @@
       }
     },
     {
+      "minecraft": "szytorkf__",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "TheCronos_YT",
       "region": "EU",
       "tiers": {
