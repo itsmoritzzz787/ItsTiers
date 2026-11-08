@@ -2212,8 +2212,8 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "HT4",
-          "peakTier": "HT4"
+          "tier": "HT3",
+          "peakTier": "HT3"
         },
         "smp": {
           "tier": "HT3",
