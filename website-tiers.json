@@ -1179,20 +1179,20 @@
       "region": "EU",
       "tiers": {
         "nethpot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "HT5",
+          "peakTier": "HT5"
         },
         "sword": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "LT4",
+          "peakTier": "LT4"
         },
         "mace": {
           "tier": "HT5",
-          "peakTier": "LT3"
+          "peakTier": "HT5"
         },
         "axe": {
           "tier": "HT4",
-          "peakTier": "LT3"
+          "peakTier": "HT4"
         },
         "crystal": {
           "tier": "LT4",
@@ -1209,10 +1209,10 @@
         },
         "uhc": {
           "tier": "HT4",
-          "peakTier": "LT3"
+          "peakTier": "HT4"
         },
         "smp": {
-          "tier": "LT3",
+          "tier": "HT4",
           "peakTier": "LT3"
         }
       }
