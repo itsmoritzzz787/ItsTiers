@@ -1683,6 +1683,10 @@
         "crystal": {
           "tier": "HT4",
           "peakTier": "HT4"
+        },
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
