@@ -1531,6 +1531,16 @@
       }
     },
     {
+      "minecraft": "MeowMaxer",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "MrmedoMC",
       "region": "EU",
       "tiers": {
