@@ -1687,6 +1687,10 @@
         "sword": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "nethpot": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
