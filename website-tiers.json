@@ -1178,10 +1178,6 @@
       "minecraft": "KFCmuncher67",
       "region": "EU",
       "tiers": {
-        "nethpot": {
-          "tier": "HT5",
-          "peakTier": "HT5"
-        },
         "sword": {
           "tier": "LT4",
           "peakTier": "LT4"
