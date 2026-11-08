@@ -1213,7 +1213,7 @@
         },
         "smp": {
           "tier": "HT4",
-          "peakTier": "LT3"
+          "peakTier": "HT4"
         }
       }
     },
