@@ -2388,42 +2388,6 @@
         }
       },
       {
-        "minecraft": "3qzy",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "HT3",
-            "peakTier": "HT3",
-            "awardedAt": "2026-09-14T20:44:20.351Z"
-          },
-          "debuff": {
-            "tier": "LT4",
-            "peakTier": "LT4",
-            "awardedAt": "2026-10-01T20:18:32.238Z"
-          },
-          "speed": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-10-03T20:21:25.956Z"
-          },
-          "diamond-smp": {
-            "tier": "HT4",
-            "peakTier": "HT4",
-            "awardedAt": "2026-10-03T20:57:53.482Z"
-          },
-          "lightspeed-mace": {
-            "tier": "HT4",
-            "peakTier": "HT4",
-            "awardedAt": "2026-10-26T22:18:04.383Z"
-          },
-          "creeper": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-11-06T21:08:46.381Z"
-          }
-        }
-      },
-      {
         "minecraft": "Anonimowy0",
         "region": "EU",
         "results": {
@@ -2628,6 +2592,42 @@
             "tier": "HT4",
             "peakTier": "LT3",
             "awardedAt": "2026-09-24T17:59:17.389Z"
+          }
+        }
+      },
+      {
+        "minecraft": "larpqzy",
+        "region": "EU",
+        "results": {
+          "diamond-op": {
+            "tier": "HT3",
+            "peakTier": "HT3",
+            "awardedAt": "2026-09-14T20:44:20.351Z"
+          },
+          "debuff": {
+            "tier": "LT4",
+            "peakTier": "LT4",
+            "awardedAt": "2026-10-01T20:18:32.238Z"
+          },
+          "speed": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-03T20:21:25.956Z"
+          },
+          "diamond-smp": {
+            "tier": "HT4",
+            "peakTier": "HT4",
+            "awardedAt": "2026-10-03T20:57:53.482Z"
+          },
+          "lightspeed-mace": {
+            "tier": "HT4",
+            "peakTier": "HT4",
+            "awardedAt": "2026-10-26T22:18:04.383Z"
+          },
+          "creeper": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-06T21:08:46.381Z"
           }
         }
       },
