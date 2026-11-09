@@ -72,52 +72,6 @@
       }
     },
     {
-      "minecraft": "3qzy",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "LT2",
-          "peakTier": "LT2"
-        },
-        "mace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "pot": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "smp": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        },
-        "nethpot": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "axe": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "chaosmace": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        },
-        "crystal": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        },
-        "spearmace": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "uhc": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        }
-      }
-    },
-    {
       "minecraft": "67kz",
       "region": "EU",
       "tiers": {
@@ -1267,6 +1221,52 @@
         "smp": {
           "tier": "LT3",
           "peakTier": "LT3"
+        }
+      }
+    },
+    {
+      "minecraft": "larpqzy",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "LT2",
+          "peakTier": "LT2"
+        },
+        "mace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "pot": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "smp": {
+          "tier": "LT3",
+          "peakTier": "HT3"
+        },
+        "nethpot": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "axe": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        },
+        "chaosmace": {
+          "tier": "LT3",
+          "peakTier": "HT3"
+        },
+        "crystal": {
+          "tier": "LT4",
+          "peakTier": "LT4"
+        },
+        "spearmace": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        },
+        "uhc": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
