@@ -1678,6 +1678,10 @@
         "axe": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "pot": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
