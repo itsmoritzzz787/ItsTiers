@@ -2257,6 +2257,10 @@
         "chaosmace": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "crystal": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
