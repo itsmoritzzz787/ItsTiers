@@ -1682,6 +1682,10 @@
         "pot": {
           "tier": "HT4",
           "peakTier": "HT4"
+        },
+        "chaosmace": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
