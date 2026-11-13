@@ -2423,6 +2423,17 @@
         }
       },
       {
+        "minecraft": "Art_th3_clown",
+        "region": "EU",
+        "results": {
+          "diamond-op": {
+            "tier": "HT4",
+            "peakTier": "LT3",
+            "awardedAt": "2026-09-24T17:59:17.389Z"
+          }
+        }
+      },
+      {
         "minecraft": "certifiedrid",
         "region": "NA",
         "results": {
@@ -2605,17 +2616,6 @@
             "tier": "LT3",
             "peakTier": "LT3",
             "awardedAt": "2026-10-17T23:51:31.492Z"
-          }
-        }
-      },
-      {
-        "minecraft": "kxnzzs_",
-        "region": "EU",
-        "results": {
-          "diamond-op": {
-            "tier": "HT4",
-            "peakTier": "LT3",
-            "awardedAt": "2026-09-24T17:59:17.389Z"
           }
         }
       },
