@@ -609,36 +609,6 @@
       }
     },
     {
-      "minecraft": "GhostlyFatih",
-      "region": "EU",
-      "tiers": {
-        "crystal": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        },
-        "sword": {
-          "tier": "LT3",
-          "peakTier": "HT3"
-        },
-        "smp": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "mace": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "pot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "nethpot": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        }
-      }
-    },
-    {
       "minecraft": "Ginoski",
       "region": "EU",
       "tiers": {
@@ -2123,6 +2093,36 @@
           "tier": "LT2",
           "peakTier": "LT2",
           "retired": true
+        }
+      }
+    },
+    {
+      "minecraft": "unseenmot1on",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "LT3",
+          "peakTier": "HT3"
+        },
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "HT3"
+        },
+        "smp": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "mace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "pot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "nethpot": {
+          "tier": "HT4",
+          "peakTier": "HT4"
         }
       }
     },
