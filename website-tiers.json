@@ -2391,8 +2391,23 @@
         "icon": "https://subtiers.net/assets/og_vanilla-20260909.png"
       }
     ],
-    "active": null,
-    "activeLtms": [],
+    "active": {
+      "id": "og-vanila",
+      "name": "OG Vanila",
+      "icon": "https://subtiers.net/assets/og_vanilla-20260909.png",
+      "startedAt": "2026-11-15T01:58:56.943Z",
+      "endsAt": "2026-11-29T01:58:56.943Z"
+    },
+    "activeLtms": [
+      {
+        "id": "og-vanila",
+        "name": "OG Vanila",
+        "icon": "https://subtiers.net/assets/og_vanilla-20260909.png",
+        "slot": 1,
+        "startedAt": "2026-11-15T01:58:56.943Z",
+        "endsAt": "2026-11-29T01:58:56.943Z"
+      }
+    ],
     "players": [
       {
         "minecraft": "1TREN",
@@ -2646,6 +2661,11 @@
             "tier": "LT3",
             "peakTier": "LT3",
             "awardedAt": "2026-11-06T21:08:46.381Z"
+          },
+          "og-vanila": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-15T01:59:37.554Z"
           }
         }
       },
