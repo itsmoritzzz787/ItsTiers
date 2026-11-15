@@ -2384,6 +2384,11 @@
         "id": "creeper",
         "name": "Creeper",
         "icon": "https://subtiers.net/assets/creeper-2cbc5b3a.svg"
+      },
+      {
+        "id": "og-vanila",
+        "name": "OG Vanila",
+        "icon": "https://subtiers.net/assets/og_vanilla-20260909.png"
       }
     ],
     "active": null,
