@@ -1127,16 +1127,6 @@
       }
     },
     {
-      "minecraft": "KelvinFittii",
-      "region": "EU",
-      "tiers": {
-        "crystal": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        }
-      }
-    },
-    {
       "minecraft": "KFCmuncher67",
       "region": "EU",
       "tiers": {
@@ -1804,6 +1794,16 @@
       }
     },
     {
+      "minecraft": "Slyc__",
+      "region": "EU",
+      "tiers": {
+        "crystal": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "Sm1targusPrimus",
       "region": "EU",
       "tiers": {
@@ -2386,23 +2386,8 @@
         "icon": "https://subtiers.net/assets/creeper-2cbc5b3a.svg"
       }
     ],
-    "active": {
-      "id": "creeper",
-      "name": "Creeper",
-      "icon": "https://subtiers.net/assets/creeper-2cbc5b3a.svg",
-      "startedAt": "2026-10-31T23:50:53.798Z",
-      "endsAt": "2026-11-14T23:50:53.798Z"
-    },
-    "activeLtms": [
-      {
-        "id": "creeper",
-        "name": "Creeper",
-        "icon": "https://subtiers.net/assets/creeper-2cbc5b3a.svg",
-        "slot": 1,
-        "startedAt": "2026-10-31T23:50:53.798Z",
-        "endsAt": "2026-11-14T23:50:53.798Z"
-      }
-    ],
+    "active": null,
+    "activeLtms": [],
     "players": [
       {
         "minecraft": "1TREN",
