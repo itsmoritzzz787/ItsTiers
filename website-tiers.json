@@ -1934,6 +1934,10 @@
         "pot": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "nethpot": {
+          "tier": "HT3",
+          "peakTier": "HT3"
         }
       }
     },
