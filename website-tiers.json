@@ -1373,6 +1373,10 @@
         "smp": {
           "tier": "HT3",
           "peakTier": "HT3"
+        },
+        "chaosmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
