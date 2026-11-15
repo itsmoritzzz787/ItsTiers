@@ -1734,6 +1734,16 @@
       }
     },
     {
+      "minecraft": "santavyrr",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "ShabakAgent3",
       "region": "EU",
       "tiers": {
@@ -2335,8 +2345,8 @@
       "region": "EU",
       "tiers": {
         "mace": {
-          "tier": "HT5",
-          "peakTier": "HT5"
+          "tier": "LT4",
+          "peakTier": "LT4"
         },
         "axe": {
           "tier": "HT5",
