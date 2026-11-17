@@ -264,6 +264,16 @@
       }
     },
     {
+      "minecraft": "CatboyPunktexe",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "certifiedrid",
       "region": "NA",
       "tiers": {
@@ -1820,16 +1830,6 @@
         "mace": {
           "tier": "HT5",
           "peakTier": "HT5"
-        }
-      }
-    },
-    {
-      "minecraft": "SkinPunktexe",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "HT4",
-          "peakTier": "HT4"
         }
       }
     },
