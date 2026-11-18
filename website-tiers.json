@@ -1417,6 +1417,10 @@
         "mace": {
           "tier": "HT4",
           "peakTier": "HT4"
+        },
+        "uhc": {
+          "tier": "LT5",
+          "peakTier": "LT5"
         }
       }
     },
