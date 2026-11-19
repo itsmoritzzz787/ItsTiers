@@ -2622,6 +2622,11 @@
             "tier": "LT3",
             "peakTier": "LT3",
             "awardedAt": "2026-11-03T22:35:37.680Z"
+          },
+          "og-vanila": {
+            "tier": "HT3",
+            "peakTier": "HT3",
+            "awardedAt": "2026-11-19T22:04:30.934Z"
           }
         }
       },
