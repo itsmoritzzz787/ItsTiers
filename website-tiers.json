@@ -1390,6 +1390,10 @@
         "chaosmace": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "spearmace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
