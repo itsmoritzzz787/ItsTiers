@@ -358,7 +358,8 @@
         },
         "smp": {
           "tier": "LT2",
-          "peakTier": "LT2"
+          "peakTier": "LT2",
+          "retired": true
         },
         "spearmace": {
           "tier": "HT3",
@@ -370,7 +371,8 @@
         },
         "uhc": {
           "tier": "LT2",
-          "peakTier": "LT2"
+          "peakTier": "LT2",
+          "retired": true
         },
         "pot": {
           "tier": "LT2",
@@ -1382,8 +1384,8 @@
           "peakTier": "LT3"
         },
         "smp": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT2",
+          "peakTier": "LT2"
         },
         "chaosmace": {
           "tier": "LT3",
