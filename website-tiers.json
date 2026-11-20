@@ -353,7 +353,8 @@
       "tiers": {
         "crystal": {
           "tier": "LT2",
-          "peakTier": "LT2"
+          "peakTier": "LT2",
+          "retired": true
         },
         "smp": {
           "tier": "LT2",
@@ -1766,32 +1767,6 @@
       }
     },
     {
-      "minecraft": "santavyrr",
-      "region": "EU",
-      "tiers": {
-        "mace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
-        },
-        "sword": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "axe": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "smp": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "pot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        }
-      }
-    },
-    {
       "minecraft": "ShabakAgent3",
       "region": "EU",
       "tiers": {
@@ -2193,6 +2168,32 @@
         "mace": {
           "tier": "HT5",
           "peakTier": "HT5"
+        }
+      }
+    },
+    {
+      "minecraft": "vyrrr",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "axe": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "smp": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "pot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
@@ -2853,17 +2854,6 @@
         }
       },
       {
-        "minecraft": "santavyrr",
-        "region": "EU",
-        "results": {
-          "og-vanila": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-11-15T13:04:58.245Z"
-          }
-        }
-      },
-      {
         "minecraft": "Sn00wies",
         "region": "EU",
         "results": {
@@ -2955,6 +2945,17 @@
             "tier": "LT4",
             "peakTier": "LT4",
             "awardedAt": "2026-11-07T22:55:07.733Z"
+          }
+        }
+      },
+      {
+        "minecraft": "vyrrr",
+        "region": "EU",
+        "results": {
+          "og-vanila": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-15T13:04:58.245Z"
           }
         }
       },
