@@ -1745,6 +1745,24 @@
       }
     },
     {
+      "minecraft": "PudzianowskiBoss",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT5",
+          "peakTier": "HT5"
+        },
+        "crystal": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "uhc": {
+          "tier": "HT5",
+          "peakTier": "HT5"
+        }
+      }
+    },
+    {
       "minecraft": "PVPSnapper",
       "region": "EU",
       "tiers": {
@@ -2005,24 +2023,6 @@
         "mace": {
           "tier": "HT3",
           "peakTier": "HT3"
-        }
-      }
-    },
-    {
-      "minecraft": "Szaniaczekk",
-      "region": "EU",
-      "tiers": {
-        "mace": {
-          "tier": "HT5",
-          "peakTier": "HT5"
-        },
-        "crystal": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "uhc": {
-          "tier": "HT5",
-          "peakTier": "HT5"
         }
       }
     },
