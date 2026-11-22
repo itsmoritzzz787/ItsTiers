@@ -2818,9 +2818,9 @@
         "region": "EU",
         "results": {
           "debuff": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-09-27T22:14:02.003Z"
+            "tier": "HT3",
+            "peakTier": "HT3",
+            "awardedAt": "2026-11-22T20:41:53.814Z"
           },
           "speed": {
             "tier": "LT3",
@@ -3035,8 +3035,8 @@
           },
           "speed": {
             "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-11-22T20:36:14.105Z"
+            "peakTier": "HT3",
+            "awardedAt": "2026-11-22T20:37:08.962Z"
           }
         }
       },
