@@ -584,6 +584,16 @@
       }
     },
     {
+      "minecraft": "Federsplitter",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "HT5",
+          "peakTier": "HT5"
+        }
+      }
+    },
+    {
       "minecraft": "Fluriol",
       "region": "EU",
       "tiers": {
