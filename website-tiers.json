@@ -2861,6 +2861,11 @@
             "tier": "HT5",
             "peakTier": "HT5",
             "awardedAt": "2026-11-01T18:01:58.188Z"
+          },
+          "og-vanila": {
+            "tier": "LT4",
+            "peakTier": "LT4",
+            "awardedAt": "2026-11-22T16:19:49.123Z"
           }
         }
       },
