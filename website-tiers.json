@@ -1372,8 +1372,8 @@
       "region": "EU",
       "tiers": {
         "uhc": {
-          "tier": "LT3",
-          "peakTier": "HT3"
+          "tier": "LT2",
+          "peakTier": "LT2"
         },
         "mace": {
           "tier": "LT3",
