@@ -1420,8 +1420,8 @@
       "region": "EU",
       "tiers": {
         "nethpot": {
-          "tier": "HT4",
-          "peakTier": "HT4"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "chaosmace": {
           "tier": "LT4",
