@@ -810,8 +810,8 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "LT4",
+          "peakTier": "LT4"
         },
         "nethpot": {
           "tier": "HT4",
@@ -823,15 +823,15 @@
         },
         "sword": {
           "tier": "LT4",
-          "peakTier": "LT4"
+          "peakTier": "HT4"
         },
         "mace": {
           "tier": "LT4",
           "peakTier": "LT4"
         },
         "pot": {
-          "tier": "LT3",
-          "peakTier": "LT3"
+          "tier": "LT4",
+          "peakTier": "LT4"
         },
         "spearmace": {
           "tier": "HT4",
@@ -839,11 +839,11 @@
         },
         "axe": {
           "tier": "HT5",
-          "peakTier": "LT3"
+          "peakTier": "LT4"
         },
         "smp": {
           "tier": "LT4",
-          "peakTier": "HT4"
+          "peakTier": "LT4"
         }
       }
     },
@@ -2601,6 +2601,16 @@
             "tier": "LT4",
             "peakTier": "LT4",
             "awardedAt": "2026-11-02T17:57:24.434Z"
+          },
+          "diamond-smp": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-22T13:22:46.353Z"
+          },
+          "speed": {
+            "tier": "HT5",
+            "peakTier": "HT5",
+            "awardedAt": "2026-11-22T13:23:06.202Z"
           }
         }
       },
