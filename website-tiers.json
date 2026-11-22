@@ -1446,6 +1446,10 @@
         "uhc": {
           "tier": "LT5",
           "peakTier": "LT5"
+        },
+        "axe": {
+          "tier": "LT4",
+          "peakTier": "LT4"
         }
       }
     },
