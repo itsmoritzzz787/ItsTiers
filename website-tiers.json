@@ -2593,6 +2593,17 @@
         }
       },
       {
+        "minecraft": "Ceinra",
+        "region": "EU",
+        "results": {
+          "lightspeed-mace": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-10-17T23:51:31.492Z"
+          }
+        }
+      },
+      {
         "minecraft": "certifiedrid",
         "region": "NA",
         "results": {
@@ -2800,17 +2811,6 @@
             "tier": "HT3",
             "peakTier": "HT3",
             "awardedAt": "2026-10-03T20:30:16.163Z"
-          }
-        }
-      },
-      {
-        "minecraft": "KFCmuncher67",
-        "region": "EU",
-        "results": {
-          "lightspeed-mace": {
-            "tier": "LT3",
-            "peakTier": "LT3",
-            "awardedAt": "2026-10-17T23:51:31.492Z"
           }
         }
       },
