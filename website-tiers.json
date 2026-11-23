@@ -2270,6 +2270,44 @@
       }
     },
     {
+      "minecraft": "yC0W",
+      "region": "EU",
+      "tiers": {
+        "uhc": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        },
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "crystal": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "pot": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "smp": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "axe": {
+          "tier": "LT4",
+          "peakTier": "LT4"
+        },
+        "nethpot": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        },
+        "mace": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "ytgabereal",
       "region": "EU",
       "tiers": {
@@ -3031,7 +3069,7 @@
           "og-vanila": {
             "tier": "LT3",
             "peakTier": "LT3",
-            "awardedAt": "2026-11-15T13:04:58.245Z"
+            "awardedAt": "2026-11-23T12:38:43.388Z"
           },
           "speed": {
             "tier": "LT3",
@@ -3048,6 +3086,26 @@
             "tier": "LT4",
             "peakTier": "LT4",
             "awardedAt": "2026-11-23T12:38:16.540Z"
+          },
+          "debuff": {
+            "tier": "LT4",
+            "peakTier": "LT4",
+            "awardedAt": "2026-11-23T12:38:42.507Z"
+          },
+          "diamond-smp": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-23T12:39:07.479Z"
+          },
+          "speed": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-23T12:39:43.662Z"
+          },
+          "og-vanila": {
+            "tier": "HT3",
+            "peakTier": "HT3",
+            "awardedAt": "2026-11-23T12:39:59.029Z"
           }
         }
       },
