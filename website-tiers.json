@@ -724,6 +724,20 @@
       }
     },
     {
+      "minecraft": "hhz678",
+      "region": "EU",
+      "tiers": {
+        "smp": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "axe": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "ILOVEGAPPLES",
       "region": "EU",
       "tiers": {
@@ -2612,6 +2626,11 @@
             "tier": "LT3",
             "peakTier": "LT3",
             "awardedAt": "2026-11-01T01:19:56.937Z"
+          },
+          "og-vanila": {
+            "tier": "HT3",
+            "peakTier": "HT3",
+            "awardedAt": "2026-11-23T12:53:38.929Z"
           }
         }
       },
@@ -2656,6 +2675,11 @@
             "tier": "HT3",
             "peakTier": "HT3",
             "awardedAt": "2026-11-23T12:50:30.869Z"
+          },
+          "og-vanila": {
+            "tier": "LT3",
+            "peakTier": "LT3",
+            "awardedAt": "2026-11-23T12:50:56.230Z"
           }
         }
       },
