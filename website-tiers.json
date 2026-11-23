@@ -274,6 +274,32 @@
       }
     },
     {
+      "minecraft": "Ceinra",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "LT4",
+          "peakTier": "LT4"
+        },
+        "mace": {
+          "tier": "HT5",
+          "peakTier": "HT5"
+        },
+        "axe": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        },
+        "uhc": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        },
+        "smp": {
+          "tier": "HT4",
+          "peakTier": "HT4"
+        }
+      }
+    },
+    {
       "minecraft": "certifiedrid",
       "region": "NA",
       "tiers": {
@@ -1164,32 +1190,6 @@
         "axe": {
           "tier": "LT3",
           "peakTier": "LT3"
-        }
-      }
-    },
-    {
-      "minecraft": "KFCmuncher67",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "LT4",
-          "peakTier": "LT4"
-        },
-        "mace": {
-          "tier": "HT5",
-          "peakTier": "HT5"
-        },
-        "axe": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "uhc": {
-          "tier": "HT4",
-          "peakTier": "HT4"
-        },
-        "smp": {
-          "tier": "HT4",
-          "peakTier": "HT4"
         }
       }
     },
