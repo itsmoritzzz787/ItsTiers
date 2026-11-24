@@ -776,24 +776,6 @@
       }
     },
     {
-      "minecraft": "ILOVEGAPPLES",
-      "region": "EU",
-      "tiers": {
-        "sword": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "uhc": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        },
-        "axe": {
-          "tier": "LT3",
-          "peakTier": "LT3"
-        }
-      }
-    },
-    {
       "minecraft": "Im_Zealous",
       "region": "EU",
       "tiers": {
@@ -1647,6 +1629,24 @@
         "mace": {
           "tier": "LT5",
           "peakTier": "LT5"
+        }
+      }
+    },
+    {
+      "minecraft": "nyxkrekel",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "uhc": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        },
+        "axe": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
