@@ -433,6 +433,16 @@
       }
     },
     {
+      "minecraft": "cutie_kit",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "LT3",
+          "peakTier": "LT3"
+        }
+      }
+    },
+    {
       "minecraft": "DieElfeFX",
       "region": "EU",
       "tiers": {
