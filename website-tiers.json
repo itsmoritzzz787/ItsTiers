@@ -1246,7 +1246,7 @@
           "peakTier": "LT2"
         },
         "smp": {
-          "tier": "LT3",
+          "tier": "HT3",
           "peakTier": "HT3"
         },
         "nethpot": {
@@ -1258,7 +1258,7 @@
           "peakTier": "HT4"
         },
         "chaosmace": {
-          "tier": "LT3",
+          "tier": "HT3",
           "peakTier": "HT3"
         },
         "crystal": {
