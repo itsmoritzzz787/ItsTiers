@@ -378,9 +378,8 @@
       "region": "EU",
       "tiers": {
         "crystal": {
-          "tier": "LT2",
-          "peakTier": "LT2",
-          "retired": true
+          "tier": "LT3",
+          "peakTier": "LT2"
         },
         "smp": {
           "tier": "LT2",
