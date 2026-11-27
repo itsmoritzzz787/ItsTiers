@@ -1234,7 +1234,7 @@
       "region": "EU",
       "tiers": {
         "sword": {
-          "tier": "LT2",
+          "tier": "LT3",
           "peakTier": "LT2"
         },
         "mace": {
@@ -1243,14 +1243,14 @@
         },
         "pot": {
           "tier": "LT3",
-          "peakTier": "LT2"
+          "peakTier": "HT3"
         },
         "smp": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "nethpot": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "axe": {
@@ -1258,7 +1258,7 @@
           "peakTier": "HT4"
         },
         "chaosmace": {
-          "tier": "HT3",
+          "tier": "LT3",
           "peakTier": "HT3"
         },
         "crystal": {
