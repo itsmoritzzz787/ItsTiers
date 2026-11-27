@@ -667,6 +667,10 @@
         "mace": {
           "tier": "LT5",
           "peakTier": "HT5"
+        },
+        "crystal": {
+          "tier": "LT5",
+          "peakTier": "LT5"
         }
       }
     },
