@@ -388,12 +388,12 @@
           "retired": true
         },
         "spearmace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "sword": {
-          "tier": "LT2",
-          "peakTier": "LT2"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "uhc": {
           "tier": "LT2",
@@ -401,24 +401,24 @@
           "retired": true
         },
         "pot": {
-          "tier": "LT2",
-          "peakTier": "LT2"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "mace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "nethpot": {
           "tier": "LT3",
-          "peakTier": "LT2"
+          "peakTier": "LT3"
         },
         "axe": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "chaosmace": {
-          "tier": "HT3",
-          "peakTier": "HT3"
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
