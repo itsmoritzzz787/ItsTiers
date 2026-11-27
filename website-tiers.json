@@ -379,12 +379,11 @@
       "tiers": {
         "crystal": {
           "tier": "LT3",
-          "peakTier": "LT2"
+          "peakTier": "LT3"
         },
         "smp": {
-          "tier": "LT2",
-          "peakTier": "LT2",
-          "retired": true
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "spearmace": {
           "tier": "LT3",
@@ -395,9 +394,8 @@
           "peakTier": "LT3"
         },
         "uhc": {
-          "tier": "LT2",
-          "peakTier": "LT2",
-          "retired": true
+          "tier": "LT3",
+          "peakTier": "LT3"
         },
         "pot": {
           "tier": "LT3",
@@ -2854,6 +2852,11 @@
             "tier": "HT3",
             "peakTier": "HT3",
             "awardedAt": "2026-10-03T20:30:16.163Z"
+          },
+          "og-vanila": {
+            "tier": "HT3",
+            "peakTier": "HT3",
+            "awardedAt": "2026-11-27T18:11:44.530Z"
           }
         }
       },
