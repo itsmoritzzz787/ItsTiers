@@ -2242,6 +2242,16 @@
       }
     },
     {
+      "minecraft": "uwumommy123",
+      "region": "EU",
+      "tiers": {
+        "mace": {
+          "tier": "LT5",
+          "peakTier": "LT5"
+        }
+      }
+    },
+    {
       "minecraft": "VampyWolf",
       "region": "EU",
       "tiers": {
