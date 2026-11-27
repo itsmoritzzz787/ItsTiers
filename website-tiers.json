@@ -2248,6 +2248,10 @@
         "mace": {
           "tier": "LT5",
           "peakTier": "LT5"
+        },
+        "sword": {
+          "tier": "LT3",
+          "peakTier": "LT3"
         }
       }
     },
