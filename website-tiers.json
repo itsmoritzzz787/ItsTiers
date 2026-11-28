@@ -2101,6 +2101,10 @@
         "nethpot": {
           "tier": "LT3",
           "peakTier": "LT3"
+        },
+        "pot": {
+          "tier": "LT5",
+          "peakTier": "LT5"
         }
       }
     },
