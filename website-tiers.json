@@ -2309,8 +2309,8 @@
       "region": "EU",
       "tiers": {
         "mace": {
-          "tier": "LT2",
-          "peakTier": "LT2"
+          "tier": "HT2",
+          "peakTier": "HT2"
         },
         "sword": {
           "tier": "LT3",
