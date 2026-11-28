@@ -1905,6 +1905,16 @@
       }
     },
     {
+      "minecraft": "Schmitt77",
+      "region": "EU",
+      "tiers": {
+        "sword": {
+          "tier": "HT3",
+          "peakTier": "HT3"
+        }
+      }
+    },
+    {
       "minecraft": "ShabakAgent3",
       "region": "EU",
       "tiers": {
